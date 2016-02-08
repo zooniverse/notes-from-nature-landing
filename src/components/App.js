@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import packageJSON from '../../package.json';
 
+import Data from '../data.js';
 
 export default class App extends React.Component {
   returnSomething(something) {
@@ -14,12 +15,12 @@ export default class App extends React.Component {
     return (
       <div>
         <header className="site-header">
-          <h1 className="title">React Starterify {version}</h1>
+          <h1 className="title"><a href="/">React Starterify {version}</a></h1>
           <Link to="/about" className="link">About</Link>
           <Link to="/poweredby" className="link">Powered by</Link>
         </header>
         <section className="content-section">
-          {this.props.children || 'Welcome to React Starterify'}
+          <div>{React.cloneElement(this.props.children, { data: Data })}</div>
         </section>
       </div>
     );
