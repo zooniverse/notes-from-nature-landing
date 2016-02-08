@@ -17,6 +17,7 @@ ReactDOM.render(
   <Router>
     <Route path="/" component={App}>
       <IndexRoute component={Landing}/>
+      <Route path="/subCollections" component={PoweredBy}/>
       <Route path="/about" component={About}/>
       <Route path="/poweredby" component={PoweredBy}/>
     </Route>

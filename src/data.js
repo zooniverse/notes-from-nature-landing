@@ -13,5 +13,6 @@ export default [
     displayName: 'Herbarium',
     backgroundImage: 'images/herbarium.jpg',
     description: 'A SERNEC collection is comprised of herbarium specimens: these flowers and plants are carefully pressed onto sheets along with descriptive labels, and contain vital information for broader understanding of biodiversity at regional and national scales.',
+    subCollections: true,
   },
 ];
