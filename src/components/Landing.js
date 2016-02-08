@@ -1,5 +1,4 @@
 import React from 'react';
-// import Collection from './Collection.js';
 
 export default class Landing extends React.Component {
   constructor(props) {
@@ -9,9 +8,9 @@ export default class Landing extends React.Component {
 
   _checkForSubCollections(item) {
     if (item.subCollections) {
-      return '/#subCollections';
+      return `/#subCollections/${item.subCollections}`;
     }
-    return 'http://www.zooniverse.org';
+    return item.url;
   }
 
   render() {
