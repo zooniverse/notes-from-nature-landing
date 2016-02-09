@@ -2,6 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import nib from 'nib';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 module.exports = {
 
@@ -32,6 +33,9 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
     }),
+    new CopyWebpackPlugin([
+      { from: 'src/images/collections/' },
+    ]),
   ],
 
   resolve: {

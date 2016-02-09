@@ -23,8 +23,8 @@ export const collections = [
     start_date: '1880',
     end_date: '2012',
     regions: ['Southeastern US'],
-    image: 'img-collections3.jpg',
-    headerImage: '/images/collections/archives/sernecBg.jpg',
+    image: 'herb.svg',
+    headerImage: 'images/collections/archives/sernecBg.jpg',
   },
   {
     name: 'Calbug',
@@ -46,7 +46,7 @@ export const collections = [
     start_date: '1880',
     end_date: 'Present',
     image: 'img-collections5.jpg',
-    headerImage: '/images/collections/archives/calbugBg2.jpg',
+    headerImage: 'images/collections/archives/calbugBg2.jpg',
   },
   {
     name: 'calbug-expeditions',
