@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 import packageJSON from '../../package.json';
-
-import Data from '../data.js';
+import Landing from 'components/Landing';
+import { collections } from 'constants/collections';
 
 export default class App extends React.Component {
   returnSomething(something) {
@@ -20,12 +20,13 @@ export default class App extends React.Component {
           <Link to="/poweredby" className="link">Powered by</Link>
         </header>
         <section className="content-section">
-          <div>{React.cloneElement(this.props.children, { data: Data })}</div>
+          <Landing collections={ collections } />
         </section>
       </div>
     );
   }
 }
+
 App.propTypes = {
   children: React.PropTypes.object,
 };

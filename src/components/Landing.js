@@ -6,31 +6,29 @@ export default class Landing extends React.Component {
     this._checkForSubCollections = this._checkForSubCollections.bind(this);
   }
 
-  _checkForSubCollections(item) {
-    if (item.subCollections) {
-      return `/#subCollections/${item.subCollections}`;
+  _checkForSubCollections(collection) {
+    if (collection.subCollections) {
+      return `/#subCollections/${collection.subCollections}`;
     }
-    return item.url;
+    return collection.url;
   }
 
   render() {
+    const { collections } = this.props;
     return (
       <div>
         <h2>Landing</h2>
-        {this.props.data.map((item) =>
-          <div key={item.displayName}>
-            <a href={this._checkForSubCollections(item)}>
-              <h3>{item.displayName}</h3>
-              <img src={item.backgroundImage}/>
-              <p>{item.description}</p>
-            </a>
+        {collections.map((collection, i) =>
+          <div key={i}>
+            <h3>{collection.name}</h3>
+            <img src={require('../images/collections/img-collections3.jpg')} />
           </div>
-        )}
+         )}
       </div>
     );
   }
 }
 
 Landing.propTypes = {
-  data: React.PropTypes.array,
+  collections: React.PropTypes.array,
 };

@@ -3,10 +3,9 @@ import React from 'react';
 export default class SubCollections extends React.Component {
 
   render() {
-    console.log(this.props);
     return (
       <div>
-        <h2>SubCollections</h2>
+        <h2>Subcollections</h2>
       </div>
     );
   }
