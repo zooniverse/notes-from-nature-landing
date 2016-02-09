@@ -23,7 +23,7 @@ export const collections = [
     start_date: '1880',
     end_date: '2012',
     regions: ['Southeastern US'],
-    image: '/images/collections/img-collections3.jpg',
+    image: 'img-collections3.jpg',
     headerImage: '/images/collections/archives/sernecBg.jpg',
   },
   {
@@ -45,7 +45,7 @@ export const collections = [
     regions: ['California and surrounding region'],
     start_date: '1880',
     end_date: 'Present',
-    image: '/images/collections/img-collections5.jpg',
+    image: 'img-collections5.jpg',
     headerImage: '/images/collections/archives/calbugBg2.jpg',
   },
   {
@@ -66,7 +66,7 @@ export const collections = [
     regions: ['California and surrounding region'],
     start_date: '1880',
     end_date: 'Present',
-    image: '/images/collections/img-collections6.jpg',
+    image: 'img-collections6.jpg',
     headerImage: '/images/collections/archives/calbugBg3.jpg',
   },
   {
@@ -80,7 +80,7 @@ export const collections = [
     average_length: '15 minutes',
     start_date: '1837',
     end_date: '1990',
-    image: '/images/collections/img-collections2.jpg',
+    image: 'img-collections2.jpg',
     headerImage: '/images/collections/archives/birdsBg.jpg',
   },
   {
@@ -115,7 +115,7 @@ export const collections = [
     average_length: '3 minutes',
     start_date: '~1900',
     end_date: '~2000',
-    image: '/images/collections/archives/macrofungi/collection-list-bg.jpg',
+    image: 'collection-list-bg.jpg',
     headerImage: '/images/collections/archives/macrofungi/archive-bg.jpg',
   },
   {
@@ -142,7 +142,7 @@ export const collections = [
     start_date: '1880',
     end_date: '2015',
     regions: ['Southeastern US'],
-    image: '/images/collections/USF127737.jpg',
+    image: 'USF127737.jpg',
     headerImage: '/images/collections/USF127737.jpg',
   },
   {
@@ -168,7 +168,7 @@ export const collections = [
     start_date: '1880',
     end_date: '2015',
     regions: ['Southeastern US'],
-    image: '/images/collections/collections/FSU_NFN_image.jpg',
+    image: 'FSU_NFN_image.jpg',
     headerImage: '/images/collections/FSU_NFN_image_banner.jpg',
   },
   {
@@ -192,7 +192,34 @@ export const collections = [
     start_date: '1880',
     end_date: '2015',
     regions: ['Tennessee & Alabama'],
-    image: '/images/collections/collections/Phylalower-herb.jpg',
+    image: 'phylalower-herb.jpg',
     headerImage: '/images/collections/collections/brit_VDBWeDigBioImage_resized.jpg',
+  },
+  {
+    name: 'SELU',
+    categories: ['Plants'],
+    title: 'Southeastern Louisiana University Herbarium',
+    collection_name: '',
+    collection_group: 'SERNEC',
+    institute: 'SERNEC',
+    description: `SERNEC is an organization that supports the 222 Herbaria and over
+      12 million plant specimens found in the Southeastern United States.
+      Each of these herbaria are valued collections of plants specimens used in
+      research and teaching.  Their value is amplified in partnership and
+      SERNEC is devoted to making the resources of all these Herbaria available
+      online as one virtual, researchable collection. SERNEC will improve access to
+      specimen data of a richly biodiverse region, and provide a platform for herbarium
+      curators and plant scientists to exchange ideas, share expertise, and benefit
+      from the value of information shared across institutions.`,
+    snippet: `A SERNEC collection is comprised of herbarium specimens: these
+      flowers and plants are carefully pressed onto sheets along with descriptive labels,
+      and contain vital information for broader understanding of biodiversity at
+      regional and national scales.`,
+    difficulty: 'Easy',
+    start_date: '1880',
+    end_date: '2012',
+    regions: ['Southeastern US'],
+    image: 'img-collections3.jpg',
+    headerImage: '/images/collections/archives/sernecBg.jpg',
   },
 ];

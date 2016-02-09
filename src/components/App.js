@@ -5,10 +5,6 @@ import Landing from 'components/Landing';
 import { collections } from 'constants/collections';
 
 export default class App extends React.Component {
-  returnSomething(something) {
-    // this is only for testing purposes. Check /test/components/App-test.js
-    return something;
-  }
   render() {
     const version = packageJSON.version;
 
