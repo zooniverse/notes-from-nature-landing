@@ -34,7 +34,7 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('development'),
     }),
     new CopyWebpackPlugin([
-      { from: 'src/images/collections/' },
+      { from: 'src/images/' },
     ]),
   ],
 

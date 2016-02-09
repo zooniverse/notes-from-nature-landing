@@ -3,12 +3,12 @@ import React from 'react';
 export default class Landing extends React.Component {
   constructor(props) {
     super(props);
-    this._checkForSubCollections = this._checkForSubCollections.bind(this);
+    this.makeHref = this.makeHref.bind(this);
   }
 
-  _checkForSubCollections(collection) {
-    if (collection.subCollections) {
-      return `/#subCollections/${collection.subCollections}`;
+  makeHref(collection, i) {
+    if (collection.subcollections) {
+      return `/#subcollections/${i}`;
     }
     return collection.url;
   }
@@ -20,10 +20,12 @@ export default class Landing extends React.Component {
         <h2>Landing</h2>
         {collections.map((collection, i) =>
           <div key={i}>
-            <h3>{collection.name}</h3>
-            <img src={collection.image}
-              height="220" width="320"
-            />
+            <a href={this.makeHref(collection, i)}>
+              <img src={collection.image}
+                height="220" width="320"
+              />
+              <h3>{collection.name}</h3>
+            </a>
           </div>
          )}
       </div>
