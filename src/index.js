@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute } from 'react-router';
+import About from './components/About';
 import App from './components/App';
 import Landing from './components/Landing';
 import Subcollections from './components/Subcollections';
@@ -16,7 +17,8 @@ ReactDOM.render(
   <Router>
     <Route path="/" component={App}>
       <IndexRoute component={Landing}/>
-      <Route path="/subcollections/:id" component={Subcollections}/>
+      <Route path="/subcollections/:index" component={Subcollections}/>
+      <Route path="/about" component={About}/>
     </Route>
   </Router>,
   document.getElementById('root')

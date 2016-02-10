@@ -2,8 +2,7 @@ import React from 'react';
 
 export default class Subcollections extends React.Component {
   render() {
-    const subcollections = this.props.data[this.props.params.index].subcollections;
-    console.log('subcollections');
+    const { subcollections } = this.props.collections[this.props.params.index];
 
     return (
       <div>
@@ -11,8 +10,8 @@ export default class Subcollections extends React.Component {
         {subcollections.map((item) =>
           <div key={item.displayName}>
             <a href={item.url}>
-              <img src={item.backgroundImage}/>
-              <h3>{item.displayName}</h3>
+              <img src={item.image} height="220" width="320" />
+              <h3>{item.name}</h3>
               <p>{item.description}</p>
             </a>
           </div>
@@ -23,6 +22,6 @@ export default class Subcollections extends React.Component {
 }
 
 Subcollections.propTypes = {
-  data: React.PropTypes.array,
+  collections: React.PropTypes.array,
   params: React.PropTypes.object,
 };
