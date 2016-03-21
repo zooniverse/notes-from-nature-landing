@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
+import { collections } from 'constants/collections';
 
-export default class Landing extends React.Component {
+export default class Landing extends Component {
   makeHref(collection, i) {
     if (collection.subcollections) {
       return `/#subcollections/${i}`;
@@ -9,10 +11,20 @@ export default class Landing extends React.Component {
   }
 
   render() {
-    const { collections } = this.props;
     return (
       <div className="landing">
         <div className="hero">
+          <div className="landing-header">
+            <div className="header-links">
+              <span className="first active">Get Started</span>
+              <Link to="/about">About</Link>
+              <Link to="/about">Discuss</Link>
+              <Link to="/about" className="last">Blog</Link>
+            </div>
+            <div className="login-info">
+              <span>Log in Placeholder</span>
+            </div>
+          </div>
           <div className="landing-title">
             <div className="action"><span>TRANSCRIBE MUSEUM RECORDS</span></div>
             <div><hr/></div>
@@ -27,7 +39,7 @@ export default class Landing extends React.Component {
               <div className="collection" key={i}>
                 <a href={this.makeHref(collection, i)}>
                   <svg>
-                    <image xlinkHref={collection.image} x="0" y="0"/>
+                    <image xlinkHref={collection.image}/>
                   </svg>
                 </a>
               </div>
@@ -78,5 +90,5 @@ export default class Landing extends React.Component {
 }
 
 Landing.propTypes = {
-  collections: React.PropTypes.array,
+  collections: PropTypes.array,
 };

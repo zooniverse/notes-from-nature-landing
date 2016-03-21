@@ -1,4 +1,5 @@
 .landing-app
+  background-color: #e1e1e1
 
   .landing
     .hero
@@ -7,6 +8,47 @@
       flex-direction: column
       min-height: 500px
 
+      .landing-header
+        font-size: 12px
+        color: white
+        flex: 1
+        display: flex
+        flex-flow: row
+        background-color: rgba(32, 32, 32, 0.6)
+
+        .header-links
+          flex: 8
+          display: flex
+          flex-flow: row
+          align-content: center
+
+          a, span
+            color: white
+            flex: 1
+            text-align: center
+            text-decoration: none
+            align-self: center
+
+          a:hover
+            color: #96f132
+
+          span.first
+            flex: 3
+            text-align: right
+            padding-right: 1em
+            font-weight: bold
+            text-decoration: underline solid #96f132
+
+          a.last
+            flex: 4
+            text-align: left
+            padding-left: 1em
+
+        .login-info
+          flex: 2
+          text-align: center
+          align-self: center
+
       .landing-title
         color: white
         display: flex
@@ -14,6 +56,7 @@
         text-align: center
         flex: 8
         align-items: center
+        background-color: rgba(32, 32, 32, 0.2)
 
         .action
           display: flex
@@ -32,7 +75,7 @@
         .tagline
           font-weight: bold
           font-size: 40px
-          flex: 1
+          flex: 2
 
           span.smaller
             font-weight: normal
@@ -44,11 +87,10 @@
         flex: 3
         align-items: center
         flex-flow: row
-        background-color: rgba(0, 0, 0, 0.6)
+        background-color: rgba(32, 32, 32, 0.7)
         text-align: center
 
         .collection
-          color: white
           flex: 1
 
           svg
@@ -57,32 +99,30 @@
             width: 100px
             height: 100px
 
+            &hover path
+              fill: red
+
             &:hover
-              background-color: gainsboro
+              background-color: #e1e1e1
 
             image
               width: 100px
               height: 100px
               fill: #5b7676
 
-          a
-            color: white
-            text-decoration: none
-
       .counters
-        background-color: rgba(0, 0, 0, 0.9)
-        color: white
+        background-color: rgba(32, 32, 32, 0.9)
         align-items: center
         flex: 1
         display: flex
         flex-flow: row
         text-align: center
+        color: white
 
         > div
           flex: 1
 
     .why
-      background-color: white
       text-align: center
 
       .reasons
@@ -91,3 +131,6 @@
 
         > div
           flex: 1
+
+        img
+          border-radius: 67px
