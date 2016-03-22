@@ -1,15 +1,19 @@
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { collections } from 'constants/collections';
+import * as action from 'actions/landing';
 
 export default class Landing extends Component {
+  componentDidMount() {
+    this.props.dispatch(action.fetchProjectData());
+  }
   makeHref(collection, i) {
     if (collection.subcollections) {
       return `/#subcollections/${i}`;
     }
     return collection.url;
   }
-
   render() {
     return (
       <div className="landing">
@@ -65,7 +69,7 @@ export default class Landing extends Component {
           <div className="reasons">
             <div>
               <img src="landing/home_icon_bird.png" alt="avian best friend"/>
-              <h3>To improve our world.</h3>
+              <h3>To ifuncmprove our world.</h3>
               <p>Museum records contain historical biodiversity data. Scientists and researchers
                 can use the data to conduct new research and make better conservation decisions.
               </p>
@@ -91,4 +95,12 @@ export default class Landing extends Component {
 
 Landing.propTypes = {
   collections: PropTypes.array,
+  dispatch: PropTypes.func,
 };
+
+function mapStateToProps() {
+  return {
+  };
+}
+
+export default connect(mapStateToProps)(Landing);

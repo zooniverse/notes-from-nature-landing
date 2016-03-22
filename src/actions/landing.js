@@ -14,9 +14,9 @@ function receiveProjectData(json) {
 */
 
 export function fetchProjectData() {
-  return (dispatch) => {
+  return dispatch => {
     dispatch(requestProjectData());
-    apiClient.type('projects').get('20')
+    apiClient.type('projects').get('1593')
       .then(response => console.log(response));
       // .then(json => dispatch(receiveProjectData(json)));
   };

@@ -2,6 +2,10 @@
   background-color: #e1e1e1
 
   .landing
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
     .hero
       background: url("../images/landing/home.jpg")
       display: flex
@@ -99,16 +103,12 @@
             width: 100px
             height: 100px
 
-            &hover path
-              fill: red
-
             &:hover
               background-color: #e1e1e1
 
             image
               width: 100px
               height: 100px
-              fill: #5b7676
 
       .counters
         background-color: rgba(32, 32, 32, 0.9)
