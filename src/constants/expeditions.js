@@ -1,21 +1,22 @@
-export const collections = [
+export const expeditionCount = 8;
+export const expeditions = [
   {
     name: 'Herbarium',
     categories: ['Plants'],
     title: 'Southeastern Louisiana University Herbarium',
-    collection_name: '',
-    collection_group: 'SERNEC',
+    expedition_name: '',
+    expedition_group: 'SERNEC',
     institute: 'SERNEC',
     description: `SERNEC is an organization that supports the 222 Herbaria and over
       12 million plant specimens found in the Southeastern United States.
-      Each of these herbaria are valued collections of plants specimens used in
+      Each of these herbaria are valued expeditions of plants specimens used in
       research and teaching.  Their value is amplified in partnership and
       SERNEC is devoted to making the resources of all these Herbaria available
-      online as one virtual, researchable collection. SERNEC will improve access to
+      online as one virtual, researchable expedition. SERNEC will improve access to
       specimen data of a richly biodiverse region, and provide a platform for herbarium
       curators and plant scientists to exchange ideas, share expertise, and benefit
       from the value of information shared across institutions.`,
-    snippet: `A SERNEC collection is comprised of herbarium specimens: these
+    snippet: `A SERNEC expedition is comprised of herbarium specimens: these
       flowers and plants are carefully pressed onto sheets along with descriptive labels,
       and contain vital information for broader understanding of biodiversity at
       regional and national scales.`,
@@ -23,15 +24,15 @@ export const collections = [
     start_date: '1880',
     end_date: '2012',
     regions: ['Southeastern US'],
-    image: 'collections/herb.svg',
-    headerImage: 'images/collections/archives/sernecBg.jpg',
-    subcollections: [
+    image: 'expeditions/herb.svg',
+    headerImage: 'images/expeditions/archives/sernecBg.jpg',
+    expeditions: [
       {
         categories: ['Plants'],
         name: 'USF_Herbaria',
         title: 'University of South Florida Herbarium',
-        collection_name: '',
-        collection_group: 'SERNEC',
+        expedition_name: '',
+        expedition_group: 'SERNEC',
         institute: 'USF',
         description: `Welcome to the University of South Florida (USF) Herbarium
           and Notes from Nature. The USF Herbarium contains over 250,000 preserved plant
@@ -42,7 +43,7 @@ export const collections = [
           by our scientists, our educators, our land managers, our resource providers, and
           many, many others. We need you to help us provide and disseminate that information
           to online users.`,
-        snippet: `The USF Herbarium collection is comprised of herbarium specimens:
+        snippet: `The USF Herbarium expedition is comprised of herbarium specimens:
           these flowers and plants are carefully pressed onto sheets along with
           descriptive labels, and contain vital information for broader understanding
         of biodiversity at regional and national scales.`,
@@ -50,16 +51,16 @@ export const collections = [
         start_date: '1880',
         end_date: '2015',
         regions: ['Southeastern US'],
-        image: 'collections/USF127737.jpg',
-        headerImage: '/images/collections/USF127737.jpg',
+        image: 'expeditions/USF127737.jpg',
+        headerImage: '/images/expeditions/USF127737.jpg',
         url: 'http://google.com',
       },
       {
         name: 'FSU_Herbaria',
         categories: ['Plants'],
         title: 'Florida State University Herbarium',
-        collection_name: 'Robert K. Godfrey Herbarium Collection',
-        collection_group: 'SERNEC',
+        expedition_name: 'Robert K. Godfrey Herbarium Collection',
+        expedition_group: 'SERNEC',
         institute: 'FSU',
         description: `Florida State University's Robert K. Godfrey Herbarium documents the
         distribution and natural variation of 2,400 species of flowering plants,
@@ -68,7 +69,7 @@ export const collections = [
           in North America.  Join our effort to liberate specimen data from our cabinets and
           deploy it online—we currently serve data for a third of our 220,000 specimens and
           are adding to this each week with your help!`,
-        snippet: `The FSU Herbarium collection is comprised of herbarium specimens:
+        snippet: `The FSU Herbarium expedition is comprised of herbarium specimens:
           these flowers and plants are carefully pressed onto sheets along with descriptive
           labels, and contain vital information for broader understanding of biodiversity
           at regional and national scales.`,
@@ -76,18 +77,18 @@ export const collections = [
         start_date: '1880',
         end_date: '2015',
         regions: ['Southeastern US'],
-        image: 'collections/FSU_NFN_image.jpg',
-        headerImage: '/images/collections/FSU_NFN_image_banner.jpg',
+        image: 'expeditions/FSU_NFN_image.jpg',
+        headerImage: '/images/expeditions/FSU_NFN_image_banner.jpg',
         url: '',
       },
       {
         name: 'BRIT_Herbaria',
         categories: ['Plants'],
         title: 'Botanical Research Institute of Texas',
-        collection_name: 'VDB Collection',
-        collection_group: 'SERNEC',
+        expedition_name: 'VDB Collection',
+        expedition_group: 'SERNEC',
         institute: 'BRIT',
-        description: `The VDB collection of the Philecology Herbarium at the
+        description: `The VDB expedition of the Philecology Herbarium at the
           Botanical Research Institute of Texas
           is composed of ca. 360,000 plant specimens and is one of the best representations of
           the flora of the southeastern United States. Each of these herbarium sheets serve
@@ -101,27 +102,27 @@ export const collections = [
         start_date: '1880',
         end_date: '2015',
         regions: ['Tennessee & Alabama'],
-        image: 'collections/phylalower-herb.jpg',
-        headerImage: '/images/collections/collections/brit_VDBWeDigBioImage_resized.jpg',
+        image: 'expeditions/phylalower-herb.jpg',
+        headerImage: '/images/expeditions/expeditions/brit_VDBWeDigBioImage_resized.jpg',
         url: '',
       },
       {
         name: 'SELU',
         categories: ['Plants'],
         title: 'Southeastern Louisiana University Herbarium',
-        collection_name: '',
-        collection_group: 'SERNEC',
+        expedition_name: '',
+        expedition_group: 'SERNEC',
         institute: 'SERNEC',
         description: `SERNEC is an organization that supports the 222 Herbaria and over
           12 million plant specimens found in the Southeastern United States.
-          Each of these herbaria are valued collections of plants specimens used in
+          Each of these herbaria are valued expeditions of plants specimens used in
           research and teaching.  Their value is amplified in partnership and
           SERNEC is devoted to making the resources of all these Herbaria available
-          online as one virtual, researchable collection. SERNEC will improve access to
+          online as one virtual, researchable expedition. SERNEC will improve access to
           specimen data of a richly biodiverse region, and provide a platform for herbarium
           curators and plant scientists to exchange ideas, share expertise, and benefit
           from the value of information shared across institutions.`,
-        snippet: `A SERNEC collection is comprised of herbarium specimens: these
+        snippet: `A SERNEC expedition is comprised of herbarium specimens: these
           flowers and plants are carefully pressed onto sheets along with descriptive labels,
           and contain vital information for broader understanding of biodiversity at
           regional and national scales.`,
@@ -129,8 +130,8 @@ export const collections = [
         start_date: '1880',
         end_date: '2012',
         regions: ['Southeastern US'],
-        image: 'collections/img-collections3.jpg',
-        headerImage: '/images/collections/archives/sernecBg.jpg',
+        image: 'expeditions/img-expeditions3.jpg',
+        headerImage: '/images/expeditions/archives/sernecBg.jpg',
         url: '',
       },
     ],
@@ -141,43 +142,43 @@ export const collections = [
     institute: 'Essig Museum Collections',
     description: `Calbug is an effort to digitize terrestrial arthropod-specimen
       records with a focus on California. The project, funded by the National Science
-      Foundation, represents a collaboration among eight entomological collections in
+      Foundation, represents a collaboration among eight entomological expeditions in
       California to capture data from specimen labels. The Calbug Science Team will then
-      use the collection data to assess how arthropods have responded to climate change
+      use the expedition data to assess how arthropods have responded to climate change
       and habitat modification. Drawing from over a century of insect collecting in the
       region, our goal is to develop a database of over 1 million geographically
       referenced specimens.`,
-    snippet: `Calbug digitizes collections of pinned insect specimens drawn from eight
+    snippet: `Calbug digitizes expeditions of pinned insect specimens drawn from eight
       of California's major institutions, showcasing the stunning diversity of
       insect life in our world.`,
     difficulty: 'Easy',
     regions: ['California and surrounding region'],
     start_date: '1880',
     end_date: 'Present',
-    image: 'collections/insect.svg',
-    headerImage: 'images/collections/archives/calbugBg2.jpg',
-    subcollections: [
+    image: 'expeditions/insect.svg',
+    headerImage: 'images/expeditions/archives/calbugBg2.jpg',
+    expeditions: [
       {
         name: 'Calbug',
         categories: ['Insects', 'Spiders'],
         institute: 'Essig Museum Collections',
         description: `Calbug is an effort to digitize terrestrial arthropod-specimen
           records with a focus on California. The project, funded by the National Science
-          Foundation, represents a collaboration among eight entomological collections in
+          Foundation, represents a collaboration among eight entomological expeditions in
           California to capture data from specimen labels. The Calbug Science Team will then
-          use the collection data to assess how arthropods have responded to climate change
+          use the expedition data to assess how arthropods have responded to climate change
           and habitat modification. Drawing from over a century of insect collecting in the
           region, our goal is to develop a database of over 1 million geographically
           referenced specimens.`,
-        snippet: `Calbug digitizes collections of pinned insect specimens drawn from eight
+        snippet: `Calbug digitizes expeditions of pinned insect specimens drawn from eight
           of California's major institutions, showcasing the stunning diversity of
           insect life in our world.`,
         difficulty: 'Easy',
         regions: ['California and surrounding region'],
         start_date: '1880',
         end_date: 'Present',
-        image: 'collections/img-collections5.jpg',
-        headerImage: 'images/collections/archives/calbugBg2.jpg',
+        image: 'expeditions/img-expeditions5.jpg',
+        headerImage: 'images/expeditions/archives/calbugBg2.jpg',
         url: '',
       },
       {
@@ -186,20 +187,20 @@ export const collections = [
         institute: 'Essig Museum Collections',
         description: `Calbug is an effort to digitize terrestrial arthropod-specimen
           records with a focus on California, with specimen imges drawn from among eight
-          entomological collections. The Calbug Science Team will then use the collection
+          entomological expeditions. The Calbug Science Team will then use the expedition
           data to assess how arthropods have responded to climate change and habitat
           modification. CalBug Expeditions provide you with a focused taxonomic group to tackle.
           Our first expedition is on a group known as Jewel Beetles.
           They are both beautiful and destructive, and we need your help to learn more about them!`,
-        snippet: `Calbug digitizes collections of pinned insect specimens drawn from eight of
+        snippet: `Calbug digitizes expeditions of pinned insect specimens drawn from eight of
           California's major institutions, showcasing the stunning diversity of
           insect life in our world.`,
         difficulty: 'Easy',
         regions: ['California and surrounding region'],
         start_date: '1880',
         end_date: 'Present',
-        image: 'collections/img-collections6.jpg',
-        headerImage: '/images/collections/archives/calbugBg3.jpg',
+        image: 'expeditions/img-expeditions6.jpg',
+        headerImage: '/images/expeditions/archives/calbugBg3.jpg',
         url: '',
       },
     ],
@@ -215,8 +216,8 @@ export const collections = [
     average_length: '15 minutes',
     start_date: '1837',
     end_date: '1990',
-    image: 'collections/bird.svg',
-    headerImage: '/images/collections/archives/birdsBg.jpg',
+    image: 'expeditions/bird.svg',
+    headerImage: '/images/expeditions/archives/birdsBg.jpg',
     url: 'http://google.com',
   },
   {
@@ -251,8 +252,8 @@ export const collections = [
     average_length: '3 minutes',
     start_date: '~1900',
     end_date: '~2000',
-    image: 'collections/fungus.svg',
-    headerImage: '/images/collections/archives/macrofungi/archive-bg.jpg',
+    image: 'expeditions/fungus.svg',
+    headerImage: '/images/expeditions/archives/macrofungi/archive-bg.jpg',
     url: 'http://google.com',
   },
 ];

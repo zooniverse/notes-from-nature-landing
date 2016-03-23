@@ -1,14 +1,14 @@
 import React from 'react';
-import { collections } from 'constants/collections';
+import { expeditions } from 'constants/expeditions';
 
-export default class Subcollections extends React.Component {
+export default class Expeditions extends React.Component {
   render() {
-    const { subcollections } = collections[this.props.params.index];
+    const { expeditionList } = expeditions[this.props.params.index];
 
     return (
       <div>
-        <h2>Subcollections</h2>
-        {subcollections.map((item, i) =>
+        <h2>Expeditions</h2>
+        {expeditionList.map((item, i) =>
           <div key={item.displayName} key={i}>
             <a href={item.url}>
               <img src={item.image} height="220" width="320" />
@@ -22,7 +22,7 @@ export default class Subcollections extends React.Component {
   }
 }
 
-Subcollections.propTypes = {
-  collections: React.PropTypes.array,
+Expeditions.propTypes = {
+  expeditions: React.PropTypes.array,
   params: React.PropTypes.object,
 };

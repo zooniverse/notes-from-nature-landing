@@ -1,0 +1,129 @@
+.main-footer
+  .main-footer-zooniverse-info
+    align-items: center
+    background-color: #2d2d2d
+    color: rgba(#999, 1)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 3em 3vw
+
+    .zooniverse-logo
+      position: relative
+      width: 75px
+      height: 75px
+      transition: transform .5s ease-in-out
+
+      svg
+        transform: translate(-50%, -50%)
+        position: absolute
+        left: 51%
+        top: 50%
+        path
+          transition: fill .5s ease-in-out
+
+      img
+        border-width: 5px 5px 12px 5px
+        border-color: transparent
+        border-style: solid
+        border-radius: 2px
+        opacity: 0
+        transition all 0.5s ease-in-out
+
+      &:hover
+        transform: rotate(-15deg)
+
+        svg
+          path
+            fill: #EFD59C
+        img
+          border-color: white
+          opacity: 1
+
+    .markdown
+      p
+        font-size: 1.2em
+        font-weight: 400
+        max-width: 41em
+        text-align: center
+
+    .footer-link-button
+      @extends $reset-button
+      border: solid 2px rgba(#8a9d56, 1)
+      border-radius: 4px
+      color: #8a9d56
+      font-size: 0.9em
+      padding: 1em 0
+      text-align: center
+      width: 215px
+
+      &:hover
+        background-color: lighten(#8a9d56, 10%)
+        border-color: lighten(#8a9d56, 10%)
+        color: #f2f2f2
+
+  .main-footer-projects-lists
+    background-color: #1f1f1f
+    color: #bbb
+    display: flex
+    justify-content: center
+    min-height: 175px
+    padding: 1em 3vw
+
+    @media screen and (max-width: 900px)
+      flex-wrap: wrap
+      justify-content: flex-start
+
+    .project-list-container
+      padding: 0.5em 2em
+      white-space: nowrap
+
+      h5
+        color: #f2f2f2
+        margin: 0
+
+      .project-list
+        list-style: none
+        font-size: 0.8em
+        margin: 0
+        padding: 0
+
+        li > a
+          @extends $reset-link
+
+          &:hover
+            color: white
+
+  .main-footer-social-media
+    background-color: #00181a
+    box-sizing: border-box
+    color: #ccc
+    display: flex
+    font-size: 0.8em
+    justify-content: space-between
+    max-width: 2000px
+    padding: 0.25em 3vw
+    width: 100%
+
+    .markdown
+      align-items: center
+      display: flex
+
+      p
+        margin: 0.5em 0.5em 0.5em 0
+
+    .social-media-links
+      line-height: 50px
+      min-width: 150px
+
+      a
+        margin-left: 1.5em
+
+      span, i
+        vertical-align: middle
+
+    a
+      @extends $reset-link
+
+      &:hover
+        color: lighten(#ccc, 30%)

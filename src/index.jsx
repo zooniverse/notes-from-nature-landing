@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute } from 'react-router';
-import About from './components/About';
-import App from './components/App';
-import Landing from './components/Landing';
-import Subcollections from './components/Subcollections';
+import About from './components/about';
+import App from './components/app';
+import Landing from './components/landing';
+import expeditions from './components/expeditions';
 import configureStore from './store';
 
 // Todo: let's find a better way to include Styles,
@@ -20,7 +20,7 @@ ReactDOM.render(
     <Router>
       <Route path="/" component={App}>
         <IndexRoute component={Landing} />
-        <Route path="/subcollections/:index" component={Subcollections}/>
+        <Route path="/expedition/:index" component={expeditions}/>
         <Route path="/about" component={About}/>
       </Route>
     </Router>

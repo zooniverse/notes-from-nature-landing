@@ -1,11 +1,11 @@
 import * as actionType from 'actions/landing';
 
 const initialState = {
-  isFetching: false,
+  isFetching: true,
   project: {},
 };
 
-export function project(state = initialState, action = '') {
+export function landing(state = initialState, action = '') {
   let nextState;
   switch (action.type) {
     case actionType.REQUEST_PROJECT_DATA:

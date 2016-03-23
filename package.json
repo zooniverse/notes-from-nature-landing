@@ -35,6 +35,7 @@
   "dependencies": {
     "history": "^1.13.1",
     "isomorphic-fetch": "^2.2.1",
+    "markdownz": "^4.0.3",
     "panoptes-client": "^2.0.2",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
