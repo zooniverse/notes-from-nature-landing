@@ -1,11 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { expeditions } from 'constants/expeditions';
 import * as action from 'actions/landing';
 import LandingHeader from 'landing/header';
 import LandingReasons from 'landing/reasons';
 import LandingStatistics from 'landing/statistics';
-import LandingExpeditionGroup from 'landing/expedition-group';
+import LandingExpeditionGroup from 'landing/expedition-groups';
 import FatFooter from 'footer/fat-footer';
 
 class Landing extends Component {
@@ -27,13 +26,7 @@ class Landing extends Component {
               <span>&nbsp;Nature</span>
             </div>
           </div>
-          <div className="links">
-            {expeditions.map((group, i) =>
-              <div className="expedition" key={i}>
-                <LandingExpeditionGroup group={group} index={i} />
-              </div>
-            )}
-          </div>
+          <LandingExpeditionGroup />
           <LandingStatistics project={project} />
         </div>
         <LandingReasons />

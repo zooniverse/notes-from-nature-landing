@@ -103,7 +103,7 @@ export const footer = {
           <strong>Zooniverse.org</strong>
         </a>
         The universe is too big to explore without you. |
-        <a href="https://www.zooniverse.org/privacy target="_blank"">
+        <a href="https://www.zooniverse.org/privacy" target="_blank">
           Privacy Policy
         </a>
         |

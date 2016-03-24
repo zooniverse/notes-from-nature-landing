@@ -3,9 +3,6 @@ import FooterLogo from 'footer/logo';
 import { footer } from 'constants/footer';
 
 export default class FatFooter extends Component {
-  footerSocial() {
-    return { __html: footer.social.content };
-  }
   render() {
     return (
       <footer className="main-footer">
@@ -37,7 +34,7 @@ export default class FatFooter extends Component {
             )}
           </section>
           <section className="main-footer-social-media">
-            <div className="markdown" dangerouslySetInnerHTML={this.footerSocial()}>
+            <div className="markdown" dangerouslySetInnerHTML={{ __html: footer.social.content }}>
             </div>
             <div className="social-media-links">
             </div>
