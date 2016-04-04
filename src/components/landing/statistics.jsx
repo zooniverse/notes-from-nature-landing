@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { expeditionCount } from 'constants/expeditions';
 
+// TODO: Format numbers with commas
+
 export default class LandingStatistics extends Component {
   render() {
     const { project } = this.props;

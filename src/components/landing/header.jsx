@@ -1,6 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 
+// TODO: Active link is disabled and Boulder
+// TODO: Put in <HeaderAuth /> control
+
 export default class LandingHeader extends Component {
   render() {
     // const { active } = this.props;

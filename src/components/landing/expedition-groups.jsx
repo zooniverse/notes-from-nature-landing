@@ -5,6 +5,8 @@ import LandingExpeditionGroupInsect from 'landing/expedition-groups/insect';
 import LandingExpeditionGroupFungus from 'landing/expedition-groups/fungus';
 import { expeditions } from 'constants/expeditions';
 
+// Make Expedition links go to the correct page
+
 export default class LandingExpeditionGroups extends Component {
   makeHref(index) {
     if (expeditions.expeditions) {
