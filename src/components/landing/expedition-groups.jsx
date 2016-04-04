@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import LandingLogoHerb from 'landing/logo/herb';
-import LandingLogoBird from 'landing/logo/bird';
-import LandingLogoInsect from 'landing/logo/insect';
-import LandingLogoFungus from 'landing/logo/fungus';
+import LandingExpeditionGroupHerb from 'landing/expedition-groups/herb';
+import LandingExpeditionGroupBird from 'landing/expedition-groups/bird';
+import LandingExpeditionGroupInsect from 'landing/expedition-groups/insect';
+import LandingExpeditionGroupFungus from 'landing/expedition-groups/fungus';
 import { expeditions } from 'constants/expeditions';
 
 export default class LandingExpeditionGroups extends Component {
@@ -14,19 +14,22 @@ export default class LandingExpeditionGroups extends Component {
   }
   render() {
     return (
-      <div className="links">
-        <a href={this.makeHref(0)}>
-          <LandingLogoHerb/>
-        </a>
-        <a href={this.makeHref(1)}>
-          <LandingLogoInsect/>
-        </a>
-        <a href={this.makeHref(2)}>
-          <LandingLogoBird/>
-        </a>
-        <a href={this.makeHref(3)}>
-          <LandingLogoFungus/>
-        </a>
+      <div className="genera">
+        <h3>Choose a Genre and Start Transcribing!</h3>
+        <div className="links">
+          <a href={this.makeHref(0)}>
+            <LandingExpeditionGroupHerb/>
+          </a>
+          <a href={this.makeHref(1)}>
+            <LandingExpeditionGroupInsect/>
+          </a>
+          <a href={this.makeHref(2)}>
+            <LandingExpeditionGroupBird/>
+          </a>
+          <a href={this.makeHref(3)}>
+            <LandingExpeditionGroupFungus/>
+          </a>
+        </div>
       </div>
     );
   }

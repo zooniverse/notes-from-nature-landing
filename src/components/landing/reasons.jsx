@@ -4,7 +4,7 @@ export default class LandingReasons extends Component {
   render() {
     return (
       <div className="why">
-        <h3 className="title center">Why should you get involved?</h3>
+        <h3 className="title">Why should you get involved?</h3>
         <div className="reasons">
           <div>
             <img src="landing/home_icon_bird.png" alt="avian best friend"/>

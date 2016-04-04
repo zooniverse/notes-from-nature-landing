@@ -25,7 +25,7 @@ export const expeditions = [
     end_date: '2012',
     regions: ['Southeastern US'],
     image: 'expeditions/herb.svg',
-    headerImage: 'images/expeditions/archives/sernecBg.jpg',
+    headerImage: '/images/expeditions/archives/sernecBg.jpg',
     expeditions: [
       {
         categories: ['Plants'],
@@ -156,7 +156,7 @@ export const expeditions = [
     start_date: '1880',
     end_date: 'Present',
     image: 'expeditions/insect.svg',
-    headerImage: 'images/expeditions/archives/calbugBg2.jpg',
+    headerImage: '/images/expeditions/archives/calbugBg2.jpg',
     expeditions: [
       {
         name: 'Calbug',
@@ -178,7 +178,7 @@ export const expeditions = [
         start_date: '1880',
         end_date: 'Present',
         image: 'expeditions/img-expeditions5.jpg',
-        headerImage: 'images/expeditions/archives/calbugBg2.jpg',
+        headerImage: '/images/expeditions/archives/calbugBg2.jpg',
         url: '',
       },
       {
