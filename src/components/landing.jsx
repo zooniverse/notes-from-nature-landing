@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import * as action from 'actions/landing';
-import LandingHeader from 'landing/header';
+import { Header } from 'header/header';
 import { LandingReasons } from 'landing/reasons';
 import { LandingStatistics } from 'landing/statistics';
 import LandingExpeditionGroup from 'landing/expedition-groups';
-import FatFooter from 'footer/fat-footer';
+import { FatFooter } from 'footer/fat-footer';
 
 class Landing extends Component {
   componentDidMount() {
@@ -16,7 +16,7 @@ class Landing extends Component {
     return (
       <div className="landing">
         <div className="hero">
-          <LandingHeader />
+          <Header active={ 'landing' }/>
           <div className="landing-title">
             <div className="action"><span>TRANSCRIBE MUSEUM RECORDS</span></div>
             <div><hr/></div>

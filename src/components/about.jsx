@@ -1,12 +1,12 @@
 import React from 'react';
-import LandingHeader from 'landing/header';
-import FatFooter from 'footer/fat-footer';
+import { Header } from 'header/header';
+import { FatFooter } from 'footer/fat-footer';
 
 export default class About extends React.Component {
   render() {
     return (
       <div className="about">
-        <LandingHeader />
+        <Header active={ 'about' } />
         <div className="title">
           <h2>
             Notes From Nature
