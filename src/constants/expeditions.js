@@ -97,7 +97,7 @@ export const expeditions = [
           physical data. Imagine the big, complex questions we could ask about evolution and
           adaptation in our environments. All this begins with the simple act of transcribing
           a specimen label; it all begins with YOU!`,
-        snippet: ``,
+        snippet: '',
         difficulty: 'Easy',
         start_date: '1880',
         end_date: '2015',
@@ -209,7 +209,7 @@ export const expeditions = [
     name: 'Ornithological',
     categories: ['Birds'],
     institute: 'Natural History Museum',
-    description: ``,
+    description: '',
     snippet: `Bird register information from the Natural History Museum,
     London, spanning from 1837 to 1990.`,
     difficulty: 'Very Hard',

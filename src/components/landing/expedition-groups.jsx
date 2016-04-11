@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import LandingExpeditionGroupHerb from 'landing/expedition-groups/herb';
-import LandingExpeditionGroupBird from 'landing/expedition-groups/bird';
-import LandingExpeditionGroupInsect from 'landing/expedition-groups/insect';
-import LandingExpeditionGroupFungus from 'landing/expedition-groups/fungus';
+import { LandingExpeditionGroupHerb } from 'landing/expedition-groups/herb';
+import { LandingExpeditionGroupBird } from 'landing/expedition-groups/bird';
+import { LandingExpeditionGroupInsect } from 'landing/expedition-groups/insect';
+import { LandingExpeditionGroupFungus } from 'landing/expedition-groups/fungus';
 import { expeditions } from 'constants/expeditions';
 
 // Make Expedition links go to the correct page
@@ -20,16 +20,16 @@ export default class LandingExpeditionGroups extends Component {
         <h3>Choose a Genre and Start Transcribing!</h3>
         <div className="links">
           <a href={this.makeHref(0)}>
-            <LandingExpeditionGroupHerb/>
+            <LandingExpeditionGroupHerb />
           </a>
           <a href={this.makeHref(1)}>
-            <LandingExpeditionGroupInsect/>
+            <LandingExpeditionGroupInsect />
           </a>
           <a href={this.makeHref(2)}>
-            <LandingExpeditionGroupBird/>
+            <LandingExpeditionGroupBird />
           </a>
           <a href={this.makeHref(3)}>
-            <LandingExpeditionGroupFungus/>
+            <LandingExpeditionGroupFungus />
           </a>
         </div>
       </div>

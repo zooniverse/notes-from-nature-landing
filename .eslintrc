@@ -23,7 +23,6 @@
       2,
       "smart"
     ],
-    "space-after-keywords": 2,
     "no-console": 1,
     // specify the maximum length of a line in your program
     // https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FooterLogo from 'footer/logo';
+import { FooterLogo } from 'footer/logo';
 import { footer } from 'constants/footer';
 
 export default class FatFooter extends Component {
