@@ -16,10 +16,10 @@ class Landing extends Component {
     return (
       <div className="landing">
         <div className="hero">
-          <Header active={ 'landing' }/>
+          <Header active={ 'landing' } />
           <div className="landing-title">
             <div className="action"><span>TRANSCRIBE MUSEUM RECORDS</span></div>
-            <div><hr/></div>
+            <div><hr /></div>
             <div className="tagline">
               <span>Notes&nbsp;</span>
               <span className="smaller">from</span>

@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 // TODO: Put in <HeaderAuth /> control
 
 export const Header = ({ active }) =>
-  <div className={'landing-header' + (active === 'about' ? ' opaque' : '') }>
+  <div className={ `landing-header ${active === 'about' ? ' opaque' : ''}` }>
     <div className="header-links">
       <Link className={ active === 'landing' ? 'first active' : 'first' } to="/">Get Started</Link>
       <Link className={ active === 'about' ? 'active' : '' } to="/about">About</Link>

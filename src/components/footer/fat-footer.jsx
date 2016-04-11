@@ -6,7 +6,7 @@ export const FatFooter = () =>
   <footer className="main-footer">
     <section className="main-footer-zooniverse-info">
       <div className="zooniverse-logo">
-        <img src="footer-logo-bg.jpg"/>
+        <img src="footer-logo-bg.jpg" />
         <FooterLogo />
       </div>
       <div className="markdown"><p>{footer.info.content}</p></div>
@@ -21,7 +21,7 @@ export const FatFooter = () =>
             <ul className="project-list">
             {list.projects.map((project, j) =>
               <li key={j}>
-                  <a href={'http://www.zooniverse.org/#/#' + project.href} target="_blank">
+                  <a href={ `http://www.zooniverse.org/#/#${project.href}` } target="_blank">
                     {project.text}
                   </a>
               </li>

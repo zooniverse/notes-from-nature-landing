@@ -2,6 +2,8 @@ import React from 'react';
 import { Header } from 'header/header';
 import { FatFooter } from 'footer/fat-footer';
 
+/* eslint "react/prefer-stateless-function": 1 */
+
 export default class About extends React.Component {
   render() {
     return (
@@ -14,7 +16,7 @@ export default class About extends React.Component {
               Transcribe notes from nature, contribute to science.
             </span>
           </h2>
-          <hr/>
+          <hr />
         </div>
         <div className="about-content">
           <h2>The Project</h2>
@@ -42,7 +44,7 @@ export default class About extends React.Component {
               biological collections one record at a time!
             </p>
             </div>
-            <img src="about/sernec.jpg"/>
+            <img src="about/sernec.jpg" />
           </div>
           <h3>People and Partners</h3>
           <p>
@@ -114,7 +116,7 @@ export default class About extends React.Component {
 
           <h3>Notes from Nature and You</h3>
           <div className="paragraph-and-image">
-            <img src="about/calbug.jpg"/>
+            <img src="about/calbug.jpg" />
             <p>
               Natural history museums across the world share a common goal – to make scientific
               data accessible to those who would use it. The Notes from Nature project gives you
@@ -209,32 +211,32 @@ export default class About extends React.Component {
 
           <h4>Steering Committee Membership</h4>
           <p>
-            (Chair) Michael Denslow, Asst. Dir. of Scientific Collections, NEON Inc.<br/>
-            Robert Guralnick, Curator and Assoc. Professor, CU Boulder<br/>
-            Austin Mast, Curator and Assoc. Prof., Florida State University and iDigBio<br/>
-            Andrew Sallans, Head of Strategic Data Initiatives. University of Virginia<br/>
-            Chris Synder, Adler Planetarium and the Zooniverse<br/>
+            (Chair) Michael Denslow, Asst. Dir. of Scientific Collections, NEON Inc.<br />
+            Robert Guralnick, Curator and Assoc. Professor, CU Boulder<br />
+            Austin Mast, Curator and Assoc. Prof., Florida State University and iDigBio<br />
+            Andrew Sallans, Head of Strategic Data Initiatives. University of Virginia<br />
+            Chris Synder, Adler Planetarium and the Zooniverse<br />
             Barbara Thiers, Director, William and Lynda Steere Herbarium,
-            The New York Botanical Garden<br/>
+            The New York Botanical Garden<br />
             Kipling Will, Director, Essig Museum of Entomology and Associate Professor,
             UC, Berkeley
           </p>
           <h4>MUSEUMS INVOLVED</h4>
           <div className="museums">
             <a href="http://www.nhm.ac.uk/tring/research-and-curation/index.html">
-              <img alt="Natural History Museum" src="logos/natural_history_museum_white.jpg"/>
+              <img alt="Natural History Museum" src="logos/natural_history_museum_white.jpg" />
             </a>
             <a href="http://www.sernec.org/">
-              <img alt="SERNEC" src="logos/sernec.png"/>
+              <img alt="SERNEC" src="logos/sernec.png" />
             </a>
             <a href="http://calbug.berkeley.edu/">
-              <img alt="Calbug" src="logos/calbug_white.jpg"/>
+              <img alt="Calbug" src="logos/calbug_white.jpg" />
             </a>
             <a href="http://vizzuality.com/">
-              <img alt="Vizzuality" src="logos/vizzuality.png"/>
+              <img alt="Vizzuality" src="logos/vizzuality.png" />
             </a>
             <a href="http://www.nsf.gov/">
-              <img alt="National Science Foundation" src="logos/national-science-foundation.gif"/>
+              <img alt="National Science Foundation" src="logos/national-science-foundation.gif" />
             </a>
           </div>
         </div>
