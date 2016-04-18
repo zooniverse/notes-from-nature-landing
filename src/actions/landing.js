@@ -11,10 +11,28 @@ function receiveProjectData(json) {
   return { type: RECEIVE_PROJECT_DATA, json };
 }
 
+export const REQUEST_WORKFLOWS = 'REQUEST_WORKFLOWS';
+function requestWorkflows() {
+  return { type: REQUEST_WORKFLOWS };
+}
+
+export const RECEIVE_WORKFLOWS = 'RECEIVE_WORKFLOWS';
+function receiveWorkflows(json) {
+  return { type: RECEIVE_WORKFLOWS, json };
+}
+
 export function fetchProjectData() {
   return dispatch => {
     dispatch(requestProjectData());
     apiClient.type('projects').get(config.projectId)
       .then(json => dispatch(receiveProjectData(json)));
+  };
+}
+
+export function fetchWorkflows() {
+  return dispatch => {
+    dispatch(requestWorkflows());
+    apiClient.type('workflows').get({ project_id: config.projectId })
+      .then(json => dispatch(receiveWorkflows(json)));
   };
 }
