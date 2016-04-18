@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
+// import { HeaderAuth } from 'HeaderAuth';
 
 // TODO: Put in <HeaderAuth /> control
 
@@ -15,6 +16,7 @@ export const Header = ({ active }) =>
       <span>Log in Placeholder</span>
     </div>
   </div>;
+// <HeaderAuth />
 
 Header.propTypes = {
   active: PropTypes.string,

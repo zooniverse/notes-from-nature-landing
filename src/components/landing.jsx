@@ -37,7 +37,6 @@ class Landing extends Component {
 }
 
 Landing.propTypes = {
-  expeditions: PropTypes.array,
   dispatch: PropTypes.func,
   project: PropTypes.object,
 };

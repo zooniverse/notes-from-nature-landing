@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute } from 'react-router';
-import About from './components/about';
+import { About } from './components/about';
 import App from './components/app';
 import Landing from './components/landing';
 import expeditions from './components/expeditions';
