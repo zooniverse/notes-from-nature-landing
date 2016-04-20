@@ -8,21 +8,21 @@ export const expeditions = [
   {
     name: 'Herbarium',
     icon: LandingExpeditionGroupIconHerb,
-    prefix: 'Herbarium',
+    group: 'Herbarium',
   },
   {
     name: 'Bugs',
     icon: LandingExpeditionGroupIconInsect,
-    prefix: 'Calbug',
+    group: 'Calbug',
   },
   {
     name: 'Birds',
     icon: LandingExpeditionGroupIconBird,
-    prefix: 'Birds',
+    group: 'Birds',
   },
   {
     name: 'Macrofungi',
     icon: LandingExpeditionGroupIconFungus,
-    prefix: 'Macrofungi',
+    group: 'Macrofungi',
   },
 ];

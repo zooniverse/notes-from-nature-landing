@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 
-export const ExpeditionGroup = () =>
-  <div>
-    <h2>Expeditions</h2>
-  </div>;
+/* eslint "react/prefer-stateless-function": 1 */
 
-ExpeditionGroup.propTypes = {
-  params: React.PropTypes.object,
-  workflows: React.PropTypes.array,
+export default class LandingExpeditionGroup extends Component {
+  render() {
+    const { group } = this.props;
+    return (
+      <div className="about">
+        <h1>{ group }</h1>
+        <div className="title">
+            Notes From Nature
+          <hr />
+        </div>
+      </div>
+    );
+  }
+}
+
+LandingExpeditionGroup.propTypes = {
+  group: PropTypes.string,
+  project: PropTypes.object,
+  workflows: PropTypes.array,
 };
