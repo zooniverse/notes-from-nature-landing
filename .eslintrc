@@ -15,6 +15,7 @@
     "mocha": true
   },
   "rules": {
+    "react/prefer-stateless-function": 1,
     "quotes": [
       2,
       "single"

@@ -1,7 +1,5 @@
 import React from 'react';
 
-/* eslint "react/prefer-stateless-function": 1 */
-
 export default class App extends React.Component {
   render() {
     return (

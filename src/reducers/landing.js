@@ -14,20 +14,20 @@ const initialState = {
 export function landing(state = initialState, action = '') {
   let nextState;
   switch (action.type) {
-    case actionType.REQUEST_PROJECT_DATA:
+    case actionType.PROJECT_DATA_REQUESTED:
       return Object.assign({}, state, { isFetchingProject: true });
 
-    case actionType.RECEIVE_PROJECT_DATA:
+    case actionType.PROJECT_DATA_RECEIVED:
       nextState = Object.assign({}, state, {
         isFetchingProject: false,
         project: action.json,
       });
       return nextState;
 
-    case actionType.REQUEST_WORKFLOWS:
+    case actionType.WORKFLOWS_REQUESTED:
       return Object.assign({}, state, { isFetchingWorkflows: true });
 
-    case actionType.RECEIVE_WORKFLOWS:
+    case actionType.WORKFLOWS_RECEIVED:
       nextState = Object.assign({}, state, {
         isFetchingWorkflows: false,
         workflows: action.json.filter((w) => w.active),

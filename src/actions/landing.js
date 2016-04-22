@@ -1,38 +1,38 @@
 import { apiClient } from 'panoptes-client';
 import { config } from 'constants/config';
 
-export const REQUEST_PROJECT_DATA = 'REQUEST_PROJECT_DATA';
-function requestProjectData() {
-  return { type: REQUEST_PROJECT_DATA };
+export const PROJECT_DATA_REQUESTED = 'PROJECT_DATA_REQUESTED';
+function projectDataRequested() {
+  return { type: PROJECT_DATA_REQUESTED };
 }
 
-export const RECEIVE_PROJECT_DATA = 'RECEIVE_PROJECT_DATA';
-function receiveProjectData(json) {
-  return { type: RECEIVE_PROJECT_DATA, json };
+export const PROJECT_DATA_RECEIVED = 'PROJECT_DATA_RECEIVED';
+function projectDataReceived(json) {
+  return { type: PROJECT_DATA_RECEIVED, json };
 }
 
-export const REQUEST_WORKFLOWS = 'REQUEST_WORKFLOWS';
-function requestWorkflows() {
-  return { type: REQUEST_WORKFLOWS };
+export const WORKFLOWS_REQUESTED = 'WORKFLOWS_REQUESTED';
+function workflowsRequested() {
+  return { type: WORKFLOWS_REQUESTED };
 }
 
-export const RECEIVE_WORKFLOWS = 'RECEIVE_WORKFLOWS';
-function receiveWorkflows(json) {
-  return { type: RECEIVE_WORKFLOWS, json };
+export const WORKFLOWS_RECEIVED = 'WORKFLOWS_RECEIVED';
+function workflowsReceived(json) {
+  return { type: WORKFLOWS_RECEIVED, json };
 }
 
 export function fetchProjectData() {
   return dispatch => {
-    dispatch(requestProjectData());
+    dispatch(projectDataRequested());
     apiClient.type('projects').get(config.projectId)
-      .then(json => dispatch(receiveProjectData(json)));
+      .then(json => dispatch(projectDataReceived(json)));
   };
 }
 
 export function fetchWorkflows() {
   return dispatch => {
-    dispatch(requestWorkflows());
+    dispatch(workflowsRequested());
     apiClient.type('workflows').get({ project_id: config.projectId })
-      .then(json => dispatch(receiveWorkflows(json)));
+      .then(json => dispatch(workflowsReceived(json)));
   };
 }

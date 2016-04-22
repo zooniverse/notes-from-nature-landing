@@ -21,7 +21,6 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <IndexRoute component={Landing} />
         <Route path="/about" component={About} />
-        <Route path="/expedition-group" component={LandingExpeditionGroup} />
         <Route path="/expedition-group/:group" component={LandingExpeditionGroup} />
       </Route>
     </Router>

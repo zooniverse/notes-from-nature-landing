@@ -27,7 +27,7 @@ class Landing extends Component {
               <span>&nbsp;Nature</span>
             </div>
           </div>
-          <LandingExpeditionGroups />
+          <LandingExpeditionGroups workflows={ workflows }/>
           <LandingStatistics project={project} workflows={workflows} />
         </div>
         <LandingReasons />

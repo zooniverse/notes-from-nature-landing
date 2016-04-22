@@ -1,13 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 
-/* eslint "react/prefer-stateless-function": 1 */
-
 export default class LandingExpeditionGroup extends Component {
   render() {
-    const { group } = this.props;
+    const { group, workflows } = this.props;
     return (
       <div className="about">
         <h1>{ group }</h1>
+        <p>{ workflows }</p>
         <div className="title">
             Notes From Nature
           <hr />
