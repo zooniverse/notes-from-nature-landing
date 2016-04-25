@@ -16,10 +16,8 @@ export default class LandingExpeditionGroup extends Component {
         <Header />
         <div className="expedition-group">
           <div className="title">
-            <a href="/">
-              <h1>Notes From Nature</h1>
-              <div>{ React.createElement(expedition.icon) }</div>
-            </a>
+            <a href="/"><h1>Notes From Nature</h1></a>
+            <a href="/">{ React.createElement(expedition.icon) }</a>
           </div>
           <hr />
           <div className="tiles">
