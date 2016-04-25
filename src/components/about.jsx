@@ -4,7 +4,7 @@ import { FatFooter } from 'footer/fat-footer';
 
 export const About = () =>
   <div className="about">
-    <Header active={ 'about' } />
+    <Header />
     <div className="title">
       <h2>
         Notes From Nature

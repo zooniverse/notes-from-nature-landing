@@ -6,14 +6,15 @@ import { About } from 'components/about';
 import App from 'components/app';
 import Landing from 'components/landing';
 import LandingExpeditionGroup from 'components/landing/expedition-group';
-import configureStore from './store';
+import configureStore from 'store';
+import * as action from 'actions/landing';
 
-// Todo: let's find a better way to include Styles,
-// currently Styles looks like an unused var to eslint
 /* eslint "no-unused-vars": 1 */
 import Styles from './styles/main.styl';
 
 const store = configureStore();
+store.dispatch(action.fetchProjectData());
+store.dispatch(action.fetchWorkflows());
 
 ReactDOM.render(
   <Provider store={store}>

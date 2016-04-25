@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import * as action from 'actions/landing';
 import { Header } from 'header/header';
 import { LandingReasons } from 'landing/reasons';
 import { LandingStatistics } from 'landing/statistics';
@@ -8,16 +7,12 @@ import LandingExpeditionGroups from 'landing/expedition-groups';
 import { FatFooter } from 'footer/fat-footer';
 
 class Landing extends Component {
-  componentDidMount() {
-    this.props.dispatch(action.fetchProjectData());
-    this.props.dispatch(action.fetchWorkflows());
-  }
   render() {
     const { project, workflows } = this.props;
     return (
       <div className="landing">
         <div className="hero">
-          <Header active={ 'landing' } />
+          <Header active={'landing'} />
           <div className="landing-title">
             <div className="action"><span>TRANSCRIBE MUSEUM RECORDS</span></div>
             <div><hr /></div>
@@ -27,7 +22,7 @@ class Landing extends Component {
               <span>&nbsp;Nature</span>
             </div>
           </div>
-          <LandingExpeditionGroups workflows={ workflows }/>
+          <LandingExpeditionGroups workflows={workflows} />
           <LandingStatistics project={project} workflows={workflows} />
         </div>
         <LandingReasons />
@@ -38,7 +33,6 @@ class Landing extends Component {
 }
 
 Landing.propTypes = {
-  dispatch: PropTypes.func,
   project: PropTypes.object,
   workflows: PropTypes.array,
 };

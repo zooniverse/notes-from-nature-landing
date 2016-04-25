@@ -26,3 +26,7 @@ export const expeditions = [
     group: 'Macrofungi',
   },
 ];
+
+/* eslint "prefer-const": 1 */
+export let expeditionMap = {};
+expeditions.forEach((e) => (expeditionMap[e.group] = e));
