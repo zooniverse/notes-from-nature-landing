@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { Header } from 'header/header';
+import Header from 'header/header';
 import { LandingReasons } from 'landing/reasons';
 import { LandingStatistics } from 'landing/statistics';
 import LandingExpeditionGroups from 'landing/expedition-groups';

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { expeditionMap } from 'constants/expeditions';
-import { Header } from 'header/header';
+import Header from 'header/header';
 import { FatFooter } from 'footer/fat-footer';
 
 // TODO Fix links

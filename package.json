@@ -12,13 +12,9 @@
     "react",
     "wepback",
     "seed",
-    "boilerplate",
-    "kickstarter",
     "ES6",
     "ES2015",
-    "babel",
-    "mocha",
-    "chai"
+    "babel"
   ],
   "scripts": {
     "start": "babel-node server.js",
