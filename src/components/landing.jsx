@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Header from 'header/header';
+import { ProjectName } from 'project-name';
 import { LandingReasons } from 'landing/reasons';
 import { LandingStatistics } from 'landing/statistics';
 import LandingExpeditionGroups from 'landing/expedition-groups';
@@ -9,6 +10,7 @@ import { FatFooter } from 'footer/fat-footer';
 class Landing extends Component {
   render() {
     const { project, workflows } = this.props;
+    console.log(workflows);
     return (
       <div className="landing">
         <div className="hero">
@@ -16,11 +18,7 @@ class Landing extends Component {
           <div className="landing-title">
             <div className="action"><span>TRANSCRIBE MUSEUM RECORDS</span></div>
             <div><hr /></div>
-            <div className="tagline">
-              <span>Notes&nbsp;</span>
-              <span className="smaller">from</span>
-              <span>&nbsp;Nature</span>
-            </div>
+          <ProjectName />
           </div>
           <LandingExpeditionGroups workflows={workflows} />
           <LandingStatistics project={project} workflows={workflows} />

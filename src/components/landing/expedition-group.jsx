@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { expeditionMap } from 'constants/expeditions';
 import Header from 'header/header';
 import { FatFooter } from 'footer/fat-footer';
+import { ProjectName } from 'project-name';
 
 // TODO Fix links
 
@@ -16,7 +17,7 @@ export default class LandingExpeditionGroup extends Component {
         <Header />
         <div className="expedition-group">
           <div className="title">
-            <a href="/"><h1>Notes From Nature</h1></a>
+            <ProjectName />
             <a href="/">{ React.createElement(expedition.icon) }</a>
           </div>
           <hr />
