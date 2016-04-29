@@ -7,7 +7,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 module.exports = {
 
   devtool: 'eval-source-map',
-  
+
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
     'webpack-hot-middleware/client?reload=true',
@@ -31,7 +31,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) || JSON.stringify('staging'),
     }),
     new CopyWebpackPlugin([
       { from: 'src/images/' },
