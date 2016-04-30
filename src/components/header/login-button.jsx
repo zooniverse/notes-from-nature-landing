@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 
-export const LoginButton = ({ login }) =>
-  <button className="btn btn-default navbar-btn navbar-right" onClick={ login }>Login</button>;
+export const HeaderLoginButton = ({ login }) =>
+  <button onClick={ login }>Login</button>;
 
-LoginButton.propTypes = {
+HeaderLoginButton.propTypes = {
   login: PropTypes.func,
 };

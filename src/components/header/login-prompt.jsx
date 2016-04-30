@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Layout from './Layout.jsx'
 import { loginToPanoptes } from '../actions/login';
 
-class LoginPromptPage extends Component {
+class HeaderLoginPrompt extends Component {
   constructor() {
     super();
     this.login = this.login.bind(this);

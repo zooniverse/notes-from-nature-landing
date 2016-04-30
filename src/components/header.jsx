@@ -2,8 +2,8 @@ import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import * as action from 'actions/login';
-import { LoginButton } from 'header/login-button';
-import { LoggedInUser } from 'header/logged-in-user';
+import { HeaderLoginButton } from 'header/login-button';
+import { HeaderLoggedIn } from 'header/logged-in';
 
 const activeStyle = '#96f132';
 
@@ -34,8 +34,8 @@ class Header extends Component {
         </div>
         <div className="login-info">
           {this.props.user
-            ? <LoggedInUser user={user} logout={this.logout} />
-            : <LoginButton login={this.login} />
+            ? <HeaderLoggedIn user={user} logout={this.logout} />
+            : <HeaderLoginButton login={this.login} />
           }
         </div>
       </div>
