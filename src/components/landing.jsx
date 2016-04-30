@@ -5,7 +5,7 @@ import { ProjectName } from 'project-name';
 import { LandingReasons } from 'landing/reasons';
 import { LandingStatistics } from 'landing/statistics';
 import LandingExpeditionGroups from 'landing/expedition-groups';
-import { FatFooter } from 'footer/fat-footer';
+import { FatFooter } from 'fat-footer';
 
 class Landing extends Component {
   render() {

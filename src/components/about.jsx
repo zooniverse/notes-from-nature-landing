@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from 'header';
-import { FatFooter } from 'footer/fat-footer';
+import { FatFooter } from 'fat-footer';
 
 export const About = () =>
   <div className="about">
