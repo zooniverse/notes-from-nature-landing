@@ -1,11 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { expeditionMap } from 'constants/expeditions';
+import { config } from 'constants/config';
 import Header from 'header/header';
 import { FatFooter } from 'footer/fat-footer';
 import { ProjectName } from 'project-name';
-
-// TODO Fix links
 
 export default class LandingExpeditionGroup extends Component {
   render() {
@@ -23,8 +22,8 @@ export default class LandingExpeditionGroup extends Component {
           <hr />
           <div className="tiles">
             {workflows.filter((e) => e.display_name.startsWith(group)).map((workflow, i) =>
-              <div className="tile">
-                <a href="/" key={i}>
+              <div className="tile" key={i}>
+                <a href={`${config.workflowUrl}workflow=${workflow.id}`}>
                   <img src={ `expeditions/${workflow.display_name.replace(/ /g, '_')}.jpg` }></img>
                   <span>{ workflow.display_name.replace(`${group}_`, '') }</span>
                 </a>
