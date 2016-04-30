@@ -11,7 +11,7 @@ class LandingExpeditionGroups extends Component {
         <h3>Choose a Group and Start Transcribing!</h3>
         <div className="links">
           {expeditions.filter((e) => workflows.some((w) => w.display_name.startsWith(e.group))).map((expedition, i) =>
-            <Link to={`/expedition-group/${expedition.group}`} key={i}>
+            <Link to={ `/expedition-group/${expedition.group}` } key={i}>
               { React.createElement(expedition.icon) }
             </Link>
           )}

@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { expeditionMap } from 'constants/expeditions';
 import { config } from 'constants/config';
-import Header from 'header/header';
+import Header from 'header';
 import { FatFooter } from 'footer/fat-footer';
 import { ProjectName } from 'project-name';
 

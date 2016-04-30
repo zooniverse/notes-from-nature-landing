@@ -1,5 +1,5 @@
 import Panoptes from 'panoptes-client';
-import config from '../constants/config';
+import { config } from 'constants/config';
 
 export const SET_LOGIN_USER = 'SET_LOGIN_USER';
 export function setLoginUser(user) {
@@ -23,7 +23,7 @@ export function checkLoginUser() {
 
 // Returns a login page URL for the user to navigate to.
 export function loginToPanoptes() {
-  return (/* dispatch */) => {
+  return () => {
     Panoptes.oauth.signIn(config.panoptesReturnUrl);
   };
 }

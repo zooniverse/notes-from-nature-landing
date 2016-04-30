@@ -2,15 +2,28 @@ import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import * as action from 'actions/login';
+import { LoginButton } from 'header/login-button';
+import { LoggedInUser } from 'header/logged-in-user';
 
 const activeStyle = '#96f132';
 
 class Header extends Component {
+  constructor() {
+    super();
+    this.login = this.login.bind(this);
+    this.logout = this.logout.bind(this);
+  }
   componentDidMount() {
     this.props.dispatch(action.checkLoginUser());
   }
+  login() {
+    return this.props.dispatch(action.loginToPanoptes());
+  }
+  logout() {
+    this.props.dispatch(action.logoutFromPanoptes());
+  }
   render() {
-    const { active } = this.props;
+    const { active, user } = this.props;
     return (
       <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
         <div className="header-links">
@@ -20,7 +33,10 @@ class Header extends Component {
           <a className="last" href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
         </div>
         <div className="login-info">
-          <span>Log in Placeholder</span>
+          {this.props.user
+            ? <LoggedInUser user={user} logout={this.logout} />
+            : <LoginButton login={this.login} />
+          }
         </div>
       </div>
     );

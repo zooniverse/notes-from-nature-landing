@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Header from 'header/header';
+import Header from 'header';
 import { ProjectName } from 'project-name';
 import { LandingReasons } from 'landing/reasons';
 import { LandingStatistics } from 'landing/statistics';
@@ -10,7 +10,6 @@ import { FatFooter } from 'footer/fat-footer';
 class Landing extends Component {
   render() {
     const { project, workflows } = this.props;
-    console.log(workflows);
     return (
       <div className="landing">
         <div className="hero">
