@@ -6,6 +6,7 @@ import { config } from 'constants/config';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
 import { ProjectName } from 'project-name';
+import { LandingExpeditionGroupIconHome } from 'components/expedition-group/icons/home';
 
 export default class LandingExpeditionGroup extends Component {
   render() {
@@ -18,7 +19,10 @@ export default class LandingExpeditionGroup extends Component {
         <div className="expedition-group">
           <div className="title">
             <ProjectName />
-            <a href="/">{ React.createElement(expedition.icon) }</a>
+            <a href="/">
+              { React.createElement(expedition.icon) }
+              <LandingExpeditionGroupIconHome />
+            </a>
           </div>
           <hr />
           <div className="tiles">

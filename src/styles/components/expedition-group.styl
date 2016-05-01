@@ -11,11 +11,26 @@
 
     a
       text-decoration: none
+      position: relative
+      height: 100px
 
-      h1
-        color: #ddd
-        margin-top: 0
-        text-align: center
+      svg.expedition-group-icon
+        opacity: 1
+        transition: opacity 0.75s linear
+
+      svg.expedition-group-home
+        position: absolute
+        left: 0
+        opacity: 0
+        transition: opacity 0.75s linear
+
+      &:hover svg.expedition-group-icon
+        opacity: 0
+        transition: opacity 0.75s linear
+
+      &:hover svg.expedition-group-home
+        opacity: 1
+        transition: opacity 0.75s linear
 
   hr
     margin: 20px 10px 30px 10px
@@ -38,18 +53,20 @@
       padding-bottom: 20px
 
       .snippet
-        padding: 12px
-        position: absolute
         top: 0
         max-height: 0
+        color: white
+        opacity: 0
+        padding: 12px
+        position: absolute
         font-size: 14px
         font-weight: normal
-        color: rgba(0, 0, 0, 0)
         transition: all 1.25s linear
 
       .snippet:hover, &:hover .snippet
-        background-color: rgba(0, 0, 0, 0.7)
         max-height: 200px
+        opacity: 1
+        background-color: rgba(0, 0, 0, 0.7)
         color: white
         transition: all 0.75s linear
 
