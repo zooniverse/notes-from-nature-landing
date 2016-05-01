@@ -28,6 +28,7 @@
     justify-content: space-around
 
     .tile
+      position: relative
       max-width: 320px
       max-height: 320px
       font-weight: bold
@@ -36,12 +37,27 @@
       font-size: 20px
       padding-bottom: 20px
 
+      .snippet
+        padding: 12px
+        position: absolute
+        top: 0
+        max-height: 0
+        font-size: 14px
+        font-weight: normal
+        color: rgba(0, 0, 0, 0)
+        transition: all 1.25s linear
+
+      .snippet:hover, &:hover .snippet
+        background-color: rgba(0, 0, 0, 0.7)
+        max-height: 200px
+        color: white
+        transition: all 0.75s linear
+
       a
         display: flex
         flex-flow: column
         text-decoration: none
         color: #96f132
-        vertical-align: center
 
         span
           height: 60px

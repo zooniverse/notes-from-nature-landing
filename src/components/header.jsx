@@ -28,7 +28,8 @@ class Header extends Component {
           <Link className={'first'} activeStyle={{ color: activeStyle }} to="/">Get Started</Link>
           <Link activeStyle={{ color: activeStyle }} to="/about">About</Link>
           <a href="https://talk.notesfromnature.org">Discuss</a>
-          <a className="last" href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
+          <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
+          <div className="last">&nbsp;</div>
         </div>
         <div className="login-info">
           {this.props.user

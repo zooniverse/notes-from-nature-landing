@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { expeditionMap } from 'constants/expeditions';
+import { expeditionGroupMap } from 'constants/expedition-groups';
+import { expeditions } from 'constants/expeditions';
 import { config } from 'constants/config';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
@@ -10,7 +11,7 @@ export default class LandingExpeditionGroup extends Component {
   render() {
     const { params, workflows } = this.props;
     const { group } = params;
-    const expedition = expeditionMap[group];
+    const expedition = expeditionGroupMap[group];
     return (
       <div>
         <Header />
@@ -21,14 +22,20 @@ export default class LandingExpeditionGroup extends Component {
           </div>
           <hr />
           <div className="tiles">
-            {workflows.filter(e => e.display_name.startsWith(group)).map((workflow, i) =>
-              <div className="tile" key={i}>
-                <a href={`${config.workflowUrl}workflow=${workflow.id}`} aria-label={`Link to ${workflow.display_name.replace(`${group}_`, '')}`}>
-                  <img src={ `expeditions/${workflow.display_name.replace(/ /g, '_')}.jpg` } alt={workflow.display_name.replace(`${group}_`, '')}></img>
-                  <span>{ workflow.display_name.replace(`${group}_`, '') }</span>
-                </a>
-              </div>
-            )}
+            {workflows.filter(e => e.display_name.startsWith(group)).map((workflow, i) => {
+              const name = workflow.display_name.replace(`${group}_`, '');
+              const imgName = workflow.display_name.replace(/ /g, '_');
+              const snippet = expeditions[workflow.display_name].snippet;
+              return (
+                <div className="tile" key={i}>
+                  <a href={`${config.workflowUrl}workflow=${workflow.id}`} aria-label={`Link to ${name}`}>
+                    <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
+                    <div className="snippet">{snippet}</div>
+                    <span>{name}</span>
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
         <FatFooter />
