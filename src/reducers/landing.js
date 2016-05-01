@@ -30,8 +30,8 @@ export function landing(state = initialState, action = '') {
     case actionType.WORKFLOWS_RECEIVED:
       nextState = Object.assign({}, state, {
         workflowsFetched: true,
-        workflows: action.json.filter((w) => w.active),
-        inactiveWorkflows: action.json.filter((w) => !w.active),
+        workflows: action.json.filter(w => w.active),
+        inactiveWorkflows: action.json.filter(w => !w.active),
       });
       return nextState;
 

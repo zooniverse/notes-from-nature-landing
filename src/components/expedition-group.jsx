@@ -21,10 +21,10 @@ export default class LandingExpeditionGroup extends Component {
           </div>
           <hr />
           <div className="tiles">
-            {workflows.filter((e) => e.display_name.startsWith(group)).map((workflow, i) =>
+            {workflows.filter(e => e.display_name.startsWith(group)).map((workflow, i) =>
               <div className="tile" key={i}>
-                <a href={`${config.workflowUrl}workflow=${workflow.id}`}>
-                  <img src={ `expeditions/${workflow.display_name.replace(/ /g, '_')}.jpg` }></img>
+                <a href={`${config.workflowUrl}workflow=${workflow.id}`} aria-label={`Link to ${workflow.display_name.replace(`${group}_`, '')}`}>
+                  <img src={ `expeditions/${workflow.display_name.replace(/ /g, '_')}.jpg` } alt={workflow.display_name.replace(`${group}_`, '')}></img>
                   <span>{ workflow.display_name.replace(`${group}_`, '') }</span>
                 </a>
               </div>

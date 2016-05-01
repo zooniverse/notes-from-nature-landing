@@ -1,7 +1,7 @@
-import { LandingExpeditionGroupIconHerb } from 'components/landing/expedition-group/icons/herb';
-import { LandingExpeditionGroupIconBird } from 'components/landing/expedition-group/icons/bird';
-import { LandingExpeditionGroupIconInsect } from 'components/landing/expedition-group/icons/insect';
-import { LandingExpeditionGroupIconFungus } from 'components/landing/expedition-group/icons/fungus';
+import { LandingExpeditionGroupIconHerb } from 'components/expedition-group/icons/herb';
+import { LandingExpeditionGroupIconBird } from 'components/expedition-group/icons/bird';
+import { LandingExpeditionGroupIconInsect } from 'components/expedition-group/icons/insect';
+import { LandingExpeditionGroupIconFungus } from 'components/expedition-group/icons/fungus';
 
 
 export const expeditions = [
@@ -29,4 +29,4 @@ export const expeditions = [
 
 /* eslint "prefer-const": 1 */
 export let expeditionMap = {};
-expeditions.forEach((e) => (expeditionMap[e.group] = e));
+expeditions.forEach(e => (expeditionMap[e.group] = e));
