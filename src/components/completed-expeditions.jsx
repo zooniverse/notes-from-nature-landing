@@ -5,9 +5,9 @@ import { expeditionGroupMap } from 'constants/expedition-groups';
 import { expeditionInfo } from 'constants/expeditions';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
-import { ProjectName } from 'project-name';
+import { Title } from 'title';
 
-export default class CompletedExpeditions extends Component {
+class CompletedExpeditions extends Component {
   render() {
     const { params, inactiveWorkflows } = this.props;
     const { group } = params;
@@ -16,9 +16,8 @@ export default class CompletedExpeditions extends Component {
       <div>
         <Header />
         <div className="completed-expeditions">
-          <div className="title">
-            <ProjectName />
-            <h1>Completed Expeditions</h1>
+          <div className="completed-expeditions-title">
+            <Title title={`Completed Expeditions for ${expedition.name}`} />
             <Link to={ `/active-expeditions/${expedition.prefix}` }>
               { React.createElement(expedition.icon) }
             </Link>

@@ -1,17 +1,13 @@
 import React from 'react';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
+import { Title } from 'title';
 
 export const About = () =>
   <div className="about">
     <Header />
-    <div className="title">
-      <h2>
-        Notes From Nature
-        <span className="subtitle">
-          Transcribe notes from nature, contribute to science.
-        </span>
-      </h2>
+    <div className="about-title">
+      <Title title="Transcribe notes from nature, contribute to science." />
       <hr />
     </div>
     <div className="about-content">

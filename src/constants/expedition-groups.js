@@ -5,7 +5,7 @@ import { FungusIcon } from 'components/icons/fungus';
 
 export const expeditionGroups = [
   {
-    name: 'Herbarium',
+    name: 'Herbaria',
     prefix: 'Herbarium',
     icon: HerbIcon,
   },

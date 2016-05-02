@@ -11,15 +11,19 @@ class Header extends Component {
     this.login = this.login.bind(this);
     this.logout = this.logout.bind(this);
   }
+
   componentDidMount() {
     this.props.dispatch(action.checkLoginUser());
   }
+
   login() {
     return this.props.dispatch(action.loginToPanoptes());
   }
+
   logout() {
     this.props.dispatch(action.logoutFromPanoptes());
   }
+
   render() {
     const { active, user } = this.props;
     return (
@@ -29,6 +33,10 @@ class Header extends Component {
           <Link activeStyle={{ color: activeStyle }} to="/about">About</Link>
           <a href="https://talk.notesfromnature.org">Discuss</a>
           <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
+          {this.props.user
+            ? <Link activeStyle={{ color: activeStyle }} to="/field-book">Fieldbook</Link>
+            : ''
+          }
           <div className="last">&nbsp;</div>
         </div>
         <div className="login-info">

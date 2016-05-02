@@ -2,7 +2,7 @@ import React from 'react';
 
 export const LandingReasons = () =>
   <div className="why">
-    <h3 className="title">Why should you get involved?</h3>
+    <h3 className="reasons-title">Why should you get involved?</h3>
     <div className="reasons">
       <div>
         <img src="landing/home_icon_bird.png" alt="avian best friend" />

@@ -7,6 +7,7 @@ import App from 'components/app';
 import Landing from 'components/landing';
 import ActiveExpeditions from 'components/active-expeditions';
 import CompletedExpeditions from 'components/completed-expeditions';
+import FieldBook from 'components/field-book';
 import configureStore from 'store';
 import * as action from 'actions/landing';
 import a11y from 'react-a11y';
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path="/about" component={About} />
         <Route path="/active-expeditions/:group" component={ActiveExpeditions} />
         <Route path="/completed-expeditions/:group" component={CompletedExpeditions} />
+        <Route path="/field-book" component={FieldBook} />
       </Route>
     </Router>
   </Provider>,

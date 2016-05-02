@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Header from 'header';
-import { ProjectName } from 'project-name';
+import { Title } from 'title';
 import { LandingReasons } from 'landing/reasons';
 import { LandingStatistics } from 'landing/statistics';
 import LandingExpeditionGroups from 'landing/expedition-groups';
@@ -17,7 +17,7 @@ class Landing extends Component {
           <div className="landing-title">
             <div className="action"><span>TRANSCRIBE MUSEUM RECORDS</span></div>
             <div><hr /></div>
-          <ProjectName />
+          <Title title="" />
           </div>
           <LandingExpeditionGroups workflows={workflows} />
           <LandingStatistics project={project} workflows={workflows} />

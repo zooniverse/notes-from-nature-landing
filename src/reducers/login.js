@@ -1,6 +1,9 @@
 import * as actionType from 'actions/login';
 
-const initialState = { user: null, initialised: false };
+const initialState = {
+  user: { display_name: '' },
+  initialised: false,
+};
 
 export function login(state = initialState, action = '') {
   switch (action.type) {

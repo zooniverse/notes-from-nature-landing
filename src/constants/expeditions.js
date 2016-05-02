@@ -21,6 +21,11 @@ export const expeditions = {
     `,
   },
   'Herbarium_Southeastern Louisiana University': {
+    snippet: `
+      The SELU Herbarium collection is comprised of herbarium specimens: these flowers and plants are
+      carefully pressed onto sheets along with descriptive labels, and contain vital information
+      for broader understanding of biodiversity at regional and national scales.
+    `,
     description: `
       SERNEC is an organization that supports the 222 Herbaria and over 12 million plant
       specimens found in the Southeastern United States. Each of these herbaria are valued
@@ -31,13 +36,13 @@ export const expeditions = {
       curators and plant scientists to exchange ideas, share expertise, and benefit from the
       value of information shared across institutions.
     `,
-    snippet: `
-      A SERNEC collection is comprised of herbarium specimens: these flowers and plants are
-      carefully pressed onto sheets along with descriptive labels, and contain vital information
-      for broader understanding of biodiversity at regional and national scales.
-    `,
   },
   'Herbarium_University of South Florida': {
+    snippet: `
+      The USF Herbarium collection is comprised of herbarium specimens: these flowers and plants
+      are carefully pressed onto sheets along with descriptive labels, and contain vital
+      information for broader understanding of biodiversity at regional and national scales.
+    `,
     description: `
       Welcome to the University of South Florida (USF) Herbarium and Notes from Nature.
       The USF Herbarium contains over 250,000 preserved plant specimens from as far back
@@ -48,10 +53,20 @@ export const expeditions = {
       resource providers, and many, many others. We need you to help us provide and disseminate
       that information to online users.
     `,
+  },
+  'Calbug_Essig Museum Collections': {
     snippet: `
-      The USF Herbarium collection is comprised of herbarium specimens: these flowers and plants
-      are carefully pressed onto sheets along with descriptive labels, and contain vital
-      information for broader understanding of biodiversity at regional and national scales.
+      Calbug digitizes collections of pinned insect specimens drawn from eight of California's
+      major institutions, showcasing the stunning diversity of insect life in our world.
+    `,
+    description: `
+      Calbug is an effort to digitize terrestrial arthropod-specimen records with a focus on
+      California. The project, funded by the National Science Foundation, represents a
+      collaboration among eight entomological collections in California to capture data
+      from specimen labels. The Calbug Science Team will then use the collection data to
+      assess how arthropods have responded to climate change and habitat modification.
+      Drawing from over a century of insect collecting in the region, our goal is to develop
+      a database of over 1 million geographically referenced specimens.
     `,
   },
 };

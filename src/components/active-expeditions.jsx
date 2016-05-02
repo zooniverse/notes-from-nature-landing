@@ -6,7 +6,7 @@ import { expeditionInfo } from 'constants/expeditions';
 import { config } from 'constants/config';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
-import { ProjectName } from 'project-name';
+import { Title } from 'title';
 import { HomeIcon } from 'components/icons/home';
 import { HistoryIcon } from 'components/icons/history';
 
@@ -15,19 +15,22 @@ export default class ActiveExpeditions extends Component {
     const { params, workflows, inactiveWorkflows } = this.props;
     const { group } = params;
     const expedition = expeditionGroupMap[group];
+    const activeWorkflows = workflows.filter(e => e.display_name.startsWith(group));
+    const hasInactiveWorkflows = inactiveWorkflows.filter(e => e.display_name.startsWith(group)).length;
+
     return (
       <div>
         <Header />
         <div className="active-expeditions">
-          <div className="title">
-            { inactiveWorkflows.some(w => w.display_name.startsWith(group)) ?
-              <Link to={ `/completed-expeditions/${expedition.prefix}` } className="history-link">
-                <HistoryIcon />
-                <div>Completed<br />Expeditions</div>
-              </Link>
+          <div className="active-expeditions-title">
+            { hasInactiveWorkflows
+              ? <Link to={ `/completed-expeditions/${expedition.prefix}` } className="history-link">
+                  <HistoryIcon />
+                  <div>Completed<br />Expeditions</div>
+                </Link>
               : ''
             }
-            <ProjectName />
+            <Title title={`Active Expeditions for ${expedition.name}`} />
             <a href="/">
               { React.createElement(expedition.icon) }
               <HomeIcon />
@@ -35,7 +38,7 @@ export default class ActiveExpeditions extends Component {
           </div>
           <hr />
           <div className="tiles">
-            {workflows.filter(e => e.display_name.startsWith(group)).map((workflow, i) => {
+            {activeWorkflows.map((workflow, i) => {
               const name = workflow.display_name.replace(`${group}_`, '');
               const imgName = workflow.display_name.replace(/ /g, '_');
               const snippet = expeditionInfo(workflow.display_name).snippet;
