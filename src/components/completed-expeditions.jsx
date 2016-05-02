@@ -7,11 +7,10 @@ import Header from 'header';
 import { FatFooter } from 'fat-footer';
 import { ProjectName } from 'project-name';
 import { LandingExpeditionGroupIconHome } from 'components/expedition-group/icons/home';
-import { LandingExpeditionGroupIconHistory } from 'components/expedition-group/icons/history';
 
-export default class ExpeditionGroup extends Component {
+export default class CompletedExpeditions extends Component {
   render() {
-    const { params, workflows } = this.props;
+    const { params, inactiveWorkflows } = this.props;
     const { group } = params;
     const expedition = expeditionGroupMap[group];
     return (
@@ -19,10 +18,8 @@ export default class ExpeditionGroup extends Component {
         <Header />
         <div className="expedition-group">
           <div className="title">
-            <a href="#" className="history-link">
-              <LandingExpeditionGroupIconHistory />
-            </a>
             <ProjectName />
+            <h1>Completed Expeditions</h1>
             <a href="/">
               { React.createElement(expedition.icon) }
               <LandingExpeditionGroupIconHome />
@@ -30,7 +27,7 @@ export default class ExpeditionGroup extends Component {
           </div>
           <hr />
           <div className="tiles">
-            {workflows.filter(e => e.display_name.startsWith(group)).map((workflow, i) => {
+            {inactiveWorkflows.filter(e => e.display_name.startsWith(group)).map((workflow, i) => {
               const name = workflow.display_name.replace(`${group}_`, '');
               const imgName = workflow.display_name.replace(/ /g, '_');
               const snippet = expeditionInfo(workflow.display_name).snippet;
@@ -52,10 +49,11 @@ export default class ExpeditionGroup extends Component {
   }
 }
 
-ExpeditionGroup.propTypes = {
+CompletedExpeditions.propTypes = {
   params: PropTypes.object,
   project: PropTypes.object,
   workflows: PropTypes.array,
+  inactiveWorkflows: PropTypes.array,
 };
 
 function mapStateToProps(state) {
@@ -66,4 +64,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(ExpeditionGroup);
+export default connect(mapStateToProps)(CompletedExpeditions);

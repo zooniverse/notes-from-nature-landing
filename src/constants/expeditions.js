@@ -1,7 +1,11 @@
 export const expeditions = {
+  default: {
+    snippet: 'We need your help with transcrbing these specimens!',
+    description: 'We need your help with transcrbing these specimens!',
+  },
   'Herbarium_Florida State University': {
     snippet: `
-      The FSU Herbarium collection is comprised of herbarium specimens: these flowers
+      The FSU Herbarium collection specimens: these flowers
       and plants are carefully pressed onto sheets along with descriptive labels, and
       contain vital information for broader understanding of biodiversity at regional
       and national scales.
@@ -16,4 +20,42 @@ export const expeditions = {
       week with your help!
     `,
   },
+  'Herbarium_Southeastern Louisiana University': {
+    description: `
+      SERNEC is an organization that supports the 222 Herbaria and over 12 million plant
+      specimens found in the Southeastern United States. Each of these herbaria are valued
+      collections of plants specimens used in research and teaching. Their value is amplified
+      in partnership and  SERNEC is devoted to making the resources of all these Herbaria
+      available online as one virtual, researchable collection. SERNEC will improve access to
+      specimen data of a richly biodiverse region, and provide a platform for herbarium
+      curators and plant scientists to exchange ideas, share expertise, and benefit from the
+      value of information shared across institutions.
+    `,
+    snippet: `
+      A SERNEC collection is comprised of herbarium specimens: these flowers and plants are
+      carefully pressed onto sheets along with descriptive labels, and contain vital information
+      for broader understanding of biodiversity at regional and national scales.
+    `,
+  },
+  'Herbarium_University of South Florida': {
+    description: `
+      Welcome to the University of South Florida (USF) Herbarium and Notes from Nature.
+      The USF Herbarium contains over 250,000 preserved plant specimens from as far back
+      as the 1840s. As we depend on plants for food, medicine, water and air quality, soil health,
+      paper, fabrics, cosmetics, building materials, and beautification, these plant specimens
+      contain vital information that help us ensure the health and longevity of our species and
+      the ecosystem. They are used by our scientists, our educators, our land managers, our
+      resource providers, and many, many others. We need you to help us provide and disseminate
+      that information to online users.
+    `,
+    snippet: `
+      The USF Herbarium collection is comprised of herbarium specimens: these flowers and plants
+      are carefully pressed onto sheets along with descriptive labels, and contain vital
+      information for broader understanding of biodiversity at regional and national scales.
+    `,
+  },
 };
+
+export function expeditionInfo(key) {
+  return expeditions[key] ? expeditions[key] : expeditions.default;
+}

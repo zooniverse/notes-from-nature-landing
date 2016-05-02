@@ -5,7 +5,8 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import { About } from 'components/about';
 import App from 'components/app';
 import Landing from 'components/landing';
-import LandingExpeditionGroup from 'components/expedition-group';
+import ExpeditionGroup from 'components/expedition-group';
+import CompletedExpeditions from 'components/completed-expeditions';
 import configureStore from 'store';
 import * as action from 'actions/landing';
 import a11y from 'react-a11y';
@@ -25,7 +26,8 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <IndexRoute component={Landing} />
         <Route path="/about" component={About} />
-        <Route path="/expedition-group/:group" component={LandingExpeditionGroup} />
+        <Route path="/expedition-group/:group" component={ExpeditionGroup} />
+        <Route path="/completed-expeditions/:group" component={CompletedExpeditions} />
       </Route>
     </Router>
   </Provider>,

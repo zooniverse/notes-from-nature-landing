@@ -7,26 +7,26 @@ import { LandingExpeditionGroupIconFungus } from 'components/expedition-group/ic
 export const expeditionGroups = [
   {
     name: 'Herbarium',
+    prefix: 'Herbarium',
     icon: LandingExpeditionGroupIconHerb,
-    group: 'Herbarium',
   },
   {
     name: 'Bugs',
+    prefix: 'Calbug',
     icon: LandingExpeditionGroupIconInsect,
-    group: 'Calbug',
   },
   {
     name: 'Birds',
+    prefix: 'Birds',
     icon: LandingExpeditionGroupIconBird,
-    group: 'Birds',
   },
   {
     name: 'Macrofungi',
+    prefix: 'Macrofungi',
     icon: LandingExpeditionGroupIconFungus,
-    group: 'Macrofungi',
   },
 ];
 
 /* eslint "prefer-const": 1 */
 export let expeditionGroupMap = {};
-expeditionGroups.forEach(e => (expeditionGroupMap[e.group] = e));
+expeditionGroups.forEach(e => (expeditionGroupMap[e.prefix] = e));
