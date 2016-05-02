@@ -6,8 +6,8 @@ import { config } from 'constants/config';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
 import { ProjectName } from 'project-name';
-import { LandingExpeditionGroupIconHome } from 'components/expedition-group/icons/home';
-import { LandingExpeditionGroupIconHistory } from 'components/expedition-group/icons/history';
+import { LandingExpeditionGroupHomeIcon } from 'components/expedition-group/home';
+import { LandingExpeditionGroupHistoryIcon } from 'components/expedition-group/history';
 
 export default class ExpeditionGroup extends Component {
   render() {
@@ -20,12 +20,12 @@ export default class ExpeditionGroup extends Component {
         <div className="expedition-group">
           <div className="title">
             <a href="#" className="history-link">
-              <LandingExpeditionGroupIconHistory />
+              <LandingExpeditionGroupHistoryIcon />
             </a>
             <ProjectName />
             <a href="/">
               { React.createElement(expedition.icon) }
-              <LandingExpeditionGroupIconHome />
+              <LandingExpeditionGroupHomeIcon />
             </a>
           </div>
           <hr />
