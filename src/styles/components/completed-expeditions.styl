@@ -1,6 +1,9 @@
-.expedition-group
+.completed-expeditions
   background-color: #202020
   padding: 0 12px
+
+  .project-name
+    padding-bottom: 0
 
   .title
     display: flex
@@ -8,10 +11,9 @@
     flex-flow: column
     position: relative
 
-    .history-link
-      position: absolute
-      right: 10px
-      top: 48px
+    h1
+      color: white
+      padding-bottom: 40px
 
     .project-name
       padding-top: 40px
@@ -22,21 +24,9 @@
       height: 100px
 
       svg.expedition-group-icon
-        opacity: 1
-        transition: opacity 0.75s linear
-
-      svg.expedition-group-home
-        position: absolute
-        left: 0
-        opacity: 0
         transition: opacity 0.75s linear
 
       &:hover svg.expedition-group-icon
-        opacity: 0
-        transition: opacity 0.75s linear
-
-      &:hover svg.expedition-group-home
-        opacity: 1
         transition: opacity 0.75s linear
 
   hr
@@ -77,7 +67,7 @@
         color: white
         transition: all 0.75s linear
 
-      a
+      a, .completed-expedition
         display: flex
         flex-flow: column
         text-decoration: none

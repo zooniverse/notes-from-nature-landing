@@ -1,12 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 import { expeditionGroupMap } from 'constants/expedition-groups';
 import { expeditionInfo } from 'constants/expeditions';
-import { config } from 'constants/config';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
 import { ProjectName } from 'project-name';
-import { HomeIcon } from 'components/icons/home';
 
 export default class CompletedExpeditions extends Component {
   render() {
@@ -16,14 +15,13 @@ export default class CompletedExpeditions extends Component {
     return (
       <div>
         <Header />
-        <div className="expedition-group">
+        <div className="completed-expeditions">
           <div className="title">
             <ProjectName />
             <h1>Completed Expeditions</h1>
-            <a href="/">
+            <Link to={ `/active-expeditions/${expedition.prefix}` }>
               { React.createElement(expedition.icon) }
-              <HomeIcon />
-            </a>
+            </Link>
           </div>
           <hr />
           <div className="tiles">
@@ -33,11 +31,11 @@ export default class CompletedExpeditions extends Component {
               const snippet = expeditionInfo(workflow.display_name).snippet;
               return (
                 <div className="tile" key={i}>
-                  <a href={`${config.workflowUrl}workflow=${workflow.id}`} aria-label={`Link to ${name}`}>
+                  <div className="completed-expedition">
                     <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
                     <div className="snippet">{snippet}</div>
                     <span>{name}</span>
-                  </a>
+                  </div>
                 </div>
               );
             })}

@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 import { expeditionGroupMap } from 'constants/expedition-groups';
 import { expeditionInfo } from 'constants/expeditions';
 import { config } from 'constants/config';
@@ -11,17 +12,21 @@ import { HistoryIcon } from 'components/icons/history';
 
 export default class ActiveExpeditions extends Component {
   render() {
-    const { params, workflows } = this.props;
+    const { params, workflows, inactiveWorkflows } = this.props;
     const { group } = params;
     const expedition = expeditionGroupMap[group];
     return (
       <div>
         <Header />
-        <div className="expedition-group">
+        <div className="active-expeditions">
           <div className="title">
-            <a href="#" className="history-link">
-              <HistoryIcon />
-            </a>
+            { inactiveWorkflows.some(w => w.display_name.startsWith(group)) ?
+              <Link to={ `/completed-expeditions/${expedition.prefix}` } className="history-link">
+                <HistoryIcon />
+                <div>Completed<br />Expeditions</div>
+              </Link>
+              : ''
+            }
             <ProjectName />
             <a href="/">
               { React.createElement(expedition.icon) }
@@ -56,6 +61,7 @@ ActiveExpeditions.propTypes = {
   params: PropTypes.object,
   project: PropTypes.object,
   workflows: PropTypes.array,
+  inactiveWorkflows: PropTypes.array,
 };
 
 function mapStateToProps(state) {
