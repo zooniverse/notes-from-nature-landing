@@ -1,29 +1,28 @@
-import { LandingExpeditionGroupHerbIcon } from 'components/expedition-group/herb';
-import { LandingExpeditionGroupBirdIcon } from 'components/expedition-group/bird';
-import { LandingExpeditionGroupInsectIcon } from 'components/expedition-group/insect';
-import { LandingExpeditionGroupFungusIcon } from 'components/expedition-group/fungus';
-
+import { HerbIcon } from 'components/icons/herb';
+import { BirdIcon } from 'components/icons/bird';
+import { InsectIcon } from 'components/icons/insect';
+import { FungusIcon } from 'components/icons/fungus';
 
 export const expeditionGroups = [
   {
     name: 'Herbarium',
     prefix: 'Herbarium',
-    icon: LandingExpeditionGroupHerbIcon,
+    icon: HerbIcon,
   },
   {
     name: 'Bugs',
     prefix: 'Calbug',
-    icon: LandingExpeditionGroupInsectIcon,
+    icon: InsectIcon,
   },
   {
     name: 'Birds',
     prefix: 'Birds',
-    icon: LandingExpeditionGroupBirdIcon,
+    icon: BirdIcon,
   },
   {
     name: 'Macrofungi',
     prefix: 'Macrofungi',
-    icon: LandingExpeditionGroupFungusIcon,
+    icon: FungusIcon,
   },
 ];
 

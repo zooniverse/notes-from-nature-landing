@@ -6,10 +6,10 @@ import { config } from 'constants/config';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
 import { ProjectName } from 'project-name';
-import { LandingExpeditionGroupHomeIcon } from 'components/expedition-group/home';
-import { LandingExpeditionGroupHistoryIcon } from 'components/expedition-group/history';
+import { HomeIcon } from 'components/icons/home';
+import { HistoryIcon } from 'components/icons/history';
 
-export default class ExpeditionGroup extends Component {
+export default class ActiveExpeditions extends Component {
   render() {
     const { params, workflows } = this.props;
     const { group } = params;
@@ -20,12 +20,12 @@ export default class ExpeditionGroup extends Component {
         <div className="expedition-group">
           <div className="title">
             <a href="#" className="history-link">
-              <LandingExpeditionGroupHistoryIcon />
+              <HistoryIcon />
             </a>
             <ProjectName />
             <a href="/">
               { React.createElement(expedition.icon) }
-              <LandingExpeditionGroupHomeIcon />
+              <HomeIcon />
             </a>
           </div>
           <hr />
@@ -52,7 +52,7 @@ export default class ExpeditionGroup extends Component {
   }
 }
 
-ExpeditionGroup.propTypes = {
+ActiveExpeditions.propTypes = {
   params: PropTypes.object,
   project: PropTypes.object,
   workflows: PropTypes.array,
@@ -66,4 +66,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(ExpeditionGroup);
+export default connect(mapStateToProps)(ActiveExpeditions);

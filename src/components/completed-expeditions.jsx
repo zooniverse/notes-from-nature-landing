@@ -6,7 +6,7 @@ import { config } from 'constants/config';
 import Header from 'header';
 import { FatFooter } from 'fat-footer';
 import { ProjectName } from 'project-name';
-import { LandingExpeditionGroupHomeIcon } from 'components/expedition-group/home';
+import { HomeIcon } from 'components/icons/home';
 
 export default class CompletedExpeditions extends Component {
   render() {
@@ -22,7 +22,7 @@ export default class CompletedExpeditions extends Component {
             <h1>Completed Expeditions</h1>
             <a href="/">
               { React.createElement(expedition.icon) }
-              <LandingExpeditionGroupHomeIcon />
+              <HomeIcon />
             </a>
           </div>
           <hr />
