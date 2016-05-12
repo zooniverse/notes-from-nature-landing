@@ -1,4 +1,4 @@
-import { apiClient } from 'panoptes-client';
+import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
 
 export const PROJECT_DATA_REQUESTED = 'PROJECT_DATA_REQUESTED';

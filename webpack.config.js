@@ -31,7 +31,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) || JSON.stringify('staging'),
+      'process.env.NODE_ENV': JSON.stringify('staging'),
     }),
     new CopyWebpackPlugin([
       { from: 'src/images/' },
@@ -44,13 +44,13 @@ module.exports = {
   },
 
   module: {
-    preLoaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-      },
-    ],
+    // preLoaders: [
+    //   {
+    //     test: /\.jsx?$/,
+    //     exclude: /node_modules/,
+    //     loader: 'eslint-loader',
+    //   },
+    // ],
     loaders: [
       {
         test: /\.json$/,
