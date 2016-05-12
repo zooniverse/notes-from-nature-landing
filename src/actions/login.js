@@ -1,32 +1,39 @@
-import Panoptes from 'panoptes-client';
+import auth from 'panoptes-client/lib/auth';
+import oauth from 'panoptes-client/lib/oauth';
+import * as types from '../constants/actionTypes';
 import { config } from 'constants/config';
-
-export const SET_LOGIN_USER = 'SET_LOGIN_USER';
-export function setLoginUser(user) {
-  return dispatch => {
-    dispatch({
-      type: SET_LOGIN_USER,
-      user,
-    });
-  };
-}
 
 // First thing on app load - check if the user is logged in.
 export function checkLoginUser() {
-  return dispatch => {
-    Panoptes.auth.checkCurrent()
-    .then(user => dispatch(setLoginUser(user)));
+  return (dispatch) => {
+    auth.checkCurrent()
+      .then((user) => {
+        dispatch(setLoginUser(user));
+      });
+  }
+}
+
+export function setLoginUser(user) {
+  return (dispatch) => {
+    dispatch({
+      type: types.SET_LOGIN_USER,
+      user
+    });
   };
 }
 
 // Returns a login page URL for the user to navigate to.
 export function loginToPanoptes() {
-  return () => Panoptes.oauth.signIn(config.panoptesReturnUrl);
+  return (dispatch) => {
+    return oauth.signIn(window.location.href.split('#')[0])
+  }
 }
 
 export function logoutFromPanoptes() {
   return (dispatch) => {
-    Panoptes.oauth.signOut()
-      .then(user => dispatch(setLoginUser(user)));
-  };
+    oauth.signOut()
+      .then(user => {
+        dispatch(setLoginUser(user));
+      });
+  }
 }

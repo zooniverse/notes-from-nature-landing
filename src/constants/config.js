@@ -9,7 +9,7 @@ const envConfig = {
     projectId: '2432',
     workflowUrl: '',
     panoptesReturnUrl: 'https://notesfromnature.org/',
-    panoptesAppId: '442c8c4910fbb9be14bd9a92ee6e14ad29159d0217d0345fd9b2db3d881c4a7d',
+    panoptesAppId: 'ddfe340dea1039c21c2d73f4fb4362c3da152a2732be866ddcfd3f0d1163cc0c',
   },
 };
 
