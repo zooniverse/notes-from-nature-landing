@@ -4,8 +4,8 @@ import { Link } from 'react-router';
 import { expeditionGroups } from 'constants/expedition-groups';
 
 const LandingExpeditionGroups = ({ workflows }) => {
-  const activeGroups = expeditionGroups.filter(e => workflows.some(w =>
-    w.display_name.startsWith(e.prefix)));
+  const activeGroups = expeditionGroups.filter(
+    e => workflows.some(w => w.display_name.startsWith(e.prefix)));
   return (
     <div className="genera">
       <h3>Choose a Group and Start Transcribing!</h3>

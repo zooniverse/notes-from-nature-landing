@@ -36,7 +36,6 @@ class Header extends Component {
           {inactiveWorkflows.length
             ? <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
                 Completed Expeditions
-              >
               </Link>
             : ''
           }

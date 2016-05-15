@@ -12,6 +12,7 @@ const ActiveExpeditions = ({ params, workflows }) => {
   const { group } = params;
   const expedition = expeditionGroupMap[group];
   const activeWorkflows = workflows.filter(e => e.display_name.startsWith(group));
+  console.log(activeWorkflows);
   return (
     <div>
       <Header />
@@ -37,6 +38,7 @@ const ActiveExpeditions = ({ params, workflows }) => {
                   <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
                   <div className="snippet">{snippet}</div>
                   <span>{name}</span>
+                  <span className="completeness">{workflow.completeness}% complete</span>
                 </a>
               </div>
             );
