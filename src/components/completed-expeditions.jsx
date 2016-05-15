@@ -5,7 +5,7 @@ import Header from 'header';
 import { FatFooter } from 'fat-footer';
 import { Title } from 'title';
 
-const CompletedExpeditions = ({ inactiveWorkflows }) =>
+const CompletedExpeditions = ({ workflows }) =>
   <div>
     <Header />
     <div className="completed-expeditions">
@@ -14,7 +14,7 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
       </div>
       <hr />
       <div className="tiles">
-        {inactiveWorkflows.map((workflow, i) => {
+        {workflows.map((workflow, i) => {
           const name = workflow.display_name.replace(/^[a-z0-9]+_/i, '');
           const imgName = workflow.display_name.replace(/ /g, '_');
           const snippet = expeditionInfo(workflow.display_name).snippet;

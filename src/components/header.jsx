@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 import * as action from 'actions/login';
 import HeaderAuth from 'header/header-auth';
 
-const activeStyle = '#96f132';
-
 class Header extends Component {
   constructor() {
     super();
@@ -27,15 +25,19 @@ class Header extends Component {
 
   render() {
     const { active, inactiveWorkflows } = this.props;
+    const activeStyle = { color: '#96f132' };
     return (
       <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
         <div className="header-links">
-          <Link className={'first'} activeStyle={{ color: activeStyle }} to="/">Get Started</Link>
-          <Link activeStyle={{ color: activeStyle }} to="/about">About</Link>
+          <Link className={'first'} activeStyle={ activeStyle } to="/">Get Started</Link>
+          <Link activeStyle={ activeStyle } to="/about">About</Link>
           <a href="https://talk.notesfromnature.org">Discuss</a>
           <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
           {inactiveWorkflows.length
-            ? <Link activeStyle={{ color: activeStyle }} to="/completed-expeditions" className="wide">Completed Expeditions</Link>
+            ? <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
+                Completed Expeditions
+              >
+              </Link>
             : ''
           }
           {this.props.user

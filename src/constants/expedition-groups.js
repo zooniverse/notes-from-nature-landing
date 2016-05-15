@@ -1,7 +1,8 @@
-import { HerbIcon } from 'components/icons/herb';
 import { BirdIcon } from 'components/icons/bird';
+import { HerbIcon } from 'components/icons/herb';
 import { InsectIcon } from 'components/icons/insect';
 import { FungusIcon } from 'components/icons/fungus';
+import { ButterflyIcon } from 'components/icons/butterfly';
 
 export const expeditionGroups = [
   {
@@ -23,6 +24,11 @@ export const expeditionGroups = [
     name: 'Macrofungi',
     prefix: 'Macrofungi',
     icon: FungusIcon,
+  },
+  {
+    name: 'Butterflies',
+    prefix: 'Butterfly',
+    icon: ButterflyIcon,
   },
 ];
 
