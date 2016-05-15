@@ -9,14 +9,14 @@ import * as action from 'actions/landing';
 import oauth from 'panoptes-client/lib/oauth';
 import { config } from 'constants/config';
 
-import App from 'components/app';
+import { App } from 'components/app';
 import Landing from 'components/landing';
 import { About } from 'components/about';
 import ActiveExpeditions from 'components/active-expeditions';
 import CompletedExpeditions from 'components/completed-expeditions';
 import FieldBook from 'components/field-book';
 
-/* eslint "no-unused-vars": 1 */
+/* eslint "no-unused-vars": 0 */
 import Styles from './styles/main.styl';
 
 if (process.env.NODE_ENV === 'staging') { a11y(React); }
@@ -34,7 +34,7 @@ oauth.init(config.panoptesAppId)
             <IndexRoute component={Landing} />
             <Route path="/about" component={About} />
             <Route path="/active-expeditions/:group" component={ActiveExpeditions} />
-            <Route path="/completed-expeditions/:group" component={CompletedExpeditions} />
+            <Route path="/completed-expeditions" component={CompletedExpeditions} />
             <Route path="/field-book" component={FieldBook} />
           </Route>
         </Router>

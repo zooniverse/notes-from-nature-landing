@@ -1,15 +1,10 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        {React.cloneElement(this.props.children)}
-      </div>
-    );
-  }
-}
+export const App = ({ children }) =>
+  <div>
+    {React.cloneElement(children)}
+  </div>;
 
 App.propTypes = {
-  children: React.PropTypes.object,
+  children: PropTypes.object,
 };

@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import * as action from 'actions/login';
-import HeaderAuth from './header/header-auth';
+import HeaderAuth from 'header/header-auth';
 
 const activeStyle = '#96f132';
 
@@ -26,7 +26,7 @@ class Header extends Component {
   }
 
   render() {
-    const { active } = this.props;
+    const { active, inactiveWorkflows } = this.props;
     return (
       <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
         <div className="header-links">
@@ -34,6 +34,10 @@ class Header extends Component {
           <Link activeStyle={{ color: activeStyle }} to="/about">About</Link>
           <a href="https://talk.notesfromnature.org">Discuss</a>
           <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
+          {inactiveWorkflows.length
+            ? <Link activeStyle={{ color: activeStyle }} to="/completed-expeditions" className="wide">Completed Expeditions</Link>
+            : ''
+          }
           {this.props.user
             ? <Link activeStyle={{ color: activeStyle }} to="/field-book">Fieldbook</Link>
             : ''
@@ -51,12 +55,14 @@ Header.propTypes = {
   active: PropTypes.string,
   user: PropTypes.object,
   initialised: PropTypes.bool,
+  inactiveWorkflows: PropTypes.array,
 };
 
 function mapStateToProps(state) {
   return {
     user: state.login.user,
     initialised: state.login.initialised,
+    inactiveWorkflows: state.landing.inactiveWorkflows,
   };
 }
 export default connect(mapStateToProps)(Header);
