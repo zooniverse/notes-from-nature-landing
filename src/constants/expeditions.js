@@ -22,9 +22,9 @@ export const expeditions = {
   },
   'Herbarium_Southeastern Louisiana University': {
     snippet: `
-      The SELU Herbarium collection is comprised of herbarium specimens: these flowers and plants are
-      carefully pressed onto sheets along with descriptive labels, and contain vital information
-      for broader understanding of biodiversity at regional and national scales.
+      The SELU Herbarium collection is comprised of herbarium specimens: these flowers and plants
+      are carefully pressed onto sheets along with descriptive labels, and contain vital
+      information for broader understanding of biodiversity at regional and national scales.
     `,
     description: `
       SERNEC is an organization that supports the 222 Herbaria and over 12 million plant

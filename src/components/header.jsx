@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import * as action from 'actions/login';
-import HeaderAuth from './header/HeaderAuth';
+import HeaderAuth from './header/header-auth';
 
 const activeStyle = '#96f132';
 
@@ -26,7 +26,7 @@ class Header extends Component {
   }
 
   render() {
-    const { active, user } = this.props;
+    const { active } = this.props;
     return (
       <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
         <div className="header-links">

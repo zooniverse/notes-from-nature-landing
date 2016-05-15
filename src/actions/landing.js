@@ -1,24 +1,21 @@
 import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
+import * as types from '../constants/landing-actions';
 
-export const PROJECT_DATA_REQUESTED = 'PROJECT_DATA_REQUESTED';
 function projectDataRequested() {
-  return { type: PROJECT_DATA_REQUESTED };
+  return { type: types.PROJECT_DATA_REQUESTED };
 }
 
-export const PROJECT_DATA_RECEIVED = 'PROJECT_DATA_RECEIVED';
 function projectDataReceived(json) {
-  return { type: PROJECT_DATA_RECEIVED, json };
+  return { type: types.PROJECT_DATA_RECEIVED, json };
 }
 
-export const WORKFLOWS_REQUESTED = 'WORKFLOWS_REQUESTED';
 function workflowsRequested() {
-  return { type: WORKFLOWS_REQUESTED };
+  return { type: types.WORKFLOWS_REQUESTED };
 }
 
-export const WORKFLOWS_RECEIVED = 'WORKFLOWS_RECEIVED';
 function workflowsReceived(json) {
-  return { type: WORKFLOWS_RECEIVED, json };
+  return { type: types.WORKFLOWS_RECEIVED, json };
 }
 
 export function fetchProjectData() {

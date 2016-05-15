@@ -26,6 +26,6 @@ export const expeditionGroups = [
   },
 ];
 
-/* eslint "prefer-const": 1 */
+/* eslint "prefer-const": 0 */
 export let expeditionGroupMap = {};
 expeditionGroups.forEach(e => (expeditionGroupMap[e.prefix] = e));

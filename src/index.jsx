@@ -26,7 +26,7 @@ store.dispatch(action.fetchProjectData());
 store.dispatch(action.fetchWorkflows());
 
 oauth.init(config.panoptesAppId)
-  .then(function () {
+  .then(() => {
     ReactDOM.render(
       <Provider store={store}>
         <Router history={hashHistory}>
@@ -41,4 +41,4 @@ oauth.init(config.panoptesAppId)
       </Provider>,
       document.getElementById('root')
     );
-});
+  });
