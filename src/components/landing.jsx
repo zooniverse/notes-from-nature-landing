@@ -6,6 +6,7 @@ import { LandingReasons } from 'landing/reasons';
 import { LandingStatistics } from 'landing/statistics';
 import LandingExpeditionGroups from 'landing/expedition-groups';
 import { FatFooter } from 'fat-footer';
+import { Contributors } from 'contributors';
 
 const Landing = ({ project, workflows }) =>
   <div className="landing">
@@ -20,6 +21,7 @@ const Landing = ({ project, workflows }) =>
       <LandingStatistics project={project} workflows={workflows} />
     </div>
     <LandingReasons />
+    <Contributors />
     <FatFooter />
   </div>;
 
