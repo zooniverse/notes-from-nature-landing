@@ -21,7 +21,6 @@
     "test": "",
     "eslint": "eslint .",
     "build": "webpack --config webpack.production.config.js -p",
-    "keygen": "openssl req -nodes -newkey rsa:2048 -keyout server.key -out server.csr -subj '/C=GB/ST=/L=/O=Zooniverse/OU=/CN=localhost' && openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt && rm server.csr && echo 'Generated key server.key, certificate server.crt'"
   },
   "author": "Zooniverse",
   "license": "Apache-2.0",

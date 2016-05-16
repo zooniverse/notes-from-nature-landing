@@ -10,8 +10,8 @@ const createStoreWithMiddleware = applyMiddleware(
 
 export default function configureStore(initialState) {
   const store = createStoreWithMiddleware(rootReducer, initialState);
+  // Enable redux tools if they are available
   // const store = createStoreWithMiddleware(rootReducer, initialState,
-  //     Enable redux tools if they are available
   //     window.devToolsExtension ? window.devToolsExtension() : undefined
   //   );
 
