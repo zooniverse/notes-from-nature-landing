@@ -25,8 +25,10 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
               <div className="completed-expedition">
                 <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
                 <div className="snippet">{snippet}</div>
-                <span>{name}</span>
-                <span className="completed">Completed: {completed}</span>
+                <div>
+                  <div>{name}</div>
+                  <div className="completed">Completed: {completed}</div>
+                </div>
               </div>
             </div>
           );

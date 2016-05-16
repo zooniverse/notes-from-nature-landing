@@ -36,8 +36,10 @@ const ActiveExpeditions = ({ params, workflows }) => {
                 >
                   <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
                   <div className="snippet">{snippet}</div>
-                  <span>{name}</span>
-                  <span className="completeness">{workflow.completeness}% complete</span>
+                  <div>
+                    <div>{name}</div>
+                    <div className="completeness">{workflow.completeness}% complete</div>
+                  </div>
                 </a>
               </div>
             );
