@@ -26,6 +26,7 @@ class Header extends Component {
   render() {
     const { active, inactiveWorkflows, user } = this.props;
     const activeStyle = { color: '#96f132' };
+    // ? <Link activeStyle={{ color: activeStyle }} to="/field-book">Field Book</Link>
     return (
       <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
         <div className="header-links">
@@ -40,7 +41,7 @@ class Header extends Component {
             : ''
           }
           {user
-            ? <Link activeStyle={{ color: activeStyle }} to="/field-book">Field Book</Link>
+            ? ''
             : ''
           }
           <div className="last">&nbsp;</div>
