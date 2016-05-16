@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Header from 'header';
-import { FatFooter } from 'fat-footer';
-import { Title } from 'title';
+import Header from 'components/header';
+import { FatFooter } from 'components/fat-footer';
+import { Title } from 'components/title';
 
 class FieldBook extends Component {
   render() {

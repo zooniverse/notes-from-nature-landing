@@ -1,14 +1,12 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { expeditionGroupMap } from 'constants/expedition-groups';
+import Header from 'components/header';
+import { FatFooter } from 'components/fat-footer';
+import { Title } from 'components/title';
+import { HomeIcon } from 'components/icons/home';
 import { expeditionInfo } from 'constants/expeditions';
 import { config } from 'constants/config';
-import Header from 'header';
-import { FatFooter } from 'fat-footer';
-import { Title } from 'title';
-import { HomeIcon } from 'components/icons/home';
-
-// TODO: Break tiles into shared component between active and completed expeditions.
 
 const ActiveExpeditions = ({ params, workflows }) => {
   const { group } = params;

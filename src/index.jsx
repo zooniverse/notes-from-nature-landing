@@ -9,12 +9,12 @@ import * as action from 'actions/landing';
 import oauth from 'panoptes-client/lib/oauth';
 import { config } from 'constants/config';
 
-import { App } from 'components/app';
-import Landing from 'components/landing';
-import { About } from 'components/about';
-import ActiveExpeditions from 'components/active-expeditions';
-import CompletedExpeditions from 'components/completed-expeditions';
-import FieldBook from 'components/field-book';
+import { App } from 'app';
+import Landing from 'pages/landing';
+import { About } from 'pages/about';
+import FieldBook from 'pages/field-book';
+import ActiveExpeditions from 'pages/active-expeditions';
+import CompletedExpeditions from 'pages/completed-expeditions';
 
 /* eslint "no-unused-vars": 0 */
 import Styles from './styles/main.styl';

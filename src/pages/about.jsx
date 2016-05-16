@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from 'header';
-import { FatFooter } from 'fat-footer';
-import { Title } from 'title';
-import { Contributors } from 'contributors';
+import Header from 'components/header';
+import { FatFooter } from 'components/fat-footer';
+import { Title } from 'components/title';
+import { Contributors } from 'components/contributors';
 
 export const About = () =>
   <div className="about">

@@ -1,12 +1,10 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { expeditionInfo } from 'constants/expeditions';
-import Header from 'header';
-import { FatFooter } from 'fat-footer';
-import { Title } from 'title';
+import Header from 'components/header';
+import { FatFooter } from 'components/fat-footer';
+import { Title } from 'components/title';
 import dateformat from 'dateformat';
-
-// TODO: Break tiles into shared component between active and completed expeditions.
 
 const CompletedExpeditions = ({ inactiveWorkflows }) =>
   <div>
@@ -51,7 +49,7 @@ CompletedExpeditions.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    inactiveWorkflows: state.landing.inactiveWorkflows,
+    inactiveWorkflows: state.landing.workflows,
   };
 }
 

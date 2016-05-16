@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Header from 'header';
-import { Title } from 'title';
-import { LandingReasons } from 'landing/reasons';
-import { LandingStatistics } from 'landing/statistics';
-import LandingExpeditionGroups from 'landing/expedition-groups';
-import { FatFooter } from 'fat-footer';
-import { Contributors } from 'contributors';
+import Header from 'components/header';
+import { Title } from 'components/title';
+import { LandingReasons } from 'components/landing/reasons';
+import { LandingStatistics } from 'components/landing/statistics';
+import LandingExpeditionGroups from 'components/landing/expedition-groups';
+import { FatFooter } from 'components/fat-footer';
+import { Contributors } from 'components/contributors';
 
 const Landing = ({ project, workflows }) =>
   <div className="landing">
