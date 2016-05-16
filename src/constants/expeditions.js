@@ -2,6 +2,7 @@ export const expeditions = {
   default: {
     snippet: 'We need your help with transcrbing these specimens!',
     description: 'We need your help with transcrbing these specimens!',
+    info: 'https://www.google.com',
   },
   'Herbarium_Florida State University': {
     snippet: `
@@ -19,6 +20,7 @@ export const expeditions = {
       currently serve data for a third of our 220,000 specimens and are adding to this each
       week with your help!
     `,
+    info: 'https://www.google.com',
   },
   'Herbarium_Southeastern Louisiana University': {
     snippet: `
@@ -36,6 +38,7 @@ export const expeditions = {
       curators and plant scientists to exchange ideas, share expertise, and benefit from the
       value of information shared across institutions.
     `,
+    info: 'https://www.google.com',
   },
   'Herbarium_University of South Florida': {
     snippet: `
@@ -53,6 +56,7 @@ export const expeditions = {
       resource providers, and many, many others. We need you to help us provide and disseminate
       that information to online users.
     `,
+    info: 'https://www.google.com',
   },
   'Calbug_Essig Museum Collections': {
     snippet: `
@@ -68,6 +72,7 @@ export const expeditions = {
       Drawing from over a century of insect collecting in the region, our goal is to develop
       a database of over 1 million geographically referenced specimens.
     `,
+    info: 'https://www.google.com',
   },
 };
 

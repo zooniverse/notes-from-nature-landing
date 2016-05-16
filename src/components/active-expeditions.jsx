@@ -28,18 +28,21 @@ const ActiveExpeditions = ({ params, workflows }) => {
           {activeWorkflows.map((workflow, i) => {
             const name = workflow.display_name.replace(`${group}_`, '');
             const imgName = workflow.display_name.replace(/ /g, '_');
-            const snippet = expeditionInfo(workflow.display_name).snippet;
+            const expInfo = expeditionInfo(workflow.display_name);
             return (
               <div className="tile" key={i}>
                 <a href={`${config.workflowUrl}workflow=${workflow.id}`}
                   aria-label={`Link to ${name}`}
                 >
                   <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
-                  <div className="snippet">{snippet}</div>
-                  <div>
+                  <div className="snippet">{expInfo.snippet}</div>
+                  <div className="label">
                     <div>{name}</div>
                     <div className="completeness">{workflow.completeness}% complete</div>
                   </div>
+                </a>
+                <a href={`${expInfo.info}`} className="more-info" zIndex="10">
+                  <i className="fa fa-info-circle" aria-hidden="true"></i>
                 </a>
               </div>
             );
@@ -53,13 +56,11 @@ const ActiveExpeditions = ({ params, workflows }) => {
 
 ActiveExpeditions.propTypes = {
   params: PropTypes.object,
-  project: PropTypes.object,
   workflows: PropTypes.array,
 };
 
 function mapStateToProps(state) {
   return {
-    project: state.landing.project,
     workflows: state.landing.workflows,
   };
 }

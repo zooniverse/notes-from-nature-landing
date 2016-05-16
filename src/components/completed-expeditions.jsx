@@ -18,18 +18,21 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
         {inactiveWorkflows.map((workflow, i) => {
           const name = workflow.display_name.replace(/^[a-z0-9]+_/i, '');
           const imgName = workflow.display_name.replace(/ /g, '_');
-          const snippet = expeditionInfo(workflow.display_name).snippet;
+          const expInfo = expeditionInfo(workflow.display_name);
           const completed = dateformat(workflow.finished_at, 'mmmm d yyyy');
           return (
             <div className="tile" key={i}>
               <div className="completed-expedition">
                 <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
-                <div className="snippet">{snippet}</div>
-                <div>
+                <div className="snippet">{expInfo.snippet}</div>
+                <div className="label">
                   <div>{name}</div>
                   <div className="completed">Completed: {completed}</div>
                 </div>
               </div>
+              <a href={`${expInfo.info}`} className="more-info" zIndex="10">
+                <i className="fa fa-info-circle" aria-hidden="true"></i>
+              </a>
             </div>
           );
         })}
@@ -40,14 +43,11 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
 
 CompletedExpeditions.propTypes = {
   params: PropTypes.object,
-  workflows: PropTypes.array,
   inactiveWorkflows: PropTypes.array,
 };
 
 function mapStateToProps(state) {
   return {
-    project: state.landing.project,
-    workflows: state.landing.workflows,
     inactiveWorkflows: state.landing.inactiveWorkflows,
   };
 }
