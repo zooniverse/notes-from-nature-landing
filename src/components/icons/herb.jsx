@@ -48,7 +48,7 @@ export const HerbIcon = () =>
       -2 6.8,-3 0,-0.2 0,-0.5 0,-0.7 -1.4,-0.3 -2.9,-0.7 -4.3,-0.9 -4.5,-0.8 -9,-1.6 -13.5,
       -2.4 -0.9,-0.2 -1.8,-0.5 -2.5,-1 -6.8,-5.7 -13.5,-11.4 -20.3,-17.1 0,0 -0.1,-0.4 -0.6,-1.1 z"
     />
-      <text x="156" y="382"style={{ fontSize: '72px', fontstyle: 'normal', fontWeight: 'normal',
+      <text style={{ fontSize: '72px', fontstyle: 'normal', fontWeight: 'normal',
         lineHeight: '125%', letterSpacing: '0px', wordSpacing: '0px', fillOpacity: 1,
         stroke: 'none', fontFamily: 'Sans' }}
       >

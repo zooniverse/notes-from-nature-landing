@@ -33,7 +33,7 @@ export const BirdIcon = () =>
     <path d="m 105.50596,430.03966 c 0.1,0.1 0.3,0.1 0.4,0.2 -0.1,-0.1 -0.2,-0.2 -0.4,-0.2 0,
       -0.1 0,0 0,0 z"
     />
-    <text x="144" y="496" style={{ fontSize: '72px', fontstyle: 'normal', fontWeight: 'normal',
+    <text style={{ fontSize: '72px', fontstyle: 'normal', fontWeight: 'normal',
       lineHeight: '125%', letterSpacing: '0px', wordSpacing: '0px', fillOpacity: 1,
       stroke: 'none', fontFamily: 'Sans' }}
     >

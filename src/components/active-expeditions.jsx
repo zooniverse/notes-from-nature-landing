@@ -12,7 +12,6 @@ const ActiveExpeditions = ({ params, workflows }) => {
   const { group } = params;
   const expedition = expeditionGroupMap[group];
   const activeWorkflows = workflows.filter(e => e.display_name.startsWith(group));
-  console.log(activeWorkflows);
   return (
     <div>
       <Header />

@@ -18,11 +18,11 @@ export const ButterflyIcon = () =>
       1.3-1.3l0.5-9.2c1.1,1.9,8.7,14.8,13.1,17.4c11.5,6.9,36.2-20.9,15.7-28.3c2.6-0.7,7.6-1.5,
       8.9-4.4c2.2-5.1-0.3-12.9,7.7-20.7C99.1,14.7,100.2,12.2,100,9.1z"
     />
-    <text x="200" y="382"style={{
-      fontSize: '72px', fontstyle: 'normal', fontWeight: 'normal',
+    <text transform="scale(0.2,0.2)"
+      style={{ fontSize: '72px', fontstyle: 'normal', fontWeight: 'normal',
       lineHeight: '125%', letterSpacing: '0px', wordSpacing: '0px', fillOpacity: 1,
       stroke: 'none', fontFamily: 'Sans' }}
     >
-     <tspan x="200" y="382">Butterflies</tspan>
+     <tspan x="65" y="425">Butterflies</tspan>
    </text>
   </svg>;

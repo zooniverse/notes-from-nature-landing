@@ -31,10 +31,10 @@ export const InsectIcon = () =>
       1 1.6,1.8 1.9,2.9 0.6,1.7 0.8,3.6 1.1,5.4 0.6,3.7 1.9,6.9 4.9,9.3 2.3,1.8 4.9,2.6 7.7,
       1.5 0.6,-0.2 0.9,-1.3 1.4,-2 -0.7,-0.2 -1.5,-0.8 -2.1,-0.7 z"
     />
-      <text x="66" y="153" style={{ fontSize: '24px', fontstyle: 'normal', fontWeight: 'normal',
-        lineHeight: '125%', letterSpacing: '0px', wordSpacing: '0px', fillOpacity: 1,
-        stroke: 'none', fontFamily: 'Sans' }}
-      >
-       <tspan x="66" y="153">Bugs</tspan>
-     </text>
+    <text style={{ fontSize: '6px', fontstyle: 'normal', fontWeight: 'normal',
+      lineHeight: '125%', letterSpacing: '0px', wordSpacing: '0px', fillOpacity: 1,
+      stroke: 'none', fontFamily: 'Sans' }}
+    >
+     <tspan x="66" y="153">Bugs</tspan>
+   </text>
   </svg>;

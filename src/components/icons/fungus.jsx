@@ -70,7 +70,7 @@ export const FungusIcon = () =>
     <path d="m 297.74275,376.03582 c 0.1,0.1 0.1,0.2 0.2,0.2 0,0 -0.1,0 -0.1,-0.1 -0.1,0 -0.1,
       -0.1 -0.1,-0.1 0,-0.1 0,0 0,0 z"
     />
-    <text x="77" y="433" style={{ fontSize: '72px', fontstyle: 'normal', fontWeight: 'normal',
+    <text style={{ fontSize: '72px', fontstyle: 'normal', fontWeight: 'normal',
       lineHeight: '125%', letterSpacing: '0px', wordSpacing: '0px', fillOpacity: 1,
       stroke: 'none', fontFamily: 'Sans' }}
     >
