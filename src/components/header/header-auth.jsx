@@ -12,7 +12,7 @@ class HeaderAuth extends Component {
   }
 
   componentDidMount() {
-    if (!this.props.initialised) {
+    if (!this.props.initialized) {
       this.props.dispatch(checkLoginUser());
     }
   }
@@ -35,13 +35,13 @@ class HeaderAuth extends Component {
 HeaderAuth.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object,
-  initialised: PropTypes.bool,
+  initialized: PropTypes.bool,
 };
 
 function mapStateToProps(state) {
   return {
     user: state.login.user,
-    initialised: state.login.initialised,
+    initialized: state.login.initialized,
   };
 }
 export default connect(mapStateToProps)(HeaderAuth);

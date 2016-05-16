@@ -11,9 +11,10 @@ const initialState = {
   inactiveWorkflows: [],
 };
 
-export function landing(state = initialState, action = '') {
+export function landing(state = initialState, action) {
   let nextState;
   switch (action.type) {
+
     case types.PROJECT_DATA_REQUESTED:
       return Object.assign({}, state, { projectFetched: false });
 

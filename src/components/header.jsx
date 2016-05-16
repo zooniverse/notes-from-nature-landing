@@ -24,7 +24,7 @@ class Header extends Component {
   }
 
   render() {
-    const { active, inactiveWorkflows } = this.props;
+    const { active, inactiveWorkflows, user } = this.props;
     const activeStyle = { color: '#96f132' };
     return (
       <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
@@ -39,8 +39,8 @@ class Header extends Component {
               </Link>
             : ''
           }
-          {this.props.user
-            ? <Link activeStyle={{ color: activeStyle }} to="/field-book">Fieldbook</Link>
+          {user
+            ? <Link activeStyle={{ color: activeStyle }} to="/field-book">Field Book</Link>
             : ''
           }
           <div className="last">&nbsp;</div>
@@ -55,14 +55,14 @@ Header.propTypes = {
   dispatch: PropTypes.func,
   active: PropTypes.string,
   user: PropTypes.object,
-  initialised: PropTypes.bool,
+  initialized: PropTypes.bool,
   inactiveWorkflows: PropTypes.array,
 };
 
 function mapStateToProps(state) {
   return {
     user: state.login.user,
-    initialised: state.login.initialised,
+    initialized: state.login.initialized,
     inactiveWorkflows: state.landing.inactiveWorkflows,
   };
 }

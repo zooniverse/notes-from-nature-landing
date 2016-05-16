@@ -8,6 +8,8 @@ import { FatFooter } from 'fat-footer';
 import { Title } from 'title';
 import { HomeIcon } from 'components/icons/home';
 
+// TODO: Break tiles into shared component between active and completed expeditions.
+
 const ActiveExpeditions = ({ params, workflows }) => {
   const { group } = params;
   const expedition = expeditionGroupMap[group];
@@ -18,7 +20,7 @@ const ActiveExpeditions = ({ params, workflows }) => {
       <div className="active-expeditions">
         <div className="active-expeditions-title">
           <Title title={`Active Expeditions for ${expedition.name}`} />
-          <a href="/">
+          <a href="/" aria-label="Return Home">
             { React.createElement(expedition.icon) }
             <HomeIcon />
           </a>
@@ -41,7 +43,9 @@ const ActiveExpeditions = ({ params, workflows }) => {
                     <div className="completeness">{workflow.completeness}% complete</div>
                   </div>
                 </a>
-                <a href={`${expInfo.info}`} className="more-info" zIndex="10">
+                <a href={`${expInfo.info}`} className="more-info" zIndex="10"
+                  aria-label="More information"
+                >
                   <i className="fa fa-info-circle" aria-hidden="true"></i>
                 </a>
               </div>

@@ -7,15 +7,15 @@ import { Title } from 'title';
 class FieldBook extends Component {
   render() {
     const { user } = this.props;
-    console.log(user);
     return (
       <div>
         <Header />
         <div className="field-book">
           <Title title={`Field Book for ${user.display_name}`} />
           <hr />
-        <FatFooter />
+          <div>{`You have transcribed ${user.classifications_count} records`}</div>
         </div>
+        <FatFooter />
       </div>
     );
   }
@@ -23,20 +23,12 @@ class FieldBook extends Component {
 
 FieldBook.propTypes = {
   dispatch: PropTypes.func,
-  project: PropTypes.object,
-  workflows: PropTypes.array,
-  inactiveWorkflows: PropTypes.array,
-  user: PropTypes.object,
-  initialised: PropTypes.bool,
+  user: PropTypes.object.isRequired,
 };
 
 function mapStateToProps(state) {
   return {
     user: state.login.user,
-    initialised: state.login.initialised,
-    project: state.landing.project,
-    workflows: state.landing.workflows,
-    inactiveWorkflows: state.landing.inactiveWorkflows,
   };
 }
 
