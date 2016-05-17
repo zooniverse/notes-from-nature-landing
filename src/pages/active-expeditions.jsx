@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import { expeditionGroupMap } from 'constants/expedition-groups';
 import Header from 'components/header';
@@ -18,10 +19,10 @@ const ActiveExpeditions = ({ params, workflows }) => {
       <div className="active-expeditions">
         <div className="active-expeditions-title">
           <Title title={`Active Expeditions for ${expedition.name}`} />
-          <a href="/" aria-label="Return Home">
+          <Link to={"/"} aria-label="Return Home">
             { React.createElement(expedition.icon) }
             <HomeIcon />
-          </a>
+          </Link>
         </div>
         <hr />
         <div className="tiles">
