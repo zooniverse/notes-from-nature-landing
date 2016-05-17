@@ -20,7 +20,7 @@
     "start": "babel-node server.js",
     "test": "",
     "eslint": "eslint .",
-    "build": "webpack --config webpack.production.config.js -p",
+    "build": "NODE_ENV=production webpack --config webpack.production.config.js -p"
   },
   "author": "Zooniverse",
   "license": "Apache-2.0",
@@ -55,6 +55,7 @@
     "clean-webpack-plugin": "^0.1.6",
     "copy-webpack-plugin": "^1.1.1",
     "css-loader": "^0.23.1",
+    "dateformat": "^1.0.12",
     "eslint": "^2.7.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-loader": "^1.1.1",
