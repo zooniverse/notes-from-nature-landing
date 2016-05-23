@@ -5,7 +5,8 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import a11y from 'react-a11y';
 import configureStore from 'store';
-import * as action from 'actions/landing';
+import * as projectActions from 'actions/project';
+import * as workflowActions from 'actions/workflow';
 import oauth from 'panoptes-client/lib/oauth';
 import { config } from 'constants/config';
 
@@ -22,8 +23,8 @@ import Styles from './styles/main.styl';
 if (process.env.NODE_ENV === 'staging') { a11y(React); }
 
 const store = configureStore();
-store.dispatch(action.fetchProjectData());
-store.dispatch(action.fetchWorkflows());
+store.dispatch(projectActions.fetchProjectData());
+store.dispatch(workflowActions.fetchWorkflows());
 
 oauth.init(config.panoptesAppId)
   .then(() => {

@@ -32,9 +32,9 @@ Landing.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    project: state.landing.project,
-    workflows: state.landing.workflows,
-    inactiveWorkflows: state.landing.inactiveWorkflows,
+    project: state.project.project,
+    workflows: state.workflow.workflows,
+    inactiveWorkflows: state.workflow.inactiveWorkflows,
   };
 }
 

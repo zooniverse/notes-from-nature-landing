@@ -49,7 +49,7 @@ CompletedExpeditions.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    inactiveWorkflows: state.landing.inactiveWorkflows,
+    inactiveWorkflows: state.workflow.inactiveWorkflows,
   };
 }
 

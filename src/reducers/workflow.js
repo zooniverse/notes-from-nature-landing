@@ -1,0 +1,27 @@
+import * as types from '../constants/workflow-actions';
+
+const initialState = {
+  workflowsFetched: false,
+  workflows: [],
+  inactiveWorkflows: [],
+};
+
+export function workflow(state = initialState, action) {
+  let nextState;
+  switch (action.type) {
+
+    case types.WORKFLOWS_REQUESTED:
+      return Object.assign({}, state, { workflowsFetched: false });
+
+    case types.WORKFLOWS_RECEIVED:
+      nextState = Object.assign({}, state, {
+        workflowsFetched: true,
+        workflows: action.json.filter(w => w.active),
+        inactiveWorkflows: action.json.filter(w => !w.active && !w.display_name.startsWith('Template')),
+      });
+      return nextState;
+
+    default:
+      return state;
+  }
+}

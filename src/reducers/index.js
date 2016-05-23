@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 
-import * as landing from './landing';
+import * as project from './project';
+import * as workflow from './workflow';
 import * as login from './login';
 
-const reducers = Object.assign({}, landing, login);
+const reducers = Object.assign({}, project, workflow, login);
 export default combineReducers(reducers);
