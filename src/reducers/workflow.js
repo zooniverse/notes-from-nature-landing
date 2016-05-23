@@ -17,7 +17,8 @@ export function workflow(state = initialState, action) {
       nextState = Object.assign({}, state, {
         workflowsFetched: true,
         workflows: action.json.filter(w => w.active),
-        inactiveWorkflows: action.json.filter(w => !w.active && !w.display_name.match(/Template/i)),
+        inactiveWorkflows: action.json.filter(w =>
+          !w.active && !w.display_name.match(/Template/i)),
       });
       return nextState;
 
