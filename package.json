@@ -20,7 +20,8 @@
     "start": "babel-node server.js",
     "test": "",
     "eslint": "eslint .",
-    "build": "NODE_ENV=production webpack --config webpack.production.config.js -p"
+    "build": "NODE_ENV=production webpack --config webpack.production.config.js -p",
+    "deploy-production": "npm run build && publisssh dist zooniverse-static/relaunch.notesfromnature.org"
   },
   "author": "Zooniverse",
   "license": "Apache-2.0",
@@ -69,6 +70,7 @@
     "json-loader": "^0.5.4",
     "mocha": "^2.3.0",
     "nib": "^1.1.0",
+    "publisssh": "^1.0.1",
     "react-a11y": "^0.3.3",
     "react-transform-hmr": "^1.0.1",
     "redux-devtools": "^3.1.1",
