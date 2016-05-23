@@ -2,7 +2,26 @@ export const expeditions = {
   default: {
     snippet: 'We need your help with transcrbing these specimens!',
     description: 'We need your help with transcrbing these specimens!',
+    image: 'default_expedition.jpg',
     info: 'https://www.google.com',
+  },
+  'Herbarium_WeDigFLPlants\' Mints of Florida—More than Mojitos': {
+    snippet: `
+      Florida is home to over 110 species of native and naturalized mints, including
+      Scarlet Calamint. This expedition contains Florida mint specimens from four different
+      herbaria.  Help the WeDigFLPlants group transcribe specimens of the flora they dig.
+    `,
+    image: 'Herbarium_WeDigFLPlants_Mints_of_Florida.jpg',
+    info: 'http://biospex.org/project/wedigflplants',
+  },
+  'Herbarium_WeDigFLPlants\' Laurels of Florida—Fight Laurel Wilt': {
+    snippet: `
+      The fatal laurel wilt fungus reached Florida in 2005 and now all members of the family,
+      including Sassafras, are threatened. Help the WeDigFLPlants group transcribe specimens of
+      Florida's 15 native and naturalized laurel species to build the historical baseline.
+    `,
+    image: 'Herbarium_WeDigFLPlants_Laurels_of_Florida.jpg',
+    info: 'http://biospex.org/project/wedigflplants',
   },
   'Herbarium_Florida State University': {
     snippet: `
@@ -11,15 +30,7 @@ export const expeditions = {
       contain vital information for broader understanding of biodiversity at regional
       and national scales.
     `,
-    description: `
-      Florida State University's Robert K. Godfrey Herbarium documents the distribution
-      and natural variation of 2,400 species of flowering plants, ferns, conifers, and
-      cycads found in northern Florida. In this region a number of plant groups,
-      including pitcherplants, reach their greatest species richness in North America.
-      Join our effort to liberate specimen data from our cabinets and deploy it online—we
-      currently serve data for a third of our 220,000 specimens and are adding to this each
-      week with your help!
-    `,
+    image: 'Herbarium_Florida_State_University.jpg',
     info: 'https://www.google.com',
   },
   'Herbarium_Southeastern Louisiana University': {
@@ -28,16 +39,7 @@ export const expeditions = {
       are carefully pressed onto sheets along with descriptive labels, and contain vital
       information for broader understanding of biodiversity at regional and national scales.
     `,
-    description: `
-      SERNEC is an organization that supports the 222 Herbaria and over 12 million plant
-      specimens found in the Southeastern United States. Each of these herbaria are valued
-      collections of plants specimens used in research and teaching. Their value is amplified
-      in partnership and  SERNEC is devoted to making the resources of all these Herbaria
-      available online as one virtual, researchable collection. SERNEC will improve access to
-      specimen data of a richly biodiverse region, and provide a platform for herbarium
-      curators and plant scientists to exchange ideas, share expertise, and benefit from the
-      value of information shared across institutions.
-    `,
+    image: 'Herbarium_Southeastern_Louisiana_University.jpg',
     info: 'https://www.google.com',
   },
   'Herbarium_University of South Florida': {
@@ -46,16 +48,7 @@ export const expeditions = {
       are carefully pressed onto sheets along with descriptive labels, and contain vital
       information for broader understanding of biodiversity at regional and national scales.
     `,
-    description: `
-      Welcome to the University of South Florida (USF) Herbarium and Notes from Nature.
-      The USF Herbarium contains over 250,000 preserved plant specimens from as far back
-      as the 1840s. As we depend on plants for food, medicine, water and air quality, soil health,
-      paper, fabrics, cosmetics, building materials, and beautification, these plant specimens
-      contain vital information that help us ensure the health and longevity of our species and
-      the ecosystem. They are used by our scientists, our educators, our land managers, our
-      resource providers, and many, many others. We need you to help us provide and disseminate
-      that information to online users.
-    `,
+    image: 'Herbarium_University_of_South_Florida.jpg',
     info: 'https://www.google.com',
   },
   'Calbug_Essig Museum Collections': {
@@ -63,15 +56,7 @@ export const expeditions = {
       Calbug digitizes collections of pinned insect specimens drawn from eight of California's
       major institutions, showcasing the stunning diversity of insect life in our world.
     `,
-    description: `
-      Calbug is an effort to digitize terrestrial arthropod-specimen records with a focus on
-      California. The project, funded by the National Science Foundation, represents a
-      collaboration among eight entomological collections in California to capture data
-      from specimen labels. The Calbug Science Team will then use the collection data to
-      assess how arthropods have responded to climate change and habitat modification.
-      Drawing from over a century of insect collecting in the region, our goal is to develop
-      a database of over 1 million geographically referenced specimens.
-    `,
+    image: 'Calbug_Essig_Museum_Collections.jpg',
     info: 'https://www.google.com',
   },
 };

@@ -17,13 +17,12 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
       <div className="tiles">
         {inactiveWorkflows.map((workflow, i) => {
           const name = workflow.display_name.replace(/^[a-z0-9]+_/i, '');
-          const imgName = workflow.display_name.replace(/ /g, '_');
           const expInfo = expeditionInfo(workflow.display_name);
           const completed = dateformat(workflow.finished_at, 'mmmm d yyyy');
           return (
             <div className="tile" key={i}>
               <div className="completed-expedition">
-                <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
+                <img src={ `expeditions/${expInfo.image}` } alt={name}></img>
                 <div className="snippet">{expInfo.snippet}</div>
                 <div className="label">
                   <div>{name}</div>

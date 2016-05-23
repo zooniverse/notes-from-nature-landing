@@ -27,15 +27,14 @@ const ActiveExpeditions = ({ params, workflows }) => {
         <hr />
         <div className="tiles">
           {activeWorkflows.map((workflow, i) => {
-            const name = workflow.display_name.replace(`${group}_`, '');
-            const imgName = workflow.display_name.replace(/ /g, '_');
             const expInfo = expeditionInfo(workflow.display_name);
+            const name = workflow.display_name.replace(`${group}_`, '');
             return (
               <div className="tile" key={i}>
                 <a href={`${config.workflowUrl}workflow=${workflow.id}`}
                   aria-label={`Link to ${name}`}
                 >
-                  <img src={ `expeditions/${imgName}.jpg` } alt={name}></img>
+                  <img src={ `expeditions/${expInfo.image}` } alt={name}></img>
                   <div className="snippet">{expInfo.snippet}</div>
                   <div className="label">
                     <div>{name}</div>
