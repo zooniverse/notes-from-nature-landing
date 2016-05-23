@@ -1,9 +1,8 @@
 export const expeditions = {
   default: {
     snippet: 'We need your help with transcrbing these specimens!',
-    description: 'We need your help with transcrbing these specimens!',
-    image: 'default_expedition.jpg',
-    info: 'https://www.google.com',
+    image: 'default_expedition.png',
+    info: '',
   },
   'Herbarium_WeDigFLPlants\' Mints of Florida—More than Mojitos': {
     snippet: `
@@ -31,7 +30,7 @@ export const expeditions = {
       and national scales.
     `,
     image: 'Herbarium_Florida_State_University.jpg',
-    info: 'https://www.google.com',
+    info: '',
   },
   'Herbarium_Southeastern Louisiana University': {
     snippet: `
@@ -40,7 +39,7 @@ export const expeditions = {
       information for broader understanding of biodiversity at regional and national scales.
     `,
     image: 'Herbarium_Southeastern_Louisiana_University.jpg',
-    info: 'https://www.google.com',
+    info: '',
   },
   'Herbarium_University of South Florida': {
     snippet: `
@@ -49,7 +48,7 @@ export const expeditions = {
       information for broader understanding of biodiversity at regional and national scales.
     `,
     image: 'Herbarium_University_of_South_Florida.jpg',
-    info: 'https://www.google.com',
+    info: '',
   },
   'Calbug_Essig Museum Collections': {
     snippet: `
@@ -57,7 +56,7 @@ export const expeditions = {
       major institutions, showcasing the stunning diversity of insect life in our world.
     `,
     image: 'Calbug_Essig_Museum_Collections.jpg',
-    info: 'https://www.google.com',
+    info: '',
   },
 };
 

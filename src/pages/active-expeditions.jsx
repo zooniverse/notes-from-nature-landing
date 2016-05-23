@@ -41,11 +41,14 @@ const ActiveExpeditions = ({ params, workflows }) => {
                     <div className="completeness">{workflow.completeness}% complete</div>
                   </div>
                 </a>
-                <a href={`${expInfo.info}`} className="more-info" zIndex="10"
-                  aria-label="More information"
-                >
-                  <i className="fa fa-info-circle" aria-hidden="true"></i>
-                </a>
+                {expInfo.info ?
+                  <a href={`${expInfo.info}`} className="more-info" zIndex="10"
+                    aria-label="More information"
+                  >
+                      <i className="fa fa-info-circle" aria-hidden="true"></i>
+                    </a>
+                  : ''
+                }
               </div>
             );
           })}
