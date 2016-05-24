@@ -1,28 +1,9 @@
 import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import * as action from 'actions/login';
 import HeaderAuth from 'header/header-auth';
 
 class Header extends Component {
-  constructor() {
-    super();
-    this.login = this.login.bind(this);
-    this.logout = this.logout.bind(this);
-  }
-
-  componentDidMount() {
-    this.props.dispatch(action.checkLoginUser());
-  }
-
-  login() {
-    return this.props.dispatch(action.loginToPanoptes());
-  }
-
-  logout() {
-    this.props.dispatch(action.logoutFromPanoptes());
-  }
-
   render() {
     const { active, inactiveWorkflows, user } = this.props;
     const activeStyle = { color: '#96f132' };

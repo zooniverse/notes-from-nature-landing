@@ -16,6 +16,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist/'),
     filename: '[name]-[hash].min.js',
+    publicPath: '/',
   },
 
   plugins: [
@@ -40,6 +41,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) || '"production"',
+      'process.env.PANOPTES_API_HOST': '"https://panoptes.zooniverse.org"'
     }),
     new CopyWebpackPlugin([
       { from: 'src/images/' },

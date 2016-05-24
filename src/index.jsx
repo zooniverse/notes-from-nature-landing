@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import a11y from 'react-a11y';
 import configureStore from 'store';
@@ -30,7 +30,7 @@ oauth.init(config.panoptesAppId)
   .then(() => {
     ReactDOM.render(
       <Provider store={store}>
-        <Router history={hashHistory}>
+        <Router history={browserHistory}>
           <Route path="/" component={App}>
             <IndexRoute component={Landing} />
             <Route path="/about" component={About} />
