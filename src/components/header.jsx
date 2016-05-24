@@ -15,6 +15,7 @@ class Header extends Component {
           <Link activeStyle={ activeStyle } to="/about">About</Link>
           <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature-relaunch/talk">Talk</a>
           <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
+          <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature-relaunch/stats">Statistics</a>
           {inactiveWorkflows.length
             ? <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
                 Completed Expeditions
