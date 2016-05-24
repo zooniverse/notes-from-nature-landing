@@ -22,7 +22,7 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
           return (
             <div className="tile" key={i}>
               <div className="completed-expedition">
-                <img src={ `expeditions/${expInfo.image}` } alt={name}></img>
+                <img src={ require(`../images/expeditions/${expInfo.image}`) } alt={name}></img>
                 <div className="snippet">{expInfo.snippet}</div>
                 <div className="label">
                   <div>{name}</div>
