@@ -44,12 +44,26 @@ export const About = () =>
         meticulously recorded and stored as a way to preserve our natural heritage. Join us in
         unlocking this important information - take some notes from nature!
       </p>
-
-      <h3>Natural historians, how can you add an expedition to Notes from Nature?</h3>
+      <h3>
+        Do you have biodiversity transcription project? How can you make your own Notes from
+        Nature project?
+      </h3>
       <p>
-        We have good news.
+        Notes from Nature welcomes anyone who wants to build their own project, and with our
+        relaunch, we have greatly simplified and streamlined that process.  Before you contact us
+        for more details, first ask whehter Notes from Nature is the right platform for you.
+        Do you have imaged biodiversity specimens with label text (or just labels) that you need
+        transcribed?  If so, onwards.
       </p>
-
+      <p>
+        For now, the first step is to contact the Notes from Nature project manager,
+        Michael Denslow (michael.denslow at gmail.com), who can provide you with the full details
+        needed to get a project together.  In a nutshell, Notes from Nature is built on top of the
+        Zooniverse's Project Builder, which greatly simplifies creation of projects. We will have
+        more detailed tutorials available shortly that fully explains the process of getting a
+        project together, but the level of effort is measured in minutes to hours, as long as you
+        already have images you want explain more, once we hear from you.
+      </p>
     </div>
     <Contributors />
     <FatFooter />
