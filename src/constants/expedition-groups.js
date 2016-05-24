@@ -16,6 +16,11 @@ export const expeditionGroups = [
     icon: InsectIcon,
   },
   {
+    name: 'Pinned Specimen',
+    prefix: 'Pinned Specimen',
+    icon: InsectIcon,
+  },
+  {
     name: 'Birds',
     prefix: 'Birds',
     icon: BirdIcon,
