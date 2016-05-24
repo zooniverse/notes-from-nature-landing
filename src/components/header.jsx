@@ -15,6 +15,9 @@ const Header = ({ active, inactiveWorkflows, user }) => {
           Talk
         </a>
         <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
+        <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature-relaunch/stats">
+          Statistics
+        </a>
         {inactiveWorkflows.length
           ? <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
               Completed Expeditions
