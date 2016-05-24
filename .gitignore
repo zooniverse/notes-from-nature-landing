@@ -3,3 +3,5 @@ node_modules
 .idea
 dist
 *.log
+server.crt
+server.key

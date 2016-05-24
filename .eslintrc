@@ -15,6 +15,7 @@
     "mocha": true
   },
   "rules": {
+    "react/prefer-stateless-function": 1,
     "quotes": [
       2,
       "single"
@@ -23,13 +24,12 @@
       2,
       "smart"
     ],
-    "space-after-keywords": 2,
     "no-console": 1,
     // specify the maximum length of a line in your program
     // https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md
     'max-len': [1, 100, 2, {
       'ignoreUrls': true,
-      'ignoreComments': false
+      'ignoreComments': false,
     }]
   }
 }

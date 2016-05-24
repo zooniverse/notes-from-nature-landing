@@ -1,0 +1,97 @@
+.completed-expeditions
+  background-color: #202020
+  padding: 0 12px
+
+  .project-name
+    padding-bottom: 0
+
+  .completed-expeditions-title
+    display: flex
+    align-items: center
+    flex-flow: column
+    position: relative
+
+    h1
+      color: white
+      padding-bottom: 40px
+
+    .project-name
+      padding-top: 40px
+
+    a
+      text-decoration: none
+      position: relative
+      height: 100px
+
+      svg.expedition-group-icon
+        transition: opacity 0.75s linear
+
+      &:hover svg.expedition-group-icon
+        transition: opacity 0.75s linear
+
+  hr
+    margin: 20px 10px 30px 10px
+
+  .tiles
+    display: flex
+    align-items: center
+    flex-flow: row
+    flex-wrap: wrap
+    justify-content: space-around
+
+    .tile
+      position: relative
+      max-width: 240px
+      max-height: 240px
+      font-weight: bold
+      text-align: center
+      align-self: center
+      font-size: 16px
+      padding-bottom: 20px
+
+      .snippet
+        top: 0
+        max-height: 0
+        color: white
+        opacity: 0
+        padding: 12px
+        position: absolute
+        font-size: 14px
+        font-weight: normal
+        transition: all 1.25s linear
+
+      .snippet:hover, &:hover .snippet
+        max-height: 240px
+        opacity: 1
+        background-color: rgba(0, 0, 0, 0.7)
+        color: white
+        transition: all 0.75s linear
+
+      .completed-expedition
+        display: flex
+        flex-flow: column
+        text-decoration: none
+        color: #96f132
+
+        .label
+          height: 60px
+          max-width: 90%
+
+          .completed
+            font-size: 12px
+
+    .more-info
+      color: white
+      position: absolute
+      bottom: 56px
+      right: 0
+
+      i
+        font-size: 18px
+
+      i:hover
+        color: #226764
+
+    img
+      height: 180px
+      width: 100%

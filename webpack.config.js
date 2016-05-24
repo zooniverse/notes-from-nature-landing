@@ -2,6 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import nib from 'nib';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 module.exports = {
 
@@ -10,7 +11,7 @@ module.exports = {
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
     'webpack-hot-middleware/client?reload=true',
-    path.join(__dirname, 'src/index.js'),
+    path.join(__dirname, 'src/index.jsx'),
   ],
 
   output: {
@@ -30,8 +31,11 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development'),
+      'process.env.NODE_ENV': JSON.stringify('staging'),
     }),
+    new CopyWebpackPlugin([
+      { from: 'src/images/' },
+    ]),
   ],
 
   resolve: {
