@@ -56,7 +56,7 @@ export const expeditions = {
       major institutions, showcasing the stunning diversity of insect life in our world.
     `,
     image: 'Calbug_Essig_Museum_Collections.jpg',
-    info: '',
+    info: 'http://calbug.berkeley.edu/',
   },
   'Calbug_CalBug Bee Flies Expedition': {
     snippet: `
@@ -66,7 +66,7 @@ export const expeditions = {
       of bee flies sometimes resemble bees, which is how they got their common name.
     `,
     image: 'Calbug_bee_flies_expedition.jpg',
-    info: '',
+    info: 'http://calbug.berkeley.edu/',
   },
 };
 
