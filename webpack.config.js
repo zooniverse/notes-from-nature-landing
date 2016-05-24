@@ -39,6 +39,9 @@ module.exports = {
   ],
 
   resolve: {
+    alias: {
+      expeditions: './images/expeditions',
+    },
     extensions: ['', '.js', '.jsx', '.styl'],
     modulesDirectories: ['.', 'node_modules'],
   },
