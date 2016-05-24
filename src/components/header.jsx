@@ -13,7 +13,7 @@ class Header extends Component {
         <div className="header-links">
           <Link className={'first'} activeStyle={ activeStyle } to="/">Get Started</Link>
           <Link activeStyle={ activeStyle } to="/about">About</Link>
-          <a href="https://talk.notesfromnature.org">Discuss</a>
+          <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature-relaunch/talk">Talk</a>
           <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
           {inactiveWorkflows.length
             ? <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
