@@ -43,7 +43,7 @@ const ActiveExpeditions = ({ params, workflows }) => {
                 </a>
                 {expInfo.info ?
                   <a href={`${expInfo.info}`} className="more-info" zIndex="10"
-                    aria-label="More information"
+                    aria-label="More information" target="_blank"
                   >
                       <i className="fa fa-info-circle" aria-hidden="true"></i>
                     </a>
