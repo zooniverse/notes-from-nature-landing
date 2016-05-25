@@ -18,6 +18,10 @@ export const LandingStatistics = ({ project, workflows }) =>
       <div className="numbers">{project.subjects_count.toLocaleString()}</div>
       <div className="subtitle">Subjects</div>
     </div>
+    <div>
+      <div className="numbers">{project.retired_subjects_count.toLocaleString()}</div>
+      <div className="subtitle">Retired Subjects</div>
+    </div>
   </div>;
 
 LandingStatistics.propTypes = {
