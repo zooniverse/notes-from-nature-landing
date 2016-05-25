@@ -38,7 +38,9 @@ const ActiveExpeditions = ({ params, workflows }) => {
                   <div className="snippet">{expInfo.snippet}</div>
                   <div className="label">
                     <div>{name}</div>
-                    <div className="completeness">{workflow.completeness}% complete</div>
+                    <div className="completeness">
+                      {workflow.completeness.toFixed(2)}% complete
+                    </div>
                   </div>
                 </a>
                 {expInfo.info ?
