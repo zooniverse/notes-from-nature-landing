@@ -5,6 +5,8 @@ const initialState = {
   project: {
     subjects_count: 0,
     classifiers_count: 0,
+    classifications_count: 0,
+    retired_subjects_count: 0,
   },
 };
 
