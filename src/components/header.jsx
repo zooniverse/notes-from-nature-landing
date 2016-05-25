@@ -11,7 +11,9 @@ const Header = ({ active, inactiveWorkflows }) =>
     <div className="header-links">
       <Link className={'first'} activeStyle={ activeStyle } to="/">Get Started</Link>
       <Link activeStyle={ activeStyle } to="/about">About</Link>
-      <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature-relaunch/talk">
+      <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature-relaunch/talk"
+        target="_blank"
+      >
         Talk
       </a>
       <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
