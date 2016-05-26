@@ -1,6 +1,7 @@
 import auth from 'panoptes-client/lib/auth';
 import oauth from 'panoptes-client/lib/oauth';
 import * as types from '../constants/login-actions';
+import { config } from 'constants/config';
 
 export function setLoginUser(user) {
   return (dispatch) => dispatch({ type: types.SET_LOGIN_USER, user });
@@ -13,7 +14,7 @@ export function checkLoginUser() {
 
 // Returns a login page URL for the user to navigate to.
 export function loginToPanoptes() {
-  return () => oauth.signIn(window.location.href.split('#')[0]);
+  return () => oauth.signIn(config.panoptesReturnUrl);
 }
 
 export function logoutFromPanoptes() {
