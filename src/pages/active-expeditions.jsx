@@ -29,6 +29,7 @@ const ActiveExpeditions = ({ params, workflows }) => {
           {activeWorkflows.map((workflow, i) => {
             const expInfo = expeditionInfo(workflow.display_name);
             const name = workflow.display_name.replace(`${group}_`, '');
+            const percent = workflow.completeness * 100.0;
             return (
               <div className="tile" key={i}>
                 <a href={`${config.workflowUrl}workflow=${workflow.id}`}
@@ -39,7 +40,7 @@ const ActiveExpeditions = ({ params, workflows }) => {
                   <div className="label">
                     <div>{name}</div>
                     <div className="completeness">
-                      {workflow.completeness.toFixed(2)}% complete
+                      {percent.toFixed(2)}% complete
                     </div>
                   </div>
                 </a>
@@ -47,8 +48,8 @@ const ActiveExpeditions = ({ params, workflows }) => {
                   <a href={`${expInfo.info}`} className="more-info" zIndex="10"
                     aria-label="More information" target="_blank"
                   >
-                      <i className="fa fa-info-circle" aria-hidden="true"></i>
-                    </a>
+                    <i className="fa fa-info-circle" aria-hidden="true"></i>
+                  </a>
                   : ''
                 }
               </div>
