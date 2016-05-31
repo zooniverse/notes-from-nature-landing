@@ -1,6 +1,5 @@
 .about
   font-family: helvetica
-  flex-wrap: wrap
   background: white
 
   .about-title
@@ -11,21 +10,19 @@
       color: black
 
   .about-content
-    padding: 0 60px 0 20px
+    padding: 0 20px
+
+    img
+      float: right
+      border: 4px solid #ccc
+      height: 100%
+      margin: 0 0 4px 8px
 
     h3
-      padding: 10px 0 5px 0
+      padding: 10px 0 4px 0
 
     .paragraph-and-image
-      display: flex
       flex-direction: row
-
-      img
-        border: 4px solid #ccc
-        height: 100%
-
-      p
-        flex: 1
 
     a
       color: black
@@ -34,4 +31,11 @@
 
     p
       margin: 0 10px
+      padding: 4px 0
       margin-bottom: 1em;
+
+    @media screen and (max-width: 420px)
+      img
+        width: 200px
+        margin-bottom: 8px
+        float: none
