@@ -1,9 +1,9 @@
 import React from 'react';
 
 export const LandingReasons = () =>
-  <div className="why">
+  <div className="reasons">
     <h3 className="reasons-title">Why should you get involved?</h3>
-    <div className="reasons">
+    <div className="reason">
       <div>
         <img src="landing/home_icon_bird.png" alt="avian best friend" />
         <h3>To improve our world.</h3>
