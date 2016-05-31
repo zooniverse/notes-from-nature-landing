@@ -7,7 +7,7 @@ const LandingExpeditionGroups = ({ workflows }) => {
   const activeGroups = expeditionGroups.filter(
     e => workflows.some(w => w.display_name.startsWith(e.prefix)));
   return (
-    <div className="genera">
+    <div className="expedition-groups">
       <h3>Choose a Group and Start Transcribing!</h3>
       <div className="links">
         {activeGroups.map((expedition, i) =>

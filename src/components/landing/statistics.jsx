@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 export const LandingStatistics = ({ project, workflows }) =>
-  <div className="counters">
+  <div className="statistics">
     <div>
       <div className="numbers">{workflows.length}</div>
       <div className="subtitle">Expeditions Available</div>
