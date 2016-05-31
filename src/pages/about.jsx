@@ -13,7 +13,7 @@ export const About = () =>
     </div>
     <div className="about-content">
       <h2>The Notes from Nature Project</h2>
-      <img src="about/sernec.jpg" />
+      <img src="about/sernec.jpg" alt="Preparing a specimen" />
       <p>
         People have been collecting specimens from the natural world for centuries.
         Today, there are anywhere from 2-10 billion specimens housed in natural history museums
