@@ -107,7 +107,7 @@ export const footer = {
           Privacy Policy
         </a>
         |
-        <a href="https://github.com/zooniverse/notesFromNature" target="_blank">
+        <a href="https://github.com/zooniverse/notes-from-nature-landing" target="_blank">
           Source &amp; Bugs
         </a>
       </p>
