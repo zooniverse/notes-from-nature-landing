@@ -60,13 +60,13 @@ export const About = () =>
         transcribed? If so, onwards.
       </p>
       <p>
-        For now, the first step is to contact the Notes from Nature project manager,
-        Michael Denslow (michael.denslow at gmail.com), who can provide you with the full details
-        needed to get a project together. In a nutshell, Notes from Nature is built on top of the
+        For now, the first step is to contact the Notes from Nature project manager, Michael
+        Denslow (michael.denslow at gmail.com), who can provide you with the full details needed to
+        get a project together. In a nutshell, Notes from Nature is built on top of the
         Zooniverse's Project Builder, which greatly simplifies creation of projects. With our new
         system, you can spin up a project in minutes to hours. All you need are images you want
-        transcribed and a clear idea of what fields you want to capture.  We will have more details
-        shortly.
+        transcribed and a clear idea of what fields you want to capture. We will have more detailed
+        tutorials available soon that fully explains the process of getting a project together.
       </p>
     </div>
     <Contributors />
