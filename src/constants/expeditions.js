@@ -68,6 +68,16 @@ export const expeditions = {
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     info: 'http://calbug.berkeley.edu/',
   },
+  'Butterfly_New World Swallowtail Butterflies': {
+    snippet: `
+      I am interested in how climate change has shaped the evolutionary history of New World
+      Swallowtail Butterflies. The museum specimens in this collection provide a detailed record
+      of the geographical variation and distribution of butterfly species, with which I can better
+      understand their history.
+    `,
+    image: 'Butterfly_Papilio.png',
+    info: 'http://hannahlowens.weebly.com/',
+  },
 };
 
 export function expeditionInfo(key) {
