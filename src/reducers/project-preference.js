@@ -4,12 +4,12 @@ const initialState = {
   projectPrefernceFetched: false,
   mock: {
     workflows: [
-      { 2382: { count: 5 } },   // Inactive - Bugs
-      { 2318: { count: 6 } },   // Mint
-      { 2321: { count: 7 } },   // Laurel
-      { 2322: { count: 8 } },   // USF
-      { 2324: { count: 9 } },   // Pinned
-      { 2399: { count: 10 } },   // Butterflies
+      { count: 5, display_name: 'Herbarium_WeDigFLPlants\' Mints of Florida—More than Mojitos' },
+      { count: 6, display_name: 'Herbarium_WeDigFLPlants\' Laurels of Florida—Fight Laurel Wilt' },
+      { count: 7, display_name: 'Herbarium_University of South Florida' },
+      { count: 8, display_name: 'Pinned Specimen_CalBug Bee Flies' },
+      { count: 9, display_name: 'Butterfly_New World Swallowtail Butterflies' },
+      { count: 10, display_name: 'Calbug_Essig Museum Collection' },
     ],
   },
 };
