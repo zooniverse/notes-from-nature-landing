@@ -22,7 +22,7 @@ class HeaderAuth extends Component {
   }
 
   logout() {
-    return this.props.dispatch(logoutFromPanoptes());
+    this.props.dispatch(logoutFromPanoptes());
   }
 
   render() {
@@ -36,6 +36,11 @@ HeaderAuth.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object,
   initialized: PropTypes.bool,
+};
+
+HeaderAuth.defaultProps = {
+  user: null,
+  initialized: false,
 };
 
 function mapStateToProps(state) {
