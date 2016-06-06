@@ -1,12 +1,11 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-// import HeaderAuth from 'header/header-auth';
+import HeaderAuth from 'header/header-auth';
 
 const activeStyle = { color: '#96f132' };
-// ? <Link activeStyle={{ color: activeStyle }} to="/field-book">Field Book</Link>
 
-const Header = ({ active, inactiveWorkflows }) =>
+const Header = ({ active, inactiveWorkflows, user }) =>
   <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
     <div className="header-links">
       <Link className={'first'} activeStyle={ activeStyle } to="/">Get Started</Link>
@@ -22,16 +21,22 @@ const Header = ({ active, inactiveWorkflows }) =>
       >
         Statistics
       </a>
-      {inactiveWorkflows.length ?
-        <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
-          Completed Expeditions
-        </Link>
+      {inactiveWorkflows.length
+        ? <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
+            Completed Expeditions
+          </Link>
+        : ''
+      }
+      {user
+        ? <Link activeStyle={{ color: activeStyle }} to="/field-book" className="wide">
+            Field Book
+          </Link>
         : ''
       }
       <div className="last">&nbsp;</div>
+      <HeaderAuth />
     </div>
   </div>;
-  // <HeaderAuth />
 
 Header.propTypes = {
   dispatch: PropTypes.func,
