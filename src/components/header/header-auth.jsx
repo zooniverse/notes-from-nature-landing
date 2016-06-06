@@ -22,7 +22,7 @@ class HeaderAuth extends Component {
   }
 
   logout() {
-    this.props.dispatch(logoutFromPanoptes());
+    return this.props.dispatch(logoutFromPanoptes());
   }
 
   render() {
