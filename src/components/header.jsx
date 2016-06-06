@@ -28,7 +28,7 @@ const Header = ({ active, inactiveWorkflows, user }) =>
         : ''
       }
       {user
-        ? <Link activeStyle={{ color: activeStyle }} to="/field-book" className="wide">
+        ? <Link activeStyle={ activeStyle } to="/field-book" className="wide">
             Field Book
           </Link>
         : ''
