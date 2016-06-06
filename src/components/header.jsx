@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-// import HeaderAuth from 'header/header-auth';
+import HeaderAuth from 'header/header-auth';
 
 const activeStyle = { color: '#96f132' };
 // ? <Link activeStyle={{ color: activeStyle }} to="/field-book">Field Book</Link>
@@ -29,9 +29,9 @@ const Header = ({ active, inactiveWorkflows }) =>
         : ''
       }
       <div className="last">&nbsp;</div>
+      <HeaderAuth />
     </div>
   </div>;
-  // <HeaderAuth />
 
 Header.propTypes = {
   dispatch: PropTypes.func,

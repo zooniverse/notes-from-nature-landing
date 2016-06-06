@@ -38,6 +38,11 @@ HeaderAuth.propTypes = {
   initialized: PropTypes.bool,
 };
 
+HeaderAuth.defaultProps = {
+  user: null,
+  initialized: false,
+};
+
 function mapStateToProps(state) {
   return {
     user: state.login.user,
