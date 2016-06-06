@@ -1,5 +1,5 @@
 export const expeditions = {
-  default: {
+  __DEFAULT__: {
     snippet: 'We need your help with transcrbing these specimens!',
     image: 'default_expedition.png',
     info: '',
@@ -81,5 +81,5 @@ export const expeditions = {
 };
 
 export function expeditionInfo(key) {
-  return expeditions[key] ? expeditions[key] : expeditions.default;
+  return expeditions[key] ? expeditions[key] : expeditions.__DEFAULT__;
 }
