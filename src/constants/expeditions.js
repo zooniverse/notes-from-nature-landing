@@ -1,8 +1,9 @@
 export const expeditions = {
-  __DEFAULT__: {
+  DEFAULT: {
+    default: true,
     snippet: 'We need your help with transcrbing these specimens!',
     image: 'default_expedition.png',
-    info: '',
+    link: '',
   },
   'Herbarium_WeDigFLPlants\' Mints of Florida—More than Mojitos': {
     snippet: `
@@ -11,7 +12,7 @@ export const expeditions = {
       herbaria.  Help the WeDigFLPlants group transcribe specimens of the flora they dig.
     `,
     image: 'Herbarium_WeDigFLPlants_Mints_of_Florida.jpg',
-    info: 'http://biospex.org/project/wedigflplants',
+    link: 'http://biospex.org/project/wedigflplants',
   },
   'Herbarium_WeDigFLPlants\' Laurels of Florida—Fight Laurel Wilt': {
     snippet: `
@@ -20,7 +21,7 @@ export const expeditions = {
       Florida's 15 native and naturalized laurel species to build the historical baseline.
     `,
     image: 'Herbarium_WeDigFLPlants_Laurels_of_Florida.jpg',
-    info: 'http://biospex.org/project/wedigflplants',
+    link: 'http://biospex.org/project/wedigflplants',
   },
   'Herbarium_Florida State University': {
     snippet: `
@@ -30,7 +31,7 @@ export const expeditions = {
       and national scales.
     `,
     image: 'Herbarium_Florida_State_University.jpg',
-    info: '',
+    link: '',
   },
   'Herbarium_Southeastern Louisiana University': {
     snippet: `
@@ -39,7 +40,7 @@ export const expeditions = {
       information for broader understanding of biodiversity at regional and national scales.
     `,
     image: 'Herbarium_Southeastern_Louisiana_University.jpg',
-    info: '',
+    link: '',
   },
   'Herbarium_University of South Florida': {
     snippet: `
@@ -48,7 +49,7 @@ export const expeditions = {
       information for broader understanding of biodiversity at regional and national scales.
     `,
     image: 'Herbarium_University_of_South_Florida.jpg',
-    info: '',
+    link: '',
   },
   'Calbug_Essig Museum Collections': {
     snippet: `
@@ -56,7 +57,7 @@ export const expeditions = {
       major institutions, showcasing the stunning diversity of insect life in our world.
     `,
     image: 'Calbug_Essig_Museum_Collections.jpg',
-    info: 'http://calbug.berkeley.edu/',
+    link: 'http://calbug.berkeley.edu/',
   },
   'Pinned Specimen_CalBug Bee Flies': {
     snippet: `
@@ -66,7 +67,7 @@ export const expeditions = {
       of bee flies sometimes resemble bees, which is how they got their common name.
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
-    info: 'http://calbug.berkeley.edu/',
+    link: 'http://calbug.berkeley.edu/',
   },
   'Butterfly_New World Swallowtail Butterflies': {
     snippet: `
@@ -76,10 +77,11 @@ export const expeditions = {
       understand their history.
     `,
     image: 'Butterfly_Papilio.png',
-    info: 'http://hannahlowens.weebly.com/',
+    link: 'http://hannahlowens.weebly.com/',
   },
 };
 
-export function expeditionInfo(key) {
-  return expeditions[key] ? expeditions[key] : expeditions.__DEFAULT__;
-}
+Object.keys(expeditions).forEach((k) => {
+  expeditions[k].name = k.replace(/^[^_]+_/, '');
+  expeditions[k].group = k.replace(/_.+$/, '');
+});

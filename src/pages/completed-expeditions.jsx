@@ -1,9 +1,11 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import { expeditionInfo } from 'constants/expeditions';
 import Header from 'components/header';
 import { FatFooter } from 'components/fat-footer';
 import { Title } from 'components/title';
+import { findExpedition } from 'helpers/expeditions';
+import { HomeIcon } from 'components/icons/home';
 import dateformat from 'dateformat';
 
 const CompletedExpeditions = ({ inactiveWorkflows }) =>
@@ -12,25 +14,30 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
     <div className="completed-expeditions">
       <div className="completed-expeditions-title">
         <Title title="Completed Expeditions" />
+        <Link to={"/"} aria-label="Return Home">
+          <HomeIcon />
+        </Link>
       </div>
       <hr />
       <div className="tiles">
         {inactiveWorkflows.map((workflow, i) => {
-          const name = workflow.display_name.replace(/^[a-z0-9]+_/i, '');
-          const expInfo = expeditionInfo(workflow.display_name);
+          const expedition = findExpedition(workflow.display_name);
           const completed = dateformat(workflow.finished_at, 'mmmm d yyyy');
           return (
             <div className="tile" key={i}>
               <div className="completed-expedition">
-                <img src={ require(`../images/expeditions/${expInfo.image}`) } alt={name}></img>
-                <div className="snippet">{expInfo.snippet}</div>
+                <img src={ require(`../images/expeditions/${expedition.image}`) }
+                  alt={expedition.name}
+                >
+                </img>
+                <div className="snippet">{expedition.snippet}</div>
                 <div className="label">
-                  <div>{name}</div>
+                  <div>{expedition.name}</div>
                   <div className="completed">Completed: {completed}</div>
                 </div>
               </div>
-              {expInfo.info ?
-                <a href={`${expInfo.info}`} className="more-info" zIndex="10"
+              {expedition.link ?
+                <a href={`${expedition.link}`} className="more-info" zIndex="10"
                   aria-label="More information" target="_blank"
                 >
                   <i className="fa fa-info-circle" aria-hidden="true"></i>

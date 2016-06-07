@@ -4,45 +4,39 @@ import { InsectIcon } from 'components/icons/insect';
 import { FungusIcon } from 'components/icons/fungus';
 import { ButterflyIcon } from 'components/icons/butterfly';
 
-export const expeditionGroups = [
-  {
+export const expeditionGroups = {
+  Herbarium: {
     name: 'Herbaria',
-    prefix: 'Herbarium',
     icon: HerbIcon,
     badgeGroup: 'Plants',
   },
-  {
+  Calbug: {
     name: 'Bugs',
-    prefix: 'Calbug',
     icon: InsectIcon,
     badgeGroup: 'Bugs',
   },
-  {
+  'Pinned Specimen': {
     name: 'Pinned Specimen',
-    prefix: 'Pinned Specimen',
     icon: InsectIcon,
     badgeGroup: 'Bugs',
   },
-  {
+  Birds: {
     name: 'Birds',
-    prefix: 'Birds',
     icon: BirdIcon,
     badgeGroup: 'Birds',
   },
-  {
+  Macrofungi: {
     name: 'Macrofungi',
-    prefix: 'Macrofungi',
     icon: FungusIcon,
     badgeGroup: 'Macrofungi',
   },
-  {
+  Butterfly: {
     name: 'Butterflies',
-    prefix: 'Butterfly',
     icon: ButterflyIcon,
     badgeGroup: 'Bugs',
   },
-];
+};
 
-/* eslint "prefer-const": 0 */
-export let expeditionGroupMap = {};
-expeditionGroups.forEach(e => (expeditionGroupMap[e.prefix] = e));
+Object.keys(expeditionGroups).forEach((k) => {
+  expeditionGroups[k].prefix = k;
+});
