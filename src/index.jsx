@@ -17,8 +17,7 @@ import FieldBook from 'pages/field-book';
 import ActiveExpeditions from 'pages/active-expeditions';
 import CompletedExpeditions from 'pages/completed-expeditions';
 
-/* eslint "no-unused-vars": 0 */
-import Styles from './styles/main.styl';
+import Styles from './styles/main.styl';  // eslint-disable-line no-unused-vars
 
 if (process.env.NODE_ENV === 'staging') { a11y(React); }
 

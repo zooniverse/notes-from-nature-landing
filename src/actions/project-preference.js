@@ -13,7 +13,7 @@ function projectPreferenceDataReceived(json) {
 export function fetchProjectPreferenceData(userId) {
   return dispatch => {
     dispatch(projectPreferenceDataRequested());
-    apiClient.type('projects').get({ project_id: config.projectId, user_id: userId })
+    apiClient.type('project_preferences').get({ project_id: config.projectId, user_id: userId })
       .then(json => dispatch(projectPreferenceDataReceived(json)));
   };
 }

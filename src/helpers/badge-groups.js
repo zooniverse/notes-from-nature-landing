@@ -1,18 +1,31 @@
 import { expeditionGroups } from 'constants/expedition-groups';
 import { findExpedition } from 'helpers/expeditions';
-// import { badgeGroups } from 'constants/badge-groups';
+import { badgeGroups } from 'constants/badge-groups';
 
-export function countsByBadgeGroup(userWorkflowCounts) {
-  const counts = { total: 0 };
-  userWorkflowCounts.forEach((workflow) => {
+function countsByBadgeGroup(workflows, activityCountByWorkflow) {
+  const counts = {};
+  Object.keys(activityCountByWorkflow).forEach(id => {
+    const workflow = workflows.find(w => w.id === id);
     const expedition = findExpedition(workflow.display_name);
-    if (!expedition.default) {
-      const expeditionGroup = expeditionGroups[expedition.group];
-      const badgeGroup = expeditionGroup.badgeGroup;
-      if (!counts[badgeGroup]) { counts[badgeGroup] = 0; }
-      counts[badgeGroup] += workflow.count;
-      counts.total += workflow.count;
-    }
+    const badgeGroup = expeditionGroups[expedition.group].badgeGroup;
+    if (!counts[badgeGroup]) { counts[badgeGroup] = 0; }
+    counts[badgeGroup] += activityCountByWorkflow[id];
   });
   return counts;
+}
+
+export function earnedBadges(workflows, activityCountByWorkflow) {
+  const counts = countsByBadgeGroup(workflows, activityCountByWorkflow);
+  let earned = [];
+  Object.keys(counts).sort().forEach(k => {
+    console.log(k);
+    badgeGroups[k].filter(b => b.count <= counts[k]).forEach(b => earned.push(b));
+  });
+  earned = earned.concat(badgeGroups.insect);
+  return earned;
+}
+
+export function totalCount(activityCountByWorkflow) {
+  return Object.keys(activityCountByWorkflow).reduce(
+    (prev, curr) => prev + activityCountByWorkflow[curr], 0);
 }

@@ -8,32 +8,32 @@ export const expeditionGroups = {
   Herbarium: {
     name: 'Herbaria',
     icon: HerbIcon,
-    badgeGroup: 'Plants',
+    badgeGroup: 'plant',
   },
   Calbug: {
     name: 'Bugs',
     icon: InsectIcon,
-    badgeGroup: 'Bugs',
+    badgeGroup: 'insect',
   },
   'Pinned Specimen': {
     name: 'Pinned Specimen',
     icon: InsectIcon,
-    badgeGroup: 'Bugs',
+    badgeGroup: 'insect',
   },
   Birds: {
     name: 'Birds',
     icon: BirdIcon,
-    badgeGroup: 'Birds',
+    badgeGroup: 'bird',
   },
   Macrofungi: {
     name: 'Macrofungi',
     icon: FungusIcon,
-    badgeGroup: 'Macrofungi',
+    badgeGroup: 'fungus',
   },
   Butterfly: {
     name: 'Butterflies',
     icon: ButterflyIcon,
-    badgeGroup: 'Bugs',
+    badgeGroup: 'insect',
   },
 };
 

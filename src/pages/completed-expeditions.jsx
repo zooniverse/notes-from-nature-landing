@@ -14,7 +14,7 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
     <div className="completed-expeditions">
       <div className="completed-expeditions-title">
         <Title title="Completed Expeditions" />
-        <Link to={"/"} aria-label="Return Home">
+        <Link className="home-alone" to={"/"} aria-label="Return Home">
           <HomeIcon />
         </Link>
       </div>
