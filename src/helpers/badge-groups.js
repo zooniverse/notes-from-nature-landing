@@ -16,12 +16,11 @@ function countsByBadgeGroup(workflows, activityCountByWorkflow) {
 
 export function earnedBadges(workflows, activityCountByWorkflow) {
   const counts = countsByBadgeGroup(workflows, activityCountByWorkflow);
-  let earned = [];
+  const earned = [];
   Object.keys(counts).sort().forEach(k => {
-    console.log(k);
     badgeGroups[k].filter(b => b.count <= counts[k]).forEach(b => earned.push(b));
   });
-  earned = earned.concat(badgeGroups.insect);
+  // earned = earned.concat(badgeGroups.insect);
   return earned;
 }
 
