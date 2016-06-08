@@ -1,19 +1,19 @@
 import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
-import * as types from '../constants/project-actions';
+import * as types from '../constants/actions';
 
-function projectDataRequested() {
-  return { type: types.PROJECT_DATA_REQUESTED };
+function projectRequested() {
+  return { type: types.PROJECT_REQUESTED };
 }
 
-function projectDataReceived(json) {
-  return { type: types.PROJECT_DATA_RECEIVED, json };
+function projectReceived(json) {
+  return { type: types.PROJECT_RECEIVED, json };
 }
 
-export function fetchProjectData() {
+export function fetchProject() {
   return dispatch => {
-    dispatch(projectDataRequested());
+    dispatch(projectRequested());
     apiClient.type('projects').get(config.projectId)
-      .then(json => dispatch(projectDataReceived(json)));
+      .then(json => dispatch(projectReceived(json)));
   };
 }

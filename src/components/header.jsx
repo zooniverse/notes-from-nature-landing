@@ -50,7 +50,7 @@ function mapStateToProps(state) {
   return {
     user: state.login.user,
     initialized: state.login.initialized,
-    inactiveWorkflows: state.workflow.inactiveWorkflows,
+    inactiveWorkflows: state.workflows.inactiveWorkflows,
   };
 }
 export default connect(mapStateToProps)(Header);

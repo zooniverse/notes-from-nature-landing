@@ -1,4 +1,4 @@
-import * as types from '../constants/workflow-actions';
+import * as types from '../constants/actions';
 
 const initialState = {
   workflowsFetched: false,
@@ -6,7 +6,7 @@ const initialState = {
   inactiveWorkflows: [],
 };
 
-export function workflow(state = initialState, action) {
+export function workflows(state = initialState, action) {
   let nextState;
   switch (action.type) {
 

@@ -20,7 +20,6 @@ export function earnedBadges(workflows, activityCountByWorkflow) {
   Object.keys(counts).sort().forEach(k => {
     badgeGroups[k].filter(b => b.count <= counts[k]).forEach(b => earned.push(b));
   });
-  // earned = earned.concat(badgeGroups.insect);
   return earned;
 }
 

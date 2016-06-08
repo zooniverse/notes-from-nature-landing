@@ -70,7 +70,7 @@ ActiveExpeditions.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    workflows: state.workflow.workflows,
+    workflows: state.workflows.workflows,
   };
 }
 

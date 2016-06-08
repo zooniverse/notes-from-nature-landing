@@ -1,4 +1,4 @@
-import * as types from '../constants/project-actions';
+import * as types from '../constants/actions';
 
 const initialState = {
   projectFetched: false,
@@ -14,10 +14,10 @@ export function project(state = initialState, action) {
   let nextState;
   switch (action.type) {
 
-    case types.PROJECT_DATA_REQUESTED:
+    case types.PROJECT_REQUESTED:
       return Object.assign({}, state, { projectFetched: false });
 
-    case types.PROJECT_DATA_RECEIVED:
+    case types.PROJECT_RECEIVED:
       nextState = Object.assign({}, state, {
         projectFetched: true,
         project: action.json,

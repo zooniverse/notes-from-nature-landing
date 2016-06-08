@@ -1,4 +1,4 @@
-import * as types from '../constants/login-actions';
+import * as types from '../constants/actions';
 
 const initialState = {
   user: {},

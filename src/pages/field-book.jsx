@@ -5,14 +5,16 @@ import Header from 'components/header';
 import { FatFooter } from 'components/fat-footer';
 import { Title } from 'components/title';
 import { HomeIcon } from 'components/icons/home';
-import { fetchProjectPreferenceData } from 'actions/project-preference';
+import { fetchProjectPreferences } from 'actions/project-preferences';
+import { fetchClassifications } from 'actions/classifications';
 import { earnedBadges, totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
 
 class FieldBook extends Component {
   componentDidMount() {
     if (this.props.user) {
-      this.props.dispatch(fetchProjectPreferenceData(this.props.user.id));
+      this.props.dispatch(fetchProjectPreferences(this.props.user.id));
+      this.props.dispatch(fetchClassifications(this.props.user.id));
     }
   }
 
@@ -31,7 +33,8 @@ class FieldBook extends Component {
             </Link>
           </div>
           <hr />
-          <h2>{`You have transcribed ${total} records`}</h2>
+          <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
+          <h2>You have earned these badges</h2>
           <div className="badges">
             { badges.map((b, i) =>
               <div className="badge" key={i}>
@@ -60,8 +63,8 @@ FieldBook.propTypes = {
 function mapStateToProps(state) {
   return {
     user: state.login.user,
-    workflows: state.workflow.workflows,
-    activity_count_by_workflow: state.projectPreference.activity_count_by_workflow,
+    workflows: state.workflows.workflows,
+    activity_count_by_workflow: state.projectPreferences.activity_count_by_workflow,
   };
 }
 

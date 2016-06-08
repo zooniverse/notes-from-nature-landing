@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
 
 import * as project from './project';
-import * as projectPreference from './project-preference';
-import * as workflow from './workflow';
+import * as projectPreferences from './project-preferences';
+import * as workflows from './workflows';
 import * as login from './login';
+import * as classifications from './classifications';
 
-const reducers = Object.assign({}, project, workflow, login, projectPreference);
+const reducers = Object.assign({}, classifications, login, project, projectPreferences, workflows);
 export default combineReducers(reducers);

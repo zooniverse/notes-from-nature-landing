@@ -1,6 +1,6 @@
 import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
-import * as types from '../constants/workflow-actions';
+import * as types from '../constants/actions';
 
 function workflowsRequested() {
   return { type: types.WORKFLOWS_REQUESTED };
