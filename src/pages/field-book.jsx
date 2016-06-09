@@ -19,9 +19,10 @@ class FieldBook extends Component {
   }
 
   render() {
-    const { user, workflows, activity_count_by_workflow } = this.props;
+    const { user, workflows, classifications, activity_count_by_workflow } = this.props;
     const badges = earnedBadges(workflows, activity_count_by_workflow);
     const total = totalCount(activity_count_by_workflow);
+    console.log(classifications);
     return (
       <div>
         <Header />
@@ -57,6 +58,7 @@ FieldBook.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object.isRequired,
   workflows: PropTypes.array,
+  classifications: PropTypes.array,
   activity_count_by_workflow: PropTypes.object,
 };
 
@@ -64,6 +66,7 @@ function mapStateToProps(state) {
   return {
     user: state.login.user,
     workflows: state.workflows.workflows,
+    classifications: state.classifications.classifications,
     activity_count_by_workflow: state.projectPreferences.activity_count_by_workflow,
   };
 }
