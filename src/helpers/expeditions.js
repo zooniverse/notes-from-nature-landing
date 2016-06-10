@@ -6,3 +6,8 @@ export function findExpedition(key) {
 
 export const expeditionsInGroup = (group, workflows) =>
   workflows.filter(e => e.display_name.startsWith(group));
+
+export function recentExpeditions(/* collections */) {
+  // Get unique expeditions
+  // Get images and links for expeditions
+}

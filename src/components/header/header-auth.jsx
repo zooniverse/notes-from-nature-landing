@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { checkLoginUser, loginToPanoptes, logoutFromPanoptes } from '../../actions/login';
-import { LoginButton } from './login-button';
-import { LogoutButton } from './logout-button';
+import { checkLoginUser, loginToPanoptes, logoutFromPanoptes } from 'actions/login';
+import { LoginButton } from 'components/header/login-button';
+import { LogoutButton } from 'components/header/logout-button';
 
 class HeaderAuth extends Component {
   constructor() {

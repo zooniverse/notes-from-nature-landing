@@ -33,7 +33,7 @@ const ActiveExpeditions = ({ params, workflows }) => {
                 <a href={`${config.workflowUrl}workflow=${workflow.id}`}
                   aria-label={`Link to ${expedition.name}`}
                 >
-                  <img src={ require(`../images/expeditions/${expedition.image}`) }
+                  <img src={ require(`images/expeditions/${expedition.image}`) }
                     alt={expedition.name}
                   >
                   </img>

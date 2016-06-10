@@ -1,8 +1,8 @@
-import * as types from '../constants/actions';
+import * as types from 'constants/actions';
 
 const initialState = {
   classificationsFetched: false,
-  classifications: {},
+  classifications: [],
 };
 
 export function classifications(state = initialState, action) {

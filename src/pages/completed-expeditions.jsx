@@ -1,11 +1,9 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import Header from 'components/header';
 import { FatFooter } from 'components/fat-footer';
 import { Title } from 'components/title';
 import { findExpedition } from 'helpers/expeditions';
-import { HomeIcon } from 'components/icons/home';
 import dateformat from 'dateformat';
 
 const CompletedExpeditions = ({ inactiveWorkflows }) =>
@@ -14,9 +12,6 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
     <div className="completed-expeditions">
       <div className="completed-expeditions-title">
         <Title title="Completed Expeditions" />
-        <Link className="home-alone" to={"/"} aria-label="Return Home">
-          <HomeIcon />
-        </Link>
       </div>
       <hr />
       <div className="tiles">
@@ -26,7 +21,7 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
           return (
             <div className="tile" key={i}>
               <div className="completed-expedition">
-                <img src={ require(`../images/expeditions/${expedition.image}`) }
+                <img src={ require(`images/expeditions/${expedition.image}`) }
                   alt={expedition.name}
                 >
                 </img>

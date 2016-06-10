@@ -1,6 +1,6 @@
 import auth from 'panoptes-client/lib/auth';
 import oauth from 'panoptes-client/lib/oauth';
-import * as types from '../constants/actions';
+import * as types from 'constants/actions';
 import { config } from 'constants/config';
 
 export function setLoginUser(user) {
