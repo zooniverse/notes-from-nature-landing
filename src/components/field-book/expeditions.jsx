@@ -1,21 +1,20 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { earnedBadges } from 'helpers/badge-groups';
-import { pluralize } from 'helpers/text';
+import { recentExpeditions } from 'helpers/expeditions';
+import { config } from 'constants/config';
 
-const FieldBookExpeditions = ({ workflows, activity_count_by_workflow }) => {
-  const badges = earnedBadges(workflows, activity_count_by_workflow);
+const FieldBookExpeditions = ({ classifications, workflows }) => {
+  const expeditions = recentExpeditions(workflows, classifications);
   return (
     <div>
-      <h2>You have earned these badges</h2>
+      <h2>Recent Expeditions</h2>
       <div className="expeditions">
-        { badges.map((b, i) =>
-          <div className="badge" key={i}>
-            <img src={require(`images/badges/${b.badge}`)} alt={`${b.name}`}></img>
-            <div className="description">
-              {`The ${b.name} badge is earned for transcrbing ${b.count} ${b.group}
-                ${pluralize('records', b.count)}`}
-            </div>
+        { expeditions.map((e, i) =>
+          <div className="expedition" key={i}>
+            <a href={`${config.workflowUrl}workflow=${e.id}`} aria-label={`Link to ${e.name}`}>
+              <img src={ require(`images/expeditions/${e.image}`) } alt={e.name}></img>
+              <div className="label"><div>{e.name}</div></div>
+            </a>
           </div>
         )}
       </div>
@@ -25,13 +24,13 @@ const FieldBookExpeditions = ({ workflows, activity_count_by_workflow }) => {
 
 FieldBookExpeditions.propTypes = {
   workflows: PropTypes.array,
-  activity_count_by_workflow: PropTypes.object,
+  classifications: PropTypes.array,
 };
 
 function mapStateToProps(state) {
   return {
+    classifications: state.classifications.classifications,
     workflows: state.workflows.workflows,
-    activity_count_by_workflow: state.projectPreferences.activity_count_by_workflow,
   };
 }
 

@@ -11,18 +11,16 @@ const initialState = {
 };
 
 export function project(state = initialState, action) {
-  let nextState;
   switch (action.type) {
 
     case types.PROJECT_REQUESTED:
       return Object.assign({}, state, { projectFetched: false });
 
     case types.PROJECT_RECEIVED:
-      nextState = Object.assign({}, state, {
+      return Object.assign({}, state, {
         projectFetched: true,
         project: action.json,
       });
-      return nextState;
 
     default:
       return state;
