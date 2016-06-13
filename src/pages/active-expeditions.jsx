@@ -9,7 +9,7 @@ import { HomeIcon } from 'components/icons/home';
 import { config } from 'constants/config';
 import { findExpedition, expeditionsInGroup } from 'helpers/expeditions';
 
-const ActiveExpeditions = ({ params, workflows }) => {
+const ActiveExpeditions = ({ params, activeWorkflows }) => {
   const { group } = params;
   const expeditionGroup = expeditionGroups[group];
   return (
@@ -25,7 +25,7 @@ const ActiveExpeditions = ({ params, workflows }) => {
         </div>
         <hr />
         <div className="tiles">
-          {expeditionsInGroup(group, workflows).map((workflow, i) => {
+          {expeditionsInGroup(group, activeWorkflows).map((workflow, i) => {
             const expedition = findExpedition(workflow.display_name);
             const percent = workflow.completeness * 100.0;
             return (
@@ -65,12 +65,12 @@ const ActiveExpeditions = ({ params, workflows }) => {
 
 ActiveExpeditions.propTypes = {
   params: PropTypes.object,
-  workflows: PropTypes.array,
+  activeWorkflows: PropTypes.array,
 };
 
 function mapStateToProps(state) {
   return {
-    workflows: state.workflows.workflows,
+    activeWorkflows: state.workflows.activeWorkflows,
   };
 }
 

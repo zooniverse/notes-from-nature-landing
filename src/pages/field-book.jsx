@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import Header from 'components/header';
 import { FatFooter } from 'components/fat-footer';
 import { Title } from 'components/title';
-import FieldBookBadges from 'components/field-book/badges';
-import FieldBookExpeditions from 'components/field-book/expeditions';
-import FieldBookTranscriptions from 'components/field-book/transcriptions';
+import { FieldBookBadges } from 'components/field-book/badges';
+import { FieldBookExpeditions } from 'components/field-book/expeditions';
+import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
 import { fetchProjectPreferences } from 'actions/project-preferences';
 import { fetchClassifications } from 'actions/classifications';
 import { totalCount } from 'helpers/badge-groups';
@@ -20,8 +20,8 @@ class FieldBook extends Component {
   }
 
   render() {
-    const { user, activity_count_by_workflow } = this.props;
-    const total = totalCount(activity_count_by_workflow);
+    const { user, allWorkflows, activityByWorkflow, classifications } = this.props;
+    const total = totalCount(activityByWorkflow);
     return (
       <div>
         <Header />
@@ -33,9 +33,9 @@ class FieldBook extends Component {
           <div className="statistics">
             <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
           </div>
-          <FieldBookExpeditions />
-          <FieldBookTranscriptions />
-          <FieldBookBadges />
+          <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
+          <FieldBookTranscriptions classifications={classifications} />
+          <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow} />
         </div>
         <FatFooter />
       </div>
@@ -46,13 +46,17 @@ class FieldBook extends Component {
 FieldBook.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object.isRequired,
-  activity_count_by_workflow: PropTypes.object,
+  allWorkflows: PropTypes.array,
+  classifications: PropTypes.array,
+  activityByWorkflow: PropTypes.object,
 };
 
 function mapStateToProps(state) {
   return {
     user: state.login.user,
-    activity_count_by_workflow: state.projectPreferences.activity_count_by_workflow,
+    allWorkflows: state.workflows.allWorkflows,
+    classifications: state.classifications.classifications,
+    activityByWorkflow: state.projectPreferences.activityByWorkflow,
   };
 }
 

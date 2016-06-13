@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 
-export const LandingStatistics = ({ project, workflows }) =>
+export const LandingStatistics = ({ project, activeWorkflows }) =>
   <div className="statistics">
     <div>
-      <div className="numbers">{workflows.length}</div>
+      <div className="numbers">{activeWorkflows.length}</div>
       <div className="subtitle">Expeditions Available</div>
     </div>
     <div>
@@ -26,5 +26,5 @@ export const LandingStatistics = ({ project, workflows }) =>
 
 LandingStatistics.propTypes = {
   project: PropTypes.object,
-  workflows: PropTypes.array,
+  activeWorkflows: PropTypes.array,
 };

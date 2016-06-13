@@ -2,20 +2,20 @@ import { expeditionGroups } from 'constants/expedition-groups';
 import { findExpedition } from 'helpers/expeditions';
 import { badgeGroups } from 'constants/badge-groups';
 
-function countsByBadgeGroup(workflows, activityCountByWorkflow) {
+function countsByBadgeGroup(workflows, activityByWorkflow) {
   const counts = {};
-  Object.keys(activityCountByWorkflow).forEach(id => {
+  Object.keys(activityByWorkflow).forEach(id => {
     const workflow = workflows.find(w => w.id === id);
     const expedition = findExpedition(workflow.display_name);
     const badgeGroup = expeditionGroups[expedition.group].badgeGroup;
     if (!counts[badgeGroup]) { counts[badgeGroup] = 0; }
-    counts[badgeGroup] += activityCountByWorkflow[id];
+    counts[badgeGroup] += activityByWorkflow[id];
   });
   return counts;
 }
 
-export function earnedBadges(workflows, activityCountByWorkflow) {
-  const counts = countsByBadgeGroup(workflows, activityCountByWorkflow);
+export function earnedBadges(allWorkflows, activityByWorkflow) {
+  const counts = countsByBadgeGroup(allWorkflows, activityByWorkflow);
   const earned = [];
   Object.keys(counts).sort().forEach(k => {
     badgeGroups[k].filter(b => b.count <= counts[k]).forEach(b => earned.push(b));
@@ -23,7 +23,7 @@ export function earnedBadges(workflows, activityCountByWorkflow) {
   return earned;
 }
 
-export function totalCount(activityCountByWorkflow) {
-  return Object.keys(activityCountByWorkflow).reduce(
-    (prev, curr) => prev + activityCountByWorkflow[curr], 0);
+export function totalCount(activityByWorkflow) {
+  return Object.keys(activityByWorkflow).reduce(
+    (prev, curr) => prev + activityByWorkflow[curr], 0);
 }

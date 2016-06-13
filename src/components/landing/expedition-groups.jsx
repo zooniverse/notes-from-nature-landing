@@ -1,13 +1,12 @@
 import React, { PropTypes } from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { activeExpeditionGroups } from 'helpers/expedition-groups';
 
-const LandingExpeditionGroups = ({ workflows }) =>
+export const LandingExpeditionGroups = ({ activeWorkflows }) =>
   <div className="expedition-groups">
-    <h3>Choose a Group and Start Transcribing!</h3>
+    <h1>Choose a Group and Start Transcribing!</h1>
     <div className="links">
-      {activeExpeditionGroups(workflows).map((group, i) =>
+      {activeExpeditionGroups(activeWorkflows).map((group, i) =>
         <Link to={ `/active-expeditions/${group.prefix}` } key={i}>
           { React.createElement(group.icon) }
         </Link>
@@ -16,13 +15,5 @@ const LandingExpeditionGroups = ({ workflows }) =>
   </div>;
 
 LandingExpeditionGroups.propTypes = {
-  workflows: PropTypes.array,
+  activeWorkflows: PropTypes.array,
 };
-
-function mapStateToProps(state) {
-  return {
-    workflows: state.workflows.workflows,
-  };
-}
-
-export default connect(mapStateToProps)(LandingExpeditionGroups);
