@@ -8,7 +8,7 @@ export const expeditionsInGroup = (group, allWorkflows) =>
   allWorkflows.filter(e => e.display_name.startsWith(group));
 
 export function recentExpeditions(allWorkflows, classifications) {
-  return classifications.map(c => c.links.workflow)
+  const recent = classifications.map(c => c.links.workflow)
     .filter((v, i, self) => self.indexOf(v) === i)
     .map(id => {
       const workflow = allWorkflows.find(w => w.id === id);
@@ -17,6 +17,8 @@ export function recentExpeditions(allWorkflows, classifications) {
       expedition.active = workflow.active;
       return expedition;
     });
+  if (recent.length > 4) { recent.length = 4; }
+  return recent;
 }
 
 export function recentTranscriptions(classifications) {
