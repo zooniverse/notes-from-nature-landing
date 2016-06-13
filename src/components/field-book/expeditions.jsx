@@ -8,12 +8,20 @@ export const FieldBookExpeditions = ({ classifications, allWorkflows }) =>
     <div className="expeditions">
       { recentExpeditions(allWorkflows, classifications).map((e, i) =>
         <div className="expedition" key={i}>
-          <a href={`${config.workflowUrl}workflow=${e.id}`} aria-label={`Link to ${e.name}`}>
-            <img src={ require(`images/expeditions/${e.image}`) } alt={e.name}></img>
-            <div className="label">
-              <div>{e.name}</div>
-            </div>
-          </a>
+          {e.active
+            ? <a href={`${config.workflowUrl}workflow=${e.id}`} aria-label={`Link to ${e.name}`}>
+                <img src={ require(`images/expeditions/${e.image}`) } alt={e.name}></img>
+                <div className="label">
+                  <div>{e.name}</div>
+                  </div>
+              </a>
+            : <div>
+                <img src={ require(`images/expeditions/${e.image}`) } alt={e.name}></img>
+                <div className="label">
+                  <div>{e.name}</div>
+                  </div>
+              </div>
+          }
         </div>
       )}
     </div>

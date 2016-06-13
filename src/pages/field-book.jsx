@@ -5,7 +5,7 @@ import { FatFooter } from 'components/fat-footer';
 import { Title } from 'components/title';
 import { FieldBookBadges } from 'components/field-book/badges';
 import { FieldBookExpeditions } from 'components/field-book/expeditions';
-import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
+// import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
 import { fetchProjectPreferences } from 'actions/project-preferences';
 import { fetchClassifications } from 'actions/classifications';
 import { totalCount } from 'helpers/badge-groups';
@@ -34,7 +34,6 @@ class FieldBook extends Component {
             <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
           </div>
           <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
-          <FieldBookTranscriptions classifications={classifications} />
           <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow} />
         </div>
         <FatFooter />
@@ -42,6 +41,8 @@ class FieldBook extends Component {
     );
   }
 }
+
+// <FieldBookTranscriptions classifications={classifications} />
 
 FieldBook.propTypes = {
   dispatch: PropTypes.func,

@@ -14,6 +14,7 @@ export function recentExpeditions(allWorkflows, classifications) {
       const workflow = allWorkflows.find(w => w.id === id);
       const expedition = findExpedition(workflow.display_name);
       expedition.id = workflow.id;
+      expedition.active = workflow.active;
       return expedition;
     });
 }
