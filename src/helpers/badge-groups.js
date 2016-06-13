@@ -20,7 +20,7 @@ export function earnedBadges(allWorkflows, activityByWorkflow) {
   Object.keys(counts).sort().forEach(k => {
     badgeGroups[k].filter(b => b.count <= counts[k]).forEach(b => earned.push(b));
   });
-  return earned;
+  return earned.reverse();
 }
 
 export function totalCount(activityByWorkflow) {
