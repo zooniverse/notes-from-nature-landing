@@ -1,18 +1,18 @@
 import React, { PropTypes } from 'react';
-import { recentTranscriptions } from 'helpers/expeditions';
+import { transcriptionImages } from 'helpers/subjects';
 
-export const FieldBookTranscriptions = ({ classifications }) =>
+export const FieldBookTranscriptions = ({ subjects }) =>
   <div>
     <h2>Recent Transcriptions</h2>
     <div className="transcriptions">
-    { recentTranscriptions(classifications).map((c, i) =>
+    { transcriptionImages(subjects).map((img, i) =>
       <div className="transcription" key={i}>
-        {c.href}
+        <img src={img.src} alt={img.alt}></img>
       </div>
     )}
     </div>
   </div>;
 
 FieldBookTranscriptions.propTypes = {
-  classifications: PropTypes.array,
+  subjects: PropTypes.array,
 };

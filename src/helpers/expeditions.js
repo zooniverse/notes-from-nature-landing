@@ -1,5 +1,7 @@
 import { expeditions } from 'constants/expeditions';
 
+const RECENT_EXPEDITIONS_LENGTH = 4;
+
 export function findExpedition(key) {
   return expeditions[key] ? expeditions[key] : expeditions.DEFAULT;
 }
@@ -17,10 +19,6 @@ export function recentExpeditions(allWorkflows, classifications) {
       expedition.active = workflow.active;
       return expedition;
     });
-  if (recent.length > 4) { recent.length = 4; }
+  if (recent.length > RECENT_EXPEDITIONS_LENGTH) { recent.length = RECENT_EXPEDITIONS_LENGTH; }
   return recent;
-}
-
-export function recentTranscriptions(classifications) {
-  return classifications;
 }

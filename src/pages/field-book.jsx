@@ -5,7 +5,7 @@ import { FatFooter } from 'components/fat-footer';
 import { Title } from 'components/title';
 import { FieldBookBadges } from 'components/field-book/badges';
 import { FieldBookExpeditions } from 'components/field-book/expeditions';
-// import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
+import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
 import { fetchProjectPreferences } from 'actions/project-preferences';
 import { fetchClassifications } from 'actions/classifications';
 import { totalCount } from 'helpers/badge-groups';
@@ -20,7 +20,7 @@ class FieldBook extends Component {
   }
 
   render() {
-    const { user, allWorkflows, activityByWorkflow, classifications } = this.props;
+    const { user, allWorkflows, activityByWorkflow, classifications, subjects } = this.props;
     const total = totalCount(activityByWorkflow);
     return (
       <div>
@@ -34,6 +34,7 @@ class FieldBook extends Component {
             <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
           </div>
           <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
+          <FieldBookTranscriptions subjects={subjects.subjects} />
           <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow} />
         </div>
         <FatFooter />
@@ -42,11 +43,10 @@ class FieldBook extends Component {
   }
 }
 
-// <FieldBookTranscriptions classifications={classifications} />
-
 FieldBook.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object.isRequired,
+  subjects: PropTypes.object,
   allWorkflows: PropTypes.array,
   classifications: PropTypes.array,
   activityByWorkflow: PropTypes.object,
@@ -55,6 +55,7 @@ FieldBook.propTypes = {
 function mapStateToProps(state) {
   return {
     user: state.login.user,
+    subjects: state.subjects,
     allWorkflows: state.workflows.allWorkflows,
     classifications: state.classifications.classifications,
     activityByWorkflow: state.projectPreferences.activityByWorkflow,
