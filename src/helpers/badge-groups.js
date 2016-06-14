@@ -6,10 +6,12 @@ function countsByBadgeGroup(workflows, activityByWorkflow) {
   const counts = {};
   Object.keys(activityByWorkflow).forEach(id => {
     const workflow = workflows.find(w => w.id === id);
-    const expedition = findExpedition(workflow.display_name);
-    const badgeGroup = expeditionGroups[expedition.group].badgeGroup;
-    if (!counts[badgeGroup]) { counts[badgeGroup] = 0; }
-    counts[badgeGroup] += activityByWorkflow[id];
+    if (workflow) {
+      const expedition = findExpedition(workflow.display_name);
+      const badgeGroup = expeditionGroups[expedition.group].badgeGroup;
+      if (!counts[badgeGroup]) { counts[badgeGroup] = 0; }
+      counts[badgeGroup] += activityByWorkflow[id];
+    }
   });
   return counts;
 }
