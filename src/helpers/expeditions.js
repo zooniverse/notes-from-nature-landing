@@ -14,10 +14,12 @@ export function recentExpeditions(allWorkflows, classifications) {
     .filter((v, i, self) => self.indexOf(v) === i)
     .map(id => {
       const workflow = allWorkflows.find(w => w.id === id);
-      const expedition = findExpedition(workflow.display_name);
-      expedition.id = workflow.id;
-      expedition.active = workflow.active;
-      return expedition;
+      if (workflow) {
+        const expedition = findExpedition(workflow.display_name);
+        expedition.id = workflow.id;
+        expedition.active = workflow.active;
+        return expedition;
+      }
     });
   if (recent.length > RECENT_EXPEDITIONS_LENGTH) { recent.length = RECENT_EXPEDITIONS_LENGTH; }
   return recent;
