@@ -1,11 +1,11 @@
 {
   "name": "notes-from-nature-landing",
   "version": "0.0.1",
-  "description": "React JS application skeleton using Wepback and other awesome tools",
+  "description": "Notes from Nature landing page",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zooniverse/zoo-react-starterify"
+    "url": "https://github.com/zooniverse/notes-from-nature-landing"
   },
   "keywords": [
     "wepback",
@@ -26,9 +26,9 @@
   "author": "Zooniverse",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/zooniverse/zoo-react-starterify"
+    "url": "https://github.com/zooniverse/notes-from-nature-landing"
   },
-  "homepage": "https://github.com/zooniverse/zoo-react-starterify",
+  "homepage": "https://github.com/zooniverse/notes-from-nature-landing",
   "dependencies": {
     "history": "^2.0.1",
     "isomorphic-fetch": "^2.2.1",
