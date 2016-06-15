@@ -46,7 +46,7 @@ class FieldBook extends Component {
 FieldBook.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object.isRequired,
-  subjects: PropTypes.object,
+  subjects: PropTypes.array,
   allWorkflows: PropTypes.array,
   classifications: PropTypes.array,
   activityByWorkflow: PropTypes.object,
