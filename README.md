@@ -1,8 +1,6 @@
-[![bitHound Score](https://www.bithound.io/github/Granze/react-starterify/badges/score.svg)](https://www.bithound.io/github/zooniverse/zoo-react-starterify/master)
+# Notes from Nature landing page
 
-# Zooniverse React Starterify
-
-A minimal React JS application starter kit, based on [React Starterify](https://github.com/Granze/react-starterify).
+Landing page for [Notes from Nature](https://www.notesfromnature.org).
 
 ## Usage
 
@@ -22,13 +20,9 @@ __When you are done, create a production-ready version of the JS bundle:__
 
 ```npm run build```
 
-## Credits
-
-Thanks to [Granze](https://github.com/Granze) for the original [React Starterify](https://github.com/Granze/react-starterify), which is used under the [MIT License](http://opensource.org/licenses/MIT).
-
 ## License
 
-Copyright 2015 Zooniverse
+Copyright 2016 Zooniverse
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
