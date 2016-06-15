@@ -34,7 +34,7 @@ class FieldBook extends Component {
             <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
           </div>
           <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
-          <FieldBookTranscriptions subjects={subjects.subjects} />
+          <FieldBookTranscriptions subjects={subjects} />
           <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow} />
         </div>
         <FatFooter />
@@ -55,7 +55,7 @@ FieldBook.propTypes = {
 function mapStateToProps(state) {
   return {
     user: state.login.user,
-    subjects: state.subjects,
+    subjects: state.subjects.subjects,
     allWorkflows: state.workflows.allWorkflows,
     classifications: state.classifications.classifications,
     activityByWorkflow: state.projectPreferences.activityByWorkflow,
