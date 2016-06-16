@@ -12,12 +12,6 @@ const Landing = ({ project, activeWorkflows }) =>
   <div className="landing">
     <div className="hero">
       <Header active={'landing'} />
-      <div className="informational project-announcement-banner">
-        <p>
-          Beta Complete, thanks for all the feedback! We're working on site changes now.
-          Come back for full launch mid-June.
-        </p>
-      </div>
       <div className="landing-title">
         <div className="action"><span>TRANSCRIBE MUSEUM RECORDS</span></div>
         <div><hr /></div>
