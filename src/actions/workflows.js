@@ -13,7 +13,7 @@ function workflowsReceived(json) {
 export function fetchWorkflows() {
   return dispatch => {
     dispatch(workflowsRequested());
-    apiClient.type('workflows').get({ project_id: config.projectId })
+    apiClient.type('workflows').get({ project_id: config.projectId, fields: 'active,completeness,display_name,finished_at' })
       .then(json => dispatch(workflowsReceived(json)));
   };
 }
