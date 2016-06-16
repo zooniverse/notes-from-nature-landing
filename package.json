@@ -21,7 +21,8 @@
     "test": "",
     "eslint": "eslint .",
     "build": "NODE_ENV=production webpack --config webpack.production.config.js -p",
-    "deploy-production": "npm run build && publisssh dist zooniverse-static/relaunch.notesfromnature.org"
+    "deploy-staging": "npm run build && publisssh dist zooniverse-static/relaunch.notesfromnature.org",
+    "deploy-production": "npm run build && publisssh dist zooniverse-static/www.notesfromnature.org"
   },
   "author": "Zooniverse",
   "license": "Apache-2.0",

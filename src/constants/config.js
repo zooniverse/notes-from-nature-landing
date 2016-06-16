@@ -7,8 +7,8 @@ const envConfig = {
   },
   production: {
     projectId: '1558',
-    workflowUrl: 'https://www.zooniverse.org/projects/zooniverse/notes-from-nature-relaunch/classify?reload=1&',
-    panoptesReturnUrl: 'https://relaunch.notesfromnature.org/',
+    workflowUrl: 'https://www.zooniverse.org/projects/zooniverse/notes-from-nature/classify?reload=1&',
+    panoptesReturnUrl: 'https://www.notesfromnature.org/',
     panoptesAppId: 'ddfe340dea1039c21c2d73f4fb4362c3da152a2732be866ddcfd3f0d1163cc0c',
   },
 };
