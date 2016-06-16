@@ -5,3 +5,4 @@ dist
 *.log
 server.crt
 server.key
+.DS_Store
