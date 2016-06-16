@@ -5,6 +5,9 @@ import HeaderAuth from 'header/header-auth';
 
 const activeStyle = { color: '#96f132' };
 
+// Not including stats page until working
+// <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature/stats" target="_blank">Statistics</a>
+
 const Header = ({ active, inactiveWorkflows, user }) =>
   <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
     <div className="header-links">
@@ -16,11 +19,6 @@ const Header = ({ active, inactiveWorkflows, user }) =>
         Talk
       </a>
       <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
-      <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature/stats"
-        target="_blank"
-      >
-        Statistics
-      </a>
       {inactiveWorkflows.length
         ? <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
             Completed Expeditions
