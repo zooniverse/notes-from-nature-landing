@@ -29,6 +29,12 @@ const envInitialWorkflows = {
         completeness: 0.00,
         id: '2054',
       },
+      {
+        active: true,
+        display_name: 'Pinned Specimen_CalBug Bee Flies 2',
+        completeness: 0.00,
+        id: '2068',
+      },
     ],
   },
 };
