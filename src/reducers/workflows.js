@@ -1,10 +1,9 @@
 import * as types from 'constants/actions';
-import { initialWorkflows } from 'constants/initial-workflows';
 
 const initialState = {
   workflowsFetched: false,
   allWorkflows: [],
-  activeWorkflows: initialWorkflows.activeWorkflows,
+  activeWorkflows: [],
   inactiveWorkflows: [],
 };
 
