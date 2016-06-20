@@ -25,12 +25,6 @@ const envInitialWorkflows = {
       },
       {
         active: true,
-        display_name: 'Pinned Specimen_CalBug Bee Flies',
-        completeness: 0.00,
-        id: '2045',
-      },
-      {
-        active: true,
         display_name: 'Butterfly_New World Swallowtail Butterflies',
         completeness: 0.00,
         id: '2054',
