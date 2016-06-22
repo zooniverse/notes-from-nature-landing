@@ -22,23 +22,37 @@ class FieldBook extends Component {
   render() {
     const { user, allWorkflows, activityByWorkflow, classifications, subjects } = this.props;
     const total = totalCount(activityByWorkflow);
-    return (
-      <div>
-        <Header />
-        <div className="field-book">
-          <div className="field-book-title">
-            <Title title={`${user.display_name}'s Field Book`} />
+    if (user !== null) {
+      return (
+        <div>
+          <Header />
+          <div className="field-book">
+            <div className="field-book-title">
+              <Title title={`${user.display_name}'s Field Book`} />
+            </div>
+            <hr />
+            <div className="statistics">
+              <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
+            </div>
+            <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
+            <FieldBookTranscriptions subjects={subjects.subjects} />
+            <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow} />
           </div>
-          <hr />
-          <div className="statistics">
-            <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
-          </div>
-          <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
-          <FieldBookTranscriptions subjects={subjects.subjects} />
-          <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow} />
+          <FatFooter />
         </div>
-        <FatFooter />
-      </div>
+      );
+    }
+    return (
+        <div>
+          <Header />
+          <div className="field-book">
+            <div className="field-book-title">
+              <Title title={'Please login to access your Field Book'} />
+            </div>
+            <hr />
+          </div>
+          <FatFooter />
+        </div>
     );
   }
 }
