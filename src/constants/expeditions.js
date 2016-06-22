@@ -89,6 +89,25 @@ export const expeditions = {
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_WeDigFLPlants\' St. John\'s Worts of Florida—Diversity to Lift your Spirits': {
+    snippet: `
+      Florida is home to 37 species in the St. John's Wort Family. Help the
+      WeDigFLPlants group transcribe specimens from this medicinally
+      important plant family.
+    `,
+    image: 'Herbarium_WeDigFLPlants_Hypericum.jpg',
+    link: 'http://biospex.org/project/wedigflplants',
+  },
+  'Herbarium_WeDigFLPlants\' Rose Gentians of Florida—Beauty from the Center of its Diversity': {
+    snippet: `
+      Florida's 12 species of Rose Gentians make it the center of diversity
+      for this gorgeous group of gentians.  Help the WeDigFLPlants group
+      transcribe specimens to understand the group's diversity and
+      distribution at a finer scale.
+    `,
+    image: 'Herbarium_WeDigFLPlants_Rose_Gentian.jpg',
+    link: 'http://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
