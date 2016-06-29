@@ -18,7 +18,8 @@ export function workflows(state = initialState, action) {
         workflowsFetched: true,
         allWorkflows: action.json.filter(w => !w.display_name.match(/Template/i)),
         activeWorkflows: action.json.filter(w => w.active),
-        inactiveWorkflows: action.json.filter(w => !w.active && !w.display_name.match(/Template/i) && w.completeness === 1),
+        inactiveWorkflows: action.json.filter(w => !w.active &&
+          !w.display_name.match(/Template/i) && w.completeness === 1),
       });
 
     default:
