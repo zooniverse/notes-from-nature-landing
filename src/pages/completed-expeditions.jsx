@@ -17,7 +17,8 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
       <div className="tiles">
         {inactiveWorkflows.map((workflow, i) => {
           const expedition = findExpedition(workflow.display_name);
-          const completed = dateformat(workflow.finished_at, 'mmmm d yyyy');
+          const completed = expedition.completed_at ||
+          dateformat(workflow.finished_at, 'mmmm d yyyy');
           return (
             <div className="tile" key={i}>
               <div className="completed-expedition">

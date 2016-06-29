@@ -13,6 +13,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Mints_of_Florida.jpg',
     link: 'http://biospex.org/project/wedigflplants',
+    completed_at: 'June 21 2016',
   },
   'Herbarium_WeDigFLPlants\' Laurels of Florida—Fight Laurel Wilt': {
     snippet: `
@@ -22,42 +23,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Laurels_of_Florida.jpg',
     link: 'http://biospex.org/project/wedigflplants',
-  },
-  'Herbarium_Florida State University': {
-    snippet: `
-      The FSU Herbarium collection specimens: these flowers
-      and plants are carefully pressed onto sheets along with descriptive labels, and
-      contain vital information for broader understanding of biodiversity at regional
-      and national scales.
-    `,
-    image: 'Herbarium_Florida_State_University.jpg',
-    link: '',
-  },
-  'Herbarium_Southeastern Louisiana University': {
-    snippet: `
-      The SELU Herbarium collection is comprised of herbarium specimens: these flowers and plants
-      are carefully pressed onto sheets along with descriptive labels, and contain vital
-      information for broader understanding of biodiversity at regional and national scales.
-    `,
-    image: 'Herbarium_Southeastern_Louisiana_University.jpg',
-    link: '',
-  },
-  'Herbarium_University of South Florida': {
-    snippet: `
-      The USF Herbarium collection is comprised of herbarium specimens: these flowers and plants
-      are carefully pressed onto sheets along with descriptive labels, and contain vital
-      information for broader understanding of biodiversity at regional and national scales.
-    `,
-    image: 'Herbarium_University_of_South_Florida.jpg',
-    link: '',
-  },
-  'Calbug_Essig Museum Collections': {
-    snippet: `
-      Calbug digitizes collections of pinned insect specimens drawn from eight of California's
-      major institutions, showcasing the stunning diversity of insect life in our world.
-    `,
-    image: 'Calbug_Essig_Museum_Collections.jpg',
-    link: 'http://calbug.berkeley.edu/',
+    completed_at: 'June 21 2016',
   },
   'Pinned Specimen_CalBug Bee Flies': {
     snippet: `
@@ -68,6 +34,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
+    completed_at: 'June 19 2016',
   },
   'Butterfly_New World Swallowtail Butterflies': {
     snippet: `
@@ -78,6 +45,7 @@ export const expeditions = {
     `,
     image: 'Butterfly_Papilio.png',
     link: 'http://hannahlowens.weebly.com/',
+    completed_at: 'June 28 2016',
   },
   'Pinned Specimen_CalBug Bee Flies 2': {
     snippet: `
@@ -88,6 +56,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
+    completed_at: 'June 26 2016',
   },
   'Herbarium_WeDigFLPlants\' St. John\'s Worts of Florida—Diversity to Lift your Spirits': {
     snippet: `
