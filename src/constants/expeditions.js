@@ -12,7 +12,7 @@ export const expeditions = {
       herbaria.  Help the WeDigFLPlants group transcribe specimens of the flora they dig.
     `,
     image: 'Herbarium_WeDigFLPlants_Mints_of_Florida.jpg',
-    link: 'http://biospex.org/project/wedigflplants',
+    link: 'https://biospex.org/project/wedigflplants',
     completed_at: 'June 21 2016',
   },
   'Herbarium_WeDigFLPlants\' Laurels of Florida—Fight Laurel Wilt': {
@@ -22,7 +22,7 @@ export const expeditions = {
       Florida's 15 native and naturalized laurel species to build the historical baseline.
     `,
     image: 'Herbarium_WeDigFLPlants_Laurels_of_Florida.jpg',
-    link: 'http://biospex.org/project/wedigflplants',
+    link: 'https://biospex.org/project/wedigflplants',
     completed_at: 'June 21 2016',
   },
   'Pinned Specimen_CalBug Bee Flies': {
@@ -65,7 +65,7 @@ export const expeditions = {
       important plant family.
     `,
     image: 'Herbarium_WeDigFLPlants_Hypericum.jpg',
-    link: 'http://biospex.org/project/wedigflplants',
+    link: 'https://biospex.org/project/wedigflplants',
   },
   'Herbarium_WeDigFLPlants\' Rose Gentians of Florida—Beauty from the Center of its Diversity': {
     snippet: `
@@ -75,7 +75,7 @@ export const expeditions = {
       distribution at a finer scale.
     `,
     image: 'Herbarium_WeDigFLPlants_Rose_Gentian.jpg',
-    link: 'http://biospex.org/project/wedigflplants',
+    link: 'https://biospex.org/project/wedigflplants',
   },
   'Pinned Specimen_CalBug Bee Flies 3': {
     snippet: `
