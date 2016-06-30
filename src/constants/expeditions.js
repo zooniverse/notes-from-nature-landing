@@ -87,6 +87,14 @@ export const expeditions = {
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_Plants of Virginia - Ant Plants I': {
+    snippet: `
+      Ants are essential to the life of over 11,000 plant species worldwide.
+      Help us learn more about this remarkable partnership in Virginia.
+    `,
+    image: 'Herbarium_PlantsOfVirginia_Ant_Plants_I.jpg',
+    link: 'https://biospex.org/project/ant-plants-of-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
