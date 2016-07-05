@@ -12,10 +12,14 @@ import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
 
 class FieldBook extends Component {
-  componentDidMount() {
-    if (this.props.user) {
-      this.props.dispatch(fetchProjectPreferences(this.props.user.id));
-      this.props.dispatch(fetchClassifications(this.props.user.id));
+  componentDidUpdate() {
+    if (this.props.user && this.props.user.id) {
+      if (!Object.keys(this.props.activityByWorkflow).length) {
+        this.props.dispatch(fetchProjectPreferences(this.props.user.id));
+      }
+      if (!this.props.classifications.length) {
+        this.props.dispatch(fetchClassifications(this.props.user.id));
+      }
     }
   }
 
