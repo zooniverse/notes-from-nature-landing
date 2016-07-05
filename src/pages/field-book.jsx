@@ -12,7 +12,15 @@ import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
 
 class FieldBook extends Component {
+  componentDidMount() {
+    this.doDispatches();
+  }
+
   componentDidUpdate() {
+    this.doDispatches();
+  }
+
+  doDispatches() {
     if (this.props.user && this.props.user.id) {
       if (!Object.keys(this.props.activityByWorkflow).length) {
         this.props.dispatch(fetchProjectPreferences(this.props.user.id));
