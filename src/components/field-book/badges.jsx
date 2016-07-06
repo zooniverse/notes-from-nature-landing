@@ -21,20 +21,21 @@ export const FieldBookBadges = ({ allWorkflows, activityByWorkflow }) => {
           )}
           </div>
         )}
-        { Object.keys(multis).sort().map((g, i) =>
-          <div className="badges" key={i}>
-          { multis[g].map((b, j) =>
-              <div className="badge" key={j}>
-                <img src={require(`images/badges/${b.badge}`)} alt={`${b.name}`}></img>
-                <div className="description">
-                  {`The ${b.name} badge is earned for transcrbing
-                    ${b.count} ${pluralize('records', b.count)}
-                    in ${b.expeditions} expeditions`}
+        { multis.length
+          ? <div className="badges">
+              { multis.map((b, j) =>
+                <div className="badge" key={j}>
+                  <img src={require(`images/badges/${b.badge}`)} alt={`${b.name}`}></img>
+                  <div className="description">
+                    {`The ${b.name} badge is earned for transcrbing
+                      ${b.count} ${pluralize('records', b.count)}
+                      in ${b.expeditions} expeditions`}
+                  </div>
                 </div>
-              </div>
-          )}
-          </div>
-        )}
+              )}
+            </div>
+          : ''
+        }
   </div>
   );
 };

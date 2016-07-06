@@ -17,12 +17,11 @@ function countsByBadgeGroup(workflows, activityByWorkflow) {
 }
 
 export function multiBadges(activity) {
-  const earned = {};
+  const earned = [];
   badgeGroups.MULTI.forEach(b => {
     const n = Object.keys(activity).filter(id => activity[id] >= b.count).length;
     if (n >= b.expeditions) {
-      if (!earned.MULTI) { earned.MULTI = []; }
-      earned.MULTI.push(b);
+      earned.push(b);
     }
   });
   return earned;
