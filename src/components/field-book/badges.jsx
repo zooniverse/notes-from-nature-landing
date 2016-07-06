@@ -14,7 +14,7 @@ export const FieldBookBadges = ({ allWorkflows, activityByWorkflow }) => {
               <div className="badge" key={j}>
                 <img src={require(`images/badges/${b.badge}`)} alt={`${b.name}`}></img>
                 <div className="description">
-                  {`The ${b.name} badge is earned for transcrbing ${b.count} ${b.group}
+                  {`The ${b.name} badge is earned for transcribing ${b.count} ${b.group}
                     ${pluralize('records', b.count)}`}
                 </div>
               </div>
@@ -27,7 +27,7 @@ export const FieldBookBadges = ({ allWorkflows, activityByWorkflow }) => {
                 <div className="badge" key={j}>
                   <img src={require(`images/badges/${b.badge}`)} alt={`${b.name}`}></img>
                   <div className="description">
-                    {`The ${b.name} badge is earned for transcrbing
+                    {`The ${b.name} badge is earned for transcribing
                       ${b.count} ${pluralize('records', b.count)}
                       in ${b.expeditions} expeditions`}
                   </div>
