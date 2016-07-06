@@ -16,9 +16,21 @@ function countsByBadgeGroup(workflows, activityByWorkflow) {
   return counts;
 }
 
-export function earnedBadges(allWorkflows, activityByWorkflow) {
-  const counts = countsByBadgeGroup(allWorkflows, activityByWorkflow);
+export function multiBadges(activity) {
   const earned = {};
+  badgeGroups.MULTI.forEach(b => {
+    const n = Object.keys(activity).filter(id => activity[id] >= b.count).length;
+    if (n >= b.expeditions) {
+      if (!earned.MULTI) { earned.MULTI = []; }
+      earned.MULTI.push(b);
+    }
+  });
+  return earned;
+}
+
+export function taxonBadges(allWorkflows, activityByWorkflow) {
+  const earned = {};
+  const counts = countsByBadgeGroup(allWorkflows, activityByWorkflow);
   Object.keys(counts).sort().forEach(k => {
     badgeGroups[k].filter(b => b.count <= counts[k])
       .forEach(b => {
