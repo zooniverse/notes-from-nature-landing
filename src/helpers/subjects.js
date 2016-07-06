@@ -8,7 +8,7 @@ export const getSubjectIds = (subjects) => {
 };
 
 export const transcriptionImages = subjects =>
-  subjects.map((s) => {
+  subjects.filter((id, i, self) => self.indexOf(id) === i).map((s) => {
     const img = {
       src: s.locations[0]['image/jpeg'],
       alt: s.metadata.Filename,
