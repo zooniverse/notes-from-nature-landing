@@ -61,7 +61,6 @@ class FieldBook extends Component {
             <div className="field-book-title">
               <Title title={'Please login to access your Field Book'} />
             </div>
-            <hr />
           </div>
           <FatFooter />
         </div>
@@ -71,7 +70,7 @@ class FieldBook extends Component {
 
 FieldBook.propTypes = {
   dispatch: PropTypes.func,
-  user: PropTypes.object.isRequired,
+  user: PropTypes.object,
   subjects: PropTypes.object,
   allWorkflows: PropTypes.array,
   classifications: PropTypes.array,
