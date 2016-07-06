@@ -1,11 +1,16 @@
 export const badgeGroups = {
   MULTI: [
-    { count: 1, groups: 3, name: 'Novice Collection\'s Explorer', badge: 'multi/beginner.png' },
+    {
+      count: 1,
+      expeditions: 5,
+      name: 'Novice Collection\'s Explorer',
+      badge: 'multi/multi_1x5.png',
+    },
     {
       count: 25,
-      groups: 3,
+      expeditions: 5,
       name: 'Intermediate Collection\'s Explorer',
-      badge: 'multi/intermediate.png',
+      badge: 'multi/multi_25x5.png',
     },
   ],
   plant: [

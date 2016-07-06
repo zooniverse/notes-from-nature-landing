@@ -1,7 +1,7 @@
 export const expeditions = {
   DEFAULT: {
     default: true,
-    snippet: 'We need your help with transcrbing these specimens!',
+    snippet: 'We need your help with transcribing these specimens!',
     image: 'default_expedition.png',
     link: '',
   },
