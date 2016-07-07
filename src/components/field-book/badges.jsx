@@ -7,7 +7,7 @@ export const FieldBookBadges = ({ allWorkflows, activityByWorkflow }) => {
   const multis = multiBadges(activityByWorkflow);
   return (
     <div>
-      <h2>You have taxons these badges</h2>
+      <h2>You have earned these badges</h2>
         { Object.keys(taxons).sort().map((g, i) =>
           <div className="badges" key={i}>
           { taxons[g].map((b, j) =>
