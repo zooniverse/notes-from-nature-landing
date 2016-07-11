@@ -86,6 +86,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
+    completed_at: 'July 6 2016',
   },
   'Herbarium_Plants of Virginia - Ant Plants I': {
     snippet: `
