@@ -108,21 +108,24 @@ export const expeditions = {
   },
   'Herbarium_Plants of Arkansas: Discovering Dogwoods': {
     snippet: `
-      There is more to this plant family than the widely recognized flowering dogwood.  Arkansas has 6 dogwood and 3 gum/tupelo species.
+      There is more to this plant family than the widely recognized flowering dogwood.
+      Arkansas has 6 dogwood and 3 gum/tupelo species.
     `,
     image: 'Herbarium_Arkansas_Dogwoods.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
   'Herbarium_Hear Them Ring: Bellflowers of Arkansas': {
     snippet: `
-      Members of the Campanulaceae family are called the bellflowers.  They include bellflowers, lobelias, and Venus\' looking glass.
+      Members of the Campanulaceae family are called the bellflowers.
+      They include bellflowers, lobelias, and Venus\' looking glass.
     `,
     image: 'Herbarium_Arkansas_Campanulaceae.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
   'Herbarium_Plants of Arkansas: The Delta and Crowley\'s Ridge Flora': {
     snippet: `
-      The Delta and Crowley's Ridge Flora--The Arkansas Delta Region is a vastly under-explored region of the Natural State in need.
+      The Delta and Crowley's Ridge Flora--The Arkansas Delta Region
+      is a vastly under-explored region of the Natural State in need.
     `,
     image: 'Herbarium_Arkansas_Delta.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
