@@ -105,6 +105,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
+    completed_at: 'July 15 2016',
   },
   'Herbarium_Plants of Arkansas: Discovering Dogwoods': {
     snippet: `
@@ -129,6 +130,16 @@ export const expeditions = {
     `,
     image: 'Herbarium_Arkansas_Delta.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
+  'Pinned Specimen_CalBug Bee Flies 5': {
+    snippet: `
+      This expedition features 1000 images of bee fly (Bombyliidae) specimens from the CalBug
+      project. The specimens were collected across the western Unites States. The bee flies are a
+      large family of flies that feed on nectar and pollen. Some are important pollinators. Species
+      of bee flies sometimes resemble bees, which is how they got their common name.
+    `,
+    image: 'Pinned_Specimen_bee_flies_expedition.jpg',
+    link: 'http://calbug.berkeley.edu/',
   },
 };
 
