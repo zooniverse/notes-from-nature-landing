@@ -2,9 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import { taxonBadges, multiBadges, crossBadges } from 'helpers/badge-groups';
 
 export class FieldBookBadges extends Component {
-  badges(earned, i = 1) {
+  badges(earned, keyPrefix, i = 1) {
     return (earned.length
-      ? <div className="badges" key={i}>
+      ? <div className="badges" key={`${keyPrefix}${i}`}>
           {earned.map((b, j) =>
             <div className="badge" key={j}>
               <img src={require(`images/badges/${b.badge}`)} alt={`${b.name}`}></img>
@@ -23,9 +23,9 @@ export class FieldBookBadges extends Component {
     return (
       <div>
         <h2>You have earned these badges</h2>
-          { Object.keys(taxons).sort().map((g, i) => this.badges(taxons[g], i))}
-          { this.badges(multis) }
-          { this.badges(cross) }
+          { Object.keys(taxons).sort().map((g, i) => this.badges(taxons[g], 't', i))}
+          { this.badges(multis, 'm') }
+          { this.badges(cross, 'c') }
       </div>
     );
   }

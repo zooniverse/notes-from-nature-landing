@@ -55,7 +55,7 @@ Object.keys(badgeGroups).forEach(g => badgeGroups[g].forEach(b => {
   b.group = g;  // eslint-disable-line no-param-reassign
   let description = '';
   switch (g) {
-    case 'MULT':
+    case 'MULTI':
       description = `The ${b.name} badge is earned for transcribing
         ${b.count} ${pluralize('records', b.count)}
         in ${b.expeditions} expeditions`;
