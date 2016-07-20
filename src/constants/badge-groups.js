@@ -17,7 +17,7 @@ export const badgeGroups = {
   ],
   CROSS: [
     { count: 10, name: 'Ten on both old and new projects', badge: 'cross/10_each.png' },
-    // { count: 25, name: 'Twenty-Five', badge: 'cross/25_each.png' },
+    { count: 30, name: 'Thirty on both old and new projects', badge: 'cross/NfNProBadge.png' },
   ],
   plant: [
     { count: 1, name: 'Seed', badge: 'plants/seed.png' },
