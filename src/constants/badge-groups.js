@@ -1,3 +1,5 @@
+import { pluralize } from 'helpers/text';
+
 export const badgeGroups = {
   MULTI: [
     {
@@ -12,6 +14,10 @@ export const badgeGroups = {
       name: 'Intermediate Collection\'s Explorer',
       badge: 'multi/multi_25x5.png',
     },
+  ],
+  CROSS: [
+    { count: 10, name: 'Ten on both old and new projects', badge: 'cross/10_each.png' },
+    // { count: 25, name: 'Twenty-Five', badge: 'cross/25_each.png' },
   ],
   plant: [
     { count: 1, name: 'Seed', badge: 'plants/seed.png' },
@@ -47,4 +53,21 @@ export const badgeGroups = {
 
 Object.keys(badgeGroups).forEach(g => badgeGroups[g].forEach(b => {
   b.group = g;  // eslint-disable-line no-param-reassign
+  let description = '';
+  switch (g) {
+    case 'MULTI':
+      description = `The ${b.name} badge is earned for transcribing
+        ${b.count} ${pluralize('records', b.count)}
+        in ${b.expeditions} expeditions`;
+      break;
+    case 'CROSS':
+      description = `This badge is earned for transcribing
+        ${b.count} ${pluralize('records', b.count)}
+        in both the old and new Notes from Nature`;
+      break;
+    default:
+      description = `The ${b.name} badge is earned for transcribing ${b.count} ${b.group}
+        ${pluralize('records', b.count)}`;
+  }
+  b.description = description;  // eslint-disable-line no-param-reassign
 }));
