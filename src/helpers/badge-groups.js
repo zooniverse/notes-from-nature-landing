@@ -27,6 +27,10 @@ export function multiBadges(activity) {
   return earned;
 }
 
+export function crossBadges(activityCount, oldActivityCount) {
+  return badgeGroups.CROSS.filter(b => activityCount >= b.count && oldActivityCount >= b.count);
+}
+
 export function taxonBadges(allWorkflows, activityByWorkflow) {
   const earned = {};
   const counts = countsByBadgeGroup(allWorkflows, activityByWorkflow);

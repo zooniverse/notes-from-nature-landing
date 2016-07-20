@@ -17,3 +17,19 @@ export function fetchProjectPreferences(userId) {
       .then(json => dispatch(projectPreferencesReceived(json)));
   };
 }
+
+function oldProjectPreferencesRequested() {
+  return { type: types.OLD_PROJECT_PREFERENCES_REQUESTED };
+}
+
+function oldProjectPreferencesReceived(json) {
+  return { type: types.OLD_PROJECT_PREFERENCES_RECEIVED, json };
+}
+
+export function fetchOldProjectPreferences(userId) {
+  return dispatch => {
+    dispatch(oldProjectPreferencesRequested());
+    apiClient.type('project_preferences').get({ project_id: config.oldProjectId, user_id: userId })
+      .then(json => dispatch(oldProjectPreferencesReceived(json)));
+  };
+}

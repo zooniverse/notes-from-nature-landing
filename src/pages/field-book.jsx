@@ -6,7 +6,7 @@ import { Title } from 'components/title';
 import { FieldBookBadges } from 'components/field-book/badges';
 import { FieldBookExpeditions } from 'components/field-book/expeditions';
 import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
-import { fetchProjectPreferences } from 'actions/project-preferences';
+import { fetchProjectPreferences, fetchOldProjectPreferences } from 'actions/project-preferences';
 import { fetchClassifications } from 'actions/classifications';
 import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
@@ -27,12 +27,14 @@ class FieldBook extends Component {
       }
       if (!this.props.classifications.length) {
         this.props.dispatch(fetchClassifications(this.props.user.id));
+        this.props.dispatch(fetchOldProjectPreferences(this.props.user.id));
       }
     }
   }
 
   render() {
-    const { user, allWorkflows, activityByWorkflow, classifications, subjects } = this.props;
+    const { user, allWorkflows, activityByWorkflow, oldActivityCount,
+      classifications, subjects } = this.props;
     const total = totalCount(activityByWorkflow);
     if (user !== null) {
       return (
@@ -48,7 +50,9 @@ class FieldBook extends Component {
             </div>
             <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
             <FieldBookTranscriptions subjects={subjects.subjects} />
-            <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow} />
+            <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow}
+              activityCount={total} oldActivityCount={oldActivityCount}
+            />
           </div>
           <FatFooter />
         </div>
@@ -75,6 +79,7 @@ FieldBook.propTypes = {
   allWorkflows: PropTypes.array,
   classifications: PropTypes.array,
   activityByWorkflow: PropTypes.object,
+  oldActivityCount: PropTypes.number,
 };
 
 function mapStateToProps(state) {
@@ -84,6 +89,7 @@ function mapStateToProps(state) {
     allWorkflows: state.workflows.allWorkflows,
     classifications: state.classifications.classifications,
     activityByWorkflow: state.projectPreferences.activityByWorkflow,
+    oldActivityCount: state.projectPreferences.oldActivityCount,
   };
 }
 
