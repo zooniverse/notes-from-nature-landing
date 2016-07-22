@@ -143,12 +143,11 @@ export const expeditions = {
   },
   'Pinned Specimen_Tiger Beetles 1': {
     snippet: `
-      This expedition features images of tiger beetles from the University of Alberta’s E.H.
-      Strickland Entomological Museum (UASM). The specimens were collected throughout North,
+      This expedition features tiger beetles from the University of Alberta’s E.H.
+      Strickland Entomological Museum. The specimens were collected throughout North,
       Central and South America with a specific emphasis on North America. Tiger beetles belong
       to one of the most diverse animal families on the planet, the Carabidae (a.k.a. ground
-      beetles), and are some of the fastest running insects in the world. They can be quite
-      colorful too, which makes them popular among insect collectors.
+      beetles), and are some of the fastest running insects in the world.
     `,
     image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
     link: 'http://entomology.museums.ualberta.ca/searching.php',
