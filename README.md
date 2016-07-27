@@ -46,14 +46,14 @@ __Deploy to production:__
   3. Check for expedition on localhost
   4. Test expedition Info icon link
 
-4. __Deploy to production__
-  Note: recommend deploying to production from new branch, if problem can redeploy quickly from master, can add and merge new branch after successful deploy.
+4. __Deploy to production__  
+Note: recommend deploying to production from new branch, if problem can redeploy quickly from master, can add and merge new branch after successful deploy.
 
   1. From Terminal run `npm run deploy-production`
   2. Wait, deploy may take up to 15 minutes.
 
-5. __Edit related workflow `image-layout` via API__
-  Note: Replace 1234 with expedition workflow ID.
+5. __Edit related workflow `image-layout` via API__  
+Note: Replace 1234 with expedition workflow ID.
 
   1. workflowVariable = zooAPI.type('workflows').get('1234')
   2. workflowVariable.update({'configuration.image_layout':['no-max-height']})
