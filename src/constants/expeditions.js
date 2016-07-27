@@ -66,6 +66,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Hypericum.jpg',
     link: 'https://biospex.org/project/wedigflplants',
+    completed_at: 'July 9 2016',
   },
   'Herbarium_WeDigFLPlants\' Rose Gentians of Florida—Beauty from the Center of its Diversity': {
     snippet: `
@@ -76,6 +77,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Rose_Gentian.jpg',
     link: 'https://biospex.org/project/wedigflplants',
+    completed_at: 'July 5 2016',
   },
   'Pinned Specimen_CalBug Bee Flies 3': {
     snippet: `
@@ -95,6 +97,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_PlantsOfVirginia_Ant_Plants_I.jpg',
     link: 'https://biospex.org/project/ant-plants-of-virginia',
+    completed_at: 'July 24 2016',
   },
   'Pinned Specimen_CalBug Bee Flies 4': {
     snippet: `
@@ -140,6 +143,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
+    completed_at: 'July 27 2016',
   },
   'Pinned Specimen_Tiger Beetles 1': {
     snippet: `
