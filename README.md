@@ -28,7 +28,7 @@ __Deploy to production:__
 
 1. __Obtain the following from Science Team:__
 
-  1. Related Panoptes workflow ID and name
+  1. Related Panoptes workflow ID and name from production project #1558
   2. Expedition "snippet", aka rollover text
   3. Image (reduce size, rename, as needed)
   4. Info icon link
@@ -59,9 +59,12 @@ Note: Replace 1234 with expedition workflow ID.
   2. workflowVariable.update({'configuration.image_layout':['no-max-height']})
   3. workflowVariable.save()
 
-6. __Once deploy complete, activate workflow__
+6. __Once deploy complete, activate workflow, push branch up to GitHub__
   1. Let Science Team member know they're clear to activate workflow, or activate yourself via Project Builder, Visibility section
-  2. Confirm expedition properly shows on notesfromnature.org
+  2. If you activate, or after Science Team member has, confirm expedition properly shows on notesfromnature.org
+  3. Push new expedition branch up to GitHub
+  4. Create Pull Request, Merge, delete Branch
+  5. Pull latest master down locally, (optionally) delete now merged expedition branch locally
 
 ## License
 
