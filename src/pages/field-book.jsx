@@ -10,6 +10,7 @@ import { fetchProjectPreferences, fetchOldProjectPreferences } from 'actions/pro
 import { fetchClassifications } from 'actions/classifications';
 import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
+import { NfNLogoVertical } from 'components/logos/nfn-logo-vertical';
 
 class FieldBook extends Component {
   componentDidMount() {
@@ -36,23 +37,27 @@ class FieldBook extends Component {
     const { user, allWorkflows, activityByWorkflow, oldActivityCount,
       classifications, subjects } = this.props;
     const total = totalCount(activityByWorkflow);
-    if (user !== null) {
+    if (user) {
       return (
-        <div>
-          <Header />
-          <div className="field-book">
-            <div className="field-book-title">
-              <Title title={`${user.display_name}'s Field Book`} />
+        <div className="field-book">
+          <NfNLogoVertical />
+          <div className="hero">
+            <Header bgClass={'transparent'} />
+            <h2 className="name">{`${user.display_name}'s Field Book`}</h2>
+            <h4 className="total">
+              {`You have transcribed ${total} ${pluralize('records', total)}`}
+            </h4>
+          </div>
+          <div className="content">
+            <div className="left-content">
+              <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
+              <FieldBookTranscriptions subjects={subjects.subjects} />
             </div>
-            <hr />
-            <div className="statistics">
-              <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
+            <div className="right-content">
+              <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow}
+                activityCount={total} oldActivityCount={oldActivityCount}
+              />
             </div>
-            <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
-            <FieldBookTranscriptions subjects={subjects.subjects} />
-            <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow}
-              activityCount={total} oldActivityCount={oldActivityCount}
-            />
           </div>
           <FatFooter />
         </div>

@@ -1,15 +1,73 @@
 .field-book
-  background-color: #202020
-  padding: 0 12px
+  position: relative
   color: white
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
 
-  .field-book-title
+  svg.nfn-logo
+    position: absolute
+    height: 320px
+    top: 136px
+    left: 4px
+    fill: rgba(0, 0, 0, 0)
+    stroke: rgba(176, 176, 176, 0.65)
+
+  .hero
+    height: 30vh
+    background: url("../images/background/butterflies.png")
+
+    h2, h3, h4
+      margin: 10px auto
+      text-align: left
+
+    .name
+      padding-top: 50px
+      padding-bottom: 12px
+
+    .name,
+    .total
+      padding-left: 160px
+
+    .total
+      text-transform: uppercase
+
+  .content
+    padding-left: 120px
     display: flex
-    align-items: center
-    flex-flow: column
-    position: relative
-    padding-bottom: 16px
+    flex-direction: row
+    flex-wrap: wrap
+    background-color: #e8e7e9
 
-  h2
-    margin: 10px auto
-    text-align: center
+    .left-content
+      flex: 3
+      padding-right: 20px
+      padding-bottom: 40px
+      margin-right: 50px
+
+      hr
+        border: 0
+        border-bottom: 2px dotted #65981e
+        margin-bottom: 32px
+
+      h2, h3
+        color: #65981e
+
+    .right-content
+      background-color: #535151
+      flex: 1
+
+  @media screen and (max-width: 640px)
+    .content
+      flex-direction: column
+      padding-left: 0px
+
+    .left-content
+      flex: 1
+      padding-left: 100px
+      margin-right: 0px
+
+    .hero
+      .name, .total
+        padding: 0px 0 0 40px
+        margin: 0
