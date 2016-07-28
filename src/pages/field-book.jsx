@@ -65,7 +65,6 @@ class FieldBook extends Component {
     return (
       <div className="field-book">
         <NfNLogoVertical />
-        <NfNLogoVertical />
         <div className="hero">
           <Header bgClass={'transparent'} />
           <h2 className="name">Please login to access your Field Book</h2>
