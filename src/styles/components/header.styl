@@ -5,10 +5,6 @@
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  background-color: rgba(32, 32, 32, 0.6)
-
-  &.opaque
-    background-color: black
 
   .header-links
     flex: 8
@@ -54,11 +50,12 @@
     align-self: center
 
     button
-      color: #96f132
+      color: white
       background-color: rgba(32, 32, 32, 0.6)
       border: none
 
       &:hover
+        color: #96f132
         text-decoration: underline
 
   @media screen and (max-width: 440px)
@@ -67,3 +64,15 @@
 
     .last
       display: none
+
+  &.opaque
+    background-color: black
+
+  &.translucent
+    background-color: rgba(32, 32, 32, 0.6)
+
+  &.transparent
+    background-color: rgba(0, 0, 0, 0.0)
+
+    .login-info button
+      background-color: rgba(0, 0, 0, 0.0)

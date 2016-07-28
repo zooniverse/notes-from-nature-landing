@@ -1,32 +1,34 @@
-.expeditions
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  align-items: center
-  justify-content: space-around
+.expedition-container
+  padding-top: 40px
 
-  .expedition
-    max-width: 160px
-    text-align: center
-    font-weight: bold
-    text-align: center
-    align-self: center
-    font-size: 10x
-    padding-bottom: 20px
+  .expeditions
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
 
-    a
-      display: flex
-      flex-flow: column
-      text-decoration: none
-      color: #96f132
+    .expedition
+      max-width: 160px
+      font-weight: bold
+      text-align: center
+      align-self: center
+      font-size: 10px
+      padding-bottom: 20px
+
+      a
+        display: flex
+        flex-flow: column
+        text-decoration: none
+        color: #96f132
+
+        .label
+          height: 80px
+          max-width: 90%
+
+      img
+        height: 120px
+        border 2px solid #65981e
 
       .label
-        height: 80px
-        max-width: 90%
-
-    img
-      height: 120px
-
-    .label
-      min-height: 70px
-      padding: 0 4px
+        min-height: 70px
+        padding: 0 4px

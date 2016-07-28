@@ -3,13 +3,11 @@ import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import HeaderAuth from 'header/header-auth';
 
-const activeStyle = { color: '#96f132' };
-
-const Header = ({ active, inactiveWorkflows, user }) =>
-  <div className={ `landing-header ${active === 'landing' ? '' : 'opaque'}` }>
+const Header = ({ bgClass, inactiveWorkflows, user }) =>
+  <div className={ `landing-header ${bgClass || 'opaque'}` }>
     <div className="header-links">
-      <Link className={'first'} activeStyle={ activeStyle } to="/">Get Started</Link>
-      <Link activeStyle={ activeStyle } to="/about">About</Link>
+      <Link className={'first'} to="/">Get Started</Link>
+      <Link to="/about">About</Link>
       <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature/talk"
         target="_blank"
       >
@@ -18,17 +16,10 @@ const Header = ({ active, inactiveWorkflows, user }) =>
       <a href="https://blog.notesfromnature.org/" target="_blank">Blog</a>
       <a href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature/stats" target="_blank">Statistics</a>
       {inactiveWorkflows.length
-        ? <Link activeStyle={ activeStyle } to="/completed-expeditions" className="wide">
-            Completed Expeditions
-          </Link>
+        ? <Link to="/completed-expeditions" className="wide">Completed Expeditions</Link>
         : ''
       }
-      {user
-        ? <Link activeStyle={ activeStyle } to="/field-book" className="wide">
-            Field Book
-          </Link>
-        : ''
-      }
+      {user ? <Link to="/field-book" className="wide">Field Book</Link> : ''}
       <div className="last">&nbsp;</div>
       <HeaderAuth />
     </div>
@@ -36,7 +27,7 @@ const Header = ({ active, inactiveWorkflows, user }) =>
 
 Header.propTypes = {
   dispatch: PropTypes.func,
-  active: PropTypes.string,
+  bgClass: PropTypes.string,
   user: PropTypes.object,
   initialized: PropTypes.bool,
   inactiveWorkflows: PropTypes.array,

@@ -11,7 +11,7 @@ import { Contributors } from 'components/contributors';
 const Landing = ({ project, activeWorkflows }) =>
   <div className="landing">
     <div className="hero">
-      <Header active={'landing'} />
+      <Header bgClass={'translucent'} />
       <div className="landing-title">
         <div className="action"><span>TRANSCRIBE MUSEUM RECORDS</span></div>
         <div><hr /></div>
