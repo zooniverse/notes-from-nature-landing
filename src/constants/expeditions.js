@@ -164,6 +164,15 @@ export const expeditions = {
     image: 'Herbarium_PlantsOfVirginia_Ant_Plants_I.jpg',
     link: 'https://biospex.org/project/ant-plants-of-virginia',
   },
+  'Herbarium_Natural North Carolina\'s - Be a Companion to Campanulaceae': {
+    snippet: `
+      The Campanulaceae family contains lovely wildflowers such as Lobelias,
+      Harebells and Bellflowers, which are loved by gardeners and relished by hummingbirds.
+      Help us map these plants in the Southeastern United States!
+    `,
+    image: 'LobeliaHummingbird2.jpg',
+    link: 'https://biospex.org/project/natural-north-carolina',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
