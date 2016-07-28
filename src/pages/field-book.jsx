@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Header from 'components/header';
 import { FatFooter } from 'components/fat-footer';
-import { Title } from 'components/title';
 import { FieldBookBadges } from 'components/field-book/badges';
 import { FieldBookExpeditions } from 'components/field-book/expeditions';
 import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
@@ -64,15 +63,15 @@ class FieldBook extends Component {
       );
     }
     return (
-        <div>
-          <Header />
-          <div className="field-book">
-            <div className="field-book-title">
-              <Title title={'Please login to access your Field Book'} />
-            </div>
-          </div>
-          <FatFooter />
+      <div className="field-book">
+        <NfNLogoVertical />
+        <NfNLogoVertical />
+        <div className="hero">
+          <Header bgClass={'transparent'} />
+          <h2 className="name">Please login to access your Field Book</h2>
         </div>
+        <FatFooter />
+      </div>
     );
   }
 }
