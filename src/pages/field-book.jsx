@@ -9,6 +9,7 @@ import { fetchProjectPreferences, fetchOldProjectPreferences } from 'actions/pro
 import { fetchClassifications } from 'actions/classifications';
 import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
+import * as status from 'constants/statuses';
 import { NfNLogoVertical } from 'components/logos/nfn-logo-vertical';
 
 class FieldBook extends Component {
@@ -22,20 +23,21 @@ class FieldBook extends Component {
 
   doDispatches() {
     if (this.props.user && this.props.user.id) {
-      if (!Object.keys(this.props.activityByWorkflow).length) {
+      if (this.props.projectPreferences.status === status.FETCH_READY) {
         this.props.dispatch(fetchProjectPreferences(this.props.user.id));
       }
-      if (!this.props.classifications.length) {
-        this.props.dispatch(fetchClassifications(this.props.user.id));
+      if (this.props.projectPreferences.oldStatus === status.FETCH_READY) {
         this.props.dispatch(fetchOldProjectPreferences(this.props.user.id));
+      }
+      if (this.props.classifications.status === status.FETCH_READY) {
+        this.props.dispatch(fetchClassifications(this.props.user.id));
       }
     }
   }
 
   render() {
-    const { user, allWorkflows, activityByWorkflow, oldActivityCount,
-      classifications, subjects } = this.props;
-    const total = totalCount(activityByWorkflow);
+    const { user, workflows, projectPreferences, classifications, subjects } = this.props;
+    const total = totalCount(projectPreferences.activityByWorkflow);
     if (user) {
       return (
         <div className="field-book">
@@ -49,12 +51,18 @@ class FieldBook extends Component {
           </div>
           <div className="content">
             <div className="left-content">
-              <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
+              <FieldBookExpeditions
+                allWorkflows={workflows.allWorkflows}
+                classifications={classifications.classifications}
+              />
               <FieldBookTranscriptions subjects={subjects.subjects} />
             </div>
             <div className="right-content">
-              <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow}
-                activityCount={total} oldActivityCount={oldActivityCount}
+              <FieldBookBadges
+                allWorkflows={workflows.allWorkflows}
+                activityByWorkflow={projectPreferences.activityByWorkflow}
+                activityCount={total}
+                oldActivityCount={projectPreferences.oldActivityCount}
               />
             </div>
           </div>
@@ -79,20 +87,18 @@ FieldBook.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object,
   subjects: PropTypes.object,
-  allWorkflows: PropTypes.array,
-  classifications: PropTypes.array,
-  activityByWorkflow: PropTypes.object,
-  oldActivityCount: PropTypes.number,
+  workflows: PropTypes.object,
+  classifications: PropTypes.object,
+  projectPreferences: PropTypes.object,
 };
 
 function mapStateToProps(state) {
   return {
     user: state.login.user,
     subjects: state.subjects,
-    allWorkflows: state.workflows.allWorkflows,
-    classifications: state.classifications.classifications,
-    activityByWorkflow: state.projectPreferences.activityByWorkflow,
-    oldActivityCount: state.projectPreferences.oldActivityCount,
+    workflows: state.workflows,
+    classifications: state.classifications,
+    projectPreferences: state.projectPreferences,
   };
 }
 
