@@ -24,7 +24,7 @@
       border: 2px solid rgba(0, 0, 0, 0)
 
     .tiles
-      margin: 48px 0 48px 120px
+      margin: 48px 8px 48px 120px
       display: flex
       align-items: center
       flex-direction: row
@@ -76,9 +76,17 @@
           right: 0
 
           i:hover
-            color: #162D10
+            color: #c3c3c3
 
       img
         height: 220px
         width: 100%
         border 2px solid #65981d
+
+  @media screen and (max-width: 640px)
+    .expedition-group-icon
+      display: none
+
+    .content
+      .tiles
+        margin: 48px 12px

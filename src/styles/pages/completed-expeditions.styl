@@ -1,27 +1,14 @@
 .completed-expeditions
-  background-color: #202020
-  padding: 0 12px
+  background-color: #ededed
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
 
-  .project-name
-    padding-bottom: 0
-
-  .completed-expeditions-title
-    display: flex
-    align-items: center
-    flex-flow: column
-    position: relative
-
-    h1
-      color: white
-      padding-bottom: 40px
-
-    .project-name
-      padding-top: 40px
-
-  hr
-    margin: 20px 10px 30px 10px
+  .hero
+    background: url("../images/background/birds.png")
 
   .tiles
+    margin: 48px 8px
     display: flex
     align-items: center
     flex-direction: row
@@ -32,7 +19,6 @@
       position: relative
       max-width: 240px
       font-weight: bold
-      text-align: center
       align-self: flex-start
       font-size: 16px
       padding-bottom: 20px
@@ -44,7 +30,7 @@
         opacity: 0
         padding: 12px
         position: absolute
-        font-size: 14px
+        font-size: 12px
         font-weight: normal
         transition: all 1.25s linear
 
@@ -59,7 +45,7 @@
         display: flex
         flex-flow: column
         text-decoration: none
-        color: #96f132
+        color: #65981d
 
         .label
           max-width: 90%
@@ -68,17 +54,22 @@
             font-size: 12px
 
     .more-info
-      color: white
+      color: #65981d
       position: absolute
-      bottom: 56px
+      top: 182px
       right: 0
 
       i
         font-size: 18px
 
       i:hover
-        color: #226764
+        color: #c3c3c3
 
     img
       height: 180px
       width: 100%
+      border 2px solid #65981d
+
+  @media screen and (max-width: 640px)
+    .tiles
+      margin: 48px 12px
