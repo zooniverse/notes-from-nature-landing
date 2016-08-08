@@ -66,6 +66,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Hypericum.jpg',
     link: 'https://biospex.org/project/wedigflplants',
+    completed_at: 'July 9 2016',
   },
   'Herbarium_WeDigFLPlants\' Rose Gentians of Florida—Beauty from the Center of its Diversity': {
     snippet: `
@@ -76,6 +77,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Rose_Gentian.jpg',
     link: 'https://biospex.org/project/wedigflplants',
+    completed_at: 'July 5 2016',
   },
   'Pinned Specimen_CalBug Bee Flies 3': {
     snippet: `
@@ -95,6 +97,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_PlantsOfVirginia_Ant_Plants_I.jpg',
     link: 'https://biospex.org/project/ant-plants-of-virginia',
+    completed_at: 'July 24 2016',
   },
   'Pinned Specimen_CalBug Bee Flies 4': {
     snippet: `
@@ -140,6 +143,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
+    completed_at: 'July 27 2016',
   },
   'Pinned Specimen_Tiger Beetles 1': {
     snippet: `
@@ -151,6 +155,33 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
     link: 'http://entomology.museums.ualberta.ca/searching.php',
+  },
+  'Herbarium_Plants of Virginia - Ant Plants II': {
+    snippet: `
+      Ants are essential to the life of over 11,000 plant species worldwide.
+      Help us learn more about this remarkable partnership in Virginia.
+    `,
+    image: 'Herbarium_PlantsOfVirginia_Ant_Plants_I.jpg',
+    link: 'https://biospex.org/project/ant-plants-of-virginia',
+  },
+  'Herbarium_Natural North Carolina\'s - Be a Companion to Campanulaceae': {
+    snippet: `
+      The Campanulaceae family contains lovely wildflowers such as Lobelias,
+      Harebells and Bellflowers, which are loved by gardeners and relished by hummingbirds.
+      Help us map these plants in the Southeastern United States!
+    `,
+    image: 'LobeliaHummingbird2.jpg',
+    link: 'https://biospex.org/project/natural-north-carolina',
+  },
+  'Pinned Specimen_CalBug Bee Flies 6': {
+    snippet: `
+      This expedition features 1000 images of bee fly (Bombyliidae) specimens from the CalBug
+      project. The specimens were collected across the western Unites States. The bee flies are a
+      large family of flies that feed on nectar and pollen. Some are important pollinators. Species
+      of bee flies sometimes resemble bees, which is how they got their common name.
+    `,
+    image: 'Pinned_Specimen_bee_flies_expedition.jpg',
+    link: 'http://calbug.berkeley.edu/',
   },
 };
 
