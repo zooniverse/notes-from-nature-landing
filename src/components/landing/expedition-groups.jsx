@@ -4,7 +4,6 @@ import { activeExpeditionGroups } from 'helpers/expedition-groups';
 
 export const LandingExpeditionGroups = ({ activeWorkflows }) =>
   <div className="expedition-groups">
-    <h1>Choose a Group and Start Transcribing!</h1>
     <div className="links">
       {activeExpeditionGroups(activeWorkflows).map((group, i) =>
         <Link to={ `/active-expeditions/${group.prefix}` } key={i}>

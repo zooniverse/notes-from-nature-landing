@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Header from 'components/header';
+import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
 import { FieldBookBadges } from 'components/field-book/badges';
 import { FieldBookExpeditions } from 'components/field-book/expeditions';
@@ -10,7 +10,6 @@ import { fetchClassifications } from 'actions/classifications';
 import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
 import * as status from 'constants/statuses';
-import { NfNLogoVertical } from 'components/logos/nfn-logo-vertical';
 
 class FieldBook extends Component {
   componentDidMount() {
@@ -18,7 +17,7 @@ class FieldBook extends Component {
   }
 
   componentDidUpdate() {
-    this.doDispatches();
+    this.doDispatches();  // For page reloads
   }
 
   doDispatches() {
@@ -41,14 +40,10 @@ class FieldBook extends Component {
     if (user) {
       return (
         <div className="field-book">
-          <NfNLogoVertical />
-          <div className="hero">
-            <Header bgClass={'transparent'} />
-            <h2 className="name">{`${user.display_name}'s Field Book`}</h2>
-            <h4 className="total">
-              {`You have transcribed ${total} ${pluralize('records', total)}`}
-            </h4>
-          </div>
+          <Hero
+            title={`${user.display_name}'s Field Book`}
+            subtitle={`You have transcribed ${total} ${pluralize('records', total)}`}
+          />
           <div className="content">
             <div className="left-content">
               <FieldBookExpeditions
@@ -72,11 +67,7 @@ class FieldBook extends Component {
     }
     return (
       <div className="field-book">
-        <NfNLogoVertical />
-        <div className="hero">
-          <Header bgClass={'transparent'} />
-          <h2 className="name">Please login to access your Field Book</h2>
-        </div>
+        <Hero img="" title="Please login to access your Field Book" subtitle="" />
         <FatFooter />
       </div>
     );
