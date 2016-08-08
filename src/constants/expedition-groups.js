@@ -16,7 +16,7 @@ export const expeditionGroups = {
     badgeGroup: 'insect',
   },
   'Pinned Specimen': {
-    name: 'Pinned Specimen',
+    name: 'Pinned Specimens',
     icon: InsectIcon,
     badgeGroup: 'insect',
   },
