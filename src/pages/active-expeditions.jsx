@@ -1,11 +1,8 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import { Hero } from 'components/hero';
 import { connect } from 'react-redux';
 import { expeditionGroups } from 'constants/expedition-groups';
-import Header from 'components/header';
 import { FatFooter } from 'components/fat-footer';
-import { Title } from 'components/title';
-import { HomeIcon } from 'components/icons/home';
 import { config } from 'constants/config';
 import { findExpedition, expeditionsInGroup } from 'helpers/expeditions';
 
@@ -13,19 +10,15 @@ const ActiveExpeditions = ({ params, activeWorkflows }) => {
   const { group } = params;
   const expeditionGroup = expeditionGroups[group];
   return (
-    <div>
-      <Header />
-      <div className="active-expeditions">
-        <div className="active-expeditions-title">
-          <Title title={`Active Expeditions for ${expeditionGroup.name}`} />
-          <Link to={"/"} aria-label="Return Home">
-            { React.createElement(expeditionGroup.icon) }
-            <HomeIcon />
-          </Link>
-        </div>
-        <hr />
+    <div className="active-expeditions">
+      <Hero
+        title={expeditionGroup.name}
+        subtitle={`Active Expeditions for ${expeditionGroup.name}`}
+      />
+      <div className="content">
+        { React.createElement(expeditionGroup.icon) }
         <div className="tiles">
-          {expeditionsInGroup(group, activeWorkflows).map((workflow, i) => {
+          { expeditionsInGroup(group, activeWorkflows).map((workflow, i) => {
             const expedition = findExpedition(workflow.display_name);
             const percent = workflow.completeness * 100.0;
             return (
@@ -56,8 +49,8 @@ const ActiveExpeditions = ({ params, activeWorkflows }) => {
               </div>
             );
           })}
+          </div>
         </div>
-      </div>
       <FatFooter />
     </div>
   );
