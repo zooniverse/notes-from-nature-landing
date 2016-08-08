@@ -2,12 +2,13 @@ import React from 'react';
 
 export const LandingReasons = () =>
   <div className="reasons">
-    <h3 className="reasons-title">Why should you get involved?</h3>
+    <h3 className="reasons-title">Get involved!</h3>
     <div className="reason">
       <div>
         <img src="landing/home_icon_bird.png" alt="avian best friend" />
         <h3>To improve our world.</h3>
-        <p>Museum records contain historical biodiversity data. Scientists and researchers
+        <p>
+          Museum records contain historical biodiversity data. Scientists and researchers
           can use the data to conduct new research and make better conservation decisions.
         </p>
       </div>
@@ -18,9 +19,10 @@ export const LandingReasons = () =>
       </div>
       <div>
         <img src="landing/home_icon_lab.png" alt="lab" />
-        <h3>You are contributing to real science. Thank you!</h3>
-        <p>The digitized data you are creating will help advance research related to
-           species extinction, ecosystem changes, environmental health and even human health.
+        <h3>You are contributing to real science.</h3>
+        <p>
+          The digitized data you are creating will help advance research related to
+          species extinction, ecosystem changes, environmental health and even human health.
          </p>
       </div>
     </div>

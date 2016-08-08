@@ -1,13 +1,8 @@
 .hero
-  display: flex
-  flex-direction: column
-  flex-wrap: wrap
-  justify-content: flex-start
-  align-content: flex-start
 
   svg.nfn-logo
     position: absolute
-    height: 200px
+    height: 240px
     top: 0
     left: 8px
     fill: rgba(0, 0, 0, 0)
@@ -20,19 +15,24 @@
     padding: 0
 
     &.title
-      align-content: flex-end
+      margin-top: 48px
 
     &.subtitle
-      flex: 1
-      align-content: flex-start
+      margin-top: 16px
+      font-size: 20px
       text-transform: uppercase
 
-  @media screen and (max-width: 440px)
+  @media screen and (max-width: 640px)
+    svg.nfn-logo
+      height: 180px
+
     h2, h3, h4
       margin: 16px 0 0 80px
 
-    h2
-      font-size: 20px
+      &.title
+        margin-top: 16px
+        font-size: 24px
 
-    h3, h4
-      font-size: 16px
+      &.subtitle
+        margin-top: 4px
+        font-size: 16px
