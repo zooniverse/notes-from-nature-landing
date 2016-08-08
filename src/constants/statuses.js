@@ -1,0 +1,4 @@
+export const FETCH_READY = 'FETCH_READY';
+export const FETCH_REQUESTED = 'FETCH_REQUESTED';
+export const FETCH_COMPLETED = 'FETCH_COMPLETED';
+export const FETCH_ERROR = 'FETCH_ERROR';

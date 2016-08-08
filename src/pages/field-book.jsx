@@ -1,8 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Header from 'components/header';
+import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
-import { Title } from 'components/title';
 import { FieldBookBadges } from 'components/field-book/badges';
 import { FieldBookExpeditions } from 'components/field-book/expeditions';
 import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
@@ -10,6 +9,7 @@ import { fetchProjectPreferences, fetchOldProjectPreferences } from 'actions/pro
 import { fetchClassifications } from 'actions/classifications';
 import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
+import * as status from 'constants/statuses';
 
 class FieldBook extends Component {
   componentDidMount() {
@@ -17,57 +17,59 @@ class FieldBook extends Component {
   }
 
   componentDidUpdate() {
-    this.doDispatches();
+    this.doDispatches();  // For page reloads
   }
 
   doDispatches() {
     if (this.props.user && this.props.user.id) {
-      if (!Object.keys(this.props.activityByWorkflow).length) {
+      if (this.props.projectPreferences.status === status.FETCH_READY) {
         this.props.dispatch(fetchProjectPreferences(this.props.user.id));
       }
-      if (!this.props.classifications.length) {
-        this.props.dispatch(fetchClassifications(this.props.user.id));
+      if (this.props.projectPreferences.oldStatus === status.FETCH_READY) {
         this.props.dispatch(fetchOldProjectPreferences(this.props.user.id));
+      }
+      if (this.props.classifications.status === status.FETCH_READY) {
+        this.props.dispatch(fetchClassifications(this.props.user.id));
       }
     }
   }
 
   render() {
-    const { user, allWorkflows, activityByWorkflow, oldActivityCount,
-      classifications, subjects } = this.props;
-    const total = totalCount(activityByWorkflow);
-    if (user !== null) {
+    const { user, workflows, projectPreferences, classifications, subjects } = this.props;
+    const total = totalCount(projectPreferences.activityByWorkflow);
+    if (user) {
       return (
-        <div>
-          <Header />
-          <div className="field-book">
-            <div className="field-book-title">
-              <Title title={`${user.display_name}'s Field Book`} />
+        <div className="field-book">
+          <Hero
+            title={`${user.display_name}'s Field Book`}
+            subtitle={`You have transcribed ${total} ${pluralize('records', total)}`}
+          />
+          <div className="content">
+            <div className="left-content">
+              <FieldBookExpeditions
+                allWorkflows={workflows.allWorkflows}
+                classifications={classifications.classifications}
+              />
+              <FieldBookTranscriptions subjects={subjects.subjects} />
             </div>
-            <hr />
-            <div className="statistics">
-              <h2>{`You have transcribed ${total} ${pluralize('records', total)}`}</h2>
+            <div className="right-content">
+              <FieldBookBadges
+                allWorkflows={workflows.allWorkflows}
+                activityByWorkflow={projectPreferences.activityByWorkflow}
+                activityCount={total}
+                oldActivityCount={projectPreferences.oldActivityCount}
+              />
             </div>
-            <FieldBookExpeditions allWorkflows={allWorkflows} classifications={classifications} />
-            <FieldBookTranscriptions subjects={subjects.subjects} />
-            <FieldBookBadges allWorkflows={allWorkflows} activityByWorkflow={activityByWorkflow}
-              activityCount={total} oldActivityCount={oldActivityCount}
-            />
           </div>
           <FatFooter />
         </div>
       );
     }
     return (
-        <div>
-          <Header />
-          <div className="field-book">
-            <div className="field-book-title">
-              <Title title={'Please login to access your Field Book'} />
-            </div>
-          </div>
-          <FatFooter />
-        </div>
+      <div className="field-book">
+        <Hero img="" title="Please login to access your Field Book" subtitle="" />
+        <FatFooter />
+      </div>
     );
   }
 }
@@ -76,20 +78,18 @@ FieldBook.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object,
   subjects: PropTypes.object,
-  allWorkflows: PropTypes.array,
-  classifications: PropTypes.array,
-  activityByWorkflow: PropTypes.object,
-  oldActivityCount: PropTypes.number,
+  workflows: PropTypes.object,
+  classifications: PropTypes.object,
+  projectPreferences: PropTypes.object,
 };
 
 function mapStateToProps(state) {
   return {
     user: state.login.user,
     subjects: state.subjects,
-    allWorkflows: state.workflows.allWorkflows,
-    classifications: state.classifications.classifications,
-    activityByWorkflow: state.projectPreferences.activityByWorkflow,
-    oldActivityCount: state.projectPreferences.oldActivityCount,
+    workflows: state.workflows,
+    classifications: state.classifications,
+    projectPreferences: state.projectPreferences,
   };
 }
 
