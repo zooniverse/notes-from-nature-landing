@@ -2,12 +2,12 @@ import React, { PropTypes } from 'react';
 import { recentExpeditions } from 'helpers/expeditions';
 import { config } from 'constants/config';
 
-export const FieldBookExpeditions = ({ classifications, allWorkflows, activityByWorkflow }) =>
+export const FieldBookExpeditions = ({ allWorkflows, activityByWorkflow }) =>
   <div className="expedition-container">
     <h3>Top Recent Expeditions</h3>
     <hr />
     <div className="expeditions">
-      { recentExpeditions(allWorkflows, classifications, activityByWorkflow).map((e, i) =>
+      { recentExpeditions(allWorkflows, activityByWorkflow).map((e, i) =>
         <div className="expedition" key={i}>
           {e.active
             ? <a href={`${config.workflowUrl}workflow=${e.id}`} aria-label={`Link to ${e.name}`}>
@@ -24,6 +24,5 @@ export const FieldBookExpeditions = ({ classifications, allWorkflows, activityBy
 
 FieldBookExpeditions.propTypes = {
   allWorkflows: PropTypes.array,
-  classifications: PropTypes.array,
   activityByWorkflow: PropTypes.object,
 };
