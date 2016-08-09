@@ -48,6 +48,7 @@ class FieldBook extends Component {
             <div className="left-content">
               <FieldBookExpeditions
                 allWorkflows={workflows.allWorkflows}
+                activityByWorkflow={projectPreferences.activityByWorkflow}
                 classifications={classifications.classifications}
               />
               <FieldBookTranscriptions subjects={subjects.subjects} />

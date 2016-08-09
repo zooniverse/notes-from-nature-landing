@@ -1,31 +1,51 @@
 .reasons
   background-color: #ececec
-  text-align: center
-  padding: 0 2em 1em 2em
 
-  h3.reasons-title
-    margin: 24px 64px
-    font-size: x-large
-    color: #65981e
-    border-bottom: 2px dotted #65981e
-
-  .reason
+  .content
+    padding-left: 136px
     display: flex
     flex-direction: row
     flex-wrap: wrap
 
-    > div
-      padding 1em
+    @media screen and (max-width: 640px)
+      padding: 24px
+
+    .content-left
+      flex: 3
+      padding-right: 20px
+      padding-bottom: 40px
+      margin-right: 50px
+
+      .title
+        text-align: left
+        margin: 24px 0 24px 0
+        padding: 0
+        font-size: x-large
+        color: #65981e
+        border-bottom: 2px dotted #65981e
+
+      .tile
+        display: inline-flex
+        padding-bottom: 48px
+
+        div
+          padding-left: 24px
+
+        h3, p
+          margin: 0
+
+        h3
+          font-weight: bolder
+
+        img
+          border-radius: 67px
+          height: 92px
+
+    .content-right
+      color: white
+      background-color: #226764
       flex: 1
+      padding: 8px 24px
 
-      > h3
-        min-height: 52px
-        margin-bottom: 0
-        font-weight: bold
-
-      > p
-        margin-top: 8px
-
-    img
-      border-radius: 67px
-      height: 100px
+      h4
+        border-bottom: 2px dotted white
