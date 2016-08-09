@@ -27,7 +27,7 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
               </div>
             </div>
             {expedition.link ?
-              <a href={`${expedition.link}`} className="more-info" zIndex="10"
+              <a href={`${expedition.link}`} className="more-info"
                 aria-label="More information" target="_blank"
               >
                 <i className="fa fa-info-circle" aria-hidden="true"></i>
