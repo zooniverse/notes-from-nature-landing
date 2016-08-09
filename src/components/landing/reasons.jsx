@@ -30,6 +30,7 @@ export const LandingReasons = () =>
         </div>
       </div>
       <div className="content-right">
+        <div className="arrow-left"></div>
         <h4>Notes from the Researchers</h4>
         <p>
           "The digitized data you are creating will help advance research related to

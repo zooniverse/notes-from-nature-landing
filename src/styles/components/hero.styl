@@ -1,4 +1,5 @@
 .hero
+  position: relative
   height: 28vh
 
   svg.nfn-logo
@@ -17,10 +18,10 @@
     padding: 0
 
     &.title
-      top: 168px
+      bottom: 48px
 
     &.subtitle
-      top: 220px
+      bottom: 24px
       font-size: 20px
       text-transform: uppercase
 
@@ -29,7 +30,6 @@
       height: 180px
 
     h2, h3, h4
-      position: absolute
       margin: 16px 0 0 80px
 
       &.title
@@ -37,5 +37,18 @@
         font-size: 24px
 
       &.subtitle
-        font-size: 16px
         top: 120px
+        font-size: 16px
+
+  @media screen and (max-height: 620px)
+    h2, h3, h4
+      &.title
+        top: 40px
+
+    svg.nfn-logo
+      display: none
+
+  @media screen and (max-width: 380px), (max-height: 700px)
+    h2, h3, h4
+      &.subtitle
+        display: none
