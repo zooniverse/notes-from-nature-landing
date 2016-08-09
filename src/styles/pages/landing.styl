@@ -1,42 +1,16 @@
 .landing
   background-color: #e1e1e1
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
 
   .hero
-    background: url("../images/landing/home.jpg")
-    display: flex
-    flex-direction: column
-
-    .landing-title
-      color: white
-      display: flex
-      flex-flow: column
-      align-items: center
-      background-color: rgba(32, 32, 32, 0.2)
-      padding: 80px 0
-
-      .title
-        padding: 0
-
-      .action
-        font-size: 18px
-        font-weight: bold
-
-      hr
-        width: 5em
-
-    .project-announcement-banner
-      border: 2px solid
-      border-radius: 0.2em
-      box-shadow: 0 2px 4px rgba(black, 0.3)
-      box-sizing: border-box
-      color: white
-      margin: 0 3vw
-      padding: 0 1.5vw
-      text-align: center
-      font-weight: bold
-
-      &.informational
-        background: #226764
+    background: url("../images/background/landing.jpg")
 
   .contributors
-    background: linear-gradient(to bottom, #e1e1e1, white 40%, white)
+    background: linear-gradient(to bottom, #ececec, white 40%, white)
+    padding-left: 136px
+    color: #65981e
+
+    @media screen and (max-width: 640px)
+      padding: 8px

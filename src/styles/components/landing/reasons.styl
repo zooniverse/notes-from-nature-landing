@@ -1,20 +1,62 @@
 .reasons
-  text-align: center
-  padding: 0 2em 1em 2em
+  background-color: #ececec
 
-  h3.reasons-title
-    font-size: x-large
-    color: black
-
-  .reason
+  .content
+    padding-left: 136px
     display: flex
     flex-direction: row
     flex-wrap: wrap
 
-    > div
-      padding 1em
-      flex: 1
+    @media screen and (max-width: 640px)
+      padding: 24px
 
-    img
-      border-radius: 67px
-      height: 100px
+    .content-left
+      flex: 3
+      padding-right: 20px
+      padding-bottom: 40px
+      margin-right: 50px
+
+      .title
+        text-align: left
+        margin: 24px 0 24px 0
+        padding: 0
+        font-size: x-large
+        color: #65981e
+        border-bottom: 2px dotted #65981e
+
+      .tile
+        display: inline-flex
+        padding-bottom: 48px
+
+        div
+          padding-left: 24px
+
+        h3, p
+          margin: 0
+
+        h3
+          font-weight: bolder
+
+        img
+          border-radius: 67px
+          height: 92px
+
+    .content-right
+      position: relative
+      color: white
+      background-color: #226764
+      flex: 1
+      padding: 8px 24px
+
+      h4
+        border-bottom: 2px dotted white
+
+      .arrow-left
+        position: absolute
+        left: -20px
+        top: 52px
+        width: 0
+        height: 0
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        border-right: 20px solid #226764

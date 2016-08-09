@@ -1,8 +1,8 @@
 import apiClient from 'panoptes-client/lib/api-client';
-import * as types from 'constants/actions';
+import * as type from 'constants/actions';
 
 function subjectReceived(json) {
-  return { type: types.SUBJECT_RECEIVED, json };
+  return { type: type.SUBJECT_RECEIVED, json };
 }
 
 export function fetchSubject(subjectId) {
@@ -11,7 +11,7 @@ export function fetchSubject(subjectId) {
 }
 
 function subjectsRequested() {
-  return { type: types.SUBJECTS_REQUESTED };
+  return { type: type.SUBJECTS_REQUESTED };
 }
 
 export function fetchSubjects(subjectIds) {

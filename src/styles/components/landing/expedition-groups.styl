@@ -1,16 +1,41 @@
 .expedition-groups
   background-color: rgba(32, 32, 32, 0.7)
-  text-align: center
-  padding-bottom: 20px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+  padding: 24px 0 24px 136px
 
-  h1
-    color: white
+  @media screen and (max-width: 640px)
+    padding: 24px 0
+    text-align: center
 
-  .links
-    padding: 0 20px 0 40px
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
+  a
+    flex: 1
 
-    a
-      flex: 1
+    svg.expedition-group-icon, svg.expedition-group-home, svg.expedition-group-history
+      background-color: #226764
+      height: 100px
+      width: 100px
+      border-radius: 50px
+      stroke: white
+      fill: white
+      border: 2px solid white
+      transition: ease 0.75s
+
+    svg.expedition-group-history
+      height: 32px
+      width: 32px
+
+    svg.expedition-group-home
+      background-color: white
+      stroke: #226764
+      fill: #226764
+      transition: ease 0.75s
+
+    svg.expedition-group-icon:hover, svg.expedition-group-history:hover
+      background-color: white
+      border: 2px solid white
+      stroke: #226764
+      fill: #226764
+      transition: ease 0.25s

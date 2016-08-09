@@ -1,0 +1,54 @@
+.hero
+  position: relative
+  height: 28vh
+
+  svg.nfn-logo
+    position: absolute
+    height: 260px
+    top: 0
+    left: 8px
+    fill: rgba(0, 0, 0, 0)
+    stroke: lightgray
+
+  h2, h3, h4
+    position: absolute
+    color: white
+    text-align: left
+    margin: 0 0 0 136px
+    padding: 0
+
+    &.title
+      bottom: 48px
+
+    &.subtitle
+      bottom: 24px
+      font-size: 20px
+      text-transform: uppercase
+
+  @media screen and (max-width: 640px)
+    svg.nfn-logo
+      height: 180px
+
+    h2, h3, h4
+      margin: 16px 0 0 80px
+
+      &.title
+        top: 84px
+        font-size: 24px
+
+      &.subtitle
+        top: 120px
+        font-size: 16px
+
+  @media screen and (max-height: 620px)
+    h2, h3, h4
+      &.title
+        top: 40px
+
+    svg.nfn-logo
+      display: none
+
+  @media screen and (max-width: 380px), (max-height: 700px)
+    h2, h3, h4
+      &.subtitle
+        display: none
