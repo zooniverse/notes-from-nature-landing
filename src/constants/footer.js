@@ -46,6 +46,9 @@ export const footer = {
   }, {
     header: 'Nature',
     projects: [{
+      href: 'notesFromNature.org',
+      text: 'Notes from Nature',
+    }, {
       href: 'snapshotSerengeti.org',
       text: 'Snapshot Serengeti',
     }, {
@@ -75,9 +78,6 @@ export const footer = {
     }, {
       href: 'ancientLives.org',
       text: 'Ancient Lives',
-    }, {
-      href: 'notesFromNature.org',
-      text: 'Notes from Nature',
     }, {
       href: 'scienceGossip.org',
       text: 'Science Gossip',

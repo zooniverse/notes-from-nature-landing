@@ -1,33 +1,46 @@
-.expedition-groups
-  background-color: rgba(32, 32, 32, 0.7)
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  justify-content: flex-start
+
+.expedition-groups-container
+  background-color: #626262
   padding: 24px 0 24px $lg-left-spacer
 
   @media screen and (max-width: $md-screen-width)
-    padding: 24px 0
+    padding: 24px 0 24px 32px
 
-  a
-    margin: 12px 72px 0 0
+  .call-to-action
+    color: white
+    padding-bottom: 8px
+    border-bottom: 2px dotted white
+    margin-top: 0
+    margin-right: 80px
+
+  .expedition-groups
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
 
     @media screen and (max-width: $md-screen-width)
-      padding: 12px 0 0 24px
+      padding: 24px 0
 
-    svg.expedition-group-icon
-      background-color: $dark-teal
-      height: 100px
-      width: 100px
-      border-radius: 50px
-      stroke: white
-      fill: white
-      border: 2px solid white
-      transition: ease 0.75s
+    a
+      margin: 12px 72px 0 0
 
-    svg.expedition-group-icon:hover
-      background-color: white
-      border: 2px solid white
-      stroke: $dark-teal
-      fill: $dark-teal
-      transition: ease 0.25s
+      @media screen and (max-width: $md-screen-width)
+        padding-top: 12px
+
+      svg.expedition-group-icon
+        background-color: $dark-teal
+        height: 100px
+        width: 100px
+        border-radius: 50px
+        stroke: white
+        fill: white
+        border: 2px solid white
+        transition: ease 0.75s
+
+      svg.expedition-group-icon:hover
+        background-color: white
+        border: 2px solid white
+        stroke: $dark-teal
+        fill: $dark-teal
+        transition: ease 0.25s
