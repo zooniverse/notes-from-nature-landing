@@ -9,7 +9,7 @@
     background: url("../images/background/butterflies.png")
 
   .content
-    padding-left: 120px
+    padding-left: $lg-left-spacer
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -23,27 +23,22 @@
 
       hr
         border: 0
-        border-bottom: 2px dotted #65981e
+        border-bottom: 2px dotted $lime-green
         margin-bottom: 32px
 
       h2, h3
-        color: #65981e
+        color: $lime-green
 
     .right-content
       background-color: #535151
       flex: 1
 
-  @media screen and (max-width: 640px)
+  @media screen and (max-width: $md-screen-width)
     .content
       flex-direction: column
       padding-left: 0px
 
     .left-content
       flex: 1
-      padding-left: 100px
-      margin-right: 0px
-
-    .hero
-      .name, .total
-        padding: 0px 0 0 40px
-        margin: 0
+      padding-left: 40px
+      margin-right: 20px

@@ -3,18 +3,20 @@
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  justify-content: space-around
-  padding: 24px 0 24px 136px
+  justify-content: flex-start
+  padding: 24px 0 24px $lg-left-spacer
 
-  @media screen and (max-width: 640px)
+  @media screen and (max-width: $md-screen-width)
     padding: 24px 0
-    text-align: center
 
   a
-    flex: 1
+    margin: 12px 72px 0 0
 
-    svg.expedition-group-icon, svg.expedition-group-home, svg.expedition-group-history
-      background-color: #226764
+    @media screen and (max-width: $md-screen-width)
+      padding: 12px 0 0 24px
+
+    svg.expedition-group-icon
+      background-color: $dark-teal
       height: 100px
       width: 100px
       border-radius: 50px
@@ -23,19 +25,9 @@
       border: 2px solid white
       transition: ease 0.75s
 
-    svg.expedition-group-history
-      height: 32px
-      width: 32px
-
-    svg.expedition-group-home
-      background-color: white
-      stroke: #226764
-      fill: #226764
-      transition: ease 0.75s
-
-    svg.expedition-group-icon:hover, svg.expedition-group-history:hover
+    svg.expedition-group-icon:hover
       background-color: white
       border: 2px solid white
-      stroke: #226764
-      fill: #226764
+      stroke: $dark-teal
+      fill: $dark-teal
       transition: ease 0.25s

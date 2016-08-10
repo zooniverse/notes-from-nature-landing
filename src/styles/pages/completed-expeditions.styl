@@ -8,12 +8,11 @@
     background: url("../images/background/birds.png")
 
   .tiles
-    margin: 48px 8px
+    margin: 48px 8px 48px $lg-left-spacer
     display: flex
-    align-items: center
     flex-direction: row
     flex-wrap: wrap
-    justify-content: space-around
+    justify-content: flex-start
 
     .tile
       position: relative
@@ -22,6 +21,7 @@
       align-self: flex-start
       font-size: 16px
       padding-bottom: 20px
+      margin: 10px 44px 10px 0
 
       .snippet
         top: 0
@@ -71,6 +71,6 @@
       width: 100%
       border 2px solid #65981d
 
-  @media screen and (max-width: 640px)
+  @media screen and (max-width: $md-screen-width)
     .tiles
-      margin: 48px 12px
+      margin: 48px 40px

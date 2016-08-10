@@ -1,5 +1,5 @@
 .header
-  margin: 8px 8px 0 72px
+  margin: 24px 60px 0 $lg-left-spacer
   font-size: 12px
   color: white
   display: flex
@@ -10,10 +10,9 @@
   a
     flex: 1
     color: white
-    text-align: center
     text-decoration: none
     align-self: flex-end
-    margin: 0 4px
+    margin: 0 4px 0 0
 
     &.wide
       flex: 3
@@ -31,8 +30,8 @@
       background-color: rgba(0, 0, 0, 0.0)
       border: none
 
-  @media screen and (max-width: 440px)
-    margin: 8px 8px 0 60px
+  @media screen and (max-width: $sm-screen-width)
+    margin: 8px 8px 0 $md-left-spacer
 
     a
       padding-top: 4px

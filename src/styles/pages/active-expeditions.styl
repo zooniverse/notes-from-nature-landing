@@ -13,9 +13,9 @@
     .expedition-group-icon
       position: absolute
       top: -40px
-      left: -20px
-      height: 200px
-      width: 200px
+      left: -30px
+      height: 180px
+      width: 180px
       border-radius: 100px
       background-color: rgba(0, 0, 0, 0)
       fill: rgba(0, 0, 0, 0)
@@ -24,20 +24,18 @@
       border: 2px solid rgba(0, 0, 0, 0)
 
     .tiles
-      margin: 48px 8px 48px 120px
       display: flex
-      align-items: center
       flex-direction: row
       flex-wrap: wrap
-      justify-content: space-around
+      justify-content: flex-start
+      margin: 48px 8px 48px $lg-left-spacer
 
       .tile
         position: relative
         max-width: 320px
         font-weight: bold
-        align-self: flex-start
         font-size: 20px
-        padding-bottom: 20px
+        margin: 20px 48px 20px 0
 
         .snippet
           top: 0
@@ -84,10 +82,10 @@
         width: 100%
         border 2px solid #65981d
 
-  @media screen and (max-width: 640px)
+  @media screen and (max-width: $md-screen-width)
     .expedition-group-icon
       display: none
 
     .content
       .tiles
-        margin: 48px 12px
+        margin: 48px 12px 48px 32px

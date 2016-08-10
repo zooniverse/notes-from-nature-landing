@@ -1,5 +1,4 @@
 .landing
-  background-color: #e1e1e1
   display: flex
   flex-direction: column
   flex-wrap: wrap
@@ -9,8 +8,8 @@
 
   .contributors
     background: linear-gradient(to bottom, #ececec, white 40%, white)
-    padding-left: 136px
-    color: #65981e
+    padding-left: $lg-left-spacer
+    color: $lime-green
 
-    @media screen and (max-width: 640px)
-      padding: 8px
+    @media screen and (max-width: $md-screen-width)
+      padding-left: 32px

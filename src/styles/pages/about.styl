@@ -9,7 +9,10 @@
     background: url("../images/background/landing.jpg")
 
   .about-content
-    padding: 0 20px
+    padding: 0 40px 0 $lg-left-spacer
+
+    @media screen and (max-width: $md-screen-width)
+      padding-left: 32px
 
     img
       float: right
@@ -23,15 +26,19 @@
       flex-direction: row
 
     p
-      margin: 0 10px
+      margin-right: 10px
       padding: 4px 0
       margin-bottom: 1em;
 
-    @media screen and (max-width: 420px)
+    @media screen and (max-width: $sm-screen-width)
       img
         width: 200px
         margin-bottom: 8px
         float: none
 
   .contributors
+    padding-left: $lg-left-spacer
     background: linear-gradient(to bottom, #ececec, white 40%, white)
+
+    @media screen and (max-width: $md-screen-width)
+      padding-left: 32px

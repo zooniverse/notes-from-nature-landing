@@ -2,15 +2,16 @@
   background-color: #ececec
 
   .content
-    padding-left: 136px
+    padding-left: $lg-left-spacer
     display: flex
     flex-direction: row
     flex-wrap: wrap
 
-    @media screen and (max-width: 640px)
+    @media screen and (max-width: $md-screen-width)
       padding: 24px
 
     .content-left
+      padding-top: 20px
       flex: 3
       padding-right: 20px
       padding-bottom: 40px
@@ -21,8 +22,8 @@
         margin: 24px 0 24px 0
         padding: 0
         font-size: x-large
-        color: #65981e
-        border-bottom: 2px dotted #65981e
+        color: $lime-green
+        border-bottom: 2px dotted $lime-green
 
       .tile
         display: inline-flex
@@ -44,9 +45,9 @@
     .content-right
       position: relative
       color: white
-      background-color: #226764
+      background-color: $dark-teal
       flex: 1
-      padding: 8px 24px
+      padding: 34px 24px 8px 24px
 
       h4
         border-bottom: 2px dotted white
@@ -54,9 +55,9 @@
       .arrow-left
         position: absolute
         left: -20px
-        top: 52px
+        top: 72px
         width: 0
         height: 0
         border-top: 10px solid transparent
         border-bottom: 10px solid transparent
-        border-right: 20px solid #226764
+        border-right: 20px solid $dark-teal
