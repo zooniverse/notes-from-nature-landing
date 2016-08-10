@@ -16,8 +16,8 @@ export const badgeGroups = {
     },
   ],
   CROSS: [
-    { count: 10, name: 'Ten on both old and new projects', badge: 'cross/10_each.png' },
-    { count: 30, name: 'Thirty on both old and new projects', badge: 'cross/NfNProBadge.png' },
+    { count: 10, name: 'Pioneer', badge: 'cross/10_each.png' },
+    { count: 30, name: 'Pro', badge: 'cross/NfNProBadge.png' },
   ],
   plant: [
     { count: 1, name: 'Seed', badge: 'plants/seed.png' },
@@ -56,17 +56,16 @@ Object.keys(badgeGroups).forEach(g => badgeGroups[g].forEach(b => {
   let description = '';
   switch (g) {
     case 'MULTI':
-      description = `The ${b.name} badge is earned for transcribing
+      description = `for
         ${b.count} ${pluralize('records', b.count)}
         in ${b.expeditions} expeditions`;
       break;
     case 'CROSS':
-      description = `This badge is earned for transcribing
-        ${b.count} ${pluralize('records', b.count)}
-        in both the old and new Notes from Nature`;
+      description = `for transcribing ${b.count} ${pluralize('records', b.count)}
+        in old and new Notes from Nature`;
       break;
     default:
-      description = `The ${b.name} badge is earned for transcribing ${b.count} ${b.group}
+      description = `for transcribing ${b.count} ${b.group}
         ${pluralize('records', b.count)}`;
   }
   b.description = description;  // eslint-disable-line no-param-reassign

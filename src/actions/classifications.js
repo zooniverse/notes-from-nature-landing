@@ -1,15 +1,15 @@
 import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
-import * as types from 'constants/actions';
+import * as type from 'constants/actions';
 import { fetchSubjects } from 'actions/subjects';
 import { getSubjectIds } from 'helpers/subjects';
 
 function classificationsRequested() {
-  return { type: types.CLASSIFICATIONS_REQUESTED };
+  return { type: type.CLASSIFICATIONS_REQUESTED };
 }
 
 function classificationsReceived(json) {
-  return { type: types.CLASSIFICATIONS_RECEIVED, json };
+  return { type: type.CLASSIFICATIONS_RECEIVED, json };
 }
 
 export function fetchClassifications(userId) {

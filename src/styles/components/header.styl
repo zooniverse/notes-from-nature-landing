@@ -1,69 +1,40 @@
-.landing-header
+.header
+  margin: 24px 60px 0 $lg-left-spacer
   font-size: 12px
   color: white
-  flex: 1
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  background-color: rgba(32, 32, 32, 0.6)
+  align-content: space-between
 
-  &.opaque
-    background-color: black
+  a
+    flex: 1
+    color: white
+    text-decoration: none
+    align-self: flex-end
+    margin: 0 4px 0 0
 
-  .header-links
-    flex: 8
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    align-content: center
-    padding-top: 10px
-    padding-bottom: 10px
-
-    a
-      color: white
-      flex: 1
-      text-align: center
-      text-decoration: none
-      align-self: center
-      padding-right: 5px
-      margin-bottom: 8px
-
-      &:hover
-        color: #96f132
-        text-decoration: underline
-
-    a.wide
+    &.wide
       flex: 3
 
-    .active
-      font-weight: bold
-
-    .first
-      flex: 3
-      text-align: right
-      padding-right: 1em
-
-    .last
-      flex: 4
-      text-align: left
-      padding-left: 1em
+  a:hover,
+  .login-info button:hover
+    color: #96f132
+    text-decoration: underline
 
   .login-info
-    flex: 2
-    text-align: center
-    align-self: center
+    align-self: flex-end
 
     button
-      color: #96f132
-      background-color: rgba(32, 32, 32, 0.6)
+      color: white
+      background-color: rgba(0, 0, 0, 0.0)
       border: none
 
-      &:hover
-        text-decoration: underline
+  @media screen and (max-width: $sm-screen-width)
+    margin: 8px 8px 0 $md-left-spacer
 
-  @media screen and (max-width: 440px)
-    .first
-      text-align: center
+    a
+      padding-top: 4px
 
-    .last
+    a.remove
       display: none

@@ -1,13 +1,13 @@
 import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
-import * as types from 'constants/actions';
+import * as type from 'constants/actions';
 
 function projectPreferencesRequested() {
-  return { type: types.PROJECT_PREFERENCES_REQUESTED };
+  return { type: type.PROJECT_PREFERENCES_REQUESTED };
 }
 
 function projectPreferencesReceived(json) {
-  return { type: types.PROJECT_PREFERENCES_RECEIVED, json };
+  return { type: type.PROJECT_PREFERENCES_RECEIVED, json };
 }
 
 export function fetchProjectPreferences(userId) {
@@ -19,11 +19,11 @@ export function fetchProjectPreferences(userId) {
 }
 
 function oldProjectPreferencesRequested() {
-  return { type: types.OLD_PROJECT_PREFERENCES_REQUESTED };
+  return { type: type.OLD_PROJECT_PREFERENCES_REQUESTED };
 }
 
 function oldProjectPreferencesReceived(json) {
-  return { type: types.OLD_PROJECT_PREFERENCES_RECEIVED, json };
+  return { type: type.OLD_PROJECT_PREFERENCES_RECEIVED, json };
 }
 
 export function fetchOldProjectPreferences(userId) {
