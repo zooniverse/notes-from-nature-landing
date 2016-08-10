@@ -1,10 +1,10 @@
 import auth from 'panoptes-client/lib/auth';
 import oauth from 'panoptes-client/lib/oauth';
-import * as types from 'constants/actions';
+import * as type from 'constants/actions';
 import { config } from 'constants/config';
 
 export function setLoginUser(user) {
-  return (dispatch) => dispatch({ type: types.SET_LOGIN_USER, user });
+  return (dispatch) => dispatch({ type: type.SET_LOGIN_USER, user });
 }
 
 // First thing on app load - check if the user is logged in.

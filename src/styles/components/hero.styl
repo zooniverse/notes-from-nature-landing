@@ -1,0 +1,40 @@
+.hero
+  position: relative
+  height: 320px
+  background-size: cover
+
+  svg.nfn-logo
+    position: absolute
+    height: 300px
+    top: 10px
+    left: 20px
+    fill: rgba(0, 0, 0, 0)
+    stroke: lightgray
+
+  h2, h3, h4
+    position: absolute
+    color: white
+    text-align: left
+    left: $lg-left-spacer
+    padding: 0
+    margin: 0
+
+    &.title
+      font-size: 40px
+      bottom: 50px
+
+    &.subtitle
+      bottom: 20px
+      font-size: 20px
+      text-transform: uppercase
+
+  @media screen and (max-width: $md-screen-width)
+    h2, h3, h4
+      left: $md-left-spacer
+
+      &.title
+        bottom: 100px
+        font-size: 24px
+
+      &.subtitle
+        font-size: 18px

@@ -1,30 +1,31 @@
-import * as types from 'constants/actions';
+import * as type from 'constants/actions';
+import * as status from 'constants/statuses';
 
 const initialState = {
-  projectPreferenceFetched: false,
+  status: status.FETCH_READY,
   activityByWorkflow: {},
-  oldProjectPreferenceFetched: false,
+  oldStatus: status.FETCH_READY,
   oldActivityCount: 0,
 };
 
 export function projectPreferences(state = initialState, action) {
   switch (action.type) {
 
-    case types.PROJECT_PREFERENCES_REQUESTED:
-      return Object.assign({}, state, { projectPreferenceFetched: false });
+    case type.PROJECT_PREFERENCES_REQUESTED:
+      return Object.assign({}, state, { status: status.FETCH_REQUESTED });
 
-    case types.PROJECT_PREFERENCES_RECEIVED:
+    case type.PROJECT_PREFERENCES_RECEIVED:
       return Object.assign({}, state, {
-        projectPreferenceFetched: true,
+        status: status.FETCH_COMPLETED,
         activityByWorkflow: action.json[0].activity_count_by_workflow,
       });
 
-    case types.OLD_PROJECT_PREFERENCES_REQUESTED:
-      return Object.assign({}, state, { oldProjectPreferenceFetched: false });
+    case type.OLD_PROJECT_PREFERENCES_REQUESTED:
+      return Object.assign({}, state, { oldStatus: status.FETCH_REQUESTED });
 
-    case types.OLD_PROJECT_PREFERENCES_RECEIVED:
+    case type.OLD_PROJECT_PREFERENCES_RECEIVED:
       return Object.assign({}, state, {
-        oldProjectPreferenceFetched: true,
+        oldStatus: status.FETCH_COMPLETED,
         oldActivityCount: (action.json[0] || { activity_count: 0 }).activity_count,
       });
 
