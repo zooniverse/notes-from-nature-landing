@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Contributors = () =>
   <div className="contributors">
-    <h3>Notes from Nature Collaborating Institutions, Organizations and Funders</h3>
+    <h3>Collaborating Institutions, Organizations and Funders</h3>
     <div className="museum-logos">
       <a href="http://www.sernec.org/">
         <img alt="SERNEC" src="logos/sernec.png" />

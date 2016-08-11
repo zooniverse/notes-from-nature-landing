@@ -1,13 +1,13 @@
 import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
-import * as types from 'constants/actions';
+import * as type from 'constants/actions';
 
 function projectRequested() {
-  return { type: types.PROJECT_REQUESTED };
+  return { type: type.PROJECT_REQUESTED };
 }
 
 function projectReceived(json) {
-  return { type: types.PROJECT_RECEIVED, json };
+  return { type: type.PROJECT_RECEIVED, json };
 }
 
 export function fetchProject() {

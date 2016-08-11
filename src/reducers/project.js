@@ -1,7 +1,8 @@
-import * as types from 'constants/actions';
+import * as type from 'constants/actions';
+import * as status from 'constants/statuses';
 
 const initialState = {
-  projectFetched: false,
+  status: status.FETCH_READY,
   project: {
     subjects_count: 0,
     classifiers_count: 0,
@@ -13,14 +14,11 @@ const initialState = {
 export function project(state = initialState, action) {
   switch (action.type) {
 
-    case types.PROJECT_REQUESTED:
-      return Object.assign({}, state, { projectFetched: false });
+    case type.PROJECT_REQUESTED:
+      return Object.assign({}, state, { status: status.FETCH_REQUESTED });
 
-    case types.PROJECT_RECEIVED:
-      return Object.assign({}, state, {
-        projectFetched: true,
-        project: action.json,
-      });
+    case type.PROJECT_RECEIVED:
+      return Object.assign({}, state, { status: status.FETCH_COMPLETED, project: action.json });
 
     default:
       return state;

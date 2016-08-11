@@ -1,20 +1,63 @@
 .reasons
-  text-align: center
-  padding: 0 2em 1em 2em
+  background-color: #ececec
 
-  h3.reasons-title
-    font-size: x-large
-    color: black
-
-  .reason
+  .content
+    padding-left: $lg-left-spacer
     display: flex
     flex-direction: row
     flex-wrap: wrap
 
-    > div
-      padding 1em
-      flex: 1
+    @media screen and (max-width: $md-screen-width)
+      padding: 24px
 
-    img
-      border-radius: 67px
-      height: 100px
+    .content-left
+      padding-top: 20px
+      flex: 3
+      padding-right: 20px
+      padding-bottom: 40px
+      margin-right: 50px
+
+      .title
+        text-align: left
+        margin: 24px 0 24px 0
+        padding: 0
+        font-size: x-large
+        color: $lime-green
+        border-bottom: 2px dotted $lime-green
+
+      .tile
+        display: inline-flex
+        padding-bottom: 48px
+
+        div
+          padding-left: 24px
+
+        h3, p
+          margin: 0
+
+        h3
+          font-weight: bolder
+
+        img
+          border-radius: 67px
+          height: 92px
+
+    .content-right
+      position: relative
+      color: white
+      background-color: $dark-teal
+      flex: 1
+      padding: 34px 24px 8px 24px
+
+      h4
+        border-bottom: 2px dotted white
+
+      .arrow-left
+        position: absolute
+        left: -20px
+        top: 72px
+        width: 0
+        height: 0
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+        border-right: 20px solid $dark-teal

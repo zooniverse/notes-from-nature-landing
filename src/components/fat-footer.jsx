@@ -6,7 +6,7 @@ export const FatFooter = () =>
   <footer className="main-footer">
     <section className="main-footer-zooniverse-info">
       <div className="zooniverse-logo">
-        <img src={require('images/footer-logo-bg.jpg')} alt="Zooniverse Logo" />
+        <img src={require('images/logos/footer-logo-bg.jpg')} alt="Zooniverse Logo" />
         <FooterLogo />
       </div>
       <div className="markdown"><p>{footer.info.content}</p></div>

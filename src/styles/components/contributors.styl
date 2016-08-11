@@ -1,17 +1,22 @@
 .contributors
   padding: 0 0 10px 20px
 
+  @media screen and (max-width: $md-screen-width)
+    padding-left: 20px
+
+  h3
+    padding-bottom: 16px
+
   .museum-logos
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    justify-content: space-around
-    align-items: center
+    justify-content: flex-start
 
     a
-      text-align: center
       flex: 1
-      padding: 2px 4px
+      text-align: center
+      padding: 2px 12px 2px 0
 
       img
         height: 60px

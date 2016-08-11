@@ -1,16 +1,14 @@
 import React from 'react';
-import Header from 'components/header';
+import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
-import { Title } from 'components/title';
 import { Contributors } from 'components/contributors';
 
 export const About = () =>
   <div className="about">
-    <Header />
-    <div className="about-title">
-      <Title title="Transcribe notes from nature, contribute to science." />
-      <hr />
-    </div>
+    <Hero
+      title="About Notes from Nature"
+      subtitle="Your contributution to science"
+    />
     <div className="about-content">
       <h2>The Notes from Nature Project</h2>
       <img src="about/sernec.jpg" alt="Preparing a specimen" />

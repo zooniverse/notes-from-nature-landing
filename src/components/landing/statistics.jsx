@@ -4,11 +4,11 @@ export const LandingStatistics = ({ project, activeWorkflows }) =>
   <div className="statistics">
     <div>
       <div className="numbers">{activeWorkflows.length}</div>
-      <div className="subtitle">Expeditions Available</div>
+      <div className="subtitle">Expeditions</div>
     </div>
     <div>
       <div className="numbers">{project.classifiers_count.toLocaleString()}</div>
-      <div className="subtitle">Registered Volunteers</div>
+      <div className="subtitle">Volunteers</div>
     </div>
     <div>
       <div className="numbers">{project.classifications_count.toLocaleString()}</div>
@@ -20,7 +20,7 @@ export const LandingStatistics = ({ project, activeWorkflows }) =>
     </div>
     <div>
       <div className="numbers">{project.retired_subjects_count.toLocaleString()}</div>
-      <div className="subtitle">Retired Subjects</div>
+      <div className="subtitle">Completed</div>
     </div>
   </div>;
 

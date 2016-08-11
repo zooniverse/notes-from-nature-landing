@@ -1,22 +1,16 @@
-.transcriptions
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  align-items: center
-  justify-content: space-around
+.transcription-container
+  padding: 40px 0
 
-  .transcription
-    max-width: 2400px
-    text-align: center
-    font-weight: bold
-    text-align: center
-    align-self: center
-    font-size: 10x
-    padding-bottom: 20px
+  .transcriptions
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
 
-    img
-      height: 180px
+    .transcription
+      max-width: 240px
+      margin: 10px 24px 10px 0
 
-    .label
-      min-height: 70px
-      padding: 0 4px
+      img
+        height: 140px
+        border 2px solid $lime-green

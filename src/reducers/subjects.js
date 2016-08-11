@@ -1,4 +1,4 @@
-import * as types from 'constants/actions';
+import * as type from 'constants/actions';
 
 const initialState = {
   count: 0,
@@ -10,10 +10,10 @@ export function subjects(state = initialState, action) {
 
   switch (action.type) {
 
-    case types.SUBJECTS_REQUESTED:
+    case type.SUBJECTS_REQUESTED:
       return Object.assign({}, state, { subjects: [], count: 0 });
 
-    case types.SUBJECT_RECEIVED:
+    case type.SUBJECT_RECEIVED:
       newState = Object.assign({}, state);
       newState.subjects.push(action.json);
       newState.count = newState.subjects.length;
