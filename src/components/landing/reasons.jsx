@@ -21,9 +21,8 @@ export const LandingReasons = () =>
             <div>
               <h3>Transcribe with pride</h3>
               <p>
-                Take part in a Notes from Nature expedition, build your own collection
-                and earn badges along the way. Transcribe records in any expedition and
-                earn badges along the way!
+                Take part in a Notes from Nature expedition. Along the way you can build your
+                own collection and earn unique badges for work within and across expeditions.
               </p>
             </div>
           </div>
