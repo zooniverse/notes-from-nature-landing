@@ -3,6 +3,7 @@ import { HerbIcon } from 'components/icons/herb';
 import { InsectIcon } from 'components/icons/insect';
 import { FungusIcon } from 'components/icons/fungus';
 import { ButterflyIcon } from 'components/icons/butterfly';
+import { MicroscopeIcon } from 'components/icons/microscope';
 
 export const expeditionGroups = {
   Herbarium: {
@@ -34,6 +35,11 @@ export const expeditionGroups = {
     name: 'Butterflies',
     icon: ButterflyIcon,
     badgeGroup: 'insect',
+  },
+  Magnified: {
+    name: 'Magnified',
+    icon: MicroscopeIcon,
+    badgeGroup: 'magnified',
   },
 };
 
