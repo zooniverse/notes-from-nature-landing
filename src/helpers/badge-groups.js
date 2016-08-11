@@ -8,9 +8,12 @@ function countsByBadgeGroup(workflows, activityByWorkflow) {
     const workflow = workflows.find(w => w.id === id);
     if (workflow) {
       const expedition = findExpedition(workflow.display_name);
-      const badgeGroup = expeditionGroups[expedition.group].badgeGroup;
-      if (!counts[badgeGroup]) { counts[badgeGroup] = 0; }
-      counts[badgeGroup] += activityByWorkflow[id];
+      const group = expeditionGroups[expedition.group];
+      if (group) {
+        const badgeGroup = group.badgeGroup;
+        if (!counts[badgeGroup]) { counts[badgeGroup] = 0; }
+        counts[badgeGroup] += activityByWorkflow[id];
+      }
     }
   });
   return counts;
