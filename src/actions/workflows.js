@@ -16,6 +16,7 @@ export function fetchWorkflows() {
     apiClient.type('workflows').get({
       project_id: config.projectId,
       fields: 'active,completeness,display_name,finished_at',
+      page_size: 50,
     }).then(json => dispatch(workflowsReceived(json)));
   };
 }
