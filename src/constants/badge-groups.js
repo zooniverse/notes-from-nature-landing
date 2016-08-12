@@ -50,9 +50,9 @@ export const badgeGroups = {
     { count: 100, name: 'Rock Crab', badge: 'crabs/rock-crab.png' },
   ],
   magnified: [
-    { count: 5, name: '5x', badge: 'magnified/NfN_Parasitoid-02.png' },
-    { count: 50, name: '50x', badge: 'magnified/NfN_Parasitoid-03.png' },
-    { count: 150, name: '150x', badge: 'magnified/NfN_Parasitoid-04.png' },
+    { count: 5, name: '5x Zoom', badge: 'magnified/NfN_Parasitoid-02.png' },
+    { count: 50, name: '50x Zoom', badge: 'magnified/NfN_Parasitoid-03.png' },
+    { count: 150, name: '150x Zoom', badge: 'magnified/NfN_Parasitoid-04.png' },
   ],
 };
 
