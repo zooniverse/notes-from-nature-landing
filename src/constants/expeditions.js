@@ -189,7 +189,7 @@ export const expeditions = {
       the same number of mammals in all of the continental US and Canada.  Wow!
     `,
     image: 'WeDigFLPlants_Sunflowers.jpg',
-    link: '',
+    link: 'https://biospex.org/project/wedigflplants',
   }
 };
 
