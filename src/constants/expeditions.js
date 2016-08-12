@@ -183,6 +183,14 @@ export const expeditions = {
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_WeDigFLPlants\' Sunflowers of Florida—Florida\'s Biggest Plant Family': {
+    snippet: `
+      Florida is home to over 400 species from the sunflower family.  By contrast, there are about
+      the same number of mammals in all of the continental US and Canada.  Wow!
+    `,
+    image: 'WeDigFLPlants_Sunflowers.jpg',
+    link: '',
+  }
 };
 
 Object.keys(expeditions).forEach((k) => {
