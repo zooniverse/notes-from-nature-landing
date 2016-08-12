@@ -190,7 +190,7 @@ export const expeditions = {
     `,
     image: 'WeDigFLPlants_Sunflowers.jpg',
     link: 'https://biospex.org/project/wedigflplants',
-  }
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
