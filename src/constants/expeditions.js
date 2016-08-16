@@ -200,6 +200,16 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Magnified_The Killer Within: Wasps, but not as you know them': {
+    snippet: `
+      These microscope slides feature parasitoid wasps called chalcids (pronounced 'cal-sids'),
+      which lay their eggs inside other insects. The larvae hatch and eat their way out
+      of the host insect, killing it in the process. But this gruesome life cycle is useful
+      in agriculture, as a pest control for a number of destructive plant pests.
+    `,
+    image: 'TheKillerWithinProjectImage.png',
+    link: 'http://www.nhm.ac.uk/mlm',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
