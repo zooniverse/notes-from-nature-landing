@@ -221,6 +221,14 @@ export const expeditions = {
     image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
     link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
   },
+  'Herbarium_Pollinator Plants of Virginia - I': {
+    snippet: `
+      Nearly two-thirds of flowering plant species depend on animal pollinators.
+      Help us learn more about this critical partnership in Virginia.
+    `,
+    image: 'Herbarium_Pollinator_Plants_of_Virginia.jpg',
+    link: 'https://biospex.org/project/pollinator-plants-of-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
