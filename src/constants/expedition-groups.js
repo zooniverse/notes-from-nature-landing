@@ -6,6 +6,11 @@ import { ButterflyIcon } from 'components/icons/butterfly';
 import { MicroscopeIcon } from 'components/icons/microscope';
 
 export const expeditionGroups = {
+  Default: {
+    name: 'Unknown',
+    icon: InsectIcon,
+    badgeGroup: 'none',
+  },
   Herbarium: {
     name: 'Herbaria',
     icon: HerbIcon,
