@@ -10,11 +10,6 @@ const createStoreWithMiddleware = applyMiddleware(
 
 export default function configureStore(initialState) {
   const store = createStoreWithMiddleware(rootReducer, initialState);
-  // Enable redux tools if they are available
-  // const store = createStoreWithMiddleware(rootReducer, initialState,
-  //     window.devToolsExtension ? window.devToolsExtension() : undefined
-  //   );
-
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
     module.hot.accept('reducers', () => {

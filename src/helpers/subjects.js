@@ -7,11 +7,11 @@ export const getSubjectIds = (subjects) => {
   return ids;
 };
 
-export const transcriptionImages = subjects =>
-  subjects.filter((id, i, self) => self.indexOf(id) === i).map((s) => {
-    const img = {
-      src: s.locations[0]['image/jpeg'],
-      alt: s.metadata.Filename,
-    };
-    return img;
-  });
+export const transcriptionImage = subject =>
+  Object.assign({}, { src: subject.locations[0]['image/jpeg'], alt: subject.metadata.Filename });
+
+export const subjectWorkflow = (subject, allWorkflows, classifications) => {
+  const classification = classifications.find(c => c.links.subjects[0] === subject.id);
+  const workflow = allWorkflows.find(w => w.id === classification.links.workflow);
+  return workflow;
+};

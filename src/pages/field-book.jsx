@@ -49,9 +49,12 @@ class FieldBook extends Component {
               <FieldBookExpeditions
                 allWorkflows={workflows.allWorkflows}
                 activityByWorkflow={projectPreferences.activityByWorkflow}
+              />
+              <FieldBookTranscriptions
+                subjects={subjects.subjects}
+                allWorkflows={workflows.allWorkflows}
                 classifications={classifications.classifications}
               />
-              <FieldBookTranscriptions subjects={subjects.subjects} />
             </div>
             <div className="right-content">
               <FieldBookBadges
