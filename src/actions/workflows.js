@@ -1,7 +1,6 @@
 import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
 import * as type from 'constants/actions';
-import { pages, PAGE_SIZE } from 'helpers/util';
 
 function workflowsRequested(expectedCount) {
   return { type: type.WORKFLOWS_REQUESTED, expectedCount };
@@ -12,16 +11,20 @@ function workflowsReceived(json) {
 }
 
 export function fetchWorkflows() {
-  return (dispatch, getState) => {
-    const expectedCount = getState().project.project.links.workflows.length;
-    dispatch(workflowsRequested(expectedCount));
-    pages(expectedCount).map(page =>
-      apiClient.type('workflows').get({
-        project_id: config.projectId,
-        fields: 'active,completeness,display_name,finished_at',
-        page_size: PAGE_SIZE,
-        page,
-      }).then(json => dispatch(workflowsReceived(json)))
-    );
+  const fields = 'active,completeness,display_name,finished_at';
+  let page = 1;
+  return dispatch => {
+    dispatch(workflowsRequested());
+    apiClient.type('workflows').get({ project_id: config.projectId, fields, page })
+      .then(json => {
+        const pageCount = json[0]._meta.workflows.page_count;
+        dispatch(workflowsReceived(json));
+        if (pageCount > 1) {
+          for (page = 2; page <= pageCount; ++page) {
+            apiClient.type('workflows').get({ project_id: config.projectId, fields, page })
+              .then(ws => dispatch(workflowsReceived(ws)));
+          }
+        }
+      });
   };
 }

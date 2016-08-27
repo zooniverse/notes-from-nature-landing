@@ -16,20 +16,16 @@ export function workflows(state = initialState, action) {
   switch (action.type) {
 
     case type.WORKFLOWS_REQUESTED:
-      return Object.assign({}, state, {
-        status: status.FETCH_REQUESTED,
-        expectedCount: action.expectedCount,
-      });
+      return Object.assign({}, state, { status: status.FETCH_REQUESTED });
 
     case type.WORKFLOWS_RECEIVED:
-      console.log('##################################################');
-      console.log(action.json);
       newState = Object.assign({}, state);
       newState.allWorkflows = state.allWorkflows.concat(
         action.json.filter(w => !w.display_name.match(/Template/i)));
       newState.activeWorkflows = newState.allWorkflows.filter(w => w.active);
       newState.inactiveWorkflows = newState.allWorkflows.filter(w => w.completeness === 1);
       newState.actualCount += action.json.length;
+      newState.expectedCount = action.json[0]._meta.workflows.count;
       newState.status = newState.actualCount >= newState.expectedCount
         ? status.FETCH_COMPLETED : status.FETCH_REQUESTED;
       return newState;

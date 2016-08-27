@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
-import { transcriptionImage, subjectWorkflow } from 'helpers/subjects';
+import { transcriptionImage, subjectExpedition } from 'helpers/subjects';
+import { localeDate } from 'helpers/text';
 
 export const FieldBookTranscriptions = ({ subjects, allWorkflows, classifications }) =>
   <div className="transcription-container">
@@ -8,11 +9,14 @@ export const FieldBookTranscriptions = ({ subjects, allWorkflows, classification
     <div className="transcriptions">
     { subjects.map((subject, i) => {
       const img = transcriptionImage(subject);
-      const workflow = subjectWorkflow(subject, allWorkflows, classifications);
+      const expedition = subjectExpedition(subject, allWorkflows, classifications);
       return (
         <div className="transcription" key={i}>
           <img src={img.src} alt={img.alt}></img>
-          <div>{workflow.name}</div>
+          <div className="roll-over">
+            <h4>{expedition.name}</h4>
+            <span>{`Transcribed on ${localeDate(subject.created_at)}`}</span>
+          </div>
         </div>
       );}
     )}
