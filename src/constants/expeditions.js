@@ -13,7 +13,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Mints_of_Florida.jpg',
     link: 'https://biospex.org/project/wedigflplants',
-    completed_at: 'June 21 2016',
+    completed_at: 'June 21, 2016',
   },
   'Herbarium_WeDigFLPlants\' Laurels of Florida—Fight Laurel Wilt': {
     snippet: `
@@ -23,7 +23,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Laurels_of_Florida.jpg',
     link: 'https://biospex.org/project/wedigflplants',
-    completed_at: 'June 21 2016',
+    completed_at: 'June 21, 2016',
   },
   'Pinned Specimen_CalBug Bee Flies': {
     snippet: `
@@ -34,7 +34,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
-    completed_at: 'June 19 2016',
+    completed_at: 'June 19, 2016',
   },
   'Butterfly_New World Swallowtail Butterflies': {
     snippet: `
@@ -45,7 +45,7 @@ export const expeditions = {
     `,
     image: 'Butterfly_Papilio.png',
     link: 'http://hannahlowens.weebly.com/',
-    completed_at: 'June 28 2016',
+    completed_at: 'June 28, 2016',
   },
   'Pinned Specimen_CalBug Bee Flies 2': {
     snippet: `
@@ -56,7 +56,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
-    completed_at: 'June 26 2016',
+    completed_at: 'June 26, 2016',
   },
   'Herbarium_WeDigFLPlants\' St. John\'s Worts of Florida—Diversity to Lift your Spirits': {
     snippet: `
@@ -66,7 +66,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Hypericum.jpg',
     link: 'https://biospex.org/project/wedigflplants',
-    completed_at: 'July 9 2016',
+    completed_at: 'July 9, 2016',
   },
   'Herbarium_WeDigFLPlants\' Rose Gentians of Florida—Beauty from the Center of its Diversity': {
     snippet: `
@@ -77,7 +77,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_WeDigFLPlants_Rose_Gentian.jpg',
     link: 'https://biospex.org/project/wedigflplants',
-    completed_at: 'July 5 2016',
+    completed_at: 'July 5, 2016',
   },
   'Pinned Specimen_CalBug Bee Flies 3': {
     snippet: `
@@ -88,7 +88,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
-    completed_at: 'July 6 2016',
+    completed_at: 'July 6, 2016',
   },
   'Herbarium_Plants of Virginia - Ant Plants I': {
     snippet: `
@@ -97,7 +97,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_PlantsOfVirginia_Ant_Plants_I.jpg',
     link: 'https://biospex.org/project/ant-plants-of-virginia',
-    completed_at: 'July 24 2016',
+    completed_at: 'July 24, 2016',
   },
   'Pinned Specimen_CalBug Bee Flies 4': {
     snippet: `
@@ -108,7 +108,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
-    completed_at: 'July 15 2016',
+    completed_at: 'July 15, 2016',
   },
   'Herbarium_Plants of Arkansas: Discovering Dogwoods': {
     snippet: `
@@ -143,7 +143,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
-    completed_at: 'July 27 2016',
+    completed_at: 'July 27, 2016',
   },
   'Pinned Specimen_Tiger Beetles 1': {
     snippet: `
