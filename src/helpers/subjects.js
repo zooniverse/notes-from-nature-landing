@@ -16,5 +16,5 @@ export const transcriptionImage = subject =>
 export const subjectExpedition = (subject, allWorkflows, classifications) => {
   const classification = classifications.find(c => c.links.subjects[0] === subject.id);
   const workflow = allWorkflows.find(w => w.id === classification.links.workflow);
-  return findExpedition(workflow.display_name);
+  return findExpedition(workflow ? workflow.display_name : '');
 };

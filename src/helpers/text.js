@@ -5,4 +5,4 @@ export const pluralize = (plural, n) => {
 
 export const localeDate = date =>
   (new Date(date)).toLocaleDateString('en-Us',
-    { year: 'numeric', month: 'long', day: 'numeric' });
+    { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' });
