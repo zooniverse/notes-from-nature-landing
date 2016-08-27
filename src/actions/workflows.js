@@ -2,8 +2,8 @@ import apiClient from 'panoptes-client/lib/api-client';
 import { config } from 'constants/config';
 import * as type from 'constants/actions';
 
-function workflowsRequested(expectedCount) {
-  return { type: type.WORKFLOWS_REQUESTED, expectedCount };
+function workflowsRequested() {
+  return { type: type.WORKFLOWS_REQUESTED };
 }
 
 function workflowsReceived(json) {
