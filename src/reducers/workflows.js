@@ -3,25 +3,32 @@ import * as status from 'constants/statuses';
 
 const initialState = {
   status: status.FETCH_READY,
+  expectedCount: 0,
+  actualCount: 0,
   allWorkflows: [],
   activeWorkflows: [],
   inactiveWorkflows: [],
 };
 
 export function workflows(state = initialState, action) {
+  let newState;
+
   switch (action.type) {
 
     case type.WORKFLOWS_REQUESTED:
       return Object.assign({}, state, { status: status.FETCH_REQUESTED });
 
     case type.WORKFLOWS_RECEIVED:
-      return Object.assign({}, state, {
-        status: status.FETCH_COMPLETED,
-        allWorkflows: action.json.filter(w => !w.display_name.match(/Template/i)),
-        activeWorkflows: action.json.filter(w => w.active),
-        inactiveWorkflows: action.json.filter(w => !w.active &&
-          !w.display_name.match(/Template/i) && w.completeness === 1),
-      });
+      newState = Object.assign({}, state);
+      newState.allWorkflows = state.allWorkflows.concat(
+        action.json.filter(w => !w.display_name.match(/Template/i)));
+      newState.activeWorkflows = newState.allWorkflows.filter(w => w.active);
+      newState.inactiveWorkflows = newState.allWorkflows.filter(w => w.completeness === 1);
+      newState.actualCount += action.json.length;
+      newState.expectedCount = action.json[0]._meta.workflows.count;
+      newState.status = newState.actualCount >= newState.expectedCount
+        ? status.FETCH_COMPLETED : status.FETCH_REQUESTED;
+      return newState;
 
     default:
       return state;

@@ -5,6 +5,7 @@ const envConfig = {
     workflowUrl: 'https://pfe-preview.zooniverse.org/projects/rafe-dot-lafrance/notes-from-nature-on-staging/classify?reload=1&',
     panoptesReturnUrl: 'http://localhost:3000/',
     panoptesAppId: '24ad5676d5d25c6aa850dc5d5f63ec8c03dbc7ae113b6442b8571fce6c5b974c',
+
   },
   production: {
     projectId: '1558',
