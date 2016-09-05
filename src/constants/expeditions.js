@@ -229,6 +229,15 @@ export const expeditions = {
     image: 'Herbarium_Pollinator_Plants_of_Virginia.jpg',
     link: 'https://biospex.org/project/pollinator-plants-of-virginia',
   },
+  'Herbarium_Natural North Carolina\'s - Adoxaceae - Elderberry and Viburnum!': {
+    snippet: `
+      Sambucus (Elderberry) and Viburnum  shrubs are excellent components of a garden
+      that is friendly to butterflies, birds, and wildlife.
+      Elderberry fruit can be incorporated into wines, syrups and fruit pies.
+    `,
+    image: 'NorthCarolinaAdoxacea.jpg',
+    link: 'https://biospex.org/project/natural-north-carolina',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
