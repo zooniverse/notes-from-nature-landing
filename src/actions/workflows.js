@@ -19,11 +19,9 @@ export function fetchWorkflows() {
       .then(json => {
         const pageCount = json[0]._meta.workflows.page_count;
         dispatch(workflowsReceived(json));
-        if (pageCount > 1) {
-          for (page = 2; page <= pageCount; ++page) {
-            apiClient.type('workflows').get({ project_id: config.projectId, fields, page })
-              .then(ws => dispatch(workflowsReceived(ws)));
-          }
+        for (page = 2; page <= pageCount; ++page) {
+          apiClient.type('workflows').get({ project_id: config.projectId, fields, page })
+            .then(ws => dispatch(workflowsReceived(ws)));
         }
       });
   };
