@@ -11,12 +11,17 @@ function workflowsReceived(json) {
 }
 
 export function fetchWorkflows() {
+  const fields = 'active,completeness,display_name,finished_at';
+  let page = 1;
   return dispatch => {
     dispatch(workflowsRequested());
-    apiClient.type('workflows').get({
-      project_id: config.projectId,
-      fields: 'active,completeness,display_name,finished_at',
-      page_size: 50,
-    }).then(json => dispatch(workflowsReceived(json)));
+    apiClient.type('workflows').get({ project_id: config.projectId, fields, page })
+      .then(json => {
+        dispatch(workflowsReceived(json));
+        for (page = 2; page <= json[0]._meta.workflows.page_count; ++page) {
+          apiClient.type('workflows').get({ project_id: config.projectId, fields, page })
+            .then(ws => dispatch(workflowsReceived(ws)));
+        }
+      });
   };
 }

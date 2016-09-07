@@ -13,7 +13,6 @@ function projectReceived(json) {
 export function fetchProject() {
   return dispatch => {
     dispatch(projectRequested());
-    apiClient.type('projects').get(config.projectId)
-      .then(json => dispatch(projectReceived(json)));
+    apiClient.type('projects').get(config.projectId).then(json => dispatch(projectReceived(json)));
   };
 }
