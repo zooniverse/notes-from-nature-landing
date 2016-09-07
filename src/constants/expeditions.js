@@ -117,6 +117,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_Arkansas_Dogwoods.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+    completed_at: 'August 4, 2016',
   },
   'Herbarium_Hear Them Ring: Bellflowers of Arkansas': {
     snippet: `
@@ -125,6 +126,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_Arkansas_Campanulaceae.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+    completed_at: 'August 17, 2016',
   },
   'Herbarium_Plants of Arkansas: The Delta and Crowley\'s Ridge Flora': {
     snippet: `
@@ -155,6 +157,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
     link: 'http://entomology.museums.ualberta.ca/searching.php',
+    completed_at: 'August 14, 2016',
   },
   'Herbarium_Plants of Virginia - Ant Plants II': {
     snippet: `
@@ -163,6 +166,7 @@ export const expeditions = {
     `,
     image: 'Herbarium_PlantsOfVirginia_Ant_Plants_I.jpg',
     link: 'https://biospex.org/project/ant-plants-of-virginia',
+    completed_at: 'August 18, 2016',
   },
   'Herbarium_Natural North Carolina\'s - Be a Companion to Campanulaceae': {
     snippet: `
@@ -182,6 +186,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'http://calbug.berkeley.edu/',
+    completed_at: 'August 31, 2016',
   },
   'Herbarium_WeDigFLPlants\' Sunflowers of Florida—Florida\'s Biggest Plant Family': {
     snippet: `
@@ -220,6 +225,7 @@ export const expeditions = {
     `,
     image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
     link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
+    completed_at: 'August 28, 2016',
   },
   'Herbarium_Pollinator Plants of Virginia - I': {
     snippet: `
