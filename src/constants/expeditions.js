@@ -244,6 +244,18 @@ export const expeditions = {
     image: 'NorthCarolinaAdoxacea.jpg',
     link: 'https://biospex.org/project/natural-north-carolina',
   },
+  'Pinned Specimen_Trechine Ground Beetles': {
+    snippet: `
+      This expedition features 1180 images of ground beetles (Carabidae) in the subfamily
+      Trechinae from the E.H. Strickland Entomological Museum (University of Alberta Museums).
+      The subfamily contains the genus Bembidion, the largest genus of ground beetles
+      with over 3000 species. It is also the most highly represented genus among our
+      Trechinae specimens. Most species in this genus are small (<7.5 mm),
+      and prefer cool, moist environments along bodies of water.
+    `,
+    image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
+    link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
