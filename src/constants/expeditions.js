@@ -256,6 +256,14 @@ export const expeditions = {
     image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
     link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
   },
+  'Herbarium_Arkansas Dendrology: Part I: Gymnosperms -- 16 September 2016': {
+    snippet: `
+      This is the first in a series of educational focused expeditions
+      being used for @tmarsico’s dendrology course at the Arkansas State University.
+    `,
+    image: 'ArkansasDendrology.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
