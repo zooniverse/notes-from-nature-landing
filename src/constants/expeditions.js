@@ -264,6 +264,14 @@ export const expeditions = {
     image: 'ArkansasDendrology.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_Arkansas Dendrology: Part 2: Magnolias, pawpaws, sassafras, and Dutchman\'s pipe -- 19 September 2016': {  // eslint-disable-line max-len
+    snippet: `
+      This is the second in a series of educational focused expeditions being used for
+      @tmarsico’s dendrology course at the Arkansas State University.
+    `,
+    image: 'Herbarium_Arkansas_Dendrology_Part_2.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
