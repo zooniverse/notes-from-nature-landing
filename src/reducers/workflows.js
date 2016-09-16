@@ -22,7 +22,7 @@ export function workflows(state = initialState, action) {
       newState = Object.assign({}, state);
       newState.allWorkflows = state.allWorkflows.concat(
         action.json.filter(w => !w.display_name.match(/Template/i)));
-      newState.activeWorkflows = newState.allWorkflows.filter(w => w.active & w.completeness !== 1);
+      newState.activeWorkflows = newState.allWorkflows.filter(w => w.active && w.completeness !== 1);
       newState.inactiveWorkflows = newState.allWorkflows.filter(w => w.completeness === 1);
       newState.actualCount += action.json.length;
       newState.expectedCount = action.json[0]._meta.workflows.count;
