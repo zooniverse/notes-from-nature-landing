@@ -4,6 +4,7 @@ import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
 import { findExpedition } from 'helpers/expeditions';
 import dateformat from 'dateformat';
+import { OutboundLink } from 'react-ga';
 
 const CompletedExpeditions = ({ inactiveWorkflows }) =>
   <div className="completed-expeditions">
@@ -27,11 +28,12 @@ const CompletedExpeditions = ({ inactiveWorkflows }) =>
               </div>
             </div>
             {expedition.link ?
-              <a href={`${expedition.link}`} className="more-info"
-                aria-label="More information" target="_blank"
+              <OutboundLink to={`${expedition.link}`} className="more-info"
+                eventLabel={`${expedition.link}`} target="_blank"
+                aria-label="More information"
               >
                 <i className="fa fa-info-circle" aria-hidden="true"></i>
-              </a>
+              </OutboundLink>
               : ''
             }
           </div>
