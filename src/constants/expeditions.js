@@ -281,6 +281,15 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_Herbaceous Plants of the Ouachita Mountains': {
+    snippet: `
+      The Ouachita Mountains region of Arkansas is rich with botanical diversity and endemic
+      species. This project is focused on native and naturalized herbaceous plants in this
+      isolated mountain range.
+    `,
+    image: 'Herbarium_Monotropa_uniflora.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
