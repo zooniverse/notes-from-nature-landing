@@ -18,10 +18,13 @@ import CompletedExpeditions from 'pages/completed-expeditions';
 
 import Styles from 'styles/main.styl';  // eslint-disable-line no-unused-vars
 
-if (process.env.NODE_ENV === 'staging') { a11y(React); }
+if (process.env.NODE_ENV === 'staging') {
+  a11y(React);
+} else {
+  ReactGA.initialize('UA-69723429-1');
+}
 
 const store = configureStore();
-ReactGA.initialize('UA-84653239-1');
 
 const logPageView = () => {
   ReactGA.set({ page: window.location.pathname });
