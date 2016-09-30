@@ -6,7 +6,6 @@ import { FatFooter } from 'components/fat-footer';
 import { config } from 'constants/config';
 import { findExpedition, expeditionsInGroup } from 'helpers/expeditions';
 import { getExpeditionGroup } from 'helpers/expedition-groups';
-import { OutboundLink } from 'react-ga';
 
 const ActiveExpeditions = ({ params, activeWorkflows }) => {
   const { group } = params;
@@ -27,8 +26,7 @@ const ActiveExpeditions = ({ params, activeWorkflows }) => {
               const percent = workflow.completeness * 100.0;
               return (
                 <div className="tile" key={i}>
-                  <OutboundLink to={`${config.workflowUrl}workflow=${workflow.id}`}
-                    eventLabel={`${config.workflowUrl}workflow=${workflow.id}`}
+                  <a href={`${config.workflowUrl}workflow=${workflow.id}`}
                     aria-label={`Link to ${expedition.name}`}
                   >
                     <img src={ require(`images/expeditions/${expedition.image}`) }
@@ -42,14 +40,13 @@ const ActiveExpeditions = ({ params, activeWorkflows }) => {
                         {percent.toFixed(2)}% complete
                       </div>
                     </div>
-                  </OutboundLink>
+                  </a>
                   {expedition.link ?
-                    <OutboundLink to={`${expedition.link}`} className="more-info"
-                      eventLabel={`${expedition.link}`} target="_blank"
-                      aria-label="More information"
+                    <a href={`${expedition.link}`} className="more-info"
+                      aria-label="More information" target="_blank"
                     >
                       <i className="fa fa-info-circle" aria-hidden="true"></i>
-                    </OutboundLink>
+                    </a>
                     : ''
                   }
                 </div>
