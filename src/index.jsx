@@ -18,11 +18,8 @@ import CompletedExpeditions from 'pages/completed-expeditions';
 
 import Styles from 'styles/main.styl';  // eslint-disable-line no-unused-vars
 
-if (process.env.NODE_ENV === 'staging') {
-  a11y(React);
-} else {
-  ReactGA.initialize('UA-69723429-1');
-}
+if (process.env.NODE_ENV === 'staging') { a11y(React); }
+ReactGA.initialize('UA-69723429-1');
 
 const store = configureStore();
 
