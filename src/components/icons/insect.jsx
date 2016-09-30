@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const InsectIcon = () =>
-  <svg viewBox="0 0 182.2 182.46139" className="expedition-group-icon">
+  <svg viewBox="10 70 165 55" className="expedition-group-icon">
     <path d="m 132.43951,89.550454 c -3.4,0.8 -5.6,-0.8 -7.1,-3.4 -1,-1.7 -1.4,-3.7 -1.9,-5.6 -0.6,
       -2 -0.8,-4.1 -1.5,-6 -0.7,-2.3 -2.4,-3.9 -4.8,-4.2 -2.8,-0.3 -3.7,-2.3 -4.8,-4.4 4.1,
       -2.1 4.4,-2.9 3.6,-7.5 -0.2,-1.1 -0.4,-2.3 -0.7,-3.4 -0.4,-2.1 0.3,-3.8 2.1,-4.9 1.4,
@@ -35,6 +35,6 @@ export const InsectIcon = () =>
       lineHeight: '125%', letterSpacing: '0px', wordSpacing: '0px', fillOpacity: 1,
       stroke: 'none', fontFamily: 'Sans' }}
     >
-     <tspan x="66" y="153">Bugs</tspan>
+     <tspan x="66" y="155">Bugs</tspan>
    </text>
   </svg>;
