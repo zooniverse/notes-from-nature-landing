@@ -290,6 +290,13 @@ export const expeditions = {
     image: 'Herbarium_Monotropa_uniflora.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_Arkansas Dendrology: Part 3: Greenbriars, moonseeds, sycamores, witch hazels, and sweetgum -- 10 October 2016': {  // eslint-disable-line max-len
+    snippet: `
+      A continuation of @tmarsico’s specimens for students in his dendrology course.
+    `,
+    image: 'ArkansasPart3_SmilaxHispida.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
