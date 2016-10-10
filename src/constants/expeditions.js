@@ -297,6 +297,13 @@ export const expeditions = {
     image: 'ArkansasPart3_SmilaxHispida.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_Arkansas Dendrology: Part 4: Grapes, willows, poplars, locusts, redbuds, and mimosas -- 17 October 2016': {  // eslint-disable-line max-len
+    snippet: `
+      A continuation of @tmarsico’s specimens for students in his dendrology course.
+    `,
+    image: 'ArkansasDendrologyPart4.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
