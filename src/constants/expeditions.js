@@ -304,6 +304,15 @@ export const expeditions = {
     image: 'ArkansasDendrologyPart4.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_WeDigFLPlants\' Legumes of Florida—Nitrogen-Fixers of the Peninsula': {
+    snippet: `
+      The Legume family, including beans and peas, supply humanity with high-quality protein
+      and host essential nitrogen-fixing bacteria.  Help researchers understand
+      the wild relatives of our garden legumes.
+    `,
+    image: 'Legumes.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
