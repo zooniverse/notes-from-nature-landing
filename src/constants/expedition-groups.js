@@ -4,6 +4,7 @@ import { InsectIcon } from 'components/icons/insect';
 import { FungusIcon } from 'components/icons/fungus';
 import { ButterflyIcon } from 'components/icons/butterfly';
 import { MicroscopeIcon } from 'components/icons/microscope';
+import { TrilobiteIcon } from 'components/icons/trilobite';
 
 export const expeditionGroups = {
   Default: {
@@ -45,6 +46,11 @@ export const expeditionGroups = {
     name: 'Magnified',
     icon: MicroscopeIcon,
     badgeGroup: 'magnified',
+  },
+  Fossils: {
+    name: 'Fossils',
+    icon: TrilobiteIcon,
+    badgeGroup: 'fossil',
   },
 };
 
