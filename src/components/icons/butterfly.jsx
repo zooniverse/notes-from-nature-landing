@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const ButterflyIcon = () =>
-  <svg viewBox="-25 -5 150 100" className="expedition-group-icon">
+  <svg viewBox="-25 -4 150 100" className="expedition-group-icon">
     <path d="M100,9.1c-0.1-1.3-1.9-2.3-2.8-2.6c-15-4.4-39,22.4-44.4,28.8l0-0.3c0-0.1,
       0-0.2,0-0.3c0-1-0.5-1.9-1.3-2.4c0-0.1,0.1-0.1,0.1-0.2c0.3-0.4,0.6-0.9,1-1.3
       c0.2-0.2,0.5-0.4,0.7-0.6c0.2-0.2,0.3-0.4,0.5-0.6c0.1-0.2,0.2-0.4,0.3-0.5

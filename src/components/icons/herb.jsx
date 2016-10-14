@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const HerbIcon = () =>
-  <svg viewBox="0 0 526 412" className="expedition-group-icon">
+  <svg viewBox="0 10 526 452" className="expedition-group-icon">
     <path d="m 153.37972,263.92028 c 3,0 5.5,0 7.9,0 0.1,-0.2 0.2,-0.4 0.3,-0.5 -0.7,-0.6 -1.4,
       -1.2 -2.2,-1.6 -5.2,-3.1 -10.5,-6.1 -15.7,-9.3 -1,-0.6 -2.1,-1.5 -2.7,-2.5 -5.9,-9.8 -11.8,
       -19.7 -17.7,-29.6 -0.1,-0.2 -0.1,-0.5 -0.3,-1.1 2.6,0.7 5,1.3 7.4,2 0.1,-0.2 0.2,-0.3 0.3,
@@ -52,6 +52,6 @@ export const HerbIcon = () =>
         lineHeight: '125%', letterSpacing: '0px', wordSpacing: '0px', fillOpacity: 1,
         stroke: 'none', fontFamily: 'Sans' }}
       >
-       <tspan x="156" y="382">Plants</tspan>
+       <tspan x="156" y="420">Plants</tspan>
      </text>
   </svg>;
