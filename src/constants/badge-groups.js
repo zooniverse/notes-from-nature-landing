@@ -54,6 +54,16 @@ export const badgeGroups = {
     { count: 50, name: '50x Zoom', badge: 'magnified/NfN_Parasitoid-03.png' },
     { count: 150, name: '150x Zoom', badge: 'magnified/NfN_Parasitoid-04.png' },
   ],
+  fossil: [
+    { count: 1, name: 'Junior Preparator', badge: 'fossils/paleon1.png' },
+    { count: 10, name: 'Senior Preparator', badge: 'fossils/paleon2.png' },
+    { count: 100, name: 'Curator', badge: 'fossils/paleon3.png' },
+  ],
+  aquatic: [
+    { count: 1, name: 'Larval Caddisfly', badge: 'aquatics/wet1.png' },
+    { count: 10, name: 'Emerging Adult', badge: 'aquatics/wet2.png' },
+    { count: 100, name: 'Adults Caddisfly', badge: 'aquatics/wet3.png' },
+  ],
 };
 
 Object.keys(badgeGroups).forEach(g => badgeGroups[g].forEach(b => {
