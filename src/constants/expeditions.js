@@ -336,6 +336,16 @@ export const expeditions = {
     image: 'Solidago_LSU_LakesFinal.jpg',
     link: 'https://www.wedigbio.org/content/goldenrod-digitization-bio-blitz',
   },
+  'Herbarium_Amaranthaceae from around the world': {
+    snippet: `
+      This Expedition features the widespread Amaranthaceae plant family.
+      Some species of this family are well known edible plants like spinach or beetroot.
+      Other species are adapted to extreme conditions like salty soils.
+      Help scientists track the wonderfully diverse evolution of this family around the world.
+    `,
+    image: 'Chenopodium_foliosum.jpg',
+    link: 'http://bgbm.org/en/science/biological-collections',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
