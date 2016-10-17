@@ -313,6 +313,13 @@ export const expeditions = {
     image: 'Legumes.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_Arkansas Dendrology: Part 5: Blackberries, cherries, hawthorns, buckthorns, elms, hackberries, and mulberries -- 24 October 2016': {  // eslint-disable-line max-len
+    snippet: `
+      A continuation of @tmarsico’s specimens for students in his dendrology course.
+    `,
+    image: 'ArkansasDendrologyPart5.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
