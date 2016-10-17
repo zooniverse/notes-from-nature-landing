@@ -320,6 +320,14 @@ export const expeditions = {
     image: 'ArkansasDendrologyPart5.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Fossils_IU Cambrian Trilobite Molds': {
+    snippet: `
+      Trilobites were at their peak in the Cambrian Period.
+      Explore their exceptional diversity and help scientists transcribe labels!
+    `,
+    image: 'trilobite-crotalocephalus.png',
+    link: 'https://biospex.org/project/iu-cambrian-trilobite-plastotypes',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
