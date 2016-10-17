@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { fetchProject } from 'actions/project';
 import { fetchWorkflows } from 'actions/workflows';
 import { fetchProjectPreferences, fetchOldProjectPreferences } from 'actions/project-preferences';
-import { fetchClassifications } from 'actions/classifications';
+import { fetchRecents } from 'actions/recents';
 import * as status from 'constants/statuses';
 
 class App extends Component {
@@ -29,10 +29,8 @@ class App extends Component {
       if (props.projectPreferences.oldStatus === status.FETCH_READY) {
         props.dispatch(fetchOldProjectPreferences(props.user.id));
       }
-      // Classifications are filtered by workflows
-      if (props.classifications.status === status.FETCH_READY
-          && props.workflows.status === status.FETCH_COMPLETED) {
-        props.dispatch(fetchClassifications(props.user.id));
+      if (props.recents.status === status.FETCH_READY) {
+        props.dispatch(fetchRecents(props.user.id));
       }
     }
   }
@@ -52,6 +50,7 @@ App.propTypes = {
   children: PropTypes.object,
   user: PropTypes.object,
   project: PropTypes.object,
+  recents: PropTypes.object,
   subjects: PropTypes.object,
   workflows: PropTypes.object,
   classifications: PropTypes.object,
@@ -62,6 +61,7 @@ function mapStateToProps(state) {
   return {
     user: state.login.user,
     project: state.project,
+    recents: state.recents,
     subjects: state.subjects,
     workflows: state.workflows,
     classifications: state.classifications,
