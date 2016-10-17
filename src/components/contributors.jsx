@@ -13,7 +13,7 @@ export const Contributors = () =>
       <a href="https://www.fsu.edu/">
         <img alt="Florida State Univerity" src="logos/FSU_Seal.jpg" />
       </a>
-      <a href="http://www.nhm.ac.uk/tring/research-and-curation/index.html">
+      <a href="http://www.nhm.ac.uk/take-part/citizen-science/miniature-lives-magnified.html">
         <img alt="Natural History Museum" src="logos/natural_history_museum_white.jpg" />
       </a>
       <a href="http://calbug.berkeley.edu/">
