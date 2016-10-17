@@ -328,6 +328,14 @@ export const expeditions = {
     image: 'trilobite-crotalocephalus.png',
     link: 'https://biospex.org/project/iu-cambrian-trilobite-plastotypes',
   },
+  'Herbarium_Louisiana’s goldenrods - the genus Solidago': {
+    snippet: `
+      Species identification is notoriously difficult within the genus Solidago.
+      Help us to discover Louisiana’s goldenrods!
+    `,
+    image: 'Solidago_LSU_LakesFinal.jpg',
+    link: 'https://www.wedigbio.org/content/goldenrod-digitization-bio-blitz',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
