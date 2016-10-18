@@ -346,6 +346,16 @@ export const expeditions = {
     image: 'Chenopodium_foliosum.jpg',
     link: 'http://bgbm.org/en/science/biological-collections',
   },
+  'Aquatics_Aquatic Insects of the Southeastern United States': {
+    snippet: `
+      The Clemson University Arthropod Collection has one of the largest aquatic
+      insect collections in the southeastern United States. Data on aquatic insects’
+      distributions will help scientists and land managers better protect aquatic
+      habitats and urban and agricultural water sources.
+    `,
+    image: 'aquatics_clemson_1.jpg',
+    link: 'https://sites.google.com/site/clemsonarthropodcollection/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
