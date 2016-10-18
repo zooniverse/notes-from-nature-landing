@@ -365,6 +365,19 @@ export const expeditions = {
     image: 'BRIT-Texas_tile.jpg',
     link: 'http://www.brit.org/herbarium',
   },
+  'Herbarium_Primulaceae of the world: More than primroses and cowslips': {
+    snippet: `
+      When thinking of Primulaceae, most of us will picture
+      the spring flowers primroses and cowslips.
+      However, recent research into the Primrose family has resulted
+      in its expansion to include several tropical woody members
+      from what was previously known as the Myrsinaceae family.
+      Help Kew to further understand the taxonomy and diversification of this family
+      through transcribing these specimen labels.
+    `,
+    image: 'cowslips.jpg',
+    link: 'http://www.kew.org/discover/blogs/kew-science/more-cowslips-primulaceae-goes-tropical',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
