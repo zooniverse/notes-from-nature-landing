@@ -3,19 +3,19 @@ import * as status from 'constants/statuses';
 
 const initialState = {
   status: status.FETCH_READY,
-  classifications: [],
+  recents: [],
 };
 
-export function classifications(state = initialState, action) {
+export function recents(state = initialState, action) {
   switch (action.type) {
 
-    case type.CLASSIFICATIONS_REQUESTED:
+    case type.RECENTS_REQUESTED:
       return Object.assign({}, state, { status: status.FETCH_REQUESTED });
 
-    case type.CLASSIFICATIONS_RECEIVED:
+    case type.RECENTS_RECEIVED:
       return Object.assign({}, state, {
         status: status.FETCH_COMPLETED,
-        classifications: action.json,
+        recents: action.json,
       });
 
     default:

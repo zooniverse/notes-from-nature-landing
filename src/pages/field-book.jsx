@@ -8,7 +8,7 @@ import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
 import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
 
-const FieldBook = ({ user, workflows, projectPreferences, classifications, subjects }) => {
+const FieldBook = ({ user, workflows, projectPreferences, recents }) => {
   const total = totalCount(projectPreferences.activityByWorkflow);
   if (user) {
     return (
@@ -24,9 +24,8 @@ const FieldBook = ({ user, workflows, projectPreferences, classifications, subje
               activityByWorkflow={projectPreferences.activityByWorkflow}
             />
             <FieldBookTranscriptions
-              subjects={subjects.subjects}
+              recents={recents.recents}
               allWorkflows={workflows.allWorkflows}
-              classifications={classifications.classifications}
             />
           </div>
           <div className="right-content">
@@ -53,18 +52,16 @@ const FieldBook = ({ user, workflows, projectPreferences, classifications, subje
 FieldBook.propTypes = {
   dispatch: PropTypes.func,
   user: PropTypes.object,
-  subjects: PropTypes.object,
+  recents: PropTypes.object,
   workflows: PropTypes.object,
-  classifications: PropTypes.object,
   projectPreferences: PropTypes.object,
 };
 
 function mapStateToProps(state) {
   return {
     user: state.login.user,
-    subjects: state.subjects,
+    recents: state.recents,
     workflows: state.workflows,
-    classifications: state.classifications,
     projectPreferences: state.projectPreferences,
   };
 }
