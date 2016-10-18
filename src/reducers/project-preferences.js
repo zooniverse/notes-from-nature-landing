@@ -9,6 +9,8 @@ const initialState = {
 };
 
 export function projectPreferences(state = initialState, action) {
+  const counts = action.json && action.json[0] ? action.json[0].activity_count_by_workflow : 0;
+
   switch (action.type) {
 
     case type.PROJECT_PREFERENCES_REQUESTED:
@@ -17,7 +19,7 @@ export function projectPreferences(state = initialState, action) {
     case type.PROJECT_PREFERENCES_RECEIVED:
       return Object.assign({}, state, {
         status: status.FETCH_COMPLETED,
-        activityByWorkflow: action.json[0].activity_count_by_workflow,
+        activityByWorkflow: counts,
       });
 
     case type.OLD_PROJECT_PREFERENCES_REQUESTED:
