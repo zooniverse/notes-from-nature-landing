@@ -30,7 +30,7 @@ class App extends Component {
         props.dispatch(fetchOldProjectPreferences(props.user.id));
       }
       if (props.recents.status === status.FETCH_READY) {
-        props.dispatch(fetchRecents(props.user.id));
+        props.dispatch(fetchRecents());
       }
     }
   }
@@ -51,9 +51,7 @@ App.propTypes = {
   user: PropTypes.object,
   project: PropTypes.object,
   recents: PropTypes.object,
-  subjects: PropTypes.object,
   workflows: PropTypes.object,
-  classifications: PropTypes.object,
   projectPreferences: PropTypes.object,
 };
 
@@ -62,9 +60,7 @@ function mapStateToProps(state) {
     user: state.login.user,
     project: state.project,
     recents: state.recents,
-    subjects: state.subjects,
     workflows: state.workflows,
-    classifications: state.classifications,
     projectPreferences: state.projectPreferences,
   };
 }

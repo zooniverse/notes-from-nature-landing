@@ -13,8 +13,6 @@ export function recents(state = initialState, action) {
       return Object.assign({}, state, { status: status.FETCH_REQUESTED });
 
     case type.RECENTS_RECEIVED:
-      console.log('#########################################');
-      console.log(action);
       return Object.assign({}, state, {
         status: status.FETCH_COMPLETED,
         recents: action.json,
