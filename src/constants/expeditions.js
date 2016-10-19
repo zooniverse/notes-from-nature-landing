@@ -365,7 +365,7 @@ export const expeditions = {
     image: 'BRIT-Texas_tile.jpg',
     link: 'http://www.brit.org/herbarium',
   },
-  'Herbarium_Primulaceae of the world: More than primroses and cowslips': {
+  'Herbarium_Primulaceae of the World: More than Primroses and Cowslips': {
     snippet: `
       When thinking of Primulaceae, most of us will picture
       the spring flowers primroses and cowslips.
