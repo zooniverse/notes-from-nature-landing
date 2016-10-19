@@ -378,6 +378,16 @@ export const expeditions = {
     image: 'cowslips.jpg',
     link: 'http://www.kew.org/discover/blogs/kew-science/more-cowslips-primulaceae-goes-tropical',
   },
+  'Herbarium_Unlocking Northeastern Forests: Nature\'s Laboratories for Global Change': {
+    snippet: `
+      Help scientists decode patterns of forest diversity &
+      the long-term consequences of land-use & climate change
+      by transcribing geographic and temporal data from historic plant specimens
+      from New England!
+    `,
+    image: 'NortheasternForests-NYBG.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
