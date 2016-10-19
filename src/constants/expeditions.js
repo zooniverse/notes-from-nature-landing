@@ -356,6 +356,15 @@ export const expeditions = {
     image: 'aquatics_clemson_1.jpg',
     link: 'https://sites.google.com/site/clemsonarthropodcollection/',
   },
+  'Herbarium_Plants of Texas: milkweeds and spurges and birches, oh my!': {
+    snippet: `
+      Delve into the history of Texas botany (1800s - 2000s) through
+      an eclectic mix of plants, including members of the Apocynaceae,
+      Euphorbiaceae and Betulaceae.
+    `,
+    image: 'BRIT-Texas_tile.jpg',
+    link: 'http://www.brit.org/herbarium',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
