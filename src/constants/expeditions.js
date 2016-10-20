@@ -336,7 +336,7 @@ export const expeditions = {
     image: 'Solidago_LSU_LakesFinal.jpg',
     link: 'https://www.wedigbio.org/content/goldenrod-digitization-bio-blitz',
   },
-  'Herbarium_Amaranthaceae from around the world': {
+  'Herbarium_Amaranthaceae: Cosmopolitan Allrounder': {
     snippet: `
       This Expedition features the widespread Amaranthaceae plant family.
       Some species of this family are well known edible plants like spinach or beetroot.
