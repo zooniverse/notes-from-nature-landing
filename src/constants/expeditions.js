@@ -388,6 +388,17 @@ export const expeditions = {
     image: 'NortheasternForests-NYBG.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Fantastic Ferns! Unlock Tropical Diversity from the Americas': {
+    snippet: `
+      The neotropics are home to an astounding biological diversity. Ferns have an amazing
+      evolutionary history spanning 420 million years ago to the present. Help explore the
+      botanical treasures of ferns from The Field Museum herbarium. You may see some labels
+      in Spanish. Feel free to skip these. If attempting these please ignore the accents
+      and other marks above letters.
+    `,
+    image: 'Herbarium_Fantastic_Ferns_Unlock_Tropical_Diversity_from_the_Americas.jpg',
+    link: 'https://www.fieldmuseum.org/science/research/area/plants-fungi',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
