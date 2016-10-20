@@ -375,7 +375,7 @@ export const expeditions = {
       Help Kew to further understand the taxonomy and diversification of this family
       through transcribing these specimen labels.
     `,
-    image: 'cowslips.jpg',
+    image: 'Primulaceae.jpg',
     link: 'http://www.kew.org/discover/blogs/kew-science/more-cowslips-primulaceae-goes-tropical',
   },
   'Herbarium_Unlocking Northeastern Forests: Nature\'s Laboratories for Global Change': {
