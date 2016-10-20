@@ -417,6 +417,14 @@ export const expeditions = {
     image: 'Milkweeds.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_Fall Flowers of Alachua County, Florida': {
+    snippet: `
+      The Florida Museum of Natural History hosts this expedition
+      for its Cultural Plaza Festival on Saturday, October 22, 2016.
+    `,
+    image: 'Fall_flowers.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
