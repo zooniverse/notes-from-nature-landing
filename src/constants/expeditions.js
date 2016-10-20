@@ -399,6 +399,15 @@ export const expeditions = {
     image: 'Herbarium_Fantastic_Ferns_Unlock_Tropical_Diversity_from_the_Americas.jpg',
     link: 'https://www.fieldmuseum.org/science/research/area/plants-fungi',
   },
+  'Herbarium_Scratch That Itch - Plants that Cause Dermatitis': {
+    snippet: `
+      Leave that calamine lotion on the shelf and get up-close
+      and personal with plants that make your skin itch!
+      From the VDB collection at BRIT.
+    `,
+    image: 'itch-expedition.jpg',
+    link: 'https://biospex.org/project/the-vanderbilt-university-collection-at-brit',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
