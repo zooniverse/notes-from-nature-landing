@@ -408,6 +408,15 @@ export const expeditions = {
     image: 'itch-expedition.jpg',
     link: 'https://biospex.org/project/the-vanderbilt-university-collection-at-brit',
   },
+  'Herbarium_WeDigFLPlants\' Milkweeds of Florida - Monarch Butterfly Food Plants': {
+    snippet: `
+      Milkweeds are *the* larval food plant for Monarch Butterflies.
+      Join participants at the St. Marks National Wildlife Refuge’s Monarch Butterfly Festival
+      as they energize research and conservation of Monarchs and Milkweeds.
+    `,
+    image: 'Milkweeds.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
