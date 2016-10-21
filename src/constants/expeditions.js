@@ -425,6 +425,12 @@ export const expeditions = {
     image: 'Fall_flowers.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_California Plants': {
+    snippet:
+      'California vascular plants from the University of California Santa Barbara herbarium.',
+    image: 'Herbarium_Cali_plants.png',
+    link: 'https://www.ccber.ucsb.edu/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
