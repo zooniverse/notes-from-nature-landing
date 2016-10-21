@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export const expeditions = {
   DEFAULT: {
     default: true,
@@ -264,7 +265,7 @@ export const expeditions = {
     image: 'ArkansasDendrology.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
-  'Herbarium_Arkansas Dendrology: Part 2: Magnolias, pawpaws, sassafras, and Dutchman\'s pipe -- 19 September 2016': {  // eslint-disable-line max-len
+  'Herbarium_Arkansas Dendrology: Part 2: Magnolias, pawpaws, sassafras, and Dutchman\'s pipe -- 19 September 2016': {
     snippet: `
       This is the second in a series of educational focused expeditions being used for
       @tmarsico’s dendrology course at the Arkansas State University.
@@ -430,6 +431,16 @@ export const expeditions = {
       'California vascular plants from the University of California Santa Barbara herbarium.',
     image: 'Herbarium_Cali_plants.png',
     link: 'https://www.ccber.ucsb.edu/',
+  },
+  'Herbarium_Digitization of medicinal plants used in Indian System of Medicine (Bangalore, INDIA)': {
+    snippet: `
+      About 6500 medicinal plants are used in the Indian System of Medicine. The FRLH herbarium
+      strives to collect and house all these medicinal plants from different bio-geographic zones
+      of India. Thus far the herbarium houses 45,000 voucher specimens along with section of
+      raw drug collections.
+    `,
+    image: 'Herbarium_medicinal_plants.jpg',
+    link: 'http://envis.frlht.org/',
   },
 };
 
