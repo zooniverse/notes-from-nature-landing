@@ -442,6 +442,14 @@ export const expeditions = {
     image: 'Herbarium_medicinal_plants.jpg',
     link: 'http://envis.frlht.org/',
   },
+  'Herbarium_Mississippi Coastal Plant Diversity': {
+    snippet: `
+      Join us in transcribing data on plant species from the Gulf Coast of Mississippi,
+      a biologically rich area extending from the barrier islands to the longleaf pine savannah!
+    `,
+    image: 'coastal_marsh_sawgrass_exp_tile.jpg',
+    link: 'https://biospex.org/project/mississippi-coastal-plant-diversity',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
