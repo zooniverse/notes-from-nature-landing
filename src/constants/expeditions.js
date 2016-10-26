@@ -450,6 +450,18 @@ export const expeditions = {
     image: 'coastal_marsh_sawgrass_exp_tile.jpg',
     link: 'https://biospex.org/project/mississippi-coastal-plant-diversity',
   },
+  'Pinned Specimen_Tiger Beetles 3': {
+    snippet: `
+      This expedition features 1,141 images of tiger beetles from
+      the University of Alberta’s E.H. Strickland Entomological Museum.
+      The specimens were collected throughout North and South America.
+      Tiger beetles belong to one of the most diverse animal families
+      on the planet, the Carabidae (a.k.a. ground beetles). They can be
+      quite colorful too, which makes them popular among insect collectors.
+    `,
+    image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
+    link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
