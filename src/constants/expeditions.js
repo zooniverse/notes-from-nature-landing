@@ -462,6 +462,14 @@ export const expeditions = {
     image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
     link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
   },
+  'Herbarium_Plants have all the anthers! Pt1': {
+    snippet: `
+      Aster petals are plucked to see if someone loves us or not, so why not pick asters for
+      transcribing and show some love to them! There are also Asclepiadoideae mixed in
+      this expedition with Asteraceae.`,
+    image: 'Herbarium_Plant_all_anthers.jpg',
+    link: 'https://biospex.org/project/boon-herbarium-plants-of-southeastern-usa',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
