@@ -466,9 +466,18 @@ export const expeditions = {
     snippet: `
       Aster petals are plucked to see if someone loves us or not, so why not pick asters for
       transcribing and show some love to them! There are also Asclepiadoideae mixed in
-      this expedition with Asteraceae.`,
+      this expedition with Asteraceae.
+    `,
     image: 'Herbarium_Plant_all_anthers.jpg',
     link: 'https://biospex.org/project/boon-herbarium-plants-of-southeastern-usa',
+  },
+  'Herbarium_Arkansas Dendrology: Part 6: White Oaks': {
+    snippet: `
+      This project is a continuation of the Fall 2016 Dendrology class assignment.
+      Please help the students complete this project after 15 November 2016.
+    `,
+    image: 'Herbarium_Quercus_alba.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
 };
 
