@@ -479,7 +479,7 @@ export const expeditions = {
     image: 'Herbarium_Quercus_alba.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
-  'Herbarium_Expedition title: Arkansas Dendrology: Part 7: Red Oaks -- 28 November 2016': {
+  'Herbarium_Arkansas Dendrology: Part 7: Red Oaks -- 28 November 2016': {
     snippet: `
       This project is a continuation of the Fall 2016 Dendrology class assignment.
       Please help the students complete this project after 28 November 2016.
