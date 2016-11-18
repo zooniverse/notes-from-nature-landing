@@ -487,6 +487,16 @@ export const expeditions = {
     image: 'Herbarium_Quercus_falcata.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Butterfly_New World Swallowtail Butterflies from the Field Museum of Natural History': {
+    snippet: `
+      I am interested in how climate change has shaped the evolutionary history of New World
+      Swallowtail Butterflies. The museum specimens in this collection provide a detailed record of
+      the geographical variation and distribution of butterfly species, with which I can better
+      understand their history.
+    `,
+    image: 'Butterfly_New_World_Swallowtail.jpg',
+    link: 'https://www.fieldmuseum.org/science/research/area/insects-arachnids-and-myriapods',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
