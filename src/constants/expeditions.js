@@ -497,6 +497,14 @@ export const expeditions = {
     image: 'Butterfly_New_World_Swallowtail.jpg',
     link: 'https://www.fieldmuseum.org/science/research/area/insects-arachnids-and-myriapods',
   },
+  'Herbarium_Arkansas Dendrology: Part 8: Hickories and Walnuts -- 5 December 2016': {
+    snippet: `
+      This project is a continuation of the Fall 2016 Dendrology class assignment.
+      Please help the students complete this project after 05 December 2016.
+    `,
+    image: 'Herbarium_Carya_ovata.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
