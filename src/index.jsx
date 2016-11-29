@@ -7,6 +7,7 @@ import a11y from 'react-a11y';
 import configureStore from 'store';
 import oauth from 'panoptes-client/lib/oauth';
 import { config } from 'constants/config';
+import ReactGA from 'react-ga';
 
 import App from 'app';
 import Landing from 'pages/landing';
@@ -18,14 +19,20 @@ import CompletedExpeditions from 'pages/completed-expeditions';
 import Styles from 'styles/main.styl';  // eslint-disable-line no-unused-vars
 
 if (process.env.NODE_ENV === 'staging') { a11y(React); }
+ReactGA.initialize('UA-69723429-1');
 
 const store = configureStore();
+
+const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+};
 
 oauth.init(config.panoptesAppId)
   .then(() => {
     ReactDOM.render(
       <Provider store={store}>
-        <Router history={browserHistory}>
+        <Router onUpdate={logPageView} history={browserHistory}>
           <Route path="/" component={App}>
             <IndexRoute component={Landing} />
             <Route path="/about" component={About} />

@@ -36,6 +36,7 @@
     "panoptes-client": "^2.0.2",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
+    "react-ga": "^2.1.2",
     "react-redux": "^4.4.0",
     "react-router": "^2.1.0",
     "redux": "^3.3.1",
