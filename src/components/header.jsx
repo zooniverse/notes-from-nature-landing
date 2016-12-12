@@ -6,7 +6,11 @@ import HeaderAuth from 'header/header-auth';
 const Header = ({ inactiveWorkflows, user }) =>
   <div className="header">
     <Link className="first wide" to="/">Get Started</Link>
-    <Link to="/about">About</Link>
+    <a target="_blank"
+      href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature/about/research"
+    >
+      About
+    </a>
     <a target="_blank"
       href="https://www.zooniverse.org/projects/zooniverse/notes-from-nature/talk"
     >

@@ -10,7 +10,6 @@ import { config } from 'constants/config';
 
 import App from 'app';
 import Landing from 'pages/landing';
-import { About } from 'pages/about';
 import FieldBook from 'pages/field-book';
 import ActiveExpeditions from 'pages/active-expeditions';
 import CompletedExpeditions from 'pages/completed-expeditions';
@@ -28,7 +27,6 @@ oauth.init(config.panoptesAppId)
         <Router history={browserHistory}>
           <Route path="/" component={App}>
             <IndexRoute component={Landing} />
-            <Route path="/about" component={About} />
             <Route path="/active-expeditions/:group" component={ActiveExpeditions} />
             <Route path="/completed-expeditions" component={CompletedExpeditions} />
             <Route path="/field-book" component={FieldBook} />
