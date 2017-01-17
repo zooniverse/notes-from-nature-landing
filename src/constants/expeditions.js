@@ -514,6 +514,18 @@ export const expeditions = {
     image: 'Pinned_Specimen_CalBug_Leaf-cutter_Bees_3.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Pinned Specimen_Trechine Ground Beetles 2': {
+    snippet: `
+      This expedition features more images of trechine ground beetles from
+      the E.H. Strickland Entomological Museum (University of Alberta Museums).
+      The Trechinae is a subfamily within the Carabidae (ie. ground beetles).
+      It contains the genus Bembidion, the largest genus of ground beetles
+      with about 1250 species. Most species in this genus are small (<7.5 mm),
+      and prefer cool, moist environments along bodies of water.
+    `,
+    image: 'Pinned_Specimen_CarabidDrawer_tile.jpg',
+    link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
