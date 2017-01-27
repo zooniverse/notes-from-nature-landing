@@ -546,6 +546,14 @@ export const expeditions = {
     image: 'miniature-lives-magnified.jpg',
     link: 'http://www.nhm.ac.uk/mlm',
   },
+  'Herbarium_Host Plants of Virginia I': {
+    snippet: `
+      Vascular plants sustain herbivorous insects. Help us learn more about this important
+      ecological relationship in Virginia.
+    `,
+    image: 'Herbarium_Host_Plants_of_Virginia_I.jpg',
+    link: 'https://biospex.org/project/host-plants-of-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
