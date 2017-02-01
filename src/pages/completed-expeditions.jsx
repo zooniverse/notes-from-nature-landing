@@ -2,51 +2,29 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
-import { findExpedition } from 'helpers/expeditions';
-import dateformat from 'dateformat';
+import { ExpeditionGroups } from 'components/expedition-groups';
+import CompletedExpeditionTiles from 'components/completed-expeditions/tiles';
 
 const CompletedExpeditions = ({ inactiveWorkflows }) =>
   <div className="completed-expeditions">
     <Hero title="Completed Expeditions" subtitle="" />
-    <div className="tiles">
-      {inactiveWorkflows.map((workflow, i) => {
-        const expedition = findExpedition(workflow.display_name);
-        const completed = expedition.completed_at ||
-        dateformat(workflow.finished_at, 'mmmm d yyyy');
-        return (
-          <div className="tile" key={i}>
-            <div className="completed-expedition">
-              <img src={ require(`images/expeditions/${expedition.image}`) }
-                alt={expedition.name}
-              >
-              </img>
-              <div className="snippet">{expedition.snippet}</div>
-              <div className="label">
-                <div>{expedition.name}</div>
-                <div className="completed">Completed: {completed}</div>
-              </div>
-            </div>
-            {expedition.link ?
-              <a href={`${expedition.link}`} className="more-info"
-                aria-label="More information" target="_blank"
-              >
-                <i className="fa fa-info-circle" aria-hidden="true"></i>
-              </a>
-              : ''
-            }
-          </div>
-        );
-      })}
-    </div>
+    <ExpeditionGroups
+      workflows={inactiveWorkflows}
+      link="completed-expedition-group"
+      text="Show Completed Expeditions for a Group"
+    />
+    <CompletedExpeditionTiles inactiveWorkflows={inactiveWorkflows} />
     <FatFooter />
   </div>;
 
 CompletedExpeditions.propTypes = {
+  params: PropTypes.object,
   inactiveWorkflows: PropTypes.array,
 };
 
 function mapStateToProps(state) {
   return {
+    // inactiveWorkflows: state.workflows.activeWorkflows,
     inactiveWorkflows: state.workflows.inactiveWorkflows,
   };
 }

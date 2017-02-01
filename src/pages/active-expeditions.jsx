@@ -13,10 +13,7 @@ const ActiveExpeditions = ({ params, activeWorkflows }) => {
   const expeditions = expeditionsInGroup(group, activeWorkflows);
   return (
     <div className="active-expeditions">
-      <Hero
-        title={expeditionGroup.name}
-        subtitle={`Expeditions for ${expeditionGroup.name}`}
-      />
+      <Hero title={expeditionGroup.name} subtitle={`Expeditions for ${expeditionGroup.name}`} />
       <div className="content">
         { React.createElement(expeditionGroup.icon) }
         <div className="tiles">

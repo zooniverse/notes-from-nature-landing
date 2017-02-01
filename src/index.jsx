@@ -13,6 +13,7 @@ import Landing from 'pages/landing';
 import FieldBook from 'pages/field-book';
 import ActiveExpeditions from 'pages/active-expeditions';
 import CompletedExpeditions from 'pages/completed-expeditions';
+import CompletedExpeditionGroup from 'pages/completed-expedition-group';
 
 import Styles from 'styles/main.styl';  // eslint-disable-line no-unused-vars
 
@@ -29,6 +30,7 @@ oauth.init(config.panoptesAppId)
             <IndexRoute component={Landing} />
             <Route path="/active-expeditions/:group" component={ActiveExpeditions} />
             <Route path="/completed-expeditions" component={CompletedExpeditions} />
+            <Route path="/completed-expedition-group/:group" component={CompletedExpeditionGroup} />
             <Route path="/field-book" component={FieldBook} />
           </Route>
         </Router>

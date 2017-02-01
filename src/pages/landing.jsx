@@ -3,14 +3,18 @@ import { Hero } from 'components/hero';
 import { connect } from 'react-redux';
 import { LandingReasons } from 'components/landing/reasons';
 import { LandingStatistics } from 'components/landing/statistics';
-import { LandingExpeditionGroups } from 'components/landing/expedition-groups';
+import { ExpeditionGroups } from 'components/expedition-groups';
 import { FatFooter } from 'components/fat-footer';
 import { Contributors } from 'components/contributors';
 
 const Landing = ({ project, activeWorkflows }) =>
   <div className="landing">
     <Hero title="Notes from Nature" subtitle="Transcribe Museum Records" />
-    <LandingExpeditionGroups activeWorkflows={activeWorkflows} />
+    <ExpeditionGroups
+      link="active-expeditions"
+      text="Choose a Group and Start transcribing!"
+      workflows={activeWorkflows}
+    />
     <LandingStatistics project={project} activeWorkflows={activeWorkflows} />
     <LandingReasons />
     <Contributors />
