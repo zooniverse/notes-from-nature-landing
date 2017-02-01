@@ -30,7 +30,6 @@ function mapStateToProps(state) {
   return {
     project: state.project.project,
     activeWorkflows: state.workflows.activeWorkflows,
-    inactiveWorkflows: state.workflows.inactiveWorkflows,
   };
 }
 

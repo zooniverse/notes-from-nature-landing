@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterLogo } from 'footer/logo';
+import { FooterLogo } from 'logos/footer-logo';
 import { footer } from 'constants/footer';
 
 export const FatFooter = () =>
