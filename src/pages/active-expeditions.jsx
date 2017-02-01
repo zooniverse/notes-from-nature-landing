@@ -24,7 +24,7 @@ const ActiveExpeditions = ({ params, activeWorkflows }) => {
             ? expeditions.map((workflow, i) => {
               const expedition = findExpedition(workflow.display_name);
               const total = workflow.subjects_count * workflow.retirement.options.count;
-              const percent = (workflow.classifications_count / total) * 100.0;
+              const percent = Math.min((workflow.classifications_count / total) * 100.0, 100.0);
               return (
                 <div className="tile" key={i}>
                   <a href={`${config.workflowUrl}workflow=${workflow.id}`}
