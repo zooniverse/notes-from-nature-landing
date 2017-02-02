@@ -12,7 +12,7 @@ function workflowsReceived(json) {
 
 export function fetchWorkflows() {
   const fields = 'active,classifications_count,completeness,' +
-    'display_name,finished_at,retirement,subjects_count';
+    'display_name,finished_at,retirement,subjects_count,created_at';
   let page = 1;
   return dispatch => {
     dispatch(workflowsRequested());
