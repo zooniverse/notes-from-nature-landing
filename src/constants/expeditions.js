@@ -562,7 +562,7 @@ export const expeditions = {
       their distribution in light of climate change over the last 100+ years.
     `,
     image: 'Butterfly_Catocala_composite_1.jpg',
-    link: 'http://symbiota4.acis.ufl.edu/scan/lepnet/portal/index.php​',
+    link: 'http://symbiota4.acis.ufl.edu/scan/lepnet/portal/index.php',
   },
 };
 
