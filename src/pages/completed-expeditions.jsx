@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
-import { ExpeditionGroups } from 'components/expedition-groups';
+import { ExpeditionGroupIcons } from 'components/expedition-group-icons';
 import CompletedExpeditionTile from 'components/completed-expedition-tile';
 import { findExpedition, expeditionCompleted } from 'helpers/expeditions';
 
@@ -15,7 +15,7 @@ const CompletedExpeditions = ({ inactiveWorkflows }) => {
   return (
     <div className="completed-expeditions">
       <Hero title="Completed Expeditions" subtitle="" />
-      <ExpeditionGroups
+      <ExpeditionGroupIcons
         workflows={inactiveWorkflows}
         link="completed-expedition-group"
         text="Show Completed Expeditions for a Group"
@@ -38,8 +38,8 @@ CompletedExpeditions.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    inactiveWorkflows: state.workflows.activeWorkflows,
-    // inactiveWorkflows: state.workflows.inactiveWorkflows,
+    // inactiveWorkflows: state.workflows.activeWorkflows,
+    inactiveWorkflows: state.workflows.inactiveWorkflows,
   };
 }
 

@@ -9,7 +9,7 @@ const ActiveExpeditionTile = ({ workflow }) => {
   const percent = Math.min((workflow.classifications_count / total) * 100.0, 100.0);
   return (
     <div className="tile">
-      <a href={`${config.workflowUrl}workflow=${workflow.id}`}
+      <a className="inner" href={`${config.workflowUrl}workflow=${workflow.id}`}
         aria-label={`Link to ${expedition.name}`}
       >
         <img src={ require(`images/expeditions/${expedition.image}`) }
@@ -19,7 +19,7 @@ const ActiveExpeditionTile = ({ workflow }) => {
         <div className="snippet">{expedition.snippet}</div>
         <div className="label">
           <div>{expedition.name}</div>
-          <div className="completeness">
+          <div className="smaller">
             {percent.toFixed(2)}% complete
           </div>
         </div>

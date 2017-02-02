@@ -12,7 +12,7 @@ const ActiveExpeditionGroup = ({ params, activeWorkflows }) => {
   const expeditionGroup = getExpeditionGroup(group);
   const expeditions = expeditionsInGroup(group, activeWorkflows);
   return (
-    <div className="active-expeditions">
+    <div className="expedition-group active-expedition-group">
       <Hero title={expeditionGroup.name} subtitle={`Expeditions for ${expeditionGroup.name}`} />
       <div className="content">
         { React.createElement(expeditionGroup.icon) }
@@ -21,7 +21,7 @@ const ActiveExpeditionGroup = ({ params, activeWorkflows }) => {
           ? expeditions.map((workflow, i) =>
             <ActiveExpeditionTile workflow={workflow} key={i} />
           )
-          : <div className="active-expeditions-empty">
+          : <div className="group-empty">
               <h2>There are currently no active expeditions for {expeditionGroup.name}.</h2>
               <Link to="/">Try another group.</Link>
             </div>

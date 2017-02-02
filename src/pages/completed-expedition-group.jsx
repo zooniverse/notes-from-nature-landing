@@ -16,7 +16,7 @@ const CompletedExpeditionGroup = ({ params, inactiveWorkflows }) => {
     return expedition;
   }).sort((a, b) => new Date(b.completed) - new Date(a.completed));
   return (
-    <div className="completed-expedition-group">
+    <div className="expedition-group completed-expedition-group">
       <Hero
         title={expeditionGroup.name}
         subtitle={`Completed Expeditions for ${expeditionGroup.name}`}
@@ -41,8 +41,8 @@ CompletedExpeditionGroup.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    inactiveWorkflows: state.workflows.activeWorkflows,
-    // inactiveWorkflows: state.workflows.inactiveWorkflows,
+    // inactiveWorkflows: state.workflows.activeWorkflows,
+    inactiveWorkflows: state.workflows.inactiveWorkflows,
   };
 }
 
