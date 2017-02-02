@@ -4,14 +4,12 @@ import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
 import { ExpeditionGroups } from 'components/expedition-groups';
 import CompletedExpeditionTile from 'components/completed-expedition-tile';
-import { findExpedition } from 'helpers/expeditions';
-import dateformat from 'dateformat';
+import { findExpedition, expeditionCompleted } from 'helpers/expeditions';
 
 const CompletedExpeditions = ({ inactiveWorkflows }) => {
   const expeditions = inactiveWorkflows.map(workflow => {
-    const expedition = findExpedition(workflow.display_name);
-    expedition.completed = expedition.completed_at ||
-      dateformat(workflow.finished_at, 'mmmm d yyyy');
+    const expedition = findExpedition(workflow);
+    expedition.completed = expeditionCompleted(expedition);
     return expedition;
   }).sort((a, b) => new Date(b.completed) - new Date(a.completed));
   return (

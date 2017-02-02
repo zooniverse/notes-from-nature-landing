@@ -7,5 +7,5 @@ export const transcriptionImage = recent =>
 
 export const subjectExpedition = (recent, allWorkflows) => {
   const workflow = allWorkflows.find(w => w.id === recent.links.workflow);
-  return findExpedition(workflow ? workflow.display_name : '');
+  return findExpedition(workflow);
 };

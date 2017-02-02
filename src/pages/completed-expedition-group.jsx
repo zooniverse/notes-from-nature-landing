@@ -5,16 +5,14 @@ import { FatFooter } from 'components/fat-footer';
 import { expeditionsInGroup } from 'helpers/expeditions';
 import { getExpeditionGroup } from 'helpers/expedition-groups';
 import CompletedExpeditionTile from 'components/completed-expedition-tile';
-import { findExpedition } from 'helpers/expeditions';
-import dateformat from 'dateformat';
+import { findExpedition, expeditionCompleted } from 'helpers/expeditions';
 
 const CompletedExpeditionGroup = ({ params, inactiveWorkflows }) => {
   const { group } = params;
   const expeditionGroup = getExpeditionGroup(group);
   const expeditions = expeditionsInGroup(group, inactiveWorkflows).map(workflow => {
-    const expedition = findExpedition(workflow.display_name);
-    expedition.completed = expedition.completed_at ||
-      dateformat(workflow.finished_at, 'mmmm d yyyy');
+    const expedition = findExpedition(workflow);
+    expedition.completed = expeditionCompleted(expedition);
     return expedition;
   }).sort((a, b) => new Date(b.completed) - new Date(a.completed));
   return (
@@ -43,8 +41,8 @@ CompletedExpeditionGroup.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    // inactiveWorkflows: state.workflows.activeWorkflows,
-    inactiveWorkflows: state.workflows.inactiveWorkflows,
+    inactiveWorkflows: state.workflows.activeWorkflows,
+    // inactiveWorkflows: state.workflows.inactiveWorkflows,
   };
 }
 

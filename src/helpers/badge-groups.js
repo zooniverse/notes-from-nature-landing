@@ -7,7 +7,7 @@ function countsByBadgeGroup(workflows, activityByWorkflow) {
   Object.keys(activityByWorkflow).forEach(id => {
     const workflow = workflows.find(w => w.id === id);
     if (workflow) {
-      const expedition = findExpedition(workflow.display_name);
+      const expedition = findExpedition(workflow);
       const group = expeditionGroups[expedition.group];
       if (group) {
         const badgeGroup = group.badgeGroup;

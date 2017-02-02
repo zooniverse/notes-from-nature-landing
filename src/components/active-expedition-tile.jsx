@@ -4,7 +4,7 @@ import { config } from 'constants/config';
 import { findExpedition } from 'helpers/expeditions';
 
 const ActiveExpeditionTile = ({ workflow }) => {
-  const expedition = findExpedition(workflow.display_name);
+  const expedition = findExpedition(workflow);
   const total = workflow.subjects_count * workflow.retirement.options.count;
   const percent = Math.min((workflow.classifications_count / total) * 100.0, 100.0);
   return (
