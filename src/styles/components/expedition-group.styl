@@ -1,0 +1,36 @@
+.expedition-group
+  background-color: #ededed
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+
+  .content
+    position: relative
+
+    .expedition-group-icon
+      position: absolute
+      top: -15px
+      left: -30px
+      height: 180px
+      width: 180px
+      border-radius: 100px
+      background-color: rgba(0, 0, 0, 0)
+      fill: rgba(0, 0, 0, 0)
+      stroke: #222
+      stroke-width: 1px
+      border: 2px solid rgba(0, 0, 0, 0)
+
+  .tiles
+    margin: 48px 8px 48px $lg-left-spacer
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+
+  @media screen and (max-width: $md-screen-width)
+    .expedition-group-icon
+      display: none
+
+    .content
+      .tiles
+        margin: 48px 12px 48px 32px
