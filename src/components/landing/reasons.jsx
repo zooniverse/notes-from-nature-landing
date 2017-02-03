@@ -6,7 +6,7 @@ export const LandingReasons = () =>
       <div className="content-left">
         <h3 className="title">Why should you get involved?</h3>
         <div className="tiles">
-          <div className="tile">
+          <div className="reason-tile">
             <img src="landing/home_icon_bird.png" alt="avian best friend" />
             <div>
               <h3>To improve our world</h3>
@@ -16,7 +16,7 @@ export const LandingReasons = () =>
               </p>
             </div>
           </div>
-          <div className="tile">
+          <div className="reason-tile">
             <img src="landing/home_icon_troffee.png" alt="trophy" />
             <div>
               <h3>Transcribe with pride</h3>
