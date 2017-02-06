@@ -1,5 +1,6 @@
 import { BirdIcon } from 'components/icons/bird';
 import { HerbIcon } from 'components/icons/herb';
+import { IdeaIcon } from 'components/icons/idea';
 import { InsectIcon } from 'components/icons/insect';
 import { FungusIcon } from 'components/icons/fungus';
 import { ButterflyIcon } from 'components/icons/butterfly';
@@ -57,6 +58,11 @@ export const expeditionGroups = {
     name: 'Aquatics',
     icon: CaddisflyIcon,
     badgeGroup: 'aquatic',
+  },
+  'NFN Labs': {
+    name: 'NFN Labs',
+    icon: IdeaIcon,
+    badgeGroup: 'labs',
   },
 };
 

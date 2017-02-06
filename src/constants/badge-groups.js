@@ -64,6 +64,8 @@ export const badgeGroups = {
     { count: 10, name: 'Emerging Adult', badge: 'aquatics/wet2.png' },
     { count: 100, name: 'Adults Caddisfly', badge: 'aquatics/wet3.png' },
   ],
+  labs: [
+  ],
 };
 
 Object.keys(badgeGroups).forEach(g => badgeGroups[g].forEach(b => {
