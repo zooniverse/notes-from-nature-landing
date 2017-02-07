@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const CaddisflyIcon = () =>
-	<svg viewBox="-40 20 600 430" className="expedition-group-icon">
+	<svg viewBox="-40 20 600 430" className="expedition-group-icon shrink">
 		<g>
 			<path d="M336.2,164.8c1.2-0.1,2.4-0.2,3.6-0.3c-0.3-0.4-0.6-0.8-0.8-1.3C338,163.7,337.1,
 				164.3,336.2,164.8z"
