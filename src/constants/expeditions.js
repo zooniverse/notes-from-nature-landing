@@ -564,6 +564,14 @@ export const expeditions = {
     image: 'Butterfly_Catocala_composite_1.jpg',
     link: 'http://symbiota4.acis.ufl.edu/scan/lepnet/portal/index.php',
   },
+  'Herbarium_Ferns and Fern Allies of Tennessee, Part 1': {
+    snippet: `
+      The first sneak peak at the coming Tennessee collections! This expedition covers a
+      range of Tennessee collected fern and fern allies.
+    `,
+    image: 'Herbarium_TN_Ferns_P1.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-collections',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
