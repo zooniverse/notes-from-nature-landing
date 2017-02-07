@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const IdeaIcon = () =>
-  <svg viewBox="-500 0 4200 5000" className="expedition-group-icon fill-it">
+  <svg viewBox="-500 0 4200 5000" className="expedition-group-icon fill-it shrink">
   <path d="m 1639.915,3450.6944 c -91.8228,-54.1823 -301.9898,-150.7638 -239.9045,
     -279.1637 162.0394,56.9572 349.0535,39.4839 501.9486,-37.7807 33.0888,132.4722
     -119.8915,272.6971 -232.3838,317.5143 l -29.6603,-0.5699 0,0 z m -74.29,-305.2268
