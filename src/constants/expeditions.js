@@ -572,6 +572,15 @@ export const expeditions = {
     image: 'Herbarium_TN_Ferns_P1.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-collections',
   },
+  'Herbarium_WeDigFLPlants\' Euphorbs of Florida -- Rubber Relatives of the Panhandle': {
+    snippet: `
+      The plant family Euphorbiaceae includes our sources of natural rubber,
+      cassava, tung oil, and castor oil.
+      Help researchers understand the wild relatives of those species in the Florida Panhandle.
+    `,
+    image: 'WeDigFLPlants_Euphorbiaceae.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
