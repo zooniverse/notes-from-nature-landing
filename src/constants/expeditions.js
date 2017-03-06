@@ -591,6 +591,24 @@ export const expeditions = {
     image: 'Butterfly_Catocala_composite_1.jpg',
     link: 'http://symbiota4.acis.ufl.edu/scan/lepnet/portal/index.php',
   },
+  'Pinned Specimen_CalBug Leaf-cutter Bees 4': {
+    snippet: `
+      Megachilid (Leaf-cutter bees) bees are extraordinarily important plant pollinators known as
+      leafcutter or mason bees, so named because they typically make their solitary nests using
+      soil and leaves.
+    `,
+    image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
+    link: 'http://calbug.berkeley.edu/',
+  },
+  'Labs_Phenology I: Oaks': {
+    snippet: `
+      Help us determine if these Oak specimens are flowering or fruiting.
+      These specimens have already been transcribed, so now we can ask different
+      research questions that will help us understand the phenology of these species.
+    `,
+    image: 'Labs_OakLabTile.jpg',
+    link: 'https://sites.google.com/site/robgur/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
