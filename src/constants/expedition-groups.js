@@ -59,7 +59,7 @@ export const expeditionGroups = {
     icon: CaddisflyIcon,
     badgeGroup: 'aquatic',
   },
-  'NFN Labs': {
+  Labs: {
     name: 'NFN Labs',
     icon: IdeaIcon,
     badgeGroup: 'labs',
