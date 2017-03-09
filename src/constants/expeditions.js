@@ -609,6 +609,18 @@ export const expeditions = {
     image: 'Labs_OakLabTile.jpg',
     link: 'https://sites.google.com/site/robgur/',
   },
+  'Pinned Specimen_Bombardier Beetles 1': {
+    snippet: `
+      This expedition features 1000 images of Bombardier beetles from
+      the University of Alberta’s E.H. Strickland Entomological Museum (UASM).
+      Bombardier beetles belong to the ground beetle subfamily Brachininae,
+      and are so called due to their ability to spray boiling hot noxious chemicals from
+      their abdomens when threatened. Bombardier beetles are typically found in
+      temperate and subtropical regions around the world.
+    `,
+    image: 'Brachininae1_tile.jpg',
+    link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
