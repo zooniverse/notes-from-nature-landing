@@ -26,6 +26,7 @@ export const badgeGroups = {
     { count: 75, name: 'Tree', badge: 'plants/tree.png' },
     { count: 250, name: 'Oak', badge: 'plants/oak.png' },
     { count: 1000, name: 'Mature Tree', badge: 'plants/mature-tree.png' },
+    { count: 5000, name: 'Mature Grove', badge: 'plants/mature-grove.png' },
   ],
   insect: [
     { count: 1, name: 'Egg', badge: 'bugs/egg.png' },
