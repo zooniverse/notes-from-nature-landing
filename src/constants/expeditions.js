@@ -377,7 +377,7 @@ export const expeditions = {
       through transcribing these specimen labels.
     `,
     image: 'Primulaceae.jpg',
-    link: 'http://www.kew.org/discover/blogs/kew-science/more-cowslips-primulaceae-goes-tropical',
+    link: 'http://www.kew.org/blogs/kew-science/more-cowslips-primulaceae-goes-tropical',
   },
   'Herbarium_Unlocking Northeastern Forests: Nature\'s Laboratories for Global Change': {
     snippet: `
