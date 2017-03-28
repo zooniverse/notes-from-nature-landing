@@ -621,6 +621,16 @@ export const expeditions = {
     image: 'Brachininae1_tile.jpg',
     link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
   },
+  'Macrofungi_Fungus Among Us': {
+    snippet: `
+      Transcribe label data from 19th-Century specimens of Fungi. This expedition
+      focuses on the work of Henry William Ravenel who published the Fungi Caroliniani
+      Exsiccati in 1852-1856. Digital images were produced in partnership with
+      the A.C. Moore Herbarium (USCH) and the University of South Carolina Libraries.
+    `,
+    image: 'Macrofungi_FungusAmongUs-NfNtile.jpg',
+    link: 'https://biospex.org/project/fungus-among-us',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
