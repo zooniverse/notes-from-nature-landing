@@ -631,6 +631,15 @@ export const expeditions = {
     image: 'Macrofungi_FungusAmongUs-NfNtile.jpg',
     link: 'https://biospex.org/project/fungus-among-us',
   },
+  'Herbarium_WeDigFLPlants\' Dogwoods and Tupelos of the Florida Panhandle': {
+    snippet: `
+      The plant family Cornaceae includes dogwoods and tupelos, the latter being
+      the source of the coveted tupelo honey.  Help researchers understand these
+      gorgeous spring-flowering trees and shrubs in the Florida Panhandle.
+    `,
+    image: 'Herbarium_WeDigFLPlants_Cornaceae.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
