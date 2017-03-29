@@ -640,6 +640,16 @@ export const expeditions = {
     image: 'Herbarium_WeDigFLPlants_Cornaceae.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Magnified_Miniature Lives Magnified #3': {
+    snippet: `
+      These microscope slides feature parasitoid wasps called Chalcids (pronounced 'kal-sids'), which
+      lay their eggs inside other insects. The larvae hatch and eat their way out of the host insect,
+      killing it in the process. This unique lifecycle makes Chalcids an excellent biological control
+      agent to protect crops against pests.
+    `,
+    image: 'Magnified_Miniature_Lives_Magnified_Expedition_3.png',
+    link: 'http://www.nhm.ac.uk/mlm',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
