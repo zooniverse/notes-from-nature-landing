@@ -650,6 +650,18 @@ export const expeditions = {
     image: 'Magnified_Miniature_Lives_Magnified_Expedition_3.png',
     link: 'http://www.nhm.ac.uk/mlm',
   },
+  'Butterfly_New World Swallowtail Butterflies II': {
+    snippet: `
+      I am interested in how climate change has shaped the evolutionary history
+      of New World Swallowtail Butterflies. The museum specimens in this collection
+      provide a detailed record of the geographical variation and distribution of butterfly
+      species, with which I can better understand their history. This expedition also
+      includes specimen images from hobbyists that have specimens without which I
+      wouldn't be able to complete the project.
+    `,
+    image: 'Butterfly_New_World_Swallowtail_Butterflies_II.jpg',
+    link: 'https://www.flmnh.ufl.edu/index.php/mcguire/home/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
