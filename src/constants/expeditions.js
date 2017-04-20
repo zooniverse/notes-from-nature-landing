@@ -673,6 +673,14 @@ export const expeditions = {
     image: 'Brachininae1_tile.jpg',
     link: 'http://www.biology.museums.ualberta.ca/EHStricklandEntomologicalMuseum.aspx',
   },
+  'Herbarium_Violets of the Southeast': {
+    snippet: `
+      Spring ephemerals are nature’s reward for surviving winter.
+      Help us celebrate warmer weather and longer days by spending time with these early bloomers.
+    `,
+    image: 'viola_sml.jpg',
+    link: 'https://biospex.org/project/spring-ephemerals',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
