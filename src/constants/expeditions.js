@@ -698,6 +698,18 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Magnified_Miniature Fossils Magnified': {
+    snippet: `
+      These thin sections of ancient ocean sediment contain Foraminifera
+      - single-celled organisms with shells for protection, some of which lived
+      more than 500 million years ago. The data on these slide labels are invaluable
+      - they can help us to understand how our environment and climate have changed,
+      how ocean currents have shifted, and also tell us the geological history of
+      the area in which they were found.
+    `,
+    image: 'Magnified_Miniature_Fossils.jpg',
+    link: 'http://www.nhm.ac.uk/take-part/citizen-science/miniature-fossils-magnified.html',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
