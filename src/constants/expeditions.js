@@ -718,6 +718,15 @@ export const expeditions = {
     image: 'Spring_shrubs_Panhandle.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_WeDigFLPlants’ Blueberries of the Florida Peninsula': {
+    snippet: `
+      Blueberries and their relatives are a delight to hikers and the Florida
+      fauna alike! Help researchers bring the picture of their diversity and
+      distribution on the Peninsula into sharper focus.
+    `,
+    image: 'Blueberries_Peninsula.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
