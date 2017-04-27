@@ -710,6 +710,14 @@ export const expeditions = {
     image: 'Magnified_Miniature_Fossils.jpg',
     link: 'http://www.nhm.ac.uk/take-part/citizen-science/miniature-fossils-magnified.html',
   },
+  'Herbarium_WeDigFLPlants\' Spring-flowering Shrubs and Trees from the Florida Panhandle': {
+    snippet: `
+      Spring is showtime for viburnums, blueberries, and hollies in Florida’s
+      Panhandle forests! Join us as we document their diversity and distribution.
+    `,
+    image: 'Spring_shrubs_Panhandle.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
