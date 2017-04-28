@@ -727,6 +727,14 @@ export const expeditions = {
     image: 'Blueberries_Peninsula.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_Unlocking Northeastern Forests: Nature\'s Laboratories for Global Change (Part II)': {
+    snippet: `
+      Help decode patterns of diversity & the consequences of land-use & climate
+      change by transcribing historic plant specimens of the Northeast
+    `,
+    image: 'NortheasternForests-NYBG.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
