@@ -735,6 +735,15 @@ export const expeditions = {
     image: 'NortheasternForests-NYBG.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Ant Plants of West Virginia I': {
+    snippet: `
+      Herbaria records are invaluable resources for researchers to carry out studies
+      of southeastern plants. Your contribution to the growing body of information is
+      greatly appreciated and needed.
+    `,
+    image: 'Herbarium_Ant_Plants_1.jpg',
+    link: 'https://biospex.org/project/ant-plants-of-west-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
