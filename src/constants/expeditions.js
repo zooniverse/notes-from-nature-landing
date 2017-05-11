@@ -744,6 +744,15 @@ export const expeditions = {
     image: 'Herbarium_Ant_Plants_1.jpg',
     link: 'https://biospex.org/project/ant-plants-of-west-virginia',
   },
+  'Fossils_IU Cambrian Fossils #2': {
+    snippet: `
+      Transcribe fossil labels to see the diverse Cambrian fauna of western North America.
+      This expedition focuses mainly on trilobites,
+      but keep an eye out for bizarre Burgess Shale critters!
+    `,
+    image: 'trilobite-crotalocephalus.png',
+    link: 'http://www.indiana.edu/~palcoll/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
