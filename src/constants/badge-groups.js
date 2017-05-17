@@ -20,7 +20,7 @@ export const badgeGroups = {
     { count: 30, name: 'Pro', badge: 'cross/NfNProBadge.png' },
   ],
   TALK: [
-    { count: 1, name: 'Communicator', badge: 'talk/talk1.png' },
+    { count: 1, name: 'Communicator', badge: 'talk/talk1.svg' },
     { count: 25, name: 'Socializer', badge: 'talk/talk25.png' },
   ],
   plant: [
