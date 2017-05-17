@@ -3,7 +3,7 @@ import * as status from 'constants/statuses';
 
 const initialState = {
   status: status.FETCH_READY,
-  comments: {},
+  commentCount: 0,
 };
 
 export function talk(state = initialState, action) {
@@ -13,7 +13,7 @@ export function talk(state = initialState, action) {
       return Object.assign({}, state, { status: status.FETCH_REQUESTED });
 
     case type.TALK_RECEIVED:
-      return Object.assign({}, state, { status: status.FETCH_COMPLETED, comments: action.json });
+      return Object.assign({}, state, { status: status.FETCH_COMPLETED, commentCount: action.json.length });
 
     default:
       return state;
