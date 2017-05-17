@@ -35,7 +35,7 @@ export function crossBadges(activityCount, oldActivityCount) {
 }
 
 export function talkBadges(commentCount) {
-  return badgeGroups.TALK.filter(b => commentCount >= b.count);
+  return badgeGroups.TALK.filter(b => commentCount * 25 >= b.count);
 }
 
 export function taxonBadges(allWorkflows, activityByWorkflow) {
