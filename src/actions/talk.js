@@ -13,8 +13,12 @@ function talkReceived(json) {
 export function fetchTalkUser(userId) {
   return dispatch => {
     dispatch(talkRequested());
-    talkClient.type('comments').get(
-      { section: `project-${config.projectId}`, page: 1, user_id: userId, sort: '-created_at' }).then(
-      json => dispatch(talkReceived(json)));
+    talkClient.type('comments').get({
+      section: `project-${config.projectId}`,
+      user_id: userId,
+      page: 1,
+      page_size: 25,
+      sort: '-created_at',
+    }).then(json => dispatch(talkReceived(json)));
   };
 }
