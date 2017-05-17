@@ -5,9 +5,9 @@ import * as project from 'reducers/project';
 import * as projectPreferences from 'reducers/project-preferences';
 import * as recents from 'reducers/recents';
 import * as workflows from 'reducers/workflows';
-import * as talkUser from 'reducers/talk-user';
+import * as talk from 'reducers/talk';
 
 const reducers = Object.assign({},
-  login, project, projectPreferences, recents, workflows, talkUser);
+  login, project, projectPreferences, recents, workflows, talk);
 
 export default combineReducers(reducers);

@@ -3,18 +3,17 @@ import * as status from 'constants/statuses';
 
 const initialState = {
   status: status.FETCH_READY,
-  talkUser: {
-  },
+  comments: {},
 };
 
-export function talkUser(state = initialState, action) {
+export function talk(state = initialState, action) {
   switch (action.type) {
 
-    case type.TALK_USER_REQUESTED:
+    case type.TALK_REQUESTED:
       return Object.assign({}, state, { status: status.FETCH_REQUESTED });
 
-    case type.TALK_USER_RECEIVED:
-      return Object.assign({}, state, { status: status.FETCH_COMPLETED, talkUser: action.json });
+    case type.TALK_RECEIVED:
+      return Object.assign({}, state, { status: status.FETCH_COMPLETED, comments: action.json });
 
     default:
       return state;

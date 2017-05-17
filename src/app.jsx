@@ -4,7 +4,7 @@ import { fetchProject } from 'actions/project';
 import { fetchWorkflows } from 'actions/workflows';
 import { fetchProjectPreferences, fetchOldProjectPreferences } from 'actions/project-preferences';
 import { fetchRecents } from 'actions/recents';
-import { fetchTalkUser } from 'actions/talk-user';
+import { fetchTalkUser } from 'actions/talk';
 import * as status from 'constants/statuses';
 
 class App extends Component {
@@ -33,8 +33,8 @@ class App extends Component {
       if (props.recents.status === status.FETCH_READY) {
         props.dispatch(fetchRecents());
       }
-      if (props.talkUser.status === status.FETCH_READY) {
-        props.dispatch(fetchTalkUser());
+      if (props.talk.status === status.FETCH_READY) {
+        props.dispatch(fetchTalkUser(props.user.id));
       }
     }
   }
@@ -55,7 +55,7 @@ App.propTypes = {
   user: PropTypes.object,
   project: PropTypes.object,
   recents: PropTypes.object,
-  talkUser: PropTypes.object,
+  talk: PropTypes.object,
   workflows: PropTypes.object,
   projectPreferences: PropTypes.object,
 };
@@ -66,7 +66,7 @@ function mapStateToProps(state) {
     project: state.project,
     recents: state.recents,
     workflows: state.workflows,
-    talkUser: state.talkUser,
+    talk: state.talk,
     projectPreferences: state.projectPreferences,
   };
 }
