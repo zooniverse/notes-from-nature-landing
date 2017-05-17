@@ -6,3 +6,4 @@ dist
 server.crt
 server.key
 .DS_Store
+junk.*
