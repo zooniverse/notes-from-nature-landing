@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { taxonBadges, multiBadges, crossBadges } from 'helpers/badge-groups';
+import { taxonBadges, multiBadges, crossBadges, talkBadges } from 'helpers/badge-groups';
 
 export class FieldBookBadges extends Component {
   badges(earned, keyPrefix, i = 1) {
@@ -17,17 +17,19 @@ export class FieldBookBadges extends Component {
     );
   }
   render() {
-    const { allWorkflows, activityByWorkflow, activityCount, oldActivityCount } = this.props;
+    const { allWorkflows, activityByWorkflow, activityCount, oldActivityCount, commentCount } = this.props;
     const taxons = taxonBadges(allWorkflows, activityByWorkflow);
     const multis = multiBadges(activityByWorkflow);
     const cross = crossBadges(activityCount, oldActivityCount);
+    const talk = talkBadges(commentCount);
     return (
       <div className="badge-container">
         <h3>Badges Earned</h3>
         <hr />
-        { Object.keys(taxons).sort().map((g, i) => this.badges(taxons[g], 't', i))}
-        { this.badges(multis, 'm') }
-        { this.badges(cross, 'c') }
+        { Object.keys(taxons).sort().map((g, i) => this.badges(taxons[g], 'taxon', i))}
+        { this.badges(multis, 'multis') }
+        { this.badges(cross, 'cross') }
+        { this.badges(talk, 'talk') }
       </div>
     );
   }
@@ -36,6 +38,7 @@ export class FieldBookBadges extends Component {
 FieldBookBadges.propTypes = {
   allWorkflows: PropTypes.array,
   activityByWorkflow: PropTypes.object,
+  commentCount: PropTypes.number,
   activityCount: PropTypes.number,
   oldActivityCount: PropTypes.number,
 };

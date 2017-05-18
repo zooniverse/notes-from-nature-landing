@@ -1,6 +1,6 @@
-export const pluralize = (plural, n) => {
-  const singular = plural.replace(/e?s$/, '');
-  return n === 1 ? singular : plural;
+export const pluralize = (plural, n, singular = '') => {
+  const singleton = singular || plural.replace(/e?s$/, '');
+  return n === 1 ? singleton : plural;
 };
 
 export const localeDate = date =>

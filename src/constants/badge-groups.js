@@ -19,6 +19,10 @@ export const badgeGroups = {
     { count: 10, name: 'Pioneer', badge: 'cross/10_each.png' },
     { count: 30, name: 'Pro', badge: 'cross/NfNProBadge.png' },
   ],
+  TALK: [
+    { count: 1, name: 'Communicator', badge: 'talk/talk1.svg' },
+    { count: 25, name: 'Socializer', badge: 'talk/talk25.png' },
+  ],
   plant: [
     { count: 1, name: 'Seed', badge: 'plants/seed.png' },
     { count: 10, name: 'Seedling', badge: 'plants/seedling.png' },
@@ -81,6 +85,9 @@ Object.keys(badgeGroups).forEach(g => badgeGroups[g].forEach(b => {
     case 'CROSS':
       description = `for transcribing ${b.count} ${pluralize('records', b.count)}
         in old and new Notes from Nature`;
+      break;
+    case 'TALK':
+      description = `for posting on talk ${b.count} ${pluralize('times', b.count)}`;
       break;
     default:
       description = `for transcribing ${b.count} ${b.group}

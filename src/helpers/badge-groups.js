@@ -34,6 +34,10 @@ export function crossBadges(activityCount, oldActivityCount) {
   return badgeGroups.CROSS.filter(b => activityCount >= b.count && oldActivityCount >= b.count);
 }
 
+export function talkBadges(commentCount) {
+  return badgeGroups.TALK.filter(b => commentCount >= b.count);
+}
+
 export function taxonBadges(allWorkflows, activityByWorkflow) {
   const earned = {};
   const counts = countsByBadgeGroup(allWorkflows, activityByWorkflow);
