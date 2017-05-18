@@ -10,13 +10,13 @@ export const FieldBookExpeditions = ({ allWorkflows, activityByWorkflow }) =>
     <div className="expeditions">
       { recentExpeditions(allWorkflows, activityByWorkflow).map((e, i) =>
         <div className="expedition" key={i}>
-          {e.active
+          {e.active && e.completeness < 1
             ? <a href={`${config.workflowUrl}workflow=${e.id}`} aria-label={`Link to ${e.name}`}>
                 <img src={ require(`images/expeditions/${e.image}`) } alt={e.name}></img>
                 <div className="roll-over">
                   <h4>{e.name}</h4>
                   <span>{`You transcribed ${e.count} ${pluralize('records', e.count)}.`}</span>
-                  {e.active ? <span>&nbsp;Click to transcribe more.</span> : '' }
+                  <span>&nbsp;Click to transcribe more.</span>
                 </div>
               </a>
             : <div>
