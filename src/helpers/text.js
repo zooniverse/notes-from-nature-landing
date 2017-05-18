@@ -1,4 +1,4 @@
-export const pluralize = (plural, n, singular = '') => {
+export const pluralize = (plural, n, singular = false) => {
   const singleton = singular || plural.replace(/e?s$/, '');
   return n === 1 ? singleton : plural;
 };
