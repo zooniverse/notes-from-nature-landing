@@ -766,6 +766,16 @@ export const expeditions = {
     image: 'magnified-mini-fossils-2.jpg',
     link: 'http://www.nhm.ac.uk/take-part/citizen-science/miniature-fossils-magnified.html',
   },
+  'Butterfly_Spectacular Underwing Moths IV': {
+    snippet: `
+      Underwing moths are one of the most strikingly patterned, beautiful moths. Their hindwings are
+      marked with orange, yellow, pink, red, blue, or purple, and have been one of the most historically
+      prized moths sought by collectors. Help us examine how these moths have shifted their distribution
+      in light of climate change over the last 100+ years.
+    `,
+    image: 'Butterfly_Spectacular_Underwing_Moth.jpg',
+    link: 'http://www.lep-net.org',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
