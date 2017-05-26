@@ -17,7 +17,12 @@ export class FieldBookBadges extends Component {
     );
   }
   render() {
-    const { allWorkflows, activityByWorkflow, activityCount, oldActivityCount, commentCount } = this.props;
+    const {
+      allWorkflows,
+      activityByWorkflow,
+      activityCount,
+      oldActivityCount,
+      commentCount } = this.props;
     const taxons = taxonBadges(allWorkflows, activityByWorkflow);
     const multis = multiBadges(activityByWorkflow);
     const cross = crossBadges(activityCount, oldActivityCount);
