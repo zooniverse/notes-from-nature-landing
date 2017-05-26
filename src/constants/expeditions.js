@@ -776,6 +776,14 @@ export const expeditions = {
     image: 'Butterfly_Spectacular_Underwing_Moth.jpg',
     link: 'http://www.lep-net.org',
   },
+  'Herbarium_Ferns and Fern Allies of Tennessee, Part 2': {
+    snippet: `
+      The second dive into the Tennessee collections! This expedition covers a range
+      of Tennessee collected fern and fern allies.
+    `,
+    image: 'Herbarium_TN_Ferns_P1.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
