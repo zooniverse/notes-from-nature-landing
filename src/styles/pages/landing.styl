@@ -4,7 +4,12 @@
   flex-wrap: wrap
 
   .hero
-    background: url("../images/background/landing.jpg")
+    background: url("../images/background/anniversary1.png")
+    background-size: cover
+    background-position: center
+
+    @media screen and (min-width: $md-screen-width)
+        background-position: 50% 25%
 
     @media screen and (max-width: $md-screen-width)
       padding-left: 32px
