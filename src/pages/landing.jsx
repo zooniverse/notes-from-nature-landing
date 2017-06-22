@@ -8,14 +8,9 @@ import { FatFooter } from 'components/fat-footer';
 import { Contributors } from 'components/contributors';
 
 
-const credit = `
-Image made available for use by Paul Marek at
-Virginia Tech. Original image can be found at
-http://collection.ento.vt.edu/`;
-
 const Landing = ({ project, activeWorkflows }) =>
   <div className="landing">
-    <Hero title="Notes from Nature" subtitle="Transcribe Museum Records" credit={credit} />
+    <Hero title="Notes from Nature" subtitle="Transcribe Museum Records" />
     <ExpeditionGroupIcons
       workflows={activeWorkflows}
       link="active-expeditions"
