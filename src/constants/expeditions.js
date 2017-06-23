@@ -784,6 +784,14 @@ export const expeditions = {
     image: 'Herbarium_TN_Ferns_P1.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Labs_WeDigFlowering I: When does tickseed bloom?': {
+    snippet: `
+      Identify buds, flowers, and fruits to help us understand when
+      tickseed (Coreopsis) flowers across the U.S. Southeastern Gulf Plains.
+    `,
+    image: 'Coreopsis_nudata_KDSPsmaller.jpg',
+    link: 'https://biospex.org/project/wedigflowering-understanding-phenology-in-the-u-s-southeast',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
