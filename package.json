@@ -16,6 +16,10 @@
     "ES2015",
     "babel"
   ],
+  "engines": {
+    "node": "^6.10.2",
+    "npm": "^3.10.10"
+  },
   "scripts": {
     "start": "babel-node server.js",
     "test": "",
