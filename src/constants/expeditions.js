@@ -801,6 +801,14 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_Microbe Mutualist Plants of Virginia': {
+    snippet: `
+      Plants are masters of mutualist interactions with fungi and bacteria.
+      Help us learn more about these important relationships in Virginia.
+    `,
+    image: 'Lespedeza_vir_closeup_tile.jpg',
+    link: 'https://biospex.org/project/microbe-mutualist-plants-of-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
