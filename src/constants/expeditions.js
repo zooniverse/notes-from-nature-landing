@@ -809,6 +809,14 @@ export const expeditions = {
     image: 'Lespedeza_vir_closeup_tile.jpg',
     link: 'https://biospex.org/project/microbe-mutualist-plants-of-virginia',
   },
+  'Labs_Searocket phenology': {
+    snippet: `
+      Contribute to our understanding of searocket phenology. Help us count the buds,
+      flowers and fruits on these specimens. Photo: Bruce Kirchoff https://flic.kr/p/B1wBiB
+    `,
+    image: 'Searocket_phenology.jpg',
+    link: 'https://www.eemb.ucsb.edu/people/faculty/mazer',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
