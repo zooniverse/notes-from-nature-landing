@@ -69,7 +69,10 @@ export const badgeGroups = {
     { count: 10, name: 'Emerging Adult', badge: 'aquatics/wet2.png' },
     { count: 100, name: 'Adults Caddisfly', badge: 'aquatics/wet3.png' },
   ],
-  labs: [
+  lab: [
+    { count: 2, name: 'Blossoming', badge: 'phenology/blossom.png' },
+    { count: 10, name: 'Multi-blossoming', badge: 'phenology/blossoms.png' },
+    { count: 100, name: 'Fruiting', badge: 'phenology/fruit.png' },
   ],
 };
 
