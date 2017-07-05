@@ -60,9 +60,9 @@ export const expeditionGroups = {
     badgeGroup: 'aquatic',
   },
   Labs: {
-    name: 'NFN Labs',
+    name: 'Labs',
     icon: IdeaIcon,
-    badgeGroup: 'labs',
+    badgeGroup: 'lab',
   },
 };
 
