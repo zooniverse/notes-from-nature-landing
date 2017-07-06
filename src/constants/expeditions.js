@@ -817,6 +817,14 @@ export const expeditions = {
     image: 'Searocket_phenology.jpg',
     link: 'https://www.eemb.ucsb.edu/people/faculty/mazer',
   },
+  'Herbarium_Plants have all the anthers: FERNTASIA!': {
+    snippet: `
+      Transcribe BOON Herbarium fern collection along with some of our smaller family collections.
+      We promise a sporrific time!
+    `,
+    image: 'PHATAFern.png',
+    link: 'https://biospex.org/project/boon-herbarium-plants-of-southeastern-usa',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
