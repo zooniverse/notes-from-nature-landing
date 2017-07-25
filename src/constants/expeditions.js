@@ -825,6 +825,18 @@ export const expeditions = {
     image: 'PHATAFern.png',
     link: 'https://biospex.org/project/boon-herbarium-plants-of-southeastern-usa',
   },
+  'Butterfly_Hummingbird Moths': {
+    snippet: `
+      Is that a hummingbird hovering over those flowers? Oh wait,
+      it’s a moth with a ten-inch proboscis!
+      Help transcribe data labels of these Hyles Lineata moths,
+      which are also known as the hummingbird moth.
+      They are called hummingbird moths because their flight and
+      feeding behaviors resemble the mannerisms of hummingbirds.
+    `,
+    image: 'hummingbird_moths.jpg',
+    link: 'http://www.lep-net.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
