@@ -817,6 +817,26 @@ export const expeditions = {
     image: 'Searocket_phenology.jpg',
     link: 'https://www.eemb.ucsb.edu/people/faculty/mazer',
   },
+  'Herbarium_Plants have all the anthers: FERNTASIA!': {
+    snippet: `
+      Transcribe BOON Herbarium fern collection along with some of our smaller family collections.
+      We promise a sporrific time!
+    `,
+    image: 'PHATAFern.png',
+    link: 'https://biospex.org/project/boon-herbarium-plants-of-southeastern-usa',
+  },
+  'Butterfly_Hummingbird Moths': {
+    snippet: `
+      Is that a hummingbird hovering over those flowers? Oh wait,
+      it’s a moth with a ten-inch proboscis!
+      Help transcribe data labels of these Hyles Lineata moths,
+      which are also known as the hummingbird moth.
+      They are called hummingbird moths because their flight and
+      feeding behaviors resemble the mannerisms of hummingbirds.
+    `,
+    image: 'hummingbird_moths.jpg',
+    link: 'http://www.lep-net.org/',
+  },
   'Herbarium_Plants of Arkansas: The Delta and Crowley\'s Ridge Flora (Part II)': {
     snippet: `
       The Delta and Crowley's Ridge Flora--The Arkansas Delta Region is a vastly
