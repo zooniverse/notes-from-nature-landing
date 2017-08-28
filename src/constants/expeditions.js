@@ -845,6 +845,22 @@ export const expeditions = {
     image: 'Delta_photo.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_WeDigFLPlants\' Grasses of the Florida Peninsula': {
+    snippet: `
+    Grasses are the second most diverse family in Florida with 250+ native species.
+    And boy are they important--over half of humanity’s calories come from crop grasses.
+    `,
+    image: 'WeDigFLPlants_Grasses.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
+  'Herbarium_WeDigFLPlants\' Sedges of the Florida Panhandle': {
+    snippet: `
+      Sedges offer some of the greatest challenges to field biologists who are regularly
+      stumbling on species new to science.  Will there be a new species among these specimens?
+    `,
+    image: 'WeDigFLPlants_Sedges.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
