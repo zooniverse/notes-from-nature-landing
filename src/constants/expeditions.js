@@ -851,7 +851,7 @@ export const expeditions = {
     And boy are they important--over half of humanity’s calories come from crop grasses.
     `,
     image: 'WeDigFLPlants_Grasses.jpg',
-    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+    link: 'https://biospex.org/project/wedigflplants',
   },
   'Herbarium_WeDigFLPlants\' Sedges of the Florida Panhandle': {
     snippet: `
@@ -859,7 +859,7 @@ export const expeditions = {
       stumbling on species new to science.  Will there be a new species among these specimens?
     `,
     image: 'WeDigFLPlants_Sedges.jpg',
-    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+    link: 'https://biospex.org/project/wedigflplants',
   },
 };
 
