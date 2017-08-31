@@ -869,7 +869,7 @@ export const expeditions = {
       Some are important pollinators. Species of bee flies sometimes resemble bees,
       which is how they got their common name.
     `,
-    image: 'Pinned_Specimen_CalBug_Bee_Flies_7.jpg',
+    image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'https://nature.berkeley.edu/essig/CalBug/index.html',
   },
 };
