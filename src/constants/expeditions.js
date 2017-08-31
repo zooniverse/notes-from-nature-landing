@@ -861,6 +861,17 @@ export const expeditions = {
     image: 'WeDigFLPlants_Sedges.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Pinned Specimen_CalBug Bee Flies 7': {
+    snippet: `
+      This expedition features images of bee fly (Bombyliidae) specimens from the
+      CalBug project. The specimens were collected across the western Unites States.
+      The bee flies are a large family of flies that feed on nectar and pollen.
+      Some are important pollinators. Species of bee flies sometimes resemble bees,
+      which is how they got their common name.
+    `,
+    image: 'Pinned_Specimen_bee_flies_expedition.jpg',
+    link: 'https://nature.berkeley.edu/essig/CalBug/index.html',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
