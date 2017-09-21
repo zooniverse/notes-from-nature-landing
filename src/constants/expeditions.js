@@ -872,6 +872,16 @@ export const expeditions = {
     image: 'Pinned_Specimen_bee_flies_expedition.jpg',
     link: 'https://nature.berkeley.edu/essig/CalBug/index.html',
   },
+  'Butterfly_Poweshiek Skipperling': {
+    snippet: `
+      The Oarisma poweshiek, also known as the Poweshiek skipperling is an endangered butterfly species.
+      Habitat loss and fragmentation are to blame for its endangered species status.
+      By transcribing these data labels you are helping researchers understand the decline of the specie,
+      so please help conserve the Poweshiek skipperling by transcribing data labels.
+    `,
+    image: 'Butterfly_Poweshiek-Skipperling.jpg',
+    link: 'https://www.fws.gov/midwest/endangered/insects/posk/index.html',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
