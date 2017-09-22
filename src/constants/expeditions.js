@@ -882,6 +882,16 @@ export const expeditions = {
     image: 'Butterfly_Poweshiek-Skipperling.jpg',
     link: 'https://www.fws.gov/midwest/endangered/insects/posk/index.html',
   },
+  'Butterfly_New World Swallowtail Butterflies from the Field Museum of Natural History II': {
+    snippet: `
+      I am interested in how climate change has shaped the evolutionary history
+      of New World Swallowtail Butterflies. The museum specimens in this collection
+      provide a detailed record of the geographical variation and distribution of butterfly species,
+      with which I can better understand their history.
+    `,
+    image: 'AMNHicon.jpg',
+    link: 'http://hannahlowens.weebly.com/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
