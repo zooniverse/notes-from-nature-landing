@@ -3,6 +3,11 @@ import dateformat from 'dateformat';
 
 const RECENT_EXPEDITIONS_LENGTH = 4;
 
+export function filterIfExpeditionConstant(expeditionList) {
+  return expeditionList.filter(workflow =>
+    Object.keys(expeditions).indexOf(workflow.display_name) !== -1);
+}
+
 export function findExpedition(workflow) {
   const displayName = workflow ? workflow.display_name : '';
   const expedition = expeditions[displayName] || expeditions.DEFAULT;
