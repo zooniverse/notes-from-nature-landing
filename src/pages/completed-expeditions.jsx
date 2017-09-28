@@ -4,10 +4,11 @@ import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
 import { ExpeditionGroupIcons } from 'components/expedition-group-icons';
 import CompletedExpeditionTile from 'components/completed-expedition-tile';
-import { findExpedition, expeditionCompleted } from 'helpers/expeditions';
+import { filterIfExpeditionConstant, findExpedition, expeditionCompleted } from 'helpers/expeditions'; // eslint-disable-line max-len
 
 const CompletedExpeditions = ({ inactiveWorkflows }) => {
-  const expeditions = inactiveWorkflows.map(workflow => {
+  const filteredWorkflows = filterIfExpeditionConstant(inactiveWorkflows);
+  const expeditions = filteredWorkflows.map(workflow => {
     const expedition = findExpedition(workflow);
     expedition.completed = expeditionCompleted(expedition);
     return expedition;
