@@ -264,6 +264,7 @@ export const expeditions = {
     `,
     image: 'ArkansasDendrology.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+    completed_at: 'September 9, 2016',
   },
   'Herbarium_Arkansas Dendrology: Part 2: Magnolias, pawpaws, sassafras, and Dutchman\'s pipe -- 19 September 2016': {
     snippet: `
