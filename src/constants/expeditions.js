@@ -264,6 +264,7 @@ export const expeditions = {
     `,
     image: 'ArkansasDendrology.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+    completed_at: 'September 9, 2016',
   },
   'Herbarium_Arkansas Dendrology: Part 2: Magnolias, pawpaws, sassafras, and Dutchman\'s pipe -- 19 September 2016': {
     snippet: `
@@ -891,6 +892,26 @@ export const expeditions = {
     `,
     image: 'AMNHicon.jpg',
     link: 'http://hannahlowens.weebly.com/',
+  },
+  'Labs_PhenoMuse: FLMNH 100 Years': {
+    snippet: `
+      This is a special museum kiosk expedition being used for the 100 Year celebration
+      of the Florida Museum of Natural History. Feel free to take a peak,
+      but realize that this expedition was designed to be used as part of a special onsite exhibition.
+    `,
+    image: 'phenomuse.jpg',
+    link: 'https://www.floridamuseum.ufl.edu/100years/',
+  },
+  'Magnified_Miniature Fossils Magnified #3': {
+    snippet: `
+      These thin sections of ancient ocean sediment contain Foraminifera
+      - single-celled organisms with shells for protection, some of which lived more than 500 million years ago.
+      The data on these slide labels are invaluable - they can help us to understand how our environment
+      and climate have changed, how ocean currents have shifted,
+      and also tell us the geological history of the area in which they were found.
+    `,
+    image: 'magnified-mini-fossils-2.jpg',
+    link: 'http://www.nhm.ac.uk/take-part/citizen-science/miniature-fossils-magnified.html',
   },
 };
 
