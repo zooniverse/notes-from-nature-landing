@@ -893,6 +893,15 @@ export const expeditions = {
     image: 'AMNHicon.jpg',
     link: 'http://hannahlowens.weebly.com/',
   },
+  'Labs_PhenoMuse: FLMNH 100 Years': {
+    snippet: `
+      This is a special museum kiosk expedition being used for the 100 Year celebration
+      of the Florida Museum of Natural History. Feel free to take a peak,
+      but realize that this expedition was designed to be used as part of a special onsite exhibition.
+    `,
+    image: 'phenomuse.jpg',
+    link: 'https://www.floridamuseum.ufl.edu/100years/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
