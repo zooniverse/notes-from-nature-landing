@@ -913,6 +913,15 @@ export const expeditions = {
     image: 'magnified-mini-fossils-2.jpg',
     link: 'http://www.nhm.ac.uk/take-part/citizen-science/miniature-fossils-magnified.html',
   },
+  'Herbarium_WeDigFLPlants’ Legumes of Alachua County': {
+    snippet: `
+      Legumes are the third largest plant family with economically important crop,
+      forage, dye, and ornamental species.
+      Soils are enriched by the many nitrogen-fixing members of the family.
+    `,
+    image: 'Legumes_Alachua_Co.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
