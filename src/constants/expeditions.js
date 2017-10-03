@@ -922,6 +922,14 @@ export const expeditions = {
     image: 'Legumes_Alachua_Co.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_Natural North Carolina\'s - Nothing\'s BETter Than BETULACEAE': {
+    snippet: `
+      Grab a chocolate bar with hazelnuts and a bottle of birch beer!
+      Get to know Hazelnuts, Alders, Hop Hornbeams, Ironwoods and Birches.
+    `,
+    image: 'betulaceae.jpg',
+    link: 'https://biospex.org/project/natural-north-carolina',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
