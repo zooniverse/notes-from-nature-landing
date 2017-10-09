@@ -930,6 +930,13 @@ export const expeditions = {
     image: 'betulaceae.jpg',
     link: 'https://biospex.org/project/natural-north-carolina',
   },
+  'Herbarium_Help! Transcribing specimens from the Ronald L. Jones Herbarium at EKU (Part II)': {
+    snippet: `
+      Help us transcribe label data from specimens in the Ronald. L. Jones Herbarium at Eastern Kentucky University.
+    `,
+    image: 'Herbarium_Help_I.png',
+    link: 'https://biospex.org/project/we-need-your-help-transcribing-specimens-from-the-ronald-l-jones-herbarium-at-eku-part-ii',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
