@@ -937,6 +937,15 @@ export const expeditions = {
     image: 'Herbarium_Help_I.png',
     link: 'https://biospex.org/project/we-need-your-help-transcribing-specimens-from-the-ronald-l-jones-herbarium-at-eku-part-ii',
   },
+  'Butterfly_Orange Sulfurs in a Changing Climate (part I)': {
+    snippet: `
+      The Orange Sulfur butterfly is common across the US with many generations per year.
+      I’m studying how their wing patterns change in time, both seasonally and in response to climate change.
+      The current set of images covers parts of several collections and multiple parts of the US.
+    `,
+    image: 'OrangeSulphur.jpg',
+    link: 'https://www.butterfliesandmoths.org/species/Colias-eurytheme',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
