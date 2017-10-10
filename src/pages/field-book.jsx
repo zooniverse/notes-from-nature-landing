@@ -1,5 +1,9 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { fetchProjectPreferences, fetchOldProjectPreferences } from 'actions/project-preferences';
+import { fetchRecents } from 'actions/recents';
+import { fetchTalkUser } from 'actions/talk';
+import * as status from 'constants/statuses';
 import { Hero } from 'components/hero';
 import { FatFooter } from 'components/fat-footer';
 import { FieldBookBadges } from 'components/field-book/badges';
@@ -8,47 +12,74 @@ import { FieldBookTranscriptions } from 'components/field-book/transcriptions';
 import { totalCount } from 'helpers/badge-groups';
 import { pluralize } from 'helpers/text';
 
-const FieldBook = ({ user, workflows, projectPreferences, recents, talk }) => {
-  const total = totalCount(projectPreferences.activityByWorkflow);
-  if (user) {
+class FieldBook extends Component {
+  componentWillMount() {
+    this.doDispatches(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.doDispatches(nextProps);
+  }
+
+  doDispatches(props) {
+    if (props.user && props.user.id) {
+      if (props.projectPreferences.status === status.FETCH_READY) {
+        props.dispatch(fetchProjectPreferences(props.user.id));
+      }
+      if (props.projectPreferences.oldStatus === status.FETCH_READY) {
+        props.dispatch(fetchOldProjectPreferences(props.user.id));
+      }
+      if (props.recents.status === status.FETCH_READY) {
+        props.dispatch(fetchRecents());
+      }
+      if (props.talk.status === status.FETCH_READY) {
+        props.dispatch(fetchTalkUser(props.user.id));
+      }
+    }
+  }
+
+  render() {
+    const total = totalCount(this.props.projectPreferences.activityByWorkflow);
+    if (this.props.user) {
+      return (
+        <div className="field-book">
+          <Hero
+            title={`${this.props.user.display_name}'s Field Book`}
+            subtitle={`You have transcribed ${total} ${pluralize('records', total)}`}
+          />
+          <div className="content">
+            <div className="left-content">
+              <FieldBookExpeditions
+                allWorkflows={this.props.workflows.allWorkflows}
+                activityByWorkflow={this.props.projectPreferences.activityByWorkflow}
+              />
+              <FieldBookTranscriptions
+                recents={this.props.recents.recents}
+                allWorkflows={this.props.workflows.allWorkflows}
+              />
+            </div>
+            <div className="right-content">
+              <FieldBookBadges
+                allWorkflows={this.props.workflows.allWorkflows}
+                activityByWorkflow={this.props.projectPreferences.activityByWorkflow}
+                activityCount={total}
+                oldActivityCount={this.props.projectPreferences.oldActivityCount}
+                commentCount={this.props.talk.commentCount}
+              />
+            </div>
+          </div>
+          <FatFooter />
+        </div>
+      );
+    }
     return (
       <div className="field-book">
-        <Hero
-          title={`${user.display_name}'s Field Book`}
-          subtitle={`You have transcribed ${total} ${pluralize('records', total)}`}
-        />
-        <div className="content">
-          <div className="left-content">
-            <FieldBookExpeditions
-              allWorkflows={workflows.allWorkflows}
-              activityByWorkflow={projectPreferences.activityByWorkflow}
-            />
-            <FieldBookTranscriptions
-              recents={recents.recents}
-              allWorkflows={workflows.allWorkflows}
-            />
-          </div>
-          <div className="right-content">
-            <FieldBookBadges
-              allWorkflows={workflows.allWorkflows}
-              activityByWorkflow={projectPreferences.activityByWorkflow}
-              activityCount={total}
-              oldActivityCount={projectPreferences.oldActivityCount}
-              commentCount={talk.commentCount}
-            />
-          </div>
-        </div>
+        <Hero img="" title="Please login to access your Field Book" subtitle="" />
         <FatFooter />
       </div>
     );
   }
-  return (
-    <div className="field-book">
-      <Hero img="" title="Please login to access your Field Book" subtitle="" />
-      <FatFooter />
-    </div>
-  );
-};
+}
 
 FieldBook.propTypes = {
   dispatch: PropTypes.func,
