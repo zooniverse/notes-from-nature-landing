@@ -956,6 +956,14 @@ export const expeditions = {
     image: 'Herbarium_Fantastic_Ferns_Unlock_Tropical_Diversity_from_the_Americas.jpg',
     link: 'https://www.fieldmuseum.org/science/research/area/plants-fungi',
   },
+  'Herbarium_Fixating on Figworts in Virginia': {
+    snippet: `
+      Transcribe historical label data for figwort specimens (formerly Scrophulariaceae) across Virginia.
+      These species often have striking, colorful flowers and sometimes parasitize other plants.
+    `,
+    image: 'figworts.jpg',
+    link: 'https://biospex.org/project/fixating-on-figworts-in-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
