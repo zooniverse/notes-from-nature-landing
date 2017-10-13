@@ -964,6 +964,14 @@ export const expeditions = {
     image: 'figworts.jpg',
     link: 'https://biospex.org/project/fixating-on-figworts-in-virginia',
   },
+  'Herbarium_Journeys to the “Botanical Fountain of Youth”: Expeditions of John K.Small (1869-1938)': {
+    snippet: `
+      Follow renowned 19th century botanist J.K. Small
+      and help reconstruct the primordial native flora of the Southeastern United States.
+    `,
+    image: 'fountain_youth.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
