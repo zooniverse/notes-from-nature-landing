@@ -972,6 +972,15 @@ export const expeditions = {
     image: 'fountain_youth.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Butterfly_New World Swallowtail Butterflies from the National Museum of Natural History': {
+    snippet: `
+      I am interested in how climate change has shaped the evolutionary history of New World Swallowtail Butterflies.
+      The museum specimens in this collection provide a detailed record of the geographical variation and distribution of butterfly species,
+      with which I can better understand their history.
+    `,
+    image: 'HoldingButterflySmall.jpg',
+    link: 'http://hannahlowens.weebly.com/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
