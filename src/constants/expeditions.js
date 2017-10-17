@@ -981,6 +981,15 @@ export const expeditions = {
     image: 'HoldingButterflySmall.jpg',
     link: 'http://hannahlowens.weebly.com/',
   },
+  'Herbarium_WeDigFLPlants’ Ferns (and relatives) from the Florida Panhandle': {
+    snippet: `
+      Ferns, horsetails, clubmosses, and other seedless vascular plants encompass long spans of evolution
+      — hundreds of millions of years have passed since their most recent common ancestor.
+      Do you get that sense as you look through these?
+    `,
+    image: 'Ferns_Panhandle.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
