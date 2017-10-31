@@ -990,6 +990,17 @@ export const expeditions = {
     image: 'Ferns_Panhandle.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Pinned Specimen_California Spiders': {
+    snippet: `
+      This expedition features spiders from California, as part of the CalBug project.
+      It includes several families, like jumping spiders, crab spiders, orb weavers, and ground spiders.
+      They are important predators, keeping pest insects at bay.
+      The spiders pictured with each label are not necessarily the same species as the label,
+      but they are at least close relatives. This will give you a chance to learn the general appearance of the different groups of spiders.
+    `,
+    image: 'Habronattus_peckhami.jpg',
+    link: 'https://nature.berkeley.edu/essig/CalBug/index.html',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
