@@ -1001,6 +1001,15 @@ export const expeditions = {
     image: 'Habronattus_peckhami.jpg',
     link: 'https://nature.berkeley.edu/essig/CalBug/index.html',
   },
+  'Pinned Specimen_CalBug Leaf-cutter Bees 7': {
+    snippet: `
+      Megachilid (Leaf-cutter bees) bees are extraordinarily important plant
+      pollinators known as leafcutter or mason bees, so named because they typically make their
+      solitary nests using soil and leaves.
+    `,
+    image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
+    link: 'http://calbug.berkeley.edu/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
