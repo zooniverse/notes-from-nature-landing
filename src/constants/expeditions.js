@@ -1017,6 +1017,14 @@ export const expeditions = {
     image: 'Herbarium_Help_I.png',
     link: 'https://biospex.org/project/we-need-your-help-transcribing-specimens-from-the-ronald-l-jones-herbarium-at-eku-part-iii',
   },
+  'Herbarium_Wetland Specialist Plants of Virginia I': {
+    snippet: `
+      Wetland plants protect water quality and comprise a unique flora in Virginia.
+      Help us learn more about them – hip-waders not required!
+    `,
+    image: 'wetland-specialist-virginia.jpg',
+    link: 'https://biospex.org/project/wetland-specialist-plants-of-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
