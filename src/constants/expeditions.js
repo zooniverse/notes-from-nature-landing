@@ -1025,6 +1025,14 @@ export const expeditions = {
     image: 'wetland-specialist-virginia.jpg',
     link: 'https://biospex.org/project/wetland-specialist-plants-of-virginia',
   },
+  'Herbarium_WeDigFLPlants’ Cotton Relatives in the Florida Panhandle': {
+    snippet: `
+      Upland Cotton is native to Florida and the most widely planted species of cotton in the US.
+      You are probably wearing fibers derived from this species or its relatives in the family Malvaceae right now!
+    `,
+    image: 'WeDigFLPlants_Cotton_relatives.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
