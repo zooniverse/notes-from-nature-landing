@@ -1033,6 +1033,15 @@ export const expeditions = {
     image: 'WeDigFLPlants_Cotton_relatives.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_WeDigFLPlants’ Comfort Food Relatives of Florida': {
+    snippet: `
+      Potato, Sweet Potato, Yam, and the less well-known Andean crop Oca are all starchy comfort foods,
+      but they are derived from four different families of plants.
+      Can you tell the difference between the families as you go?
+    `,
+    image: 'WeDigBio_comfort.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
