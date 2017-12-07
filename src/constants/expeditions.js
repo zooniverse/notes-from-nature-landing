@@ -1042,6 +1042,17 @@ export const expeditions = {
     image: 'WeDigBio_comfort.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Butterfly_Banded Yellow Butterflies': {
+    snippet: `
+      This expedition looks at Eurema elathea, the Banded Yellow Butterfly.
+      This tropical species has striking brown bands spanning its yellow forewings,
+      and its hindwings are mostly porcelain white, giving it a distinct appearance.
+      The information that you transcribe adds value to our ongoing research,
+      by enhancing the data sets we use to answer questions about the history and behavior of these butterflies.
+    `,
+    image: 'butterfly_banded_yellow.jpg',
+    link: 'http://www.lep-net.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
