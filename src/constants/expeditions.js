@@ -1053,6 +1053,14 @@ export const expeditions = {
     image: 'butterfly_banded_yellow.jpg',
     link: 'http://www.lep-net.org/',
   },
+  'Herbarium_Plants of Arkansas: The Delta and Crowley\'s Ridge Flora (Part III)': {
+    snippet: `
+      The Delta and Crowley's Ridge Flora--The Arkansas Delta Region is a vastly under-explored
+      region of the Natural State in need.
+    `,
+    image: 'Delta_photo.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
