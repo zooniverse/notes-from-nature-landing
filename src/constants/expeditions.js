@@ -1061,6 +1061,14 @@ export const expeditions = {
     image: 'Delta_photo.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_Understanding A Critical Symbiosis: Nitrogen Fixing in Plants': {
+    snippet: `
+      Help us unlock data from museum specimens to understand one of the most important symbioses on the globe --
+      the relationship nitrogen fixing bacteria have with the roots of legumes and their relatives.
+    `,
+    image: 'Clitoria_ternateaSmall.jpg',
+    link: 'https://sites.google.com/site/robgur/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
