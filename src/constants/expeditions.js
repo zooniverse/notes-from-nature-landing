@@ -1078,6 +1078,15 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Butterfly_Orange Sulphurs in a Changing Climate (part 2)': {
+    snippet: `
+      The Orange Sulphur butterfly is common across the US with many generations per year.
+      I’m studying how their wing patterns change in time, both seasonally and in response to climate change.
+      The current set of images specimens from the McGuire Center at the Florida Museum of Natural History.
+    `,
+    image: 'OrangeSulphur.jpg',
+    link: 'https://www.butterfliesandmoths.org/species/Colias-eurytheme',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
