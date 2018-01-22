@@ -1087,6 +1087,14 @@ export const expeditions = {
     image: 'OrangeSulphur.jpg',
     link: 'https://www.butterfliesandmoths.org/species/Colias-eurytheme',
   },
+  'Herbarium_Understanding A Critical Symbiosis: Nitrogen Fixing in Plants II': {
+    snippet: `
+      Help us unlock data from museum specimens to understand one of the most important symbioses on the globe --
+      the relationship nitrogen fixing bacteria have with the roots of legumes and their relatives.
+    `,
+    image: 'OSUExpeditionImageSmall.jpg',
+    link: 'https://sites.google.com/site/robgur/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
