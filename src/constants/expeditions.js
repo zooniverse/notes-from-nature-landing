@@ -1089,10 +1089,10 @@ export const expeditions = {
   },
   'Herbarium_Understanding A Critical Symbiosis: Nitrogen Fixing in Plants II': {
     snippet: `
-      Help us unlock data from museum specimens to understand one of the most important symbioses on the globe --
+      Help us unlock data from Ohio State's herbarium in order to understand one of the most important symbioses on the globe --
       the relationship nitrogen fixing bacteria have with the roots of legumes and their relatives.
     `,
-    image: 'OSUExpeditionImageSmall.jpg',
+    image: 'OSUExpeditionImageSmallCrop.jpg',
     link: 'https://sites.google.com/site/robgur/',
   },
 };
