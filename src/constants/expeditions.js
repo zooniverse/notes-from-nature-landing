@@ -1112,6 +1112,13 @@ export const expeditions = {
     image: 'WeDigFLPlants_Oaks_Hickories.png',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_Plants of Western Tennessee': {
+    snippet: `
+      Western Tennessee's flora is the most under represented in Tennessee, lets fill these knowledge gaps!
+    `,
+    image: 'Western-Physio-Regions-TN.smaller.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
