@@ -1119,6 +1119,15 @@ export const expeditions = {
     image: 'Western-Physio-Regions-TN.smaller.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Labs_Phenology II: Evening-primroses': {
+    snippet: `
+      Contribute to our understanding of evening-primrose phenology.
+      Help us identify if there are flowers on these specimens.
+      Note that this expedition can also be found on the Zooniverse mobile app.
+    `,
+    image: 'evening-primroses.jpg',
+    link: 'https://sites.google.com/site/robgur/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
