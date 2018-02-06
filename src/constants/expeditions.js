@@ -1103,6 +1103,15 @@ export const expeditions = {
     image: 'Herbarium_Pollinator_Plants_of_Virginia.jpg',
     link: 'https://biospex.org/project/pollinator-plants-of-virginia',
   },
+  'Herbarium_WeDigFLPlants’ Oaks, Hickories, and Relatives of Florida': {
+    snippet: `
+      Oaks, hickories, and their close relatives are important trees in Florida’s forests,
+      especially as food sources for wildlife.  American Beech, shown here,
+      is a common species in eastern North American forests that only makes it into temperate North Florida.
+    `,
+    image: 'WeDigFLPlants_Oaks_Hickories.png',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
