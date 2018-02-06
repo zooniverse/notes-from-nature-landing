@@ -1095,6 +1095,14 @@ export const expeditions = {
     image: 'OSUExpeditionImageSmallCrop.jpg',
     link: 'https://sites.google.com/site/robgur/',
   },
+  'Herbarium_Pollinator Plants of Virginia - II': {
+    snippet: `
+      Nearly two-thirds of flowering plant species depend on animal pollinators.
+      Help us learn more about this critical partnership in Virginia.
+    `,
+    image: 'Herbarium_Pollinator_Plants_of_Virginia.jpg',
+    link: 'https://biospex.org/project/pollinator-plants-of-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
