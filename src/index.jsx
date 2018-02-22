@@ -28,6 +28,7 @@ oauth.init(config.panoptesAppId)
         <Router history={browserHistory}>
           <Route path="/" component={App}>
             <IndexRoute component={Landing} />
+            <Route path="/classify" component={Landing} />
             <Route path="/active-expeditions/:group" component={ActiveExpeditionGroup} />
             <Route path="/completed-expeditions" component={CompletedExpeditions} />
             <Route path="/completed-expedition-group/:group" component={CompletedExpeditionGroup} />
