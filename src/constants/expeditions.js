@@ -1123,7 +1123,6 @@ export const expeditions = {
     snippet: `
       Contribute to our understanding of evening-primrose phenology.
       Help us identify if there are flowers on these specimens.
-      Note that this expedition can also be found on the Zooniverse mobile app.
     `,
     image: 'evening-primroses.jpg',
     link: 'https://sites.google.com/site/robgur/',
