@@ -1127,6 +1127,15 @@ export const expeditions = {
     image: 'evening-primroses.jpg',
     link: 'https://sites.google.com/site/robgur/',
   },
+  'Herbarium_Tennessee Invaders': {
+    snippet: `
+      Over 400 non-native plant species now call Tennessee home.
+      Help a UTC graduate student compile a large database to further her research
+      on the distribution and spread of these Tennessee invaders.
+    `,
+    image: 'TN-IPC.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
