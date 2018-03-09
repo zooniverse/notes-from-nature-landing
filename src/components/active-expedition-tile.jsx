@@ -9,8 +9,11 @@ const ActiveExpeditionTile = ({ workflow }) => {
   const percent = Math.min((workflow.classifications_count / total) * 100.0, 100.0);
   return (
     <div className="tile">
-      <a className="inner" href={`${config.workflowUrl}workflow=${workflow.id}`}
+      <a
         aria-label={`Link to ${expedition.name}`}
+        className="inner"
+        href={`${config.workflowUrl}workflow=${workflow.id}`}
+        target="_blank"
       >
         <img src={ require(`images/expeditions/${expedition.image}`) }
           alt={expedition.name}
