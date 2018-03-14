@@ -1136,6 +1136,13 @@ export const expeditions = {
     image: 'TN-IPC.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Butterfly_Mixed Bag of Specimens from the McGuire Center': {
+    snippet: `
+      Transcribe different types of moths from one of the worlds largest Lepidoptera collection, the McGuire Center.
+    `,
+    image: 'mcguire_mixed.jpg',
+    link: 'http://www.lep-net.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
