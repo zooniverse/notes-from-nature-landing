@@ -1143,7 +1143,7 @@ export const expeditions = {
     image: 'mcguire_mixed.jpg',
     link: 'http://www.lep-net.org/',
   },
-  'Herbarium_Herbarium_We need your help! Transcribing specimens from the Ralph L. Thompson Herbarium at EKU (Part I)': {
+  'Herbarium_We need your help! Transcribing specimens from the Ralph L. Thompson Herbarium at EKU (Part I)': {
     snippet: `
       Help us transcribe specimens at the Ralph L. Thompson Herbarium at EKU.
     `,
