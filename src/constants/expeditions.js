@@ -790,7 +790,7 @@ export const expeditions = {
       Identify buds, flowers, and fruits to help us understand when
       tickseed (Coreopsis) flowers across the U.S. Southeastern Gulf Plains.
     `,
-    image: 'Coreopsis_nudata_KDSPsmaller.jpg',
+    image: 'tickseed.jpg',
     link: 'https://biospex.org/project/wedigflowering-understanding-phenology-in-the-u-s-southeast',
   },
   'Pinned Specimen_CalBug Leaf-cutter Bees 6': {
