@@ -1150,6 +1150,15 @@ export const expeditions = {
     image: 'berea_icon.jpg',
     link: 'https://biospex.org/project/we-need-your-help-transcribing-specimens-from-the-ralph-l-thompson-herbarium-at-eku-part-i',
   },
+  'Herbarium_Understanding A Critical Symbiosis: Nitrogen Fixing in Plants III': {
+    snippet: `
+      Help us better utilize data from the Missouri Botanic Gardens
+      in order to understand one of the most important symbioses on the globe --
+      the relationship nitrogen fixing bacteria have with the roots of legumes and their relatives.
+    `,
+    image: 'Atakora-Parkia_biglobosa.jpg',
+    link: 'https://sites.google.com/site/robgur/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
