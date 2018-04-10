@@ -1159,6 +1159,14 @@ export const expeditions = {
     image: 'Atakora-Parkia_biglobosa.jpg',
     link: 'https://sites.google.com/site/robgur/',
   },
+  'Labs_Geography: US State Spotter (Part 1) -- Starting with Sunflowers': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'USA-satellite.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
