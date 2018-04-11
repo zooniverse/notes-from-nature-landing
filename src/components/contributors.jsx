@@ -7,8 +7,8 @@ export const Contributors = () =>
       <a href="http://www.sernec.org/">
         <img alt="SERNEC" src="logos/sernec.png" />
       </a>
-      <a href="http://www.flmnh.ufl.edu/">
-        <img alt="Florida Museum of Natural History" src="logos/fmnh_logoregisteredcolor.jpg" />
+      <a href="http://www.flmnh.ufl.edu/" className="pull-right">
+        <img alt="Florida Museum of Natural History" src="logos/FM_logo_horizontal_CMYK.png" />
       </a>
       <a href="https://www.fsu.edu/">
         <img alt="Florida State Univerity" src="logos/FSU_Seal.jpg" />
