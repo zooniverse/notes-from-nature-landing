@@ -1138,7 +1138,7 @@ export const expeditions = {
   },
   'Butterfly_Mixed Bag of Specimens from the McGuire Center': {
     snippet: `
-      Transcribe different types of moths from one of the worlds largest Lepidoptera collection, the McGuire Center.
+      Transcribe different types of moths from one of the worlds largest Lepidoptera collections, the McGuire Center.
     `,
     image: 'mcguire_mixed.jpg',
     link: 'http://www.lep-net.org/',
