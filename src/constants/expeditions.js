@@ -1138,7 +1138,7 @@ export const expeditions = {
   },
   'Butterfly_Mixed Bag of Specimens from the McGuire Center': {
     snippet: `
-      Transcribe different types of moths from one of the worlds largest Lepidoptera collection, the McGuire Center.
+      Transcribe different types of moths from one of the worlds largest Lepidoptera collections, the McGuire Center.
     `,
     image: 'mcguire_mixed.jpg',
     link: 'http://www.lep-net.org/',
@@ -1166,6 +1166,22 @@ export const expeditions = {
     `,
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
+  'Herbarium_Journeys to the “Botanical Fountain of Youth”: Expeditions of John K. Small (Part II)': {
+    snippet: `
+      Follow renowned 19th century botanist J.K. Small and help reconstruct the
+      primordial native flora of the Southeastern United States.
+    `,
+    image: 'Expedition_Image_II.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
+  'Herbarium_WeDigFLPlants’ Cherries, Blackberries, and Relatives of Florida': {
+    snippet: `
+      Flowering cherries, blackberries, and relatives abound in Florida’s forests at this time of year.
+      What a gorgeous group on which to work!
+    `,
+    image: 'WeDigFLPlants_Cherries.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
   },
 };
 
