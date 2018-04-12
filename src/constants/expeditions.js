@@ -1167,6 +1167,14 @@ export const expeditions = {
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Journeys to the “Botanical Fountain of Youth”: Expeditions of John K. Small (Part II)': {
+    snippet: `
+      Follow renowned 19th century botanist J.K. Small and help reconstruct the
+      primordial native flora of the Southeastern United States.
+    `,
+    image: 'Expedition_Image_II.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
