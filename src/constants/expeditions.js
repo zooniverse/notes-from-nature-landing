@@ -1175,6 +1175,14 @@ export const expeditions = {
     image: 'Expedition_Image_II.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_WeDigFLPlants’ Cherries, Blackberries, and Relatives of Florida': {
+    snippet: `
+      Flowering cherries, blackberries, and relatives abound in Florida’s forests at this time of year.
+      What a gorgeous group on which to work!
+    `,
+    image: 'WeDigFLPlants_Cherries.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
