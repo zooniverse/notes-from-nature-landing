@@ -1183,6 +1183,14 @@ export const expeditions = {
     image: 'WeDigFLPlants_Cherries.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_The Meandering Mallows of Malvaceae': {
+    snippet: `
+      From okra we eat, cotton we wear & hibiscus beauty we gaze at,Malvaceae has us covered!
+      Please meander with us through where they live!
+    `,
+    image: 'Malvaceae.jpg',
+    link: 'https://biospex.org/project/natural-north-carolina',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
