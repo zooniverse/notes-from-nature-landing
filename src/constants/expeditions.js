@@ -1183,6 +1183,21 @@ export const expeditions = {
     image: 'WeDigFLPlants_Cherries.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_The Meandering Mallows of Malvaceae': {
+    snippet: `
+      From okra we eat, cotton we wear & hibiscus beauty we gaze at,Malvaceae has us covered!
+      Please meander with us through where they live!
+    `,
+    image: 'Malvaceae.jpg',
+    link: 'https://biospex.org/project/natural-north-carolina',
+  },
+  'Herbarium_Tennessee\'s Great Smoky Mountains - Sevier County': {
+    snippet: `
+      Help us transcribe a selection of records from Sevier county, one of Tennessee's counties in The Great Smokies.
+    `,
+    image: 'Eastern-Physio-Regions-TN.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
