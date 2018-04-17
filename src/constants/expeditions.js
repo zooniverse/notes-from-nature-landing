@@ -1191,6 +1191,13 @@ export const expeditions = {
     image: 'Malvaceae.jpg',
     link: 'https://biospex.org/project/natural-north-carolina',
   },
+  'Herbarium_Tennessee\'s Great Smoky Mountains - Sevier County': {
+    snippet: `
+      Help us transcribe a selection of records from Sevier county, one of Tennessee's counties in The Great Smokies.
+    `,
+    image: 'Eastern-Physio-Regions-TN.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
