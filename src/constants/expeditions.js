@@ -1198,6 +1198,24 @@ export const expeditions = {
     image: 'Eastern-Physio-Regions-TN.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Pinned Specimen_CalBug Leaf-cutter Bees 9': {
+    snippet: `
+      Megachilid (Leaf-cutter bees) bees are extraordinarily important plant
+      pollinators known as leafcutter or mason bees, so named because they typically make their
+      solitary nests using soil and leaves.
+    `,
+    image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
+    link: 'http://calbug.berkeley.edu/',
+  },
+  'Herbarium_Tennessee Invaders Part II': {
+    snippet: `
+      Over 400 non-native plant species now call Tennessee home.
+      Help a UTC graduate student compile a large database to further her research
+      on the distribution and spread of these Tennessee invaders.
+    `,
+    image: 'TN-IPC.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
   'Butterfly_Grab Bag of Specimens from the McGuire Center': {
     snippet: `
       Transcribe different types of moths from one of the world's largest Lepidoptera collections,
