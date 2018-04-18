@@ -1207,7 +1207,7 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
-  'Tennessee Invaders Part II': {
+  'Herbarium_Tennessee Invaders Part II': {
     snippet: `
       Over 400 non-native plant species now call Tennessee home.
       Help a UTC graduate student compile a large database to further her research
