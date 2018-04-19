@@ -1231,6 +1231,14 @@ export const expeditions = {
     image: 'Marshallia_legrandii.jpg',
     link: 'https://biospex.org/project/field-forest-plants-of-virginia',
   },
+  'Labs_Take a Note: Cherries': {
+    snippet: `
+      Contribute to our understanding of cherry phenology.
+      Help us identify if there are flowers on these specimens.
+    `,
+    image: 'Labs_cherries.jpg',
+    link: 'https://twitter.com/hashtag/TakeANote?src=hash',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
