@@ -1224,6 +1224,13 @@ export const expeditions = {
     image: 'Tile_Image_MimSmaller.jpg',
     link: 'http://www.lep-net.org/',
   },
+  'Herbarium_Field & Forest Plants of Virginia I': {
+    snippet: `
+      The flora of Virginia is still being discovered. Help us bring all the species to light!
+    `,
+    image: 'Marshallia_legrandii.jpg',
+    link: 'https://biospex.org/project/field-forest-plants-of-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
