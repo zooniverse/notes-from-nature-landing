@@ -6,8 +6,8 @@
   .event-banner
     position: absolute
     right: 50px;
-    bottom: 32px;
-    height: 65%
+    bottom: 16px;
+    height: 75%
 
   svg.nfn-logo
     position: absolute
@@ -46,13 +46,17 @@
       &.subtitle
         font-size: 18px
 
-  @media screen and (max-width: 1060px)
+  @media screen and (max-width: 1010px)
     h2.title
       display: none
 
     h4.subtitle
       display: none
 
-  @media screen and (max-width: 680px)
+  @media screen and (max-width: 620px)
     svg.nfn-logo
       display: none
+
+  @media screen and (max-width: 520px)
+    .event-banner
+      right: 4px
