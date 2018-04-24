@@ -1247,6 +1247,13 @@ export const expeditions = {
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Tennessee\'s Great Smoky Mountains - Blount County': {
+    snippet: `
+      Help us transcribe a selection of records from Blount county, one of Tennessee's counties in The Great Smokies.
+    `,
+    image: 'Eastern-Physio-Regions-TN.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
