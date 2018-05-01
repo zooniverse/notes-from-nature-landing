@@ -1254,6 +1254,13 @@ export const expeditions = {
     image: 'Eastern-Physio-Regions-TN.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_Dr. T\'s Ferntastic Collection: 1st Expedition': {
+    snippet: `
+      The first in a series of expeditions to transcribe ferns and lycophytes from the R. Dale Thomas Plant Collection at BRIT.
+    `,
+    image: 'NLU-Ophio-BRIT_2018-04-30Smaller.jpg',
+    link: 'https://biospex.org/project/nlu-ferns',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
