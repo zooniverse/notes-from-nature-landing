@@ -1270,6 +1270,15 @@ export const expeditions = {
     image: 'Luetkea_pectina.jpg',
     link: 'http://nitfix.org/',
   },
+  'Herbarium_Understanding A Critical Symbiosis: Nitrogen Fixing in Plants V - East Coast Edition': {
+    snippet: `
+      Help us unlock data from the New York Botanical Garden herbarium in order to understand one of the most
+      important symbioses on the globe -- the relationship nitrogen fixing bacteria have with the roots
+      of legumes and their relatives.
+    `,
+    image: 'nitfix-5.jpg',
+    link: 'http://nitfix.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
