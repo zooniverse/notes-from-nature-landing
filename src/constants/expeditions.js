@@ -1261,6 +1261,15 @@ export const expeditions = {
     image: 'NLU-Ophio-BRIT_2018-04-30Smaller.jpg',
     link: 'https://biospex.org/project/nlu-ferns',
   },
+  'Herbarium_Understanding A Critical Symbiosis: Nitrogen Fixing in Plants IV - West Coast Edition': {
+    snippet: `
+      Help us unlock data from the California Academy of Sciences herbarium in order to understand one of the most
+      important symbioses on the globe -- the relationship nitrogen fixing bacteria have with the roots of
+      legumes and their relatives.
+    `,
+    image: 'Luetkea_pectina.jpg',
+    link: 'http://nitfix.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
