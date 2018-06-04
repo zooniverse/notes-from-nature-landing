@@ -1295,6 +1295,14 @@ export const expeditions = {
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Labs_Geography: US State Spotter (Part 4) -- Secretive Sedges': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'USA-satellite.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
