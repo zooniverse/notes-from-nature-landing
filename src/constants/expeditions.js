@@ -1303,6 +1303,17 @@ export const expeditions = {
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_ICEDIG glimpse on the diversity of European collections': {
+    snippet: `
+      We need your help!
+      The ICEDIG project is experimenting with transcription on different crowdsourcing platforms
+      using specimens from different herbaria, from many countries. 
+      Help us try and discover if and why some specimens are harder to transcribe than others.    
+      If you like variety in your transcriptions, then this is the challenge for you. Happy transcribing!
+    `,
+    image: 'Specimen_collage_for_ICEDIG.jpg',
+    link: 'https://icedig.eu/',
+  },  
   'Pinned Specimen_CalBug Leaf-cutter Bees 10': {
     snippet: `
       Megachilid (Leaf-cutter bees) bees are extraordinarily important plant pollinators known as leafcutter or mason bees,
