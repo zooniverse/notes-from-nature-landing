@@ -1313,7 +1313,7 @@ export const expeditions = {
     `,
     image: 'Specimen_collage_for_ICEDIG.jpg',
     link: 'https://icedig.eu/',
-  },  
+  },
   'Pinned Specimen_CalBug Leaf-cutter Bees 10': {
     snippet: `
       Megachilid (Leaf-cutter bees) bees are extraordinarily important plant pollinators known as leafcutter or mason bees,
