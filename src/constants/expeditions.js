@@ -512,7 +512,7 @@ export const expeditions = {
       leafcutter or mason bees, so named because they typically make their solitary nests using soil
       and leaves.
     `,
-    image: 'Pinned_Specimen_CalBug_Leaf-cutter_Bees_3.jpg',
+    image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
   'Pinned Specimen_Trechine Ground Beetles 2': {
@@ -1313,6 +1313,14 @@ export const expeditions = {
     `,
     image: 'Specimen_collage_for_ICEDIG.jpg',
     link: 'https://icedig.eu/',
+  },  
+  'Pinned Specimen_CalBug Leaf-cutter Bees 10': {
+    snippet: `
+      Megachilid (Leaf-cutter bees) bees are extraordinarily important plant pollinators known as leafcutter or mason bees,
+      so named because they typically make their solitary nests using soil and leaves.
+    `,
+    image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
+    link: 'http://calbug.berkeley.edu/',
   },
 };
 
