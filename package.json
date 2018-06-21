@@ -17,8 +17,8 @@
     "babel"
   ],
   "engines": {
-    "node": "^6.10.2",
-    "npm": "^3.10.10"
+    "node": "^8",
+    "npm": "^6"
   },
   "scripts": {
     "start": "babel-node server.js",
@@ -59,7 +59,7 @@
     "babelify": "^7.2.0",
     "chai": "^3.2.0",
     "clean-webpack-plugin": "^0.1.6",
-    "copy-webpack-plugin": "^1.1.1",
+    "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.23.1",
     "dateformat": "^1.0.12",
     "eslint": "^2.7.0",
@@ -71,9 +71,9 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.15.0",
-    "image-webpack-loader": "^1.6.3",
+    "image-webpack-loader": "^4.3.1",
     "json-loader": "^0.5.4",
-    "mocha": "^2.3.0",
+    "mocha": "^5.2.0",
     "nib": "^1.1.0",
     "publisssh": "^1.0.1",
     "react-a11y": "^0.3.3",
