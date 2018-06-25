@@ -1322,6 +1322,14 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_Wading through water plants in Virginia': {
+    snippet: `
+      Virginia is home to a wide variety of aquatic plants.
+      This expedition focuses on a handful of aquatic flowering plant families.
+    `,
+    image: 'va-water-plants.jpg',
+    link: 'https://biospex.org/project/wading-through-water-plants-in-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
