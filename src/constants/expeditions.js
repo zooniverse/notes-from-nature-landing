@@ -1338,6 +1338,14 @@ export const expeditions = {
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Labs_Predicting Past and Present Phenology I': {
+    snippet: `
+      Contribute to our understanding of plant phenology.
+      Help us identify if there are flowers on these specimens from a variety of plant families.
+    `,
+    image: 'V1Tile2cropped.jpg',
+    link: 'https://www.plantphenology.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
