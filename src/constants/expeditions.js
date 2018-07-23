@@ -1354,6 +1354,15 @@ export const expeditions = {
     image: 'NLU-Ophio-BRIT_2018-04-30Smaller.jpg',
     link: 'https://biospex.org/project/nlu-ferns',
   },
+  'Herbarium_WeDigFLPlants’ Waterwillows, Black Mangroves, and Relatives of Florida': {
+    snippet: `
+      The diverse family Acanthaceae includes 49 species native and naturalized to Florida,
+      ranging from understory herbaceous plants to mangrove trees.
+      Can you find similarities across the diverse specimens as you work?
+    `,
+    image: 'Acanthaceae.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
