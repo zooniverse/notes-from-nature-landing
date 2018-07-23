@@ -1346,6 +1346,14 @@ export const expeditions = {
     image: 'V1Tile2cropped.jpg',
     link: 'https://www.plantphenology.org/',
   },
+  'Herbarium_Dr. T’s Ferntastic Collection: 2nd Expedition': {
+    snippet: `
+      The second in a series of expeditions to transcribe ferns and lycophytes
+      from the R. Dale Thomas Plant Collection at BRIT.
+    `,
+    image: 'NLU-Ophio-BRIT_2018-04-30Smaller.jpg',
+    link: 'https://biospex.org/project/nlu-ferns',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
