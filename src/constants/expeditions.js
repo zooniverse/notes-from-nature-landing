@@ -1363,6 +1363,22 @@ export const expeditions = {
     image: 'Acanthaceae.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Butterfly_Grab Bag of Specimens from the McGuire Center II': {
+    snippet: `
+      Transcribe different types of moths from one of the world's largest Lepidoptera collections,
+      the McGuire Center at the Florida Museum of Natural History.
+    `,
+    image: 'Tile_Image_MimSmaller.jpg',
+    link: 'http://www.lep-net.org/',
+  },
+  'Labs_Geography: US State Spotter (Part 5) -- Gone with the Grasses (II)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'USA-satellite.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
