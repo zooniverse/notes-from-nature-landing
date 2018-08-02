@@ -1379,6 +1379,15 @@ export const expeditions = {
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Labs_Prairie Fen Phenology: Rudbeckia': {
+    snippet: `
+      Help biodiversity researchers conserve the endangered Poweshiek skipperling butterfly
+      by assessing the phenology of their nectaring plants,
+      such as Rudbeckia hirta, the black-eyed susan.
+    `,
+    image: 'rudbeckia_image.jpg',
+    link: 'https://www.researchgate.net/project/Prairie-Fen-Research-Collaborative',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
