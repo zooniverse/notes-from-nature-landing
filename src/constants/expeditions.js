@@ -1307,8 +1307,8 @@ export const expeditions = {
     snippet: `
       We need your help!
       The ICEDIG project is experimenting with transcription on different crowdsourcing platforms
-      using specimens from different herbaria, from many countries. 
-      Help us try and discover if and why some specimens are harder to transcribe than others.    
+      using specimens from different herbaria, from many countries.
+      Help us try and discover if and why some specimens are harder to transcribe than others.
       If you like variety in your transcriptions, then this is the challenge for you. Happy transcribing!
     `,
     image: 'Specimen_collage_for_ICEDIG.jpg',
@@ -1329,6 +1329,14 @@ export const expeditions = {
     `,
     image: 'va-water-plants.jpg',
     link: 'https://biospex.org/project/wading-through-water-plants-in-virginia',
+  },
+  'Herbarium_Treasures of a Small Georgia Herbarium I': {
+    snippet: `
+      What botanical treasures await discovery in the Columbus State University Herbarium?
+      Help us move this small herbarium from photographs to research-ready data!
+    `,
+    image: 'Columbus_State_University_I.jpg',
+    link: 'https://biospex.org/project/plants-of-the-columbus-state-university-herbarium',
   },
 };
 
