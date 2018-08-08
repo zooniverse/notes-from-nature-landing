@@ -1330,6 +1330,64 @@ export const expeditions = {
     image: 'va-water-plants.jpg',
     link: 'https://biospex.org/project/wading-through-water-plants-in-virginia',
   },
+  'Labs_Geography: US State Spotter (Part 5) -- Gone with the Grasses': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'USA-satellite.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
+  'Labs_Predicting Past and Present Phenology I': {
+    snippet: `
+      Contribute to our understanding of plant phenology.
+      Help us identify if there are flowers on these specimens from a variety of plant families.
+    `,
+    image: 'V1Tile2cropped.jpg',
+    link: 'https://www.plantphenology.org/',
+  },
+  'Herbarium_Dr. T’s Ferntastic Collection: 2nd Expedition': {
+    snippet: `
+      The second in a series of expeditions to transcribe ferns and lycophytes
+      from the R. Dale Thomas Plant Collection at BRIT.
+    `,
+    image: 'NLU-Ophio-BRIT_2018-04-30Smaller.jpg',
+    link: 'https://biospex.org/project/nlu-ferns',
+  },
+  'Herbarium_WeDigFLPlants’ Waterwillows, Black Mangroves, and Relatives of Florida': {
+    snippet: `
+      The diverse family Acanthaceae includes 49 species native and naturalized to Florida,
+      ranging from understory herbaceous plants to mangrove trees.
+      Can you find similarities across the diverse specimens as you work?
+    `,
+    image: 'Acanthaceae.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
+  'Butterfly_Grab Bag of Specimens from the McGuire Center II': {
+    snippet: `
+      Transcribe different types of moths from one of the world's largest Lepidoptera collections,
+      the McGuire Center at the Florida Museum of Natural History.
+    `,
+    image: 'Tile_Image_MimSmaller.jpg',
+    link: 'http://www.lep-net.org/',
+  },
+  'Labs_Geography: US State Spotter (Part 5) -- Gone with the Grasses (II)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'USA-satellite.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
+  'Labs_Prairie Fen Phenology: Rudbeckia': {
+    snippet: `
+      Help biodiversity researchers conserve the endangered Poweshiek skipperling butterfly
+      by assessing the phenology of their nectaring plants,
+      such as Rudbeckia hirta, the black-eyed susan.
+    `,
+    image: 'rudbeckia_image.jpg',
+    link: 'https://www.researchgate.net/project/Prairie-Fen-Research-Collaborative',
+  },
   'Herbarium_Treasures of a Small Georgia Herbarium I': {
     snippet: `
       What botanical treasures await discovery in the Columbus State University Herbarium?
