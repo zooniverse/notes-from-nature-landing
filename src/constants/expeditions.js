@@ -1396,6 +1396,14 @@ export const expeditions = {
     image: 'Columbus_State_University_I.jpg',
     link: 'https://biospex.org/project/plants-of-the-columbus-state-university-herbarium',
   },
+  'Labs_Geography: US State Spotter (Part 5) -- Gone with the Grasses (III)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'USA-satellite.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
