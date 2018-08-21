@@ -1404,6 +1404,15 @@ export const expeditions = {
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Butterfly_Arctic Oeneis Butterflies in the Triplehorn Insect Collection at Ohio State': {
+    snippet: `
+      Arctic butterflies are very sensitive to environmental changes.
+      Specimen data from collections provide a window into their past distribution and will help
+      scientists understand the present and future impact of climate change in the world.
+    `,
+    image: 'Oeneis_chryxus-smlResize.jpg',
+    link: 'https://go.osu.edu/Arctics',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
