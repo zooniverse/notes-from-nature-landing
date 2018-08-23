@@ -1413,6 +1413,15 @@ export const expeditions = {
     image: 'Oeneis_chryxus-smlResize.jpg',
     link: 'https://go.osu.edu/Arctics',
   },
+  'Herbarium_WeDigFLPlants’ Lilies, Wakerobins, and Relatives of Florida': {
+    snippet: `
+      Lilies and their relatives in the order Liliales include 37 native and naturalized species in Florida.
+      Over a quarter of these species are threatened or endangered.
+      Help us gather data to protect this lovely group!
+    `,
+    image: 'WeDigFLPlants_Lilies.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
