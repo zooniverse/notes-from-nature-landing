@@ -1430,6 +1430,15 @@ export const expeditions = {
     image: 'USA-satellite.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Tennessee Invaders Part III': {
+    snippet: `
+      Over 400 non-native plant species now call Tennessee home.
+      Help a UTC graduate student compile a large database to further her research
+      on the distribution and spread of these Tennessee invaders.
+    `,
+    image: 'TN-IPC.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
