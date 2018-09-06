@@ -1439,6 +1439,13 @@ export const expeditions = {
     image: 'TN-IPC.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_Tennessee\'s Carter County': {
+    snippet: `
+      Help us transcribe records from Carter County Tennessee.
+    `,
+    image: 'Roan_Mountain.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
