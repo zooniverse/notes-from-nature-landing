@@ -1446,6 +1446,13 @@ export const expeditions = {
     image: 'Roan_Mountain.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_We need your help! Transcribing specimens from the Ralph L. Thompson Herbarium at EKU (Part II)': {
+    snippet: `
+      Help us transcribe specimens at the Ralph L. Thompson Herbarium at EKU (Part II).
+    `,
+    image: 'berea_icon.jpg',
+    link: 'https://biospex.org/project/we-need-your-help-transcribing-specimens-from-the-ralph-l-thompson-herbarium-at-eku-part-i',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
