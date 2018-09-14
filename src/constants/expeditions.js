@@ -1453,6 +1453,14 @@ export const expeditions = {
     image: 'berea_icon.jpg',
     link: 'https://biospex.org/project/we-need-your-help-transcribing-specimens-from-the-ralph-l-thompson-herbarium-at-eku-part-i',
   },
+  'Herbarium_Geography: US State Spotter (Part 5) -- Gone with the Grasses (V)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'USA-satellite.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
