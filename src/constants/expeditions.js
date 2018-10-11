@@ -1469,6 +1469,17 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_Fantastic Ferns! Celebrate Field Museum’s 125th Anniversary by Unlocking Tropical Diversity from the Caribbean, Africa and Australasia.': {
+    snippet: `
+      Ferns and their relatives ("pteridophytes") are ecologically important and have an amazing evolutionary history
+      spanning 420 million years ago to the present. Some of these ferns are found in geographical regions with high biodiversity,
+      but are threatened with destruction. These regions are called biodiversity hotspots.
+      The Caribbean, Africa and Australasia are home to half of the 36 biodiversity hotspots that still exist on this planet.
+      Help explore the botanical treasures of these ferns from Field Museum herbarium.
+    `,
+    image: 'Herbarium_Fantastic_Ferns_Unlock_Tropical_Diversity_from_the_Americas.jpg',
+    link: 'https://www.fieldmuseum.org/science/research/area/plants-fungi',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
