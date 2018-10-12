@@ -1480,6 +1480,24 @@ export const expeditions = {
     image: 'Herbarium_Fantastic_Ferns_Unlock_Tropical_Diversity_from_the_Americas.jpg',
     link: 'https://www.fieldmuseum.org/science/research/area/plants-fungi',
   },
+  'Herbarium_WeDigFLPlants’ Magnolias, Pawpaws, and Relatives of Florida': {
+    snippet: `
+      Magnolias and their relatives in order Magnoliales include 28 native and naturalized species in Florida.  
+      These trees and shrubs are charismatic members of Florida forests and include several threatened species. 
+      Help us gather data on this cherished plant group!
+    `,
+    image: 'WeDigFLPlants_Magnolias.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
+  'Herbarium_WeDigFLPlants’ Mustards, Capers, and Relatives of Florida': {
+    snippet: `
+      Mustards and their relatives in order Brassicales include over 50 native and naturalized species in Florida.
+      These plants produce special defensive compounds—the mustard oils.
+      Help us gather data on this spicy group!
+    `,
+    image: 'WeDigFLPlants_Mustards.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
