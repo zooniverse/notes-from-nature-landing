@@ -1503,7 +1503,7 @@ export const expeditions = {
       Help connect researchers to biodiversity data by identifying the geographic area where
       each historic plant specimen was originally collected.
     `,
-    image: 'USA-satellite.jpg',
+    image: 'Boggled_by_Blueberries.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
   'Herbarium_“Nature’s Nobleman”: Botanical Legacies of William Canby (1831-1904)': {
