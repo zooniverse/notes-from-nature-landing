@@ -1498,6 +1498,22 @@ export const expeditions = {
     image: 'WeDigFLPlants_Mustards.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Labs_Geography: US State Spotter -- Boggled by Blueberries': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'USA-satellite.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
+  'Herbarium_“Nature’s Nobleman”: Botanical Legacies of William Canby (1831-1904)': {
+    snippet: `
+      Discover the collections of William Canby, 19th century explorer, businessman,
+      and botanist who surveyed for the transcontinental railroad.
+    `,
+    image: 'Canby_Image.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
