@@ -1522,6 +1522,15 @@ export const expeditions = {
     image: 'sedge_tile.jpg',
     link: 'https://biospex.org/project/botany-with-an-edge-all-about-sedges',
   },
+  'Herbarium_WeDigFLPlants’ Meadow Beauties, Evening Primroses, and Relatives of Florida': {
+    snippet: `
+      Meadow beauties and their relatives in order Myrtales include just over 100 native and naturalized species in Florida.
+      These plants range from the white mangroves of coastal subtropical waters to the bee blossoms of our temperate sandhills.
+      Help us gather data on this ecologically diverse group!
+    `,
+    image: 'WeDigFLPlants_Meadowbeauties.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
