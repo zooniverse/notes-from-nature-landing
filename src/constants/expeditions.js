@@ -1482,8 +1482,8 @@ export const expeditions = {
   },
   'Herbarium_WeDigFLPlants’ Magnolias, Pawpaws, and Relatives of Florida': {
     snippet: `
-      Magnolias and their relatives in order Magnoliales include 28 native and naturalized species in Florida.  
-      These trees and shrubs are charismatic members of Florida forests and include several threatened species. 
+      Magnolias and their relatives in order Magnoliales include 28 native and naturalized species in Florida.
+      These trees and shrubs are charismatic members of Florida forests and include several threatened species.
       Help us gather data on this cherished plant group!
     `,
     image: 'WeDigFLPlants_Magnolias.jpg',
@@ -1513,6 +1513,23 @@ export const expeditions = {
     `,
     image: 'Canby_Image.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
+  'Herbarium_Botany with an edge: all about sedges': {
+    snippet: `
+      "Sedges have edges" is a helpful mantra in plant ID to spot this tricky group.
+      Try learning Virginia's sedge diversity with this expedition!
+    `,
+    image: 'sedge_tile.jpg',
+    link: 'https://biospex.org/project/botany-with-an-edge-all-about-sedges',
+  },
+  'Herbarium_WeDigFLPlants’ Meadow Beauties, Evening Primroses, and Relatives of Florida': {
+    snippet: `
+      Meadow beauties and their relatives in order Myrtales include just over 100 native and naturalized species in Florida.
+      These plants range from the white mangroves of coastal subtropical waters to the bee blossoms of our temperate sandhills.
+      Help us gather data on this ecologically diverse group!
+    `,
+    image: 'WeDigFLPlants_Meadowbeauties.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
   },
 };
 
