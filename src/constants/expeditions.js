@@ -1469,6 +1469,14 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_Botany with an edge: all about sedges': {
+    snippet: `
+      "Sedges have edges" is a helpful mantra in plant ID to spot this tricky group.
+      Try learning Virginia's sedge diversity with this expedition!
+    `,
+    image: 'sedge_tile.jpg',
+    link: 'https://biospex.org/project/botany-with-an-edge-all-about-sedges',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
