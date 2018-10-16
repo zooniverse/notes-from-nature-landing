@@ -1469,6 +1469,51 @@ export const expeditions = {
     image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
     link: 'http://calbug.berkeley.edu/',
   },
+  'Herbarium_Fantastic Ferns! Celebrate Field Museum’s 125th Anniversary by Unlocking Tropical Diversity from the Caribbean, Africa and Australasia.': {
+    snippet: `
+      Ferns and their relatives ("pteridophytes") are ecologically important and have an amazing evolutionary history
+      spanning 420 million years ago to the present. Some of these ferns are found in geographical regions with high biodiversity,
+      but are threatened with destruction. These regions are called biodiversity hotspots.
+      The Caribbean, Africa and Australasia are home to half of the 36 biodiversity hotspots that still exist on this planet.
+      Help explore the botanical treasures of these ferns from Field Museum herbarium.
+    `,
+    image: 'Herbarium_Fantastic_Ferns_Unlock_Tropical_Diversity_from_the_Americas.jpg',
+    link: 'https://www.fieldmuseum.org/science/research/area/plants-fungi',
+  },
+  'Herbarium_WeDigFLPlants’ Magnolias, Pawpaws, and Relatives of Florida': {
+    snippet: `
+      Magnolias and their relatives in order Magnoliales include 28 native and naturalized species in Florida.
+      These trees and shrubs are charismatic members of Florida forests and include several threatened species.
+      Help us gather data on this cherished plant group!
+    `,
+    image: 'WeDigFLPlants_Magnolias.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
+  'Herbarium_WeDigFLPlants’ Mustards, Capers, and Relatives of Florida': {
+    snippet: `
+      Mustards and their relatives in order Brassicales include over 50 native and naturalized species in Florida.
+      These plants produce special defensive compounds—the mustard oils.
+      Help us gather data on this spicy group!
+    `,
+    image: 'WeDigFLPlants_Mustards.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
+  'Labs_Geography: US State Spotter -- Boggled by Blueberries': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'Boggled_by_Blueberries.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
+  'Herbarium_“Nature’s Nobleman”: Botanical Legacies of William Canby (1831-1904)': {
+    snippet: `
+      Discover the collections of William Canby, 19th century explorer, businessman,
+      and botanist who surveyed for the transcontinental railroad.
+    `,
+    image: 'Canby_Image.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
   'Herbarium_Botany with an edge: all about sedges': {
     snippet: `
       "Sedges have edges" is a helpful mantra in plant ID to spot this tricky group.
