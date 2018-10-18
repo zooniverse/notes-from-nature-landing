@@ -1531,6 +1531,13 @@ export const expeditions = {
     image: 'WeDigFLPlants_Meadowbeauties.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Labs_Fall Showoff: The Seaside Goldenrod': {
+    snippet: `
+      Contribute to our understanding of goldenrod phenology. Help us identify if there are flowers on these specimens.
+    `,
+    image: 'FallShowoffTile.jpg',
+    link: 'https://www.idigbio.org/content/october-2018-biodiversity-spotlight',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
