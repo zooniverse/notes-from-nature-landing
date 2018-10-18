@@ -1538,6 +1538,14 @@ export const expeditions = {
     image: 'FallShowoffTile.jpg',
     link: 'https://www.idigbio.org/content/october-2018-biodiversity-spotlight',
   },
+  'Labs_Geography: US State Spotter -- Lost Legumes (II)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area
+      where each historic plant specimen was originally collected.
+    `,
+    image: 'Lost_Legumes.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
