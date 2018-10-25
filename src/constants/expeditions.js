@@ -1546,6 +1546,14 @@ export const expeditions = {
     image: 'Lost_Legumes.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_BRIT Texas Specimens - Expedition 1': {
+    snippet: `
+    Delve into the richness of Texas botany (1800s - 2000s) through an eclectic mix of plants
+    collected across the diverse history and landscape of Texas.
+    `,
+    image: 'tile-BRIT-TX-NfN.jpg',
+    link: 'https://biospex.org/project/brit-texas-specimens',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
