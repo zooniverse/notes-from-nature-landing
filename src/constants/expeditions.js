@@ -1554,6 +1554,14 @@ export const expeditions = {
     image: 'tile-BRIT-TX-NfN.jpg',
     link: 'https://biospex.org/project/brit-texas-specimens',
   },
+  'Labs_Geography: US State Spotter -- Secretive Sedges (II)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area
+      where each historic plant specimen was originally collected.
+    `,
+    image: 'Secretive_Sedges.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
