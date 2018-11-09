@@ -1562,6 +1562,14 @@ export const expeditions = {
     image: 'Secretive_Sedges.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Labs_Geography: US State Spotter -- Anomalous Asters': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area
+      where each historic plant specimen was originally collected.
+    `,
+    image: 'Anomalous_Asteraceae.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
