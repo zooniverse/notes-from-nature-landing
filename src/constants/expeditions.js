@@ -1570,6 +1570,14 @@ export const expeditions = {
     image: 'Anomalous_Asteraceae.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Treasures of a Small Georgia Herbarium II': {
+    snippet: `
+      What botanical treasures await discovery in the Columbus State University Herbarium?
+      Help us move this small herbarium from photographs to research-ready data!
+    `,
+    image: 'Columbus_State_University_I.jpg',
+    link: 'https://biospex.org/project/plants-of-the-columbus-state-university-herbarium',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
