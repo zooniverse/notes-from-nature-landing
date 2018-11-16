@@ -1586,6 +1586,14 @@ export const expeditions = {
     image: 'Anomalous_Asteraceae.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Labs_Label Babel': {
+    snippet: `
+      We are taking bold new steps to make transcription faster and better.
+      Helps us develop a training dataset to detect where a label is, and the type of content it contains.
+    `,
+    image: 'LabelBabelTile.jpg',
+    link: 'https://sites.google.com/site/robgur/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
