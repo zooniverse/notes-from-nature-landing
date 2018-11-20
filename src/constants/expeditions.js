@@ -1594,6 +1594,14 @@ export const expeditions = {
     image: 'LabelBabelTile.jpg',
     link: 'https://sites.google.com/site/robgur/',
   },
+  'Herbarium_Flora of Wormsloe Plantation': {
+    snippet: `
+      Help us document the biodiversity of Wormsloe Historic Site, a plantation in Savannah, GA, founded in 1736.
+      This historic property is open to the public and is on a scenic island with majestic live oaks and salt marshes.
+    `,
+    image: 'Ave_oaks_tile.Smaller.jpg',
+    link: 'http://www.plantbio.uga.edu/uga-herbarium',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
