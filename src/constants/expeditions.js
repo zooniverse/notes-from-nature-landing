@@ -1602,6 +1602,14 @@ export const expeditions = {
     image: 'Ave_oaks_tile.Smaller.jpg',
     link: 'http://www.plantbio.uga.edu/uga-herbarium',
   },
+  'Labs_Geography: US State Spotter -- Anomalous Asters (III)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area
+      where each historic plant specimen was originally collected.
+    `,
+    image: 'Anomalous_Asteraceae.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
