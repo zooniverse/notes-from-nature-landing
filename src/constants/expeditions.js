@@ -1610,6 +1610,13 @@ export const expeditions = {
     image: 'Anomalous_Asteraceae.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_We need your help! Transcribing specimens from the Ralph L. Thompson Herbarium at EKU (Part III)': {
+    snippet: `
+      We need your help! Transcribing specimens from the Ralph L. Thompson Herbarium at EKU (Part III).
+    `,
+    image: 'berea_icon.jpg',
+    link: 'https://biospex.org/project/we-need-your-help-transcribing-specimens-from-the-ralph-l-thompson-herbarium-at-eku-part-i',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
