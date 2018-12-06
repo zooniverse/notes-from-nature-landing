@@ -1617,6 +1617,15 @@ export const expeditions = {
     image: 'berea_icon.jpg',
     link: 'https://biospex.org/project/we-need-your-help-transcribing-specimens-from-the-ralph-l-thompson-herbarium-at-eku-part-i',
   },
+  'Herbarium_Tennessee Invaders Part IV': {
+    snippet: `
+      Over 400 non-native plant species now call Tennessee home.
+      Help a UTC graduate student compile a large database to further her research
+      on the distribution and spread of these Tennessee invaders.
+    `,
+    image: 'TN-IPC.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
