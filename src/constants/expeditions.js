@@ -1626,6 +1626,14 @@ export const expeditions = {
     image: 'TN-IPC.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_Tropical Plants in Virginia. Part 1': {
+    snippet: `
+      Global pressures are greatly impacting the distribution of plants.
+      Help us transcribe tropical plants specimens from temperate Virginia.
+    `,
+    image: 'tile1.png',
+    link: 'https://biospex.org/project/tropical-plants-in-virginia',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
