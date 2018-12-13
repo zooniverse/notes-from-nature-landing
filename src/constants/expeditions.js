@@ -1634,6 +1634,15 @@ export const expeditions = {
     image: 'tile1.png',
     link: 'https://biospex.org/project/tropical-plants-in-virginia',
   },
+  'Labs_Geography: US State Spotter -- Baffling Broomrapes': {
+    snippet: `
+      Help connect researchers to biodiversity data by 
+      identifying the geographic area where each historic plant specimen 
+      was originally collected.
+    `,
+    image: 'Baffling_Broomrapes.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
