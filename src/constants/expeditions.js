@@ -1636,11 +1636,19 @@ export const expeditions = {
   },
   'Labs_Geography: US State Spotter -- Baffling Broomrapes': {
     snippet: `
-      Help connect researchers to biodiversity data by 
-      identifying the geographic area where each historic plant specimen 
+      Help connect researchers to biodiversity data by
+      identifying the geographic area where each historic plant specimen
       was originally collected.
     `,
     image: 'Baffling_Broomrapes.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
+  'Labs_Geography: US State Spotter -- Reclusive Rosaceae (II)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'Reclusive_Rosaceae.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
 };
