@@ -1651,6 +1651,14 @@ export const expeditions = {
     image: 'Reclusive_Rosaceae.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Plants of Northwest Arkansas: The Flora of Benton County': {
+    snippet: `
+      Benton County, AR, is a rapidly developing county.
+      Help scientists catalog all plant specimens as they compile a flora for conservation.
+    `,
+    image: 'benton-county.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
