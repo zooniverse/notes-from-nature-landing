@@ -1672,7 +1672,7 @@ export const expeditions = {
       Washington County, AR, is a rapidly developing county.
       Help scientists catalog all plant specimens as they compile a flora for conservation.
     `,
-    image: 'Oak_Savanna_Shale_Barrens_Kessler_Witsell_small.jpeg',
+    image: 'Oak_Savanna_Shale_Barrens_Kessler_Witsell_small.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
 };
