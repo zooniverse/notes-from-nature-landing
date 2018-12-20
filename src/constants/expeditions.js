@@ -1659,6 +1659,22 @@ export const expeditions = {
     image: 'benton-county.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Pinned Specimen_CalBug Leaf-cutter Bees 12': {
+    snippet: `
+      Megachilid (Leaf-cutter bees) bees are extraordinarily important plant pollinators known as leafcutter or mason bees,
+      so named because they typically make their solitary nests using soil and leaves.
+    `,
+    image: 'Pinned_Specimen_leaf_cutter_bees.jpg',
+    link: 'http://calbug.berkeley.edu/',
+  },
+  'Herbarium_Plants of Northwest Arkansas: The Flora of Washington County': {
+    snippet: `
+      Washington County, AR, is a rapidly developing county.
+      Help scientists catalog all plant specimens as they compile a flora for conservation.
+    `,
+    image: 'Oak_Savanna_Shale_Barrens_Kessler_Witsell_small.jpeg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
