@@ -1675,6 +1675,14 @@ export const expeditions = {
     image: 'Oak_Savanna_Shale_Barrens_Kessler_Witsell_small.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_WeDigFLPlants\' Tropical Vacation': {
+    snippet: `
+      Palms, bromeliads, and cycads await you on this visit with tropical elements from Florida’s flora.
+      Florida is home to 27 species of native or naturalized palms, 22 of bromeliads, and 3 of cycads.
+    `,
+    image: 'WeDigFLPlants_Tropical_Vacation.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
