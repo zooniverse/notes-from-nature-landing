@@ -1683,6 +1683,14 @@ export const expeditions = {
     image: 'WeDigFLPlants_Tropical_Vacation.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Herbarium_Tennessee Buttercups and Friends - Spring Refresher': {
+    snippet: `
+      Refresh your memory of the names of buttercups in Tennessee before spring
+      arrives by transcribing specimens from across the state.
+    `,
+    image: 'Buttercups3.png',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
