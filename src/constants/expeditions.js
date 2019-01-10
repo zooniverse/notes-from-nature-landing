@@ -1691,6 +1691,22 @@ export const expeditions = {
     image: 'Buttercups3.png',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_Dr. T’s Ferntastic Collection: 3rd Expedition': {
+    snippet: `
+      The third in a series of expeditions to transcribe ferns and lycophytes
+      from the R. Dale Thomas Plant Collection at BRIT.
+    `,
+    image: 'NLU-Ophio-BRIT_2018-04-30Smaller.jpg',
+    link: 'https://biospex.org/project/nlu-ferns',
+  },
+  'Herbarium_The Vanderbilt University Collection at BRIT - 2nd expedition': {
+    snippet: `
+      The VDB collection has a focus on Tennessee and Alabama specimens
+      but many you find here are likely to come from other south eastern states.
+    `,
+    image: 'itch-expedition.jpg',
+    link: 'https://biospex.org/project/the-vanderbilt-university-collection-at-brit',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
