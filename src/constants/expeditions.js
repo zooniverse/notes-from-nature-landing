@@ -1707,6 +1707,14 @@ export const expeditions = {
     image: 'itch-expedition.jpg',
     link: 'https://biospex.org/project/the-vanderbilt-university-collection-at-brit',
   },
+  'Labs_Geography: US State Spotter -- Reclusive Rosaceae (III)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'Reclusive_Rosaceae.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
