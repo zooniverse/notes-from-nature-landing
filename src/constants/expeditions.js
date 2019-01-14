@@ -1715,6 +1715,14 @@ export const expeditions = {
     image: 'Reclusive_Rosaceae.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Tennessee Invaders Part V': {
+    snippet: `
+      Help a UTC graduate student compile a large database to further her research
+      on the distribution and spread of these Tennessee invaders.
+    `,
+    image: 'TN-IPC.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
