@@ -1723,6 +1723,15 @@ export const expeditions = {
     image: 'TN-IPC.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_Spring Mustards of Tennessee - Spring Refresher': {
+    snippet: `
+      Discover the plethora of mustards in Tennessee, learning their names and appearance to
+      identify them in the field this spring. Help us transcribe records of the mustards from
+      small Tennessee herbaria to digitize data and further research.
+    `,
+    image: 'SpringMustardsTile.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
