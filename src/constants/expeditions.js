@@ -1732,6 +1732,15 @@ export const expeditions = {
     image: 'SpringMustardsTile.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_Showy Trees of Tennessee - Spring Refresher': {
+    snippet: `
+      Help us transcribe the records of various showy trees from across Tennessee.
+      These trees are sure to make a colorful presence during spring,
+      so transcribe these records to get a head start on identifying them!
+    `,
+    image: 'Showytrees.png',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
