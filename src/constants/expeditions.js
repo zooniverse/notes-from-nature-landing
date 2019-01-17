@@ -1741,6 +1741,14 @@ export const expeditions = {
     image: 'Showytrees.png',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_Ferns and Conifers of Tennessee - Spring Refresher': {
+    snippet: `
+      Explore the ferns and gymnosperms of Tennessee and create digitized records for researchers.
+      Delve into the collections of small Tennessee herbaria while sharpening your transcription skills.
+    `,
+    image: 'FernsandConifers.png',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
