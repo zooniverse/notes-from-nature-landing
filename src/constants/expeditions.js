@@ -1749,6 +1749,17 @@ export const expeditions = {
     image: 'FernsandConifers.png',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Butterfly_Miscellaneous Moths': {
+    snippet: `
+      This expedition highlights two genera, Hemileuca and Coloradia.
+      These north American specimens are extremely varied in color, from reds and pinks, to pure white,
+      and usually have distinct black markings across each wing.
+      By transcribing these specimens, you help add to our ongoing research;
+      we use these enhanced data sets to answer questions about the behavior of these butterflies.
+    `,
+    image: 'Hemileuca_img_2.jpg',
+    link: 'http://www.lep-net.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
