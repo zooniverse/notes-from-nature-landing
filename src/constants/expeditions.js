@@ -1554,7 +1554,6 @@ export const expeditions = {
     image: 'tile-BRIT-TX-NfN.jpg',
     link: 'https://biospex.org/project/brit-texas-specimens',
   },
-<<<<<<< Updated upstream
   'Labs_Geography: US State Spotter -- Secretive Sedges (II)': {
     snippet: `
       Help connect researchers to biodiversity data by identifying the geographic area
@@ -1760,7 +1759,7 @@ export const expeditions = {
     `,
     image: 'Hemileuca_img_2.jpg',
     link: 'http://www.lep-net.org/',
-=======
+  },
   'Herbarium_BRIT Texas Specimens - Expedition 2': {
     snippet: `
     Delve into the richness of Texas botany (1800s - 2000s) through an eclectic mix of plants
@@ -1768,7 +1767,6 @@ export const expeditions = {
     `,
     image: 'tile-BRIT-TX-NfN.jpg',
     link: 'https://biospex.org/project/brit-texas-specimens',
->>>>>>> Stashed changes
   },
 };
 
