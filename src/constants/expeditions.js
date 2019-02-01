@@ -1762,11 +1762,19 @@ export const expeditions = {
   },
   'Herbarium_BRIT Texas Specimens - Expedition 2': {
     snippet: `
-    Delve into the richness of Texas botany (1800s - 2000s) through an eclectic mix of plants
-    collected across the diverse history and landscape of Texas.
+      Delve into the richness of Texas botany (1800s - 2000s) through an eclectic mix of plants
+      collected across the diverse history and landscape of Texas.
     `,
     image: 'tile-BRIT-TX-NfN.jpg',
     link: 'https://biospex.org/project/brit-texas-specimens',
+  },
+  'Labs_Training the Machines I: Prunus (Cherries, Plums, Peaches and Almonds)': {
+    snippet: `
+      Help researchers determine if citizen scientists can create high quality training datasets
+      for machine learning, using our favorite group, Prunus.
+    `,
+    image: 'labs_prunus.jpg',
+    link: 'https://sites.google.com/site/robgur/',
   },
 };
 
