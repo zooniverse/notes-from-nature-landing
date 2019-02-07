@@ -1776,6 +1776,14 @@ export const expeditions = {
     image: 'labs_prunus.jpg',
     link: 'https://sites.google.com/site/robgur/',
   },
+  'Labs_Geography: US State Spotter -- Reclusive Rosaceae (IV)': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'Reclusive_Rosaceae.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
