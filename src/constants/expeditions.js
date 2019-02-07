@@ -1784,6 +1784,15 @@ export const expeditions = {
     image: 'Reclusive_Rosaceae.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_WeDigFLPlants’ Wild Carrot, Angelica, and Relatives of Florida': {
+    snippet: `
+      Wild Carrots and their relatives in order Apiales include over 65 native and naturalized species in Florida.
+      These plants often produce gorgeous congestions of flowers that look a bit like fireworks exploding.
+      Help us gather data on this often charismatic group!
+    `,
+    image: 'WeDigFLPlants_Apiales.png',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
