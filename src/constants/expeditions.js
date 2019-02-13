@@ -1793,6 +1793,14 @@ export const expeditions = {
     image: 'WeDigFLPlants_Apiales.png',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Labs_Geography: US State Spotter: Herbal Exploration -- Mints, Violets, Buttercups, and Borages': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where
+      each historic plant specimen was originally collected.
+    `,
+    image: 'Herbal_Exploration.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
