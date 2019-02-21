@@ -1809,6 +1809,21 @@ export const expeditions = {
     image: 'DLS_2018-695_04.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_Plants of Northwest Arkansas: The Flora of Benton and Washington Counties': {
+    snippet: `
+      Northwest Arkansas is one of the most rapidly developing areas in the US.
+      Help scientists catalog plant specimens as they compile a flora.
+    `,
+    image: 'Oak_Savanna_Shale_Barrens_Kessler_Witsell_small.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
+  'Herbarium_Flora of Tennessee Prairies and Savannas': {
+    snippet: `
+      Explore the flora of the TN prairies and savannas, increasingly rare landscapes across the Southeast.
+    `,
+    image: 'PrairiesandSavannas4Smaller.jpg',
+    link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
