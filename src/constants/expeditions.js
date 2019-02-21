@@ -1801,6 +1801,14 @@ export const expeditions = {
     image: 'Herbal_Exploration.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_cARexpedition: Carex sedge exploration in Arkansas': {
+    snippet: `
+      Many Carex species grow at the limits of their ranges in Arkansas.
+      Help us explore the distribution of sedges!
+    `,
+    image: 'DLS_2018-695_04.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
