@@ -1821,7 +1821,7 @@ export const expeditions = {
     snippet: `
       Explore the flora of the TN prairies and savannas, increasingly rare landscapes across the Southeast.
     `,
-    image: 'PrairiesandSavannas4Smaller.jpg',
+    image: 'SGI2smaller.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
 };
