@@ -1824,6 +1824,15 @@ export const expeditions = {
     image: 'SGI2smaller.jpg',
     link: 'https://biospex.org/project/herbarium-specimens-of-tennessee-fern-and-fern-allies',
   },
+  'Herbarium_WeDigFLPlants\' Phenomenal Plants of Highlands County, Florida': {
+    snippet: `
+      "Dig" into the flora that makes Highlands County unique. Explore a variety of
+      botanical wonders that create the scrubs and diverse landscapes of the Heartland.
+      Be a pioneer and help write our history.
+    `,
+    image: 'PhenomenalPlantsHighlands.jpg',
+    link: 'https://biospex.org/project/wedigflplants',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
