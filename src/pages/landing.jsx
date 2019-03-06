@@ -10,7 +10,7 @@ import { Contributors } from 'components/contributors';
 
 const Landing = ({ project, activeWorkflows }) =>
   <div className="landing">
-    <Hero title="Notes from Nature" subtitle="Transcribe Museum Records" />
+    <Hero title="" subtitle="" />
     <ExpeditionGroupIcons
       workflows={activeWorkflows}
       link="active-expeditions"

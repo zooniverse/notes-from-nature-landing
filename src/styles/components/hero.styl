@@ -3,6 +3,14 @@
   height: 320px
   background-size: cover
 
+  .celebration
+    top: 32px
+    left: $lg-left-spacer
+    width: 700px
+    height: 250px
+    margin-left: auto
+    margin-right: auto
+
   svg.nfn-logo
     position: absolute
     height: 300px
@@ -28,6 +36,10 @@
       bottom: 20px
       font-size: 20px
       text-transform: uppercase
+
+  @media screen and (max-width: 840px)
+    svg.nfn-logo
+      stroke: rgba(0, 0, 0, 0)
 
   @media screen and (max-width: $md-screen-width)
     h2, h3, h4
