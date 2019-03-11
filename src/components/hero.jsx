@@ -1,14 +1,15 @@
 import React, { PropTypes } from 'react';
 import Header from 'components/header';
 import { NfNLogoVertical } from 'components/logos/nfn-logo-vertical';
-import { Celebration } from 'components/celebration';
+// import { Celebration } from 'components/celebration';
 
 
-export const Hero = ({ credit = '' }) =>
+export const Hero = ({ title, subtitle, credit = '' }) =>
   <div className="hero" title={credit}>
     <NfNLogoVertical />
     <Header bgClass={'transparent'} />
-    <Celebration />
+    <h2 className="title">{title}</h2>
+    <h4 className="subtitle">{subtitle}</h4>
   </div>;
 
 Hero.propTypes = {
