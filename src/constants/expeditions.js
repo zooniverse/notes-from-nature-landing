@@ -1833,6 +1833,14 @@ export const expeditions = {
     image: 'PhenomenalPlantsHighlands.jpg',
     link: 'https://biospex.org/project/wedigflplants',
   },
+  'Labs_Geography: US State Spotter: Herbal Exploration (II) Mustards, Primrose, Parsley, and Plantains': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the geographic area where each historic
+      plant specimen was originally collected.
+    `,
+    image: 'HERBAL_EXPLORATION_2_smaller.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
