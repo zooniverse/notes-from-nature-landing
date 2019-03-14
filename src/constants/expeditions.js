@@ -1841,6 +1841,14 @@ export const expeditions = {
     image: 'HERBAL_EXPLORATION_2_smaller.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Spruces and Pines of Canada and US housed in UBC Herbarium': {
+    snippet: `
+      We are the University of British Columbia Herbarium (UBC) and we have opened up our collection cabinets,
+      and imaged our conifer collection and now we need your help transcribing each specimens collection data.
+    `,
+    image: 'conifer_avatar.jpg',
+    link: 'http://beatymuseum.ubc.ca/research-2/collections/herbarium/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
