@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import HeaderAuth from 'header/header-auth';
 
-const Header = ({ inactiveWorkflows, user }) =>
+const Header = ({ inactiveWorkflows }) =>
   <div className="header">
     <Link className="first wide" to="/">Get Started</Link>
     <a target="_blank"
@@ -26,7 +26,7 @@ const Header = ({ inactiveWorkflows, user }) =>
       ? <Link className="remove wide" to="/completed-expeditions">Completed Expeditions</Link>
       : ''
     }
-    {user ? <Link to="/field-book" className="wide">Field Book</Link> : ''}
+    <a href="https://field-book.notesfromnature.org/" className="wide">Field Book</a>
     <div className="last">&nbsp;</div>
     <HeaderAuth />
   </div>;
@@ -41,7 +41,6 @@ Header.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    user: state.login.user,
     initialized: state.login.initialized,
     inactiveWorkflows: state.workflows.inactiveWorkflows,
   };
