@@ -1849,6 +1849,15 @@ export const expeditions = {
     image: 'conifer_avatar.jpg',
     link: 'http://beatymuseum.ubc.ca/research-2/collections/herbarium/',
   },
+  'Butterfly_Arctic Oeneis 2': {
+    snippet: `
+      Arctic butterflies are very sensitive to environmental changes.
+      Specimen data from collections provide a window into their past distribution and will help scientists
+      understand the present and future impact of climate change in the world.
+    `,
+    image: 'Oeneis_chryxus-smlResize.jpg',
+    link: 'http://go.osu.edu/Arctics',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
