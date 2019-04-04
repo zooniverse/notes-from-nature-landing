@@ -1866,6 +1866,14 @@ export const expeditions = {
     image: 'Delta_photo.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Herbarium_Agaves, borages, and mustards, oh my!': {
+    snippet: `
+      Help Long Beach State and Cal State LA transcribe specimens produced through the
+      California Phenology Collections Network (CAP).
+    `,
+    image: 'MustardImage.png',
+    link: 'https://www.capturingcaliforniasflowers.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
