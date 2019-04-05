@@ -1874,6 +1874,13 @@ export const expeditions = {
     image: 'MustardImage.png',
     link: 'https://www.capturingcaliforniasflowers.org/',
   },
+  'Herbarium_Plants of Arkansas: Digitizing Hendrix College\'s Collection': {
+    snippet: `
+      Help us finish transcribing Hendrix's collection!
+    `,
+    image: 'hendrix.jpg',
+    link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
