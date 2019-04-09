@@ -1881,6 +1881,14 @@ export const expeditions = {
     image: 'hendrix.jpg',
     link: 'https://biospex.org/project/plants-of-arkansas-discovery-and-dissemination',
   },
+  'Labs_Geography: US State Spotter: Mysterious Monocots!': {
+    snippet: `
+      Help connect researchers to biodiversity data by identifying the US State where each
+      historic plant specimen was originally collected.
+    `,
+    image: 'State_Spotter_Monocots.jpg',
+    link: 'https://biospex.org/project/biodiversity-unleashed',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
