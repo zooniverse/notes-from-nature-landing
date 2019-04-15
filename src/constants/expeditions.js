@@ -1889,6 +1889,16 @@ export const expeditions = {
     image: 'State_Spotter_Monocots.jpg',
     link: 'https://biospex.org/project/biodiversity-unleashed',
   },
+  'Herbarium_Understanding A Critical Symbiosis: Nitrogen Fixing in Plants - Missouri Botanical Gardens': {
+    snippet: `
+      Elaeagnus umbellata, autumn olive. This temperate eastern Asian native is a non-legume nitrogen-fixer,
+      hosting Frankia bacteria in its roots to fix atmospheric nitrogen. Like a number of other
+      “actinorhizal” plants that have relationships with Frankia, nitrogen fixation has allowed this
+      species to become invasive in several parts of the world.
+    `,
+    image: 'NitFix6TileSmaller.jpg',
+    link: 'https://nitfix.org/',
+  },
 };
 
 Object.keys(expeditions).forEach((k) => {
